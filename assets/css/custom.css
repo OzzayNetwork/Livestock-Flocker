@@ -1544,3 +1544,15 @@ padding: 0px;
     .logo-lg img {
         margin-right: 12px;
     }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #467759;
+        border-color: #467759;
+    }
+
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #69b48f;
+        border-color: #69b48f;
+    }
