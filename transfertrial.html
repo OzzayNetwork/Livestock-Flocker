@@ -1,0 +1,192 @@
+<!-- Modal -->
+<div class="modal fade" id="editLogModal" tabindex="-1" aria-labelledby="editLogModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editLogModalLabel">Edit Log Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Edited By:</strong> Chris Otieno (HR Director)</p>
+                <p><strong>Edited Date:</strong> 15 Mar 2025 10:00 AM</p>
+                <p><strong>Reason for Edit:</strong> Updated personal details</p>
+                <p><strong>Net Salary After Edit:</strong> KES 150,000</p>
+                <hr>
+                <h6>Changes:</h6>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Previous Value</th>
+                                <th>New Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>First Name:</strong></td><td class="text-danger">John</td><td class="text-success">Jonathan</td></tr>
+                            <tr><td><strong>Last Name:</strong></td><td class="text-danger">Doe</td><td class="text-success">Smith</td></tr>
+                            <tr><td><strong>Email:</strong></td><td class="text-danger">john.doe@example.com</td><td class="text-success">jonathan.smith@example.com</td></tr>
+                            <tr><td><strong>Phone:</strong></td><td class="text-danger">0712345678</td><td class="text-success">0723456789</td></tr>
+                            <tr><td><strong>National ID:</strong></td><td class="text-danger">12345678</td><td class="text-success">87654321</td></tr>
+                            <tr><td><strong>Gender:</strong></td><td class="text-danger">Male</td><td class="text-success">Female</td></tr>
+                            <tr><td><strong>Postal Code:</strong></td><td class="text-danger">00100</td><td class="text-success">00200</td></tr>
+                            <tr><td><strong>Physical Address:</strong></td><td class="text-danger">123 Main Street, Nairobi</td><td class="text-success">456 Park Avenue, Nairobi</td></tr>
+                            <tr><td><strong>Marital Status:</strong></td><td class="text-danger">Single</td><td class="text-success">Married</td></tr>
+                            <tr><td><strong>Driving License:</strong></td><td class="text-danger">DL123456</td><td class="text-success">DL654321</td></tr>
+                            <tr><td><strong>Blood Group:</strong></td><td class="text-danger">A+</td><td class="text-success">B+</td></tr>
+                            <tr><td><strong>Spouse Name:</strong></td><td class="text-danger">-</td><td class="text-success">Jane Smith</td></tr>
+                            <tr><td><strong>Department:</strong></td><td class="text-danger">Finance & Economic Planning</td><td class="text-success">Human Resources</td></tr>
+                            <tr><td><strong>Section/Sub-vote:</strong></td><td class="text-danger">Medical Services</td><td class="text-success">Recruitment</td></tr>
+                            <tr><td><strong>Unit/Directorate:</strong></td><td class="text-danger">Accounts</td><td class="text-success">HR Operations</td></tr>
+                            <tr><td><strong>Sub Unit:</strong></td><td class="text-danger">Emergency and Referral Services</td><td class="text-success">Employee Relations</td></tr>
+                            <tr><td><strong>Designation:</strong></td><td class="text-danger">Director</td><td class="text-success">Senior Director</td></tr>
+                            <tr><td><strong>Employment Date:</strong></td><td class="text-danger">2018-06-01</td><td class="text-success">2018-06-15</td></tr>
+                            <tr><td><strong>Reporting To:</strong></td><td class="text-danger">Chief Officer</td><td class="text-success">Deputy CEO</td></tr>
+                            <tr><td><strong>Account Holder Name:</strong></td><td class="text-danger">John Doe</td><td class="text-success">Jonathan Smith</td></tr>
+                            <tr><td><strong>Account Number:</strong></td><td class="text-danger">1234567890</td><td class="text-success">0987654321</td></tr>
+                            <tr><td><strong>Bank Country:</strong></td><td class="text-danger">Kenya</td><td class="text-success">Kenya</td></tr>
+                            <tr><td><strong>Bank Name:</strong></td><td class="text-danger">Equity Bank</td><td class="text-success">KCB Bank</td></tr>
+                            <tr><td><strong>Branch Location:</strong></td><td class="text-danger">Nairobi CBD</td><td class="text-success">Westlands</td></tr>
+                            <tr><td><strong>SHIF Number:</strong></td><td class="text-danger">SHIF12345</td><td class="text-success">SHIF54321</td></tr>
+                            <tr><td><strong>NSSF Number:</strong></td><td class="text-danger">NSSF12345</td><td class="text-success">NSSF54321</td></tr>
+                            <tr><td><strong>Emergency Contact Name:</strong></td><td class="text-danger">Jane Doe</td><td class="text-success">Jane Smith</td></tr>
+                            <tr><td><strong>Emergency Contact Email:</strong></td><td class="text-danger">jane.doe@example.com</td><td class="text-success">jane.smith@example.com</td></tr>
+                            <tr><td><strong>Emergency Contact Phone:</strong></td><td class="text-danger">0712345678</td><td class="text-success">0723456789</td></tr>
+                            <tr><td><strong>Next of Kin Name:</strong></td><td class="text-danger">Mary Doe</td><td class="text-success">Mary Smith</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-3">
+                        <button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#approveModal">
+                            <i class="bx bx-check-circle me-1"></i> Approve Changes
+                        </button>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#declineModal">
+                            <i class="bx bx-x-circle me-1"></i> Decline Changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Approve Modal with OTP -->
+<div class="modal fade" id="approveModal" tabindex="-1" aria-labelledby="approveModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-light-blue border-success">
+            <div class="modal-header text-black text-uppercase border-0">
+                <h4 class="modal-title" id="approveModalLabel">Approve Edit Changes</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="approveReason" class="form-label fw-bold">Reason for Approval</label>
+                    <textarea class="form-control border-success" id="approveReason" rows="3" placeholder="Please enter your reason for approving these changes..."></textarea>
+                </div>
+                
+                <div class="alert alert-success border-success border-2" role="alert">
+                    <h4 class="alert-heading text-black text-uppercase">OTP Verification</h4>
+                    <p>An OTP (One-Time Password) has been sent to your phone: <strong>+254 7XX XXX 123</strong>. Please enter the OTP to verify and approve the employee record changes.</p>
+            
+                    <div class="hstack gap-3">
+                        <input class="form-control me-auto border-black otp-input" type="text" placeholder="Enter OTP" aria-label="Enter OTP here..." spellcheck="false">
+                        <button type="button" class="btn btn-warning text-dark fw-bold text-nowrap text-uppercase">Resend OTP</button>
+                    </div>
+                </div>
+                
+                <button disabled class="btn btn-success fw-bold mt-4 text-uppercase w-100 d-flex justify-content-center align-items-center text-center otp-btn" title="Confirm Approval">
+                    <div>Confirm Approval</div>
+                    <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </button>
+            </div>
+            
+            <!-- Success Message (Initially Hidden) -->
+            <div class="modal-body d-none approval-successful">
+                <div class="p-4 pb-1 px-1 d-flex align-items-center justify-content-center flex-column pt-1">
+                    <div class="flex-shrink-0 align-self-center mb-4">
+                        <div class="avatar-md rounded-circle bg-success mini-stat-icon">
+                            <span class="avatar-title rounded-circle bg-success">
+                                <i class="bx bx-check-circle fs-1"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <h4 class="text-uppercase text-dark modal-title fw-bold">Changes Approved Successfully</h4>
+                    <p class="text-center px-5">
+                        The employee record changes have been approved successfully. The system has been updated with the new information.
+                    </p>
+                    <div class="w-100 mt-2">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn btn-outline-success waves-effect w-100 btn-close-btn text-uppercase fw-bold">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Decline Modal with OTP -->
+<div class="modal fade" id="declineModal" tabindex="-1" aria-labelledby="declineModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-light-blue border-danger">
+            <div class="modal-header text-black text-uppercase border-0">
+                <h4 class="modal-title" id="declineModalLabel">Decline Edit Changes</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="declineReason" class="form-label fw-bold">Reason for Declining</label>
+                    <textarea class="form-control border-danger" id="declineReason" rows="3" placeholder="Please enter your reason for declining these changes..."></textarea>
+                </div>
+                
+                <div class="alert alert-danger border-danger border-2" role="alert">
+                    <h4 class="alert-heading text-black text-uppercase">OTP Verification</h4>
+                    <p>An OTP (One-Time Password) has been sent to your phone: <strong>+254 7XX XXX 123</strong>. Please enter the OTP to verify and decline the employee record changes.</p>
+            
+                    <div class="hstack gap-3">
+                        <input class="form-control me-auto border-black otp-input" type="text" placeholder="Enter OTP" aria-label="Enter OTP here..." spellcheck="false">
+                        <button type="button" class="btn btn-warning text-dark fw-bold text-nowrap text-uppercase">Resend OTP</button>
+                    </div>
+                </div>
+                
+                <button disabled class="btn btn-danger fw-bold mt-4 text-uppercase w-100 d-flex justify-content-center align-items-center text-center otp-btn" title="Confirm Decline">
+                    <div>Confirm Decline</div>
+                    <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </button>
+            </div>
+            
+            <!-- Success Message (Initially Hidden) -->
+            <div class="modal-body d-none decline-successful">
+                <div class="p-4 pb-1 px-1 d-flex align-items-center justify-content-center flex-column pt-1">
+                    <div class="flex-shrink-0 align-self-center mb-4">
+                        <div class="avatar-md rounded-circle bg-danger mini-stat-icon">
+                            <span class="avatar-title rounded-circle bg-danger">
+                                <i class="bx bx-x-circle fs-1"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <h4 class="text-uppercase text-dark modal-title fw-bold">Changes Declined Successfully</h4>
+                    <p class="text-center px-5">
+                        The employee record changes have been declined. The original information will be retained in the system.
+                    </p>
+                    <div class="w-100 mt-2">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn btn-outline-danger waves-effect w-100 btn-close-btn text-uppercase fw-bold">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

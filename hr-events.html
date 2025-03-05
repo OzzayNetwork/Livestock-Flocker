@@ -1,0 +1,2087 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- By Kelvin Njuguna   13:53:02 GMT -->
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>HRMS - Human Resource Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="HMIS By Craft Silicon Payments" name="description" />
+    <meta content="Kelvin Njuguna" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg">
+    <!-- droping file -->
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap select styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+    
+     <!-- owl.carousel css -->
+     <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.carousel.min.css">
+
+     <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.theme.default.min.css">
+
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-sidebar="dark">
+
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-chase">
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Begin page -->
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a class="logo logo-dark"><span class="logo-sm"><img alt="" height="22" src="./assets/images/logo.svg"></span><span class="logo-lg"></span></a><a class="logo logo-light d-flex"><span class="logo-sm"><img alt="" height="50" src="https://api.craftcollect.africa/homabay/logo/county_logo.png"></span><span class="logo-lg"><img alt="" height="45" src="https://api.craftcollect.africa/homabay/logo/county_logo.png"></span><div class="portal-title"><h4 class="text-white">HRMS</h4><h6 class="text-muted mb-0 text-white opacity-75">Homa Bay County</h6></div></a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                    </button>
+                    <!-- logo small -->
+                    <div class="phone-logo d-md-none d-sm-flex"> <img src="assets/images/color-log0.svg" alt="" class="img"></div>
+
+
+
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="bx bx-search-alt"></span>
+                        </div>
+                    </form>
+
+
+                </div>
+
+                <div class="d-flex">
+                    <!-- small search -->
+                    <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="dropdown d-none d-lg-inline-block ms-1">
+                        <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
+                                <i class="bx bx-fullscreen"></i>
+                            </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block d-none">
+
+                        <!-- notifications, i will come to this later -->
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-bell bx-tada"></i>
+                                <span class="badge bg-danger rounded-pill">3</span>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0" key="t-notifications"> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="small" key="t-view-all"> View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="bx bx-cart"></i>
+                                                </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1" key="t-your-order">Your order is placed</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">James Lemire</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-simplified">It will seem like simplified English.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="bx bx-badge-check"></i>
+                                                </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1" key="t-shipped">Your item is shipped</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-4.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Salena Layfield</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-occidental">As a skeptical Cambridge friend of mine occidental.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top d-grid">
+                                <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">View More..</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ms-1" key="t-henry">Adroa Balinda</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="myprofile.html"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">My Profile</span></a>
+                            <a class="dropdown-item" href="my-logs.html"><i class="bx bx-time font-size-16 align-middle me-1"></i> <span key="t-profile">My Logs</span></a>
+                            <a class="dropdown-item" href="auth-lock-screen.html"><i class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span key="t-lock-screen">Lock screen</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="auth-login.html"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled text-capitalize" id="side-menu">
+
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="bx bx-home"></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="employee-register.html" class="waves-effect">
+                                <i class="mdi mdi-account-group"></i><span>Employee Register</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="projects.html" class="waves-effect">
+                                <i class="mdi mdi-briefcase-account"></i><span>Project Consultants</span>
+                            </a>
+                        </li>
+                    
+                       
+                    
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-logout-variant"></i>
+                                <span>Separation</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="separation-termination.html"><i class="mdi mdi-close-circle"></i> Termination</a></li>      
+                                <li><a href="separation-fnf.html"><i class="mdi mdi-cash"></i> FNF</a></li>                               
+                            </ul>
+                        </li>
+                    
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-file-document"></i>
+                                <span>Documents</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="documents-general.html"><i class="mdi mdi-file"></i> General Documents</a></li>      
+                                <li><a href="documents-policy.html"><i class="mdi mdi-book"></i> Company Policy</a></li> 
+                            </ul>
+                        </li>
+                    
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-check-decagram"></i>
+                                <span>Employee Approvals</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="employee-approvals-new.html"><i class="mdi mdi-account-check"></i> Pending Approvals - New Employees</a></li>      
+                                <li><a href="employee-approvals-edit-approvals.html"><i class="mdi mdi-pencil"></i> Pending Approvals - Data Edits</a></li> 
+                                <li><a href="employee-approvals-rejected.html"><i class="mdi mdi-close-circle"></i> Rejected</a></li> 
+                            </ul>
+                        </li>
+                    
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-file-chart"></i>
+                                <span>Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="report-daily.html"><i class="mdi mdi-calendar-today"></i> Daily Attendance</a></li>
+                                <li><a href="report-monthly.html" title="Monthly attendance summary"><i class="mdi mdi-calendar-month"></i> Monthly Attendance</a></li>
+                                <li><a href="report-hr-report.html" title="Employee Count, Department Stats & Exits Overview"><i class="mdi mdi-account-group"></i> Dept. HR Report</a></li>      
+                                <li><a href="report-leave.html"><i class="mdi mdi-airplane-departure"></i> Leave</a></li> 
+                                <li><a href="report-timesheet.html"><i class="mdi mdi-clock-time-eight-outline"></i> Timesheet</a></li> 
+                                <li><a href="report-awol.html" title="Absence Without Leave"><i class="mdi mdi-account-off"></i> AWOL Report</a></li> 
+                                <li><a href="off-duty-details.html" title="Employees absent for 15+ days without approval"><i class="mdi mdi-account-alert"></i> Unapproved Leave (15+ Days)</a></li> 
+                            </ul>
+                        </li>
+
+                         <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-account-cog"></i>
+                                <span>HR Actions</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="hr-transfers.html"><i class="mdi mdi-transfer"></i> Transfers</a></li>      
+                                <li><a href="hr-events.html"><i class="mdi mdi-calendar"></i> Events</a></li>
+                                <li><a href="hr-meetings.html"><i class="mdi mdi-account-voice"></i> Meetings</a></li>
+                                <li><a href="hr-assets.html"><i class="mdi mdi-archive"></i> Assets</a></li>
+                                <li><a href="hr-promotions.html"><i class="mdi mdi-arrow-up-bold"></i> Promotions</a></li> 
+                                <li><a href="hr-warnings.html"><i class="mdi mdi-alert"></i> Warnings</a></li> 
+                                <li><a href="hr-announcements.html"><i class="mdi mdi-bullhorn"></i> Announcements</a></li> 
+                                <li><a href="hr-holidays.html"><i class="mdi mdi-beach"></i> Holidays</a></li> 
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-calendar-check"></i> <!-- Represents leave & attendance -->
+                                <span>Leave & Attendance</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="attendance-timesheet.html"><i class="mdi mdi-clock-time-four"></i> Timesheet</a></li>      
+                                <li><a href="attendance-leave.html"><i class="mdi mdi-calendar-remove"></i> Manage Leave</a></li> 
+                                <li><a href="attendance-manage.html"><i class="mdi mdi-account-check"></i> Manage Attendance</a></li> 
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-folder-open"></i> <!-- General assets icon -->
+                                <span>Asset</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="assets-all.html"><i class="mdi mdi-barcode-scan"></i> Asset Tracking</a></li>      
+                                <li><a href="assets-new.html"><i class="mdi mdi-plus-box"></i> Register New Asset</a></li> 
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="perfomance-emp.html" class="waves-effect">
+                                <i class="mdi mdi-chart-line"></i><span>Employee Perfomance</span>
+                            </a>
+                        </li>
+                        
+                      <li class="menu-title" key="t-pages">System Administration</li>
+                         <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-cogs"></i>
+                                <span>Setups</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="set-up-revenue.html"><i class="mdi mdi-cash-multiple"></i> County Revenue</a></li>
+                                <li><a href="set-up-sdd.html"><i class="mdi mdi-lan"></i> SDD Connections</a></li>
+                                <li><a href="https://homabaycountyland.fillout.com/t/5DRmYuEdUDus" target="new"><i class="mdi mdi-file-document-edit"></i> Appraisal Form</a></li>
+                                <li><a href="set-up-general.html"><i class="mdi mdi-tune"></i> General Set Up</a></li>
+                            </ul>
+                        </li>
+                    
+                        <li class="d-none">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage Organizational Structure">
+                                <i class="mdi mdi-sitemap"></i>
+                                <span>Org Structure</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="org-designations.html"><i class="mdi mdi-account-tie"></i> Designations</a></li>
+                                <li><a href="org-departments.html"><i class="mdi mdi-domain"></i> Departments</a></li>
+                                <li><a href="org-employment-types.html"><i class="mdi mdi-briefcase"></i> Employment Types</a></li>
+                                <li><a href="org-affiliated-institution.html"><i class="mdi mdi-school"></i> Affiliated Institution</a></li>
+                            </ul>
+                        </li>
+                    
+                        <li class="d-none">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage System Users">
+                                <i class="mdi mdi-account-multiple"></i>
+                                <span>Users</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="user-registration.html"><i class="mdi mdi-account-plus"></i> Add User</a></li>
+                                <li><a href="user-userlist.html"><i class="mdi mdi-account-group"></i> Manage Users</a></li>
+                                <li><a href="users-deactivated.html"><i class="mdi mdi-account-off"></i> Deactivated Users</a></li>
+                                <li><a href="use-logs.html"><i class="mdi mdi-file-chart"></i> System Logs</a></li>
+                                <li><a href="users-roles.html"><i class="mdi mdi-shield-account"></i> System Roles</a></li>
+                            </ul>
+                        </li>
+                    
+                    </ul>
+                    
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+ <!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <h4 class="mb-sm-0 font-size-18">Events</h4>
+                <!-- Add some spacing between Events and the Select Month -->
+                <div class="ms-3">
+                    <select class="form-select" aria-label="Select Month">
+                        <option selected>Select Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">HR Actions</li>
+                    <li class="breadcrumb-item active">Events</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                    <!-- end page title -->
+
+                    <!-- stats cards --> 
+<div class="row">
+
+    <!-- Total Meetings -->
+    <div class="col-lg-3 col-md-6">
+        <div class="card mini-stats-wid">
+            <div class="card-body">
+                <div class="d-flex flex-wrap">
+                    <div class="me-3">
+                        <p class="text-muted mb-2">Total Events</p>
+                        <h5 class="mb-0">1,250</h5>
+                    </div>
+                    <div class="avatar-sm ms-auto">
+                        <div class="avatar-title bg-primary rounded-circle text-white font-size-20"> <!-- Updated to bg-primary -->
+                            <i class="mdi mdi-account-multiple"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Completed Meetings -->
+    <div class="col-lg-3 col-md-6">
+        <div class="card mini-stats-wid">
+            <div class="card-body">
+                <div class="d-flex flex-wrap">
+                    <div class="me-3">
+                        <p class="text-muted mb-2">Completed Events</p>
+                        <h5 class="mb-0">900</h5>
+                    </div>
+                    <div class="avatar-sm ms-auto">
+                        <div class="avatar-title bg-success rounded-circle text-white font-size-20">
+                            <i class="mdi mdi-check-bold"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pending Meetings -->
+    <div class="col-lg-3 col-md-6">
+        <div class="card mini-stats-wid">
+            <div class="card-body">
+                <div class="d-flex flex-wrap">
+                    <div class="me-3">
+                        <p class="text-muted mb-2">Pending Events</p>
+                        <h5 class="mb-0">250</h5>
+                    </div>
+                    <div class="avatar-sm ms-auto">
+                        <div class="avatar-title bg-warning rounded-circle text-white font-size-20">
+                            <i class="mdi mdi-timer-sand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cancelled Meetings -->
+    <div class="col-lg-3 col-md-6">
+        <div class="card mini-stats-wid">
+            <div class="card-body">
+                <div class="d-flex flex-wrap">
+                    <div class="me-3">
+                        <p class="text-muted mb-2">Cancelled Events</p>
+                        <h5 class="mb-0">100</h5>
+                    </div>
+                    <div class="avatar-sm ms-auto">
+                        <div class="avatar-title bg-danger rounded-circle text-white font-size-20">
+                            <i class="mdi mdi-cancel"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+            
+
+                    
+                    
+                     <!-- end of stats -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+
+                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+
+                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+                                      <div class="flex-grow-1">
+                                        <div class="search-box mb-0 me-3">
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                                                <i class="bx bx-search-alt search-icon"></i>
+                                            </div>
+                                        </div>
+                                      </div>
+        
+                                        <div class="d-flex">
+                                            <div class="d-flex align-items-center me-3 pe-3">
+                                                <div>
+                                                    <div class="float-end d-flex ">
+                                                        <div class="input-group fw-semibold text-uppercase me-3">
+                                                            <label class="input-group-text text-uppercase">Department</label>
+                                                            <select class="form-select " style="width: 200px;">
+                                                                    <option selected="selected" value="">All Departments</option>
+                                                                    <option value="65">Finance &amp; Economic Planning</option>
+                                                                    <option value="67">Governance, Administration, Communication &amp; Devolution</option>
+                                                                    <option value="73">Education, Human Capital Development &amp; Vocational Training</option>
+                                                                    <option value="62">Blue Economy, Fisheries, Mining &amp; Digital Economy</option>
+                                                                    <option value="66">Roads, Public Works, Transport &amp; Infrastructure</option>
+                                                                    <option value="61">Youth, Sports, Talent Development, Gender Inclusivity, Cultural Heritage &amp; Social Services</option>
+                                                                    <option value="63">Water, Irrigation, Sanitation, Environment, Energy, Forestry &amp; Climate Change</option>
+                                                                    <option value="68">Public Health &amp; Medical Services</option>
+                                                                    <option value="64">Lands, Physical Planning, Housing &amp; Urban Development</option>
+                                                                    <option value="69">Trade, Industry, Tourism, Co-Operative Development and Marketing</option>
+                                                                    <option value="70">Agriculture and Livestock Production</option>
+                                                                    <option value="72">Office of the County Secretary and Head of Public Service</option>
+                                                            </select>
+                                                        </div>
+        
+                                                      
+                                                        
+                                                       
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                                <i class="bx bxs-download "></i> <span class="pl-1 d-md-inline">Download Report</span>
+                                            </button>
+
+                                           <!-- Add Asset Button -->
+                                        <button data-bs-toggle="modal" data-bs-target="#modal-add-event" type="button" class="btn btn-success dropdown-toggle option-selector me-3 text-capitalize">
+                                            <i class="bx bx-plus"></i> <span class="pl-1 d-md-inline">Add New Event</span>
+                                        </button>
+
+
+
+
+                                          
+                                        </div>
+        
+        
+                                    </div>
+                                    <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
+                                        <button type="button" data-bs-toggle="modal" data-bs-target=".download-modal" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
+                                    </div>
+                                </div>
+                                
+                           <!-- Table for Events -->
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table align-middle table-hover contacts-table table-striped text-nowrap" id="datatable-buttons">
+            <thead class="table-light">
+                <tr class="table-dark">
+                    <th scope="col">Event Title</th>
+                    <th scope="col">Event Date</th>
+                    <th scope="col">Event Time</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Project Kickoff</th>
+                    <td>12 Feb 2025</td>
+                    <td>10:00 AM</td>
+                    <td>
+                        <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#editDetailsModal" onclick="editEvent('Project Kickoff', '12 Feb 2025', '10:00 AM', 'Conference Room A', 'Initial project discussion.', 'IT')">Edit Details</button>
+                        <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal" data-event-title="Project Kickoff">Delete Details</button>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#viewDetailsModal" onclick="viewEvent('Project Kickoff', '12 Feb 2025', '10:00 AM', 'Conference Room A', 'Initial project discussion.', 'IT')">View Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Team Sync</th>
+                    <td>25 Apr 2023</td>
+                    <td>2:00 PM</td>
+                    <td>
+                        <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#editDetailsModal" onclick="editEvent('Team Sync', '25 Apr 2023', '2:00 PM', 'Meeting Room B', 'Weekly team synchronization meeting.', 'Development')">Edit Details</button>
+                        <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal" data-event-title="Team Sync">Delete Details</button>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#viewDetailsModal" onclick="viewEvent('Team Sync', '25 Apr 2023', '2:00 PM', 'Meeting Room B', 'Weekly team synchronization meeting.', 'Development')">View Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Client Event</th>
+                    <td>15 Jun 2021</td>
+                    <td>11:00 AM</td>
+                    <td>
+                        <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#editDetailsModal" onclick="editEvent('Client Event', '15 Jun 2021', '11:00 AM', 'Board Room', 'Discussion with key client on upcoming deliverables.', 'Marketing')">Edit Details</button>
+                        <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal" data-event-title="Client Event">Delete Details</button>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#viewDetailsModal" onclick="viewEvent('Client Event', '15 Jun 2021', '11:00 AM', 'Board Room', 'Discussion with key client on upcoming deliverables.', 'Marketing')">View Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Strategy Session</th>
+                    <td>10 Sep 2022</td>
+                    <td>4:00 PM</td>
+                    <td>
+                        <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#editDetailsModal" onclick="editEvent('Strategy Session', '10 Sep 2022', '4:00 PM', 'Conference Room C', 'Planning strategy for next quarter.', 'Executive')">Edit Details</button>
+                        <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal" data-event-title="Strategy Session">Delete Details</button>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#viewDetailsModal" onclick="viewEvent('Strategy Session', '10 Sep 2022', '4:00 PM', 'Conference Room C', 'Planning strategy for next quarter.', 'Executive')">View Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Marketing Review</th>
+                    <td>5 Dec 2023</td>
+                    <td>9:30 AM</td>
+                    <td>
+                        <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#editDetailsModal" onclick="editEvent('Marketing Review', '5 Dec 2023', '9:30 AM', 'Conference Room A', 'Quarterly marketing review and analysis.', 'Marketing')">Edit Details</button>
+                        <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal" data-event-title="Marketing Review">Delete Details</button>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#viewDetailsModal" onclick="viewEvent('Marketing Review', '5 Dec 2023', '9:30 AM', 'Conference Room A', 'Quarterly marketing review and analysis.', 'Marketing')">View Details</button>
+                    </td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+</div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+
+                    <!-- end row -->
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+
+            <!-- Edit Details Modal -->
+<div class="modal fade" id="editDetailsModal" tabindex="-1" aria-labelledby="editDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editDetailsModalLabel">Edit Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="department" class="form-label">Department</label>
+                        <input type="text" class="form-control" id="department" value="IT">
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventTitle" class="form-label">Event Title</label>
+                        <input type="text" class="form-control" id="eventTitle" value="Project Kickoff">
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventDate" class="form-label">Event Date</label>
+                        <input type="date" class="form-control" id="eventDate" value="2025-02-12">
+                    </div>
+                    <div class="mb-3">
+                        <label for="venue" class="form-label">Venue</label>
+                        <input type="text" class="form-control" id="venue" value="Conference Room A">
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventTime" class="form-label">Event Time</label>
+                        <input type="time" class="form-control" id="eventTime" value="10:00">
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventNote" class="form-label">Event Note</label>
+                        <textarea class="form-control" id="eventNote" rows="3">Initial project discussion.</textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- View Details Modal -->
+<div class="modal fade" id="viewDetailsModal" tabindex="-1" aria-labelledby="viewDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="viewDetailsModalLabel">View Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Department:</strong> <span id="viewDepartment">IT</span></p>
+                <p><strong>Event Title:</strong> <span id="viewEventTitle">Project Kickoff</span></p>
+                <p><strong>Event Date:</strong> <span id="viewEventDate">12 Feb 2025</span></p>
+                <p><strong>Venue:</strong> <span id="viewVenue">Conference Room A</span></p>
+                <p><strong>Event Time:</strong> <span id="viewEventTime">10:00 AM</span></p>
+                <p><strong>Event Note:</strong> <span id="viewEventNote">Initial project discussion.</span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Add this modal for delete confirmation, centered in the middle of the screen -->
+<div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="deleteConfirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"> <!-- Added modal-dialog-centered class -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteConfirmationModalLabel">Confirm Deletion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this event: <span id="eventToDelete"></span>?</p>
+                <div class="mb-3">
+                    <label for="deleteReason" class="form-label">Reason for deletion:</label>
+                    <textarea class="form-control" id="deleteReason" rows="3" placeholder="Enter your reason for deleting this event..." required></textarea> <!-- Added placeholder here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" id="confirmDelete">
+                    <div>Confirm Delete</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- receipting modal -->
+            <div class="modal fade receipting-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Food Handler Certificate Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <address>
+                                        <strong class="text-capitalize">Patient Details</strong><br>
+                                        Mrs Jane Doe<br>
+                                        <a href="mailto:email@mail.com">email@mail.com</a>, <a href="tel:+254704549859">0704 549 859</a><br>                                   
+                                        
+                                        <br>
+                                        Valid From 1 Mar 2022, 10:20 AM
+                                        <br>
+                                        <span class="pr-2">Valid Till 2 Mar 2023, 10:20 AM </span>
+                                        <span class="badge rounded-pill bg-success text-uppercase me-3">Active</span>
+                                        
+                                    </address>
+                                </div>
+
+                                <div class="col-6 text-right">
+                                    <address>
+                                        <strong class="text-capitalize">Location Details</strong><br>
+                                        Street/Road: Mombasa Road<br>
+                                        Plot No.: 122202/1250<br>                                   
+                                        Building: The Tower. Floor: 12. Door/Stall No.: 123<br/>
+                                        Subcounty: CBD. Ward: Mututu
+                                        
+                                        
+                                    </address>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="hori-timeline mt-4">
+                                        <div class="owl-carousel owl-theme  navs-carousel events timeline-carousel" id="timeline-carousel">
+                                            <div class="item event-list">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">12 Sep 2023 10:09 AM</div>
+                                                        <h5 class="mb-4">Application</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
+                                                    </div>
+            
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted text-capitalize">Self Service Portal</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="item event-list">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">13 Sep 2023 10:09 AM</div>
+                                                        <h5 class="mb-4">Lab Test</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
+                                                    </div>
+            
+                                                    <div class="mt-3 px-3 text-capitalize">
+                                                        <p class="text-muted">Dr Mary Jane at Taifa Clinic</p>
+                                                        <a href="PrintDocs/health-result-slip-master/health-result-slip-master/slip33.html" target="_blank" type="button" class="btn btn-link waves-effect"><i class="mdi mdi-eye-outline"></i> View Result Slip</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="item event-list">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">14 Sep 2023 12:57 PM</div>
+                                                        <h5 class="mb-4">Approved</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
+                                                    </div>
+            
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted">Mary Max</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="item event-list">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">15 Sep 2023 12:54 PM</div>
+                                                        <h5 class="mb-4">Certification</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i class="bx bx-down-arrow-circle h1 text-primary down-arrow-icon"></i>
+                                                    </div>
+            
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted">Certifcate Issued By Kiprop Tanui</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 text-sm-end d-none">
+                                    <address class="mt-2 mt-sm-0">
+                                        <strong>Payment Method</strong><br>
+                                        <span class="fw-medium">MPESA</span><br>
+                                        Phone No. 0704 549 859<br> <br>
+                                        On 1 Mar 2022, 10:20 AM
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">ND12368</h3>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap vertical-align-middle">
+                                        <thead class="bg-light">
+                                            <tr>
+                                                <th>More Details</th>
+                                                <th class="text-end"></th>
+                                                
+                                            </tr>
+                                        </thead>
+                                       
+                                        <tbody>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Serial Number</p>
+                                                </td>
+                                                <td class="">12WER345</td>
+                                                
+                                            </tr>
+
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Business Owner(s)</p>
+                                                </td>
+                                                <td class="">John Doe Kamau, James Kuria Kimotho</td>
+                                                
+                                            </tr>
+
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Profession/Occupation</p>
+
+                                                </td>
+                                                <td class="">Food Processing</td>
+                                                
+                                            </tr>
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Application Date</p>
+
+                                                </td>
+                                                <td class="">5 Jan 2022 10:09 AM</td>
+                                                
+                                            </tr>
+
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Date Approved</p>
+
+                                                </td>
+                                                <td class="">11 Jan 2022 09:54 AM</td>
+                                                
+                                            </tr>
+
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Days To Expiry</p>
+
+                                                </td>
+                                                <td class="">134 Days</td>
+                                                
+                                            </tr>
+
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Amount Paid</p>
+
+                                                </td>
+                                                <td class="text-uppercase">KES 1,000</td>
+                                                
+                                            </tr>
+
+
+
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                           
+                            <a href="PrintDocs/Food-handler/health-permit.html" target="_blank" type="button" class="btn btn-primary waves-effect waves-light">
+                                <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Certificate
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of receipting modal -->
+
+            <!-- invoice details -->
+            <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Invoice Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-12">
+                                <address>
+                                    <strong>Billed To:</strong><br>
+                                    Kelvin Njuguna<br>
+                                    email@mail.com, 0704 549 859<br>                                   
+                                    Hse No. 410, 90 Degrees By Tsavo
+                                    <br><br>
+                                    1 Mar 2022, 10:20 AM
+                                </address>
+                            </div>
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">Invoice Details ( <span class="text-primary fw-medium">No. 1237</span> )</h3>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 70px;">No.</th>
+                                                <th>Item</th>
+                                                <th class="text-end">Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Rent Deposit</td>
+                                                <td class="text-end">KES 24,500</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>02</td>
+                                                <td>Monthly Rent</td>
+                                                <td class="text-end">KES 12,000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>03</td>
+                                                <td>TAX (18%)</td>
+                                                <td class="text-end">KES 250</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-end">Total</td>
+                                                <td class="text-end fw-bold">KES 36,750</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-end">Paid</td>
+                                                <td class="text-end  fw-bold">KES 0.00</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="2" class="border-0 text-end">
+                                                    <strong>Balance</strong></td>
+                                                <td class="border-0 text-end">
+                                                    <h5 class="m-0 text-uppercase fw-bold">KES 36,750</h5>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="col-12 d-none">
+                                <div class="table-resposive p-4 px-2 pt-2 overflow-visible">
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr data-id="1">
+                                                <td>
+                                                    <label for="" class="">Payment Method</label>
+                                                    <select class="form-control selectpicker w-100 payment-method" data-style="btn-secondary w-100" data-live-search="true" title="Select payment Method">
+                                                        <option value="Mpesa">MPESA</option>
+                                                        <option value="Cash">CASH</option>   
+                                                     </select>
+                                                </td>
+                                                <td class="px-3 ">
+                                                    <div class="phone-num d-none">
+                                                        <label for="">Phone No.</label>
+                                                        <input type="text " class="form-control w-100 d-flex " placeholder="Phone No." spellcheck="false" data-ms-editor="true">
+                                                    </div>
+
+                                                </td>
+                                                <td class="px-3">
+                                                    <label for="">Amount To Be Paid</label>
+                                                    <input type="text " class="form-control w-100 d-flex" placeholder="KES" spellcheck="false" data-ms-editor="true">
+
+                                                </td>
+                                                <td class="text-right float-right">
+                                                    <div class="d-flex flex-column">
+                                                        <label class="opacity-0">Something</label>
+                                                        <a href="#" class="btn btn-primary w-md waves-effect waves-light">Submit</a>
+                                                    </div>
+                                                </td>
+
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <div class="float-end">
+                                <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light me-1"><i class="mdi mdi-printer font-16px"></i></a>
+                                <a href="javascript: void(0);" class="btn btn-primary w-md waves-effect waves-light">Receive Payment</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- invoice details -->
+
+            <!-- patients details modal -->
+            <div class="modal fade patient-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">More Details On Jane</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <address>
+                                        <strong class="text-capitalize">Patient Details</strong><br>
+                                        Mrs Jane Doe<br>
+                                        <a href="mailto:email@mail.com">email@mail.com</a>, <a href="tel:+254704549859">0704 549 859</a><br>                                   
+                                        
+                                        <br>
+                                        Registered on 1 Mar 2022, 10:20 AM <br>At Sipital Kuu Medical Center
+                                        <br>
+                                        <br>
+                                        <span class="pr-2">Last Seen: 10    Mar 20233. 03:46 PM</span>
+                                        <span class="badge rounded-pill bg-success text-uppercase me-3 d-none">Active</span>
+                                        
+                                    </address>
+                                </div>
+
+                                <div class="col-6 text-right">
+                                    <address>
+                                        <strong class="text-capitalize">Location Details</strong><br>
+                                        County: Busia, Sub County: Funyula, Ward: Marachi West,
+                                        <br>
+                                        Physical Address: Near Karachi West Primary School
+                                        
+                                        
+                                    </address>
+                                </div>
+
+                                <div class="col-sm-6 text-sm-end d-none">
+                                    <address class="mt-2 mt-sm-0">
+                                        <strong>Payment Method</strong><br>
+                                        <span class="fw-medium">MPESA</span><br>
+                                        Phone No. 0704 549 859<br> <br>
+                                        On 1 Mar 2022, 10:20 AM
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">ND12368</h3>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap vertical-align-middle">
+                                        <thead class="bg-light">
+                                            <tr>
+                                                <th>More Details</th>
+                                                <th class="text-end"></th>
+                                                
+                                            </tr>
+                                        </thead>
+                                       
+                                        <tbody>
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Patient ID</p>
+                                                </td>
+                                                <td class="">MPI/1234</td>
+                                                
+                                            </tr>
+
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Blood Group</p>
+                                                </td>
+                                                <td class="">A+</td>
+                                                
+                                            </tr>
+
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Age</p>
+
+                                                </td>
+                                                <td class="">22 Years</td>
+                                                
+                                            </tr>
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Marital Status</p>
+
+                                                </td>
+                                                <td class="">Single</td>
+                                                
+                                            </tr>
+
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Occupation</p>
+
+                                                </td>
+                                                <td class="">Software Developer</td>
+                                                
+                                            </tr>
+
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Gender</p>
+
+                                                </td>
+                                                <td class="">Male</td>
+                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Height</p>
+
+                                                </td>
+                                                <td class="">156 CM</td>
+                                                
+                                            </tr>
+
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Weight</p>
+
+                                                </td>
+                                                <td class="">78 KGs</td>
+                                                
+                                            </tr>
+
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Unpaid Bills Amount</p>
+
+                                                </td>
+                                                <td class="">KES 400</td>
+                                                
+                                            </tr>
+
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Last Updated</p>
+
+                                                </td>
+                                                <td class="">12 Jul 2023, 11:45 AM By Kennedy Livondo at Costa Rick Hospital</td>
+                                                
+                                            </tr>
+
+
+
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                           
+                            <a href="PrintDocs/Food-handler/health-permit.html" target="_blank" type="button" class="btn btn-primary waves-effect waves-light">
+                                <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Certificate
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of patieonts details modal -->
+
+            <!-- kin details modal -->
+            <div class="modal fade kin-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Jane's Kin Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap vertical-align-middle">
+                                       
+                                       
+                                        <tbody>
+
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Relationship with patient</p>
+                                                </td>
+                                                <td class="">Brother</td>
+                                                
+                                            </tr>
+
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Full Names</p>
+                                                </td>
+                                                <td class="">Alex Kinoti Livondo</td>
+                                                
+                                            </tr>
+
+                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Phone Number</p>
+                                                </td>
+                                                <td class="">
+                                                    <a href="tel:+254712345678">0712 345 678</a>
+                                                </td>
+                                                
+                                            </tr>
+
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Email Address</p>
+
+                                                </td>
+                                                <td class=""><a href="mailto:Alex@kinoti.com">Alex@kinoti.com</a></td>
+                                                
+                                            </tr>
+                                            <tr >
+                                                <td>
+                                                    <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Physical Address</p>
+
+                                                </td>
+                                                <td class="">Near Mount Kilimanjaro Joint</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-none">
+                           
+                            <a href="PrintDocs/Food-handler/health-permit.html" target="_blank" type="button" class="btn btn-primary waves-effect waves-light">
+                                <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Certificate
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of kin details modal -->
+
+             <!-- Patient registration -->
+        <div class="modal fade " id="registerCustomer" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content ">
+                    
+
+                    <div class="modal-header">
+                        <h5 class="modal-title text-capitalize" id="exampleModalLongTitle">New Patient Registration</h5>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body steps-container">
+                        <div class="mb-4 the-step patient-info active">
+                            <div class="avatar-md mx-auto mb-4 d-none">
+                                <div class="avatar-title bg-light rounded-circle text-primary h1 ">
+                                    <i class="mdi mdi-account-multiple-plus "></i>
+                                </div>
+                            </div>
+
+                            <div class="row  text-left">
+                                <div class="col-12">
+                                    <h4 class="text-primary text-capitalize">Patient's Details</h4>
+                                    <form>
+                                        <div class="row ">
+                                            <div class="col-12 ">
+                                                <div class="">
+                                                    <label for="digit1-input " class="">Patient's Full Name</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mb-3">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <input type="text " class="form-control two-step " placeholder="First Name">
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <input type="text " class="form-control two-step " placeholder="Middle Name">
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <input type="text " class="form-control two-step " placeholder="Last Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 mb-3">
+                                                <div class="">
+                                                    <label for="digit1-input " class="">Date Of Birth</label>
+                                                    <input class="form-control" type="date" value="2019-08-19" id="example-date-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-4 mb-3">
+                                                <div class="">
+                                                    <label for="digit1-input " class="">Nationality</label>
+                                                    <select class="form-control selectpicker bg-white select-revenue" title="Select Nationality" data-live-search="true" title="Select a tenant">
+                                                        <option value="">-- select one --</option>
+                                                        <option value="afghan">Afghan</option>
+                                                        <option value="albanian">Albanian</option>
+                                                        <option value="algerian">Algerian</option>
+                                                        <option value="american">American</option>
+                                                        <option value="andorran">Andorran</option>
+                                                        <option value="angolan">Angolan</option>
+                                                        <option value="antiguans">Antiguans</option>
+                                                        <option value="argentinean">Argentinean</option>
+                                                        <option value="armenian">Armenian</option>
+                                                        <option value="australian">Australian</option>
+                                                        <option value="austrian">Austrian</option>
+                                                        <option value="azerbaijani">Azerbaijani</option>
+                                                        <option value="bahamian">Bahamian</option>
+                                                        <option value="bahraini">Bahraini</option>
+                                                        <option value="bangladeshi">Bangladeshi</option>
+                                                        <option value="barbadian">Barbadian</option>
+                                                        <option value="barbudans">Barbudans</option>
+                                                        <option value="batswana">Batswana</option>
+                                                        <option value="belarusian">Belarusian</option>
+                                                        <option value="belgian">Belgian</option>
+                                                        <option value="belizean">Belizean</option>
+                                                        <option value="beninese">Beninese</option>
+                                                        <option value="bhutanese">Bhutanese</option>
+                                                        <option value="bolivian">Bolivian</option>
+                                                        <option value="bosnian">Bosnian</option>
+                                                        <option value="brazilian">Brazilian</option>
+                                                        <option value="british">British</option>
+                                                        <option value="bruneian">Bruneian</option>
+                                                        <option value="bulgarian">Bulgarian</option>
+                                                        <option value="burkinabe">Burkinabe</option>
+                                                        <option value="burmese">Burmese</option>
+                                                        <option value="burundian">Burundian</option>
+                                                        <option value="cambodian">Cambodian</option>
+                                                        <option value="cameroonian">Cameroonian</option>
+                                                        <option value="canadian">Canadian</option>
+                                                        <option value="cape verdean">Cape Verdean</option>
+                                                        <option value="central african">Central African</option>
+                                                        <option value="chadian">Chadian</option>
+                                                        <option value="chilean">Chilean</option>
+                                                        <option value="chinese">Chinese</option>
+                                                        <option value="colombian">Colombian</option>
+                                                        <option value="comoran">Comoran</option>
+                                                        <option value="congolese">Congolese</option>
+                                                        <option value="costa rican">Costa Rican</option>
+                                                        <option value="croatian">Croatian</option>
+                                                        <option value="cuban">Cuban</option>
+                                                        <option value="cypriot">Cypriot</option>
+                                                        <option value="czech">Czech</option>
+                                                        <option value="danish">Danish</option>
+                                                        <option value="djibouti">Djibouti</option>
+                                                        <option value="dominican">Dominican</option>
+                                                        <option value="dutch">Dutch</option>
+                                                        <option value="east timorese">East Timorese</option>
+                                                        <option value="ecuadorean">Ecuadorean</option>
+                                                        <option value="egyptian">Egyptian</option>
+                                                        <option value="emirian">Emirian</option>
+                                                        <option value="equatorial guinean">Equatorial Guinean</option>
+                                                        <option value="eritrean">Eritrean</option>
+                                                        <option value="estonian">Estonian</option>
+                                                        <option value="ethiopian">Ethiopian</option>
+                                                        <option value="fijian">Fijian</option>
+                                                        <option value="filipino">Filipino</option>
+                                                        <option value="finnish">Finnish</option>
+                                                        <option value="french">French</option>
+                                                        <option value="gabonese">Gabonese</option>
+                                                        <option value="gambian">Gambian</option>
+                                                        <option value="georgian">Georgian</option>
+                                                        <option value="german">German</option>
+                                                        <option value="ghanaian">Ghanaian</option>
+                                                        <option value="greek">Greek</option>
+                                                        <option value="grenadian">Grenadian</option>
+                                                        <option value="guatemalan">Guatemalan</option>
+                                                        <option value="guinea-bissauan">Guinea-Bissauan</option>
+                                                        <option value="guinean">Guinean</option>
+                                                        <option value="guyanese">Guyanese</option>
+                                                        <option value="haitian">Haitian</option>
+                                                        <option value="herzegovinian">Herzegovinian</option>
+                                                        <option value="honduran">Honduran</option>
+                                                        <option value="hungarian">Hungarian</option>
+                                                        <option value="icelander">Icelander</option>
+                                                        <option value="indian">Indian</option>
+                                                        <option value="indonesian">Indonesian</option>
+                                                        <option value="iranian">Iranian</option>
+                                                        <option value="iraqi">Iraqi</option>
+                                                        <option value="irish">Irish</option>
+                                                        <option value="israeli">Israeli</option>
+                                                        <option value="italian">Italian</option>
+                                                        <option value="ivorian">Ivorian</option>
+                                                        <option value="jamaican">Jamaican</option>
+                                                        <option value="japanese">Japanese</option>
+                                                        <option value="jordanian">Jordanian</option>
+                                                        <option value="kazakhstani">Kazakhstani</option>
+                                                        <option value="kenyan" selected>Kenyan</option>
+                                                        <option value="kittian and nevisian">Kittian and Nevisian</option>
+                                                        <option value="kuwaiti">Kuwaiti</option>
+                                                        <option value="kyrgyz">Kyrgyz</option>
+                                                        <option value="laotian">Laotian</option>
+                                                        <option value="latvian">Latvian</option>
+                                                        <option value="lebanese">Lebanese</option>
+                                                        <option value="liberian">Liberian</option>
+                                                        <option value="libyan">Libyan</option>
+                                                        <option value="liechtensteiner">Liechtensteiner</option>
+                                                        <option value="lithuanian">Lithuanian</option>
+                                                        <option value="luxembourger">Luxembourger</option>
+                                                        <option value="macedonian">Macedonian</option>
+                                                        <option value="malagasy">Malagasy</option>
+                                                        <option value="malawian">Malawian</option>
+                                                        <option value="malaysian">Malaysian</option>
+                                                        <option value="maldivan">Maldivan</option>
+                                                        <option value="malian">Malian</option>
+                                                        <option value="maltese">Maltese</option>
+                                                        <option value="marshallese">Marshallese</option>
+                                                        <option value="mauritanian">Mauritanian</option>
+                                                        <option value="mauritian">Mauritian</option>
+                                                        <option value="mexican">Mexican</option>
+                                                        <option value="micronesian">Micronesian</option>
+                                                        <option value="moldovan">Moldovan</option>
+                                                        <option value="monacan">Monacan</option>
+                                                        <option value="mongolian">Mongolian</option>
+                                                        <option value="moroccan">Moroccan</option>
+                                                        <option value="mosotho">Mosotho</option>
+                                                        <option value="motswana">Motswana</option>
+                                                        <option value="mozambican">Mozambican</option>
+                                                        <option value="namibian">Namibian</option>
+                                                        <option value="nauruan">Nauruan</option>
+                                                        <option value="nepalese">Nepalese</option>
+                                                        <option value="new zealander">New Zealander</option>
+                                                        <option value="ni-vanuatu">Ni-Vanuatu</option>
+                                                        <option value="nicaraguan">Nicaraguan</option>
+                                                        <option value="nigerien">Nigerien</option>
+                                                        <option value="north korean">North Korean</option>
+                                                        <option value="northern irish">Northern Irish</option>
+                                                        <option value="norwegian">Norwegian</option>
+                                                        <option value="omani">Omani</option>
+                                                        <option value="pakistani">Pakistani</option>
+                                                        <option value="palauan">Palauan</option>
+                                                        <option value="panamanian">Panamanian</option>
+                                                        <option value="papua new guinean">Papua New Guinean</option>
+                                                        <option value="paraguayan">Paraguayan</option>
+                                                        <option value="peruvian">Peruvian</option>
+                                                        <option value="polish">Polish</option>
+                                                        <option value="portuguese">Portuguese</option>
+                                                        <option value="qatari">Qatari</option>
+                                                        <option value="romanian">Romanian</option>
+                                                        <option value="russian">Russian</option>
+                                                        <option value="rwandan">Rwandan</option>
+                                                        <option value="saint lucian">Saint Lucian</option>
+                                                        <option value="salvadoran">Salvadoran</option>
+                                                        <option value="samoan">Samoan</option>
+                                                        <option value="san marinese">San Marinese</option>
+                                                        <option value="sao tomean">Sao Tomean</option>
+                                                        <option value="saudi">Saudi</option>
+                                                        <option value="scottish">Scottish</option>
+                                                        <option value="senegalese">Senegalese</option>
+                                                        <option value="serbian">Serbian</option>
+                                                        <option value="seychellois">Seychellois</option>
+                                                        <option value="sierra leonean">Sierra Leonean</option>
+                                                        <option value="singaporean">Singaporean</option>
+                                                        <option value="slovakian">Slovakian</option>
+                                                        <option value="slovenian">Slovenian</option>
+                                                        <option value="solomon islander">Solomon Islander</option>
+                                                        <option value="somali">Somali</option>
+                                                        <option value="south african">South African</option>
+                                                        <option value="south korean">South Korean</option>
+                                                        <option value="spanish">Spanish</option>
+                                                        <option value="sri lankan">Sri Lankan</option>
+                                                        <option value="sudanese">Sudanese</option>
+                                                        <option value="surinamer">Surinamer</option>
+                                                        <option value="swazi">Swazi</option>
+                                                        <option value="swedish">Swedish</option>
+                                                        <option value="swiss">Swiss</option>
+                                                        <option value="syrian">Syrian</option>
+                                                        <option value="taiwanese">Taiwanese</option>
+                                                        <option value="tajik">Tajik</option>
+                                                        <option value="tanzanian">Tanzanian</option>
+                                                        <option value="thai">Thai</option>
+                                                        <option value="togolese">Togolese</option>
+                                                        <option value="tongan">Tongan</option>
+                                                        <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+                                                        <option value="tunisian">Tunisian</option>
+                                                        <option value="turkish">Turkish</option>
+                                                        <option value="tuvaluan">Tuvaluan</option>
+                                                        <option value="ugandan">Ugandan</option>
+                                                        <option value="ukrainian">Ukrainian</option>
+                                                        <option value="uruguayan">Uruguayan</option>
+                                                        <option value="uzbekistani">Uzbekistani</option>
+                                                        <option value="venezuelan">Venezuelan</option>
+                                                        <option value="vietnamese">Vietnamese</option>
+                                                        <option value="welsh">Welsh</option>
+                                                        <option value="yemenite">Yemenite</option>
+                                                        <option value="zambian">Zambian</option>
+                                                        <option value="zimbabwean">Zimbabwean</option>
+                                                  </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 mb-3">
+                                                <div class="">
+                                                    <label for="digit1-input " class="">Gender</label>
+                                                    <div class="row">
+                                                        <div class="col-auto">
+                                                            <div class="form-check mb-3">
+                                                                <input class="form-check-input" type="radio" name="gender" id="radioFemale" >
+                                                                <label class="form-check-label" for="radioFemale">
+                                                                    Female
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-auto">
+                                                            <div class="form-check mb-3">
+                                                                <input class="form-check-input" type="radio" name="gender" id="radioMale" >
+                                                                <label class="form-check-label" for="radioMale">
+                                                                    Male
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 mb-3">
+                                                <div class="">
+                                                    <label for="digit1-input " class="">Marital Status</label>
+                                                    <select class="form-control selectpicker bg-white select-revenue" title="Select Marital Status" data-live-search="true" title="Select a tenant">
+                                                        <option value="Single">Single</option>
+                                                        <option value="Married">Married</option>
+                                                        <option value="Widowed">Widowed</option>
+                                                        <option value="Separated">Separated</option>
+                                                        <option value="Divorced">Divorced</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 mb-3">
+                                                <div class="">
+                                                    <label for="digit1-input " class="">Religion</label>
+                                                    <select class="form-control selectpicker bg-white select-revenue" title="Select Religion" data-live-search="true">
+                                                        <option value="African Traditional & Diasporic">African Traditional & Diasporic</option>
+                                                        <option value="Agnostic">Agnostic</option>
+                                                        <option value="Atheist">Atheist</option>
+                                                        <option value="Baha'i">Baha'i</option>
+                                                        <option value="Buddhism">Buddhism</option>
+                                                        <option value="Cao Dai">Cao Dai</option>
+                                                        <option value="Chinese traditional religion">Chinese traditional religion</option>
+                                                        <option value="Christianity">Christianity</option>
+                                                        <option value="Hinduism">Hinduism</option>
+                                                        <option value="Islam">Islam</option>
+                                                        <option value="Jainism">Jainism</option>
+                                                        <option value="Juche">Juche</option>
+                                                        <option value="Judaism">Judaism</option>
+                                                        <option value="Neo-Paganism">Neo-Paganism</option>
+                                                        <option value="Nonreligious">Nonreligious</option>
+                                                        <option value="Rastafarianism">Rastafarianism</option>
+                                                        <option value="Secular">Secular</option>
+                                                        <option value="Shinto">Shinto</option>
+                                                        <option value="Sikhism">Sikhism</option>
+                                                        <option value="Spiritism">Spiritism</option>
+                                                        <option value="Tenrikyo">Tenrikyo</option>
+                                                        <option value="Unitarian-Universalism">Unitarian-Universalism</option>
+                                                        <option value="Zoroastrianism">Zoroastrianism</option>
+                                                        <option value="primal-indigenous">primal-indigenous</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 mb-3">
+                                                <div class="">
+                                                    <label for="digit1-input " class="">Patient's Blood group</label>
+                                                    <select class="form-control selectpicker bg-white select-revenue" title="Select Blood Group" data-live-search="true">
+                                                        <option value="A+">A+</option><option value="A-">A-</option>
+                                                        <option value="B+">B+</option><option value="B-">B-</option>
+                                                        <option value="O+">O+</option><option value="O-">O-</option>
+                                                        <option value="AB+">AB+</option><option value="AB-">AB-</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mb-3">
+                                                <div class="">
+                                                    <label for="digit1-input " class="">Occupation</label>
+                                                    <input type="text " class="form-control two-step " placeholder="Patient's Occupation">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 ">
+                                                <div class="">
+                                                    <label for="digit1-input " class="">Contact Information</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mb-3">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <input type="text " class="form-control two-step " placeholder="Phone No">
+                                                    </div>
+
+                                                    <div class="col-6">
+                                                        <input type="email" class="form-control two-step " placeholder="Email Address">
+                                                    </div>
+
+                                                   
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-12 ">
+                                                <div class="">
+                                                    <label for="digit1-input " class="">Patient's Residence</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mb-3">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <select class="form-control selectpicker bg-white select-revenue" title="Select County" data-live-search="true">
+                                                           <option value="">Busia</option>
+                                                           <option value="">Nairobi</option>
+                                                           <option value="">Homabay</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <select class="form-control selectpicker bg-white select-revenue" title="Select Sub County" data-live-search="true">
+                                                            <option value="">Teso North</option>
+                                                            <option value="">Teso South</option>
+                                                            <option value="">Nambale</option>
+
+                                                            <option value="">Matayos</option>
+                                                            <option value="">Butula</option>
+                                                            <option value="">Funyula</option>
+                                                            <option value="">Budalangi</option>
+                                                         </select>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <select class="form-control selectpicker bg-white select-revenue" title="Select Ward" data-live-search="true">
+                                                            <option value="">Marachi West</option>
+                                                            <option value="">Marachi North</option>
+                                                            <option value="">Marachi Central</option>
+                                                            <option value="">Kingandole</option>
+                                                         </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mb-3">
+                                                <div class="">
+                                                    <label for="digit1-input " class="">Physical Address</label>
+                                                   <textarea name="" id=""  class="form-control" placeholder="Enter Address"></textarea>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                        
+                                       
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4 the-step next-of-kin-modal d-none">
+                            <h4 class="text-primary text-capitalize">Next Of Kin Details</h4>
+                            <div class="row">
+                                
+                                <div class="col-12 mb-4">
+                                    <label for="" class="text-capitalize">Relationship with Patient Being registerd</label>
+                                    <select class="form-control selectpicker bg-white select-revenue" title="Select Next Of Kin's Relationship with the patient being registered" data-live-search="true">
+                                        <option value="">Mother</option>
+                                        <option value="">Father</option>
+                                        <option value="">Daughter</option>
+
+                                        <option value="">Son</option>
+                                        <option value="">Sister</option>
+                                        <option value="">Brother</option>
+
+                                        <option value="">Friend</option>
+                                        <option value="">Uncle</option>
+                                        <option value="">Aunt</option>
+                                     </select>
+                                </div>
+
+                                <div class="col-12 ">
+                                    <div class="">
+                                        <label for="digit1-input " class="">Next Of Kin Full Names</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <input type="text " class="form-control two-step " placeholder="First Name">
+                                        </div>
+
+                                        <div class="col-4">
+                                            <input type="text " class="form-control two-step " placeholder="Middle Name">
+                                        </div>
+
+                                        <div class="col-4">
+                                            <input type="text " class="form-control two-step " placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 ">
+                                    <div class="">
+                                        <label for="digit1-input " class="">Next Of Kin Contact information</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control two-step " placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="email" class="form-control two-step " placeholder="Email address">
+                                        </div>
+
+                                       
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <div class="">
+                                        <label for="digit1-input " class="">Physical Address</label>
+                                       <textarea name="" id=""  class="form-control" placeholder="Enter Address"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer d-flex">
+                        <div class="d-none">
+                            <button data-toggle="modal" data-target="#subscribeModal" data-dismiss="modal" type="button" class="btn btn-link waves-effect">Back To Patient Search</button>
+                        </div>
+                        <div class="d-flex modal-next-prev-container">
+                            <button type="button" class="btn btn-outline-secondary btn-prev waves-effect waves-effect waves-light me-3">
+                                <i class="bx bx-left-arrow-alt font-size-16 align-middle me-2"></i> Previouse
+                            </button>
+    
+                            <button type="button" class="btn btn-primary waves-effect waves-effect waves-light btn-next">
+                                Next <i class="bx bx-right-arrow-alt font-size-16 align-middle me-2"></i>
+                            </button>
+    
+                            <button type="button" class="btn btn-submit btn-success d-none ml-3 ms-3 waves-effect waves-effect waves-light btn-next">
+                                <i class="bx bx-check-double font-size-16 align-middle me-2"></i> Submit Application 
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Patient registration -->
+
+        <!-- the modal -->
+       <!-- Add New Event Modal -->
+<div class="modal fade" id="modal-add-event" tabindex="-1" aria-labelledby="addEventModalLabel" aria-hidden="true"> 
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addEventModalLabel">Add New Event</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addEventForm">
+                    <div class="row">
+                        <!-- Department -->
+                        <div class="col-md-6 mb-3">
+                            <label for="section_id" class="form-label"> Select Department</label><span class="text-danger pl-1"></span>
+                            <div class="form-icon-user">
+                                <select class="form-control section_id" required="required" id="section_id" name="section_id">
+                                    <option selected="selected" value="">Department</option>
+                                    <option value="65">65 - Finance & Economic Planning</option>
+                                    <option value="67">67 - Governance, Administration, Communication & Devolution</option>
+                                    <option value="73">73 - Education, Human Capital Development & Vocational Training</option>
+                                    <option value="62">62 - Blue Economy, Fisheries, Mining & Digital Economy</option>
+                                    <option value="66">66 - Roads, Public Works, Transport & Infrastructure</option>
+                                    <option value="61">61 - Youth, Sports, Talent Development, Gender Inclusivity, Cultural Heritage & Social Services</option>
+                                    <option value="63">63 - Water, Irrigation, Sanitation, Environment, Energy, Forestry & Climate Change</option>
+                                    <option value="68">68 - Public Health & Medical Services</option>
+                                    <option value="64">64 - Lands, Physical Planning, Housing & Urban Development</option>
+                                    <option value="69">69 - Trade, Industry, Tourism, Co-Operative Development and Marketing</option>
+                                    <option value="70">70 - Agriculture and Livestock Production</option>
+                                    <option value="72">72 - Office of the County Secretary and Head of Public Service</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Select Employee -->
+                        <div class="col-md-6 mb-3">
+                            <label for="selectEmployee" class="form-label">Select Employee</label>
+                            <select class="form-control" id="selectEmployee" required>
+                                <option value="">Select Employee</option>
+                                <option value="employee1">Employee 1</option>
+                                <option value="employee2">Employee 2</option>
+                                <!-- Add more employee options as needed -->
+                            </select>
+                        </div>
+                        <!-- Event Title -->
+                        <div class="col-md-6 mb-3">
+                            <label for="eventTitle" class="form-label">Event Title</label>
+                            <input type="text" class="form-control" id="eventTitle" placeholder="Enter Event Title" required>
+                        </div>
+                        <!-- Event Date -->
+                        <div class="col-md-6 mb-3">
+                            <label for="eventDate" class="form-label">Event Date</label>
+                            <input type="date" class="form-control" id="eventDate" required>
+                        </div>
+                        <!-- Venue -->
+                        <div class="col-md-6 mb-3">
+                            <label for="venue" class="form-label">Venue</label>
+                            <input type="text" class="form-control" id="venue" placeholder="Enter Venue" required>
+                        </div>
+                        <!-- Event Time -->
+                        <div class="col-md-6 mb-3">
+                            <label for="eventTime" class="form-label">Event Time</label>
+                            <input type="time" class="form-control" id="eventTime" required>
+                        </div>
+                        <!-- Event Note -->
+                        <div class="col-md-12 mb-3">
+                            <label for="eventNote" class="form-label">Event Note</label>
+                            <textarea class="form-control" id="eventNote" rows="3" placeholder="Enter Event Note"></textarea>
+                        </div>
+                    </div>
+                       <!-- Modal Footer -->
+                       <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save Event</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+        
+    <!-- END layout-wrapper -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay "></div>
+
+    <!-- Add this JavaScript to display the event title in the modal for deletion -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all delete buttons
+        const deleteButtons = document.querySelectorAll('.btn-delete');
+        
+        // Add click event to all delete buttons
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Get the event title from the data attribute
+                const eventTitle = this.getAttribute('data-event-title');
+                
+                // Set the event title in the modal
+                document.getElementById('eventToDelete').textContent = eventTitle;
+            });
+        });
+        
+        // Handle confirm delete button
+        document.getElementById('confirmDelete').addEventListener('click', function() {
+            const reason = document.getElementById('deleteReason').value.trim();
+            
+            if (!reason) {
+                // Highlight the textarea if empty
+                document.getElementById('deleteReason').classList.add('is-invalid');
+                return;
+            }
+            
+            // Remove invalid class if it exists
+            document.getElementById('deleteReason').classList.remove('is-invalid');
+            
+            // Show loading spinner
+            this.querySelector('.spinner-border').classList.remove('d-none');
+            this.disabled = true;
+            
+            // Here you would typically send the delete request to your server
+            console.log('Deleting event:', document.getElementById('eventToDelete').textContent);
+            console.log('Reason:', reason);
+            
+            // Simulate server request (you would replace this with your actual delete code)
+            setTimeout(() => {
+                // Hide the modal
+                bootstrap.Modal.getInstance(document.getElementById('deleteConfirmationModal')).hide();
+                
+                // Hide spinner and enable button again
+                this.querySelector('.spinner-border').classList.add('d-none');
+                this.disabled = false;
+                
+                // You could show a success message here
+                alert('Event deleted successfully!');
+            }, 1000);
+        });
+    });
+</script>
+
+    <script src="assets/libs/jquery/jquery.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js "></script>
+    <script src="assets/libs/simplebar/simplebar.min.js "></script>
+    <script src="assets/libs/node-waves/waves.min.js "></script>
+
+
+
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js "></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js "></script>
+    <!-- Buttons examples -->
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js "></script>
+    <script src="assets/libs/jszip/jszip.min.js "></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js "></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js "></script>
+    <!-- numerals number formater -->
+    <script src="assets/libs/numeral/numeral.js "></script>
+
+    <!-- Responsive examples -->
+    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js "></script>
+    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js "></script>
+
+    <!-- Bootstrap select -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js "></script>
+    <!-- Plugins js -->
+    <script src="assets/libs/dropzone/min/dropzone.min.js "></script>
+    <!-- Datatable init js -->
+    <script src="assets/js/pages/datatables.init.js "></script>
+
+    <!-- owl.carousel js -->
+    <script src="assets/libs/owl.carousel/owl.carousel.min.js"></script>
+
+    <!-- timeline init js -->
+    <script src="assets/js/pages/timeline.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js "></script>
+    <script src="assets/js/custom.js "></script>
+    <script>
+            // Get today's date in YYYY-MM-DD format
+            let today = new Date().toISOString().split('T')[0];
+        
+            // Set the default value to today's date
+            document.getElementById('from-date').value = today;
+            document.getElementById('to-date').value = today;
+    </script>
+</body>
+
+
+<!-- By Kelvin Njuguna   13:55:49 GMT -->
+
+</html>
