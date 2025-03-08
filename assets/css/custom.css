@@ -32,6 +32,7 @@
     .card-header {
         background-color: rgb(85 110 230 / 16%);
         padding-top: 1.25rem;
+        
     }
     
     .avatar-xs {
@@ -764,7 +765,7 @@ padding: 0px;
     }
     
     body[data-sidebar=dark] .vertical-menu {
-        background: #385a41;
+        background: #004b11;
         /* background: #2cb34a; */
     }
     
@@ -1172,7 +1173,8 @@ padding: 0px;
             margin: 0px !important;
         }
         .card {
-            border-radius: 0px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);  
         }
         .page-title-box {
             padding-right: 20px;
@@ -1556,3 +1558,42 @@ padding: 0px;
         background-color: #69b48f;
         border-color: #69b48f;
     }
+
+
+    .elevated-card {
+        border-radius: 10px;
+        border: 1px solid rgba(0,0,0,0.05);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        background-color: #ffffff;
+        margin-bottom: 20px;
+    }
+    
+    .elevated-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+    
+    .mini-stat-icon {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+  /* to prevent the modal from scrolling to another page */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1055;
+      }
+      
+      body.modal-open {
+        overflow: hidden;
+        padding-right: 0 !important;
+      }
