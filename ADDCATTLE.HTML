@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livestock Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid mt-4">
+    <div class="row justify-content-center align-items-center d-flex">
+        <div class="col-sm-12 col-md-10 col-lg-12"> 
+            <div class="card">
+                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+                        <h4 class="card-title text-uppercase mb-0">
+                            Livestock Management
+                        </h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-info border-2 bg-opacity-10 p-3 mb-4 d-flex align-items-center">
+                                <p class="fw-semibold mb-0 pb-0 text-uppercase">Livestock Details</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="table-responsive">
+                                <table id="livestock-table" class="table align-middle table-hover contacts-table table-striped text-nowrap">
+                                    <thead class="table-light">
+                                        <tr class="text-uppercase table-dark">
+                                            <th>#</th>
+                                            <th>RFID Tag</th>
+                                            <th>Livestock Type</th>
+                                            <th>Livestock Breed</th>
+                                            <th>Gender</th>
+                                            <th>Weight (kg)</th>
+                                            <th>Age</th>
+                                            <th>Upload Images</th>
+                                            <th>Health Status</th>
+                                            <th>Acquisition Type</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="livestock-tbody">
+                                        <tr data-row="1">
+                                            <td style="width: 80px">1.</td>
+                                            <td>
+                                                <input type="text" class="form-control rfid-tag" placeholder="Enter RFID Tag" title="Enter RFID Tag for the livestock" spellcheck="false">
+                                            </td>
+                                            <td>
+                                                <select class="form-control livestock-type" data-live-search="true" title="Select Livestock Type">
+                                                    <option value="" disabled selected>-- Select Livestock Type --</option>
+                                                    <option value="Cow">Cow</option>
+                                                    <option value="Goat">Goat</option>
+                                                    <option value="Sheep">Sheep</option>
+                                                    <option value="Chicken">Chicken</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control livestock-breed" placeholder="Enter Breed" title="Enter Breed" spellcheck="false">
+                                            </td>
+                                            <td>
+                                                <select class="form-control gender" title="Select Gender">
+                                                    <option value="" disabled selected>-- Select Gender --</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control weight" placeholder="Enter Weight (kg)" title="Enter Weight" spellcheck="false">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control age" placeholder="Enter Age (months)" title="Enter Age in months" spellcheck="false">
+                                            </td>
+                                            <td>
+                                                <input type="file" class="form-control images" title="Upload Images">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control health-status" placeholder="Enter Health Status" title="Enter Health Status" spellcheck="false">
+                                            </td>
+                                            <td>
+                                                <select class="form-control acquisition-type" title="Select Acquisition Type" onchange="handleAcquisitionChange()">
+                                                    <option value="" disabled selected>-- Select Acquisition Type --</option>
+                                                    <option value="Bought">Bought</option>
+                                                    <option value="Bred">Bred</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-danger remove-row" onclick="removeRow(this)">
+                                                    <i class="bi bi-trash"></i> Remove
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="11" class="bg-light cursor-pointer">
+                                                <a href="#" id="add-row-btn" class="d-flex align-items-center text-uppercase text-decoration-none" onclick="addNewRow(); return false;">
+                                                    <i class="bi bi-plus-circle me-2"></i>
+                                                    <span>Add Row</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <!-- Seller Details Section (Hidden by default) -->
+                        <div id="seller-details-container" class="col-12 mt-4" style="display: none;">
+                            <div class="bg-warning border-2 bg-opacity-10 p-3 mb-4 d-flex align-items-center">
+                                <p class="fw-semibold mb-0 pb-0 text-uppercase">Seller Details</p>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="seller-name" class="form-label">Seller Name</label>
+                                    <input type="text" class="form-control" id="seller-name" placeholder="Enter seller's full name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="seller-contact" class="form-label">Contact Number</label>
+                                    <input type="tel" class="form-control" id="seller-contact" placeholder="Enter contact number">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="seller-address" class="form-label">Address</label>
+                                    <textarea class="form-control" id="seller-address" rows="3" placeholder="Enter seller's address"></textarea>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="purchase-date" class="form-label">Purchase Date</label>
+                                    <input type="date" class="form-control" id="purchase-date">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="purchase-price" class="form-label">Purchase Price</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">$</span>
+                                        <input type="number" class="form-control" id="purchase-price" placeholder="Enter purchase price">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="purchase-receipt" class="form-label">Upload Receipt (Optional)</label>
+                                    <input type="file" class="form-control" id="purchase-receipt">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-white border-top py-3">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase">
+                            <i class="bi bi-save me-2"></i>
+                            Save
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary waves-effect text-uppercase mx-3" onclick="clearForm()">
+                            <i class="bi bi-x-lg me-2"></i> Clear
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Function to add a new row
+    function addNewRow() {
+        const tbody = document.getElementById('livestock-tbody');
+        const rowCount = tbody.children.length + 1;
+        
+        const newRow = document.createElement('tr');
+        newRow.setAttribute('data-row', rowCount);
+        
+        newRow.innerHTML = `
+            <td style="width: 80px">${rowCount}.</td>
+            <td>
+                <input type="text" class="form-control rfid-tag" placeholder="Enter RFID Tag" title="Enter RFID Tag for the livestock" spellcheck="false">
+            </td>
+            <td>
+                <select class="form-control livestock-type" data-live-search="true" title="Select Livestock Type">
+                    <option value="" disabled selected>-- Select Livestock Type --</option>
+                    <option value="Cow">Cow</option>
+                    <option value="Goat">Goat</option>
+                    <option value="Sheep">Sheep</option>
+                    <option value="Chicken">Chicken</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" class="form-control livestock-breed" placeholder="Enter Breed" title="Enter Breed" spellcheck="false">
+            </td>
+            <td>
+                <select class="form-control gender" title="Select Gender">
+                    <option value="" disabled selected>-- Select Gender --</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" class="form-control weight" placeholder="Enter Weight (kg)" title="Enter Weight" spellcheck="false">
+            </td>
+            <td>
+                <input type="number" class="form-control age" placeholder="Enter Age (months)" title="Enter Age in months" spellcheck="false">
+            </td>
+            <td>
+                <input type="file" class="form-control images" title="Upload Images">
+            </td>
+            <td>
+                <input type="text" class="form-control health-status" placeholder="Enter Health Status" title="Enter Health Status" spellcheck="false">
+            </td>
+            <td>
+                <select class="form-control acquisition-type" title="Select Acquisition Type" onchange="handleAcquisitionChange()">
+                    <option value="" disabled selected>-- Select Acquisition Type --</option>
+                    <option value="Bought">Bought</option>
+                    <option value="Bred">Bred</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" class="btn btn-sm btn-danger remove-row" onclick="removeRow(this)">
+                    <i class="bi bi-trash"></i> Remove
+                </button>
+            </td>
+        `;
+        
+        tbody.appendChild(newRow);
+    }
+    
+    // Function to remove a row
+    function removeRow(button) {
+        const row = button.closest('tr');
+        if (row) {
+            row.remove();
+            
+            // Update row numbers
+            const rows = document.querySelectorAll('#livestock-tbody tr');
+            rows.forEach((row, index) => {
+                row.setAttribute('data-row', index + 1);
+                row.querySelector('td:first-child').textContent = `${index + 1}.`;
+            });
+            
+            // Check if we need to show seller details
+            handleAcquisitionChange();
+        }
+    }
+    
+    // Function to handle acquisition type change
+    function handleAcquisitionChange() {
+        const sellerDetails = document.getElementById('seller-details-container');
+        const acquisitionSelects = document.querySelectorAll('.acquisition-type');
+        let hasBoughtSelection = false;
+        
+        acquisitionSelects.forEach(select => {
+            if (select.value === 'Bought') {
+                hasBoughtSelection = true;
+            }
+        });
+        
+        // Show or hide seller details based on selection
+        sellerDetails.style.display = hasBoughtSelection ? 'block' : 'none';
+    }
+    
+    // Function to clear the form
+    function clearForm() {
+        // Reset all form fields
+        document.querySelectorAll('input, select, textarea').forEach(field => {
+            if (field.type === 'file') {
+                // Can't reset file input values directly in some browsers
+                const newField = document.createElement('input');
+                newField.type = 'file';
+                newField.className = field.className;
+                newField.title = field.title;
+                field.parentNode.replaceChild(newField, field);
+            } else {
+                field.value = '';
+                if (field.classList.contains('acquisition-type')) {
+                    field.selectedIndex = 0;
+                }
+            }
+        });
+        
+        // Hide seller details
+        document.getElementById('seller-details-container').style.display = 'none';
+        
+        // Remove all rows except the first one
+        const tbody = document.getElementById('livestock-tbody');
+        while (tbody.children.length > 1) {
+            tbody.removeChild(tbody.lastChild);
+        }
+    }
+
+    // Initialize event listeners when the page loads
+    window.onload = function() {
+        // Ensure the first row's acquisition type has event listener
+        document.querySelectorAll('.acquisition-type').forEach(select => {
+            select.addEventListener('change', handleAcquisitionChange);
+        });
+        
+        // Add event listener to the add row button
+        document.getElementById('add-row-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            addNewRow();
+            return false;
+        });
+    };
+</script>
+</body>
+</html>

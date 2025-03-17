@@ -46,18 +46,17 @@
                                         <div class="col-lg-7">
                                             <div class="text-center">
 
-                                                <h4 class="mb-3"><i class="bx bxs-quote-alt-left text-primary h1 align-middle me-3"></i><span class="text-primary">5k</span>+ Satisfied clients</h4>
+                                                <h4 class="mb-3"><i class="bx bxs-quote-alt-left text-primary h1 align-middle me-3"></i><span class="text-primary"></span></h4>
 
                                                 <div dir="ltr">
                                                     <div class="owl-carousel owl-theme auth-review-carousel" id="auth-review-carousel">
                                                         <div class="item">
                                                             <div class="py-3">
-                                                                <p class="font-size-16 mb-4">" Fantastic theme with a ton of options. If you just want the HTML to integrate with your project, then this is the package. You can find the files in the 'dist' folder...no need to install
-                                                                    git and all the other stuff the documentation talks about. "</p>
+                                                                <p class="font-size-16 mb-4"></p>
 
                                                                 <div>
-                                                                    <h4 class="font-size-16 text-primary">Abs1981</h4>
-                                                                    <p class="font-size-14 mb-0">- Skote User</p>
+                                                                    <h4 class="font-size-16 text-primary"></h4>
+                                                                    <p class="font-size-14 mb-0"></p>
                                                                 </div>
                                                             </div>
 
@@ -65,11 +64,11 @@
 
                                                         <div class="item">
                                                             <div class="py-3">
-                                                                <p class="font-size-16 mb-4">" If Every Vendor on Envato are as supportive as Themesbrand, Development with be a nice experience. You guys are Wonderful. Keep us the good work. "</p>
+                                                                <p class="font-size-16 mb-4"></p>
 
                                                                 <div>
-                                                                    <h4 class="font-size-16 text-primary">nezerious</h4>
-                                                                    <p class="font-size-14 mb-0">- Skote User</p>
+                                                                    <h4 class="font-size-16 text-primary"></h4>
+                                                                    <p class="font-size-14 mb-0"></p>
                                                                 </div>
                                                             </div>
 
@@ -97,77 +96,90 @@
                                         <img src="assets/images/logo-light.png" alt="" height="18" class="auth-logo-light">
                                     </a>
                                 </div>
-                                <div class="my-auto">
-
-                                    <div>
-                                        <h5 class="text-primary">Register account</h5>
-                                        <p class="text-muted">Get your free Skote account now.</p>
-                                    </div>
-
-                                    <div class="mt-4">
-                                        <form class="needs-validation" novalidate action="#">
-
-                                            <div class="mb-3">
-                                                <label for="useremail" class="form-label">Email</label>
-                                                <input type="email" class="form-control" id="useremail" placeholder="Enter email" required>
-                                                <div class="invalid-feedback">
-                                                    Please Enter Email
-                                                </div>
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <label for="username" class="form-label">Username</label>
-                                                <input type="text" class="form-control" id="username" placeholder="Enter username" required>
-                                                <div class="invalid-feedback">
-                                                    Please Enter Username
-                                                </div>
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <label for="userpassword" class="form-label">Password</label>
-                                                <input type="password" class="form-control" id="userpassword" placeholder="Enter password" required>
-                                                <div class="invalid-feedback">
-                                                    Please Enter Password
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <p class="mb-0">By registering you agree to the Skote <a href="#" class="text-primary">Terms of Use</a></p>
-                                            </div>
-
-                                            <div class="mt-4 d-grid">
-                                                <button class="btn btn-primary waves-effect waves-light" type="submit">Register</button>
-                                            </div>
-
-                                            <div class="mt-4 text-center">
-                                                <h5 class="font-size-14 mb-3">Sign up using</h5>
-
-                                                <ul class="list-inline">
-                                                    <li class="list-inline-item">
-                                                        <a href="javascript::void()" class="social-list-item bg-primary text-white border-primary">
-                                                            <i class="mdi mdi-facebook"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <a href="javascript::void()" class="social-list-item bg-info text-white border-info">
-                                                            <i class="mdi mdi-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <a href="javascript::void()" class="social-list-item bg-danger text-white border-danger">
-                                                            <i class="mdi mdi-google"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-
-                                        </form>
-
-                                        <div class="mt-5 text-center">
-                                            <p>Already have an account ? <a href="auth-login-2.html" class="fw-medium text-primary"> Login</a> </p>
+                              
+                                
+                                    <div class="my-auto">
+                                        <div>
+                                            <h5 class="text-primary">Register account</h5>
                                         </div>
+                                    
+                                        <div class="mt-4">
+                                            <form class="needs-validation" novalidate action="#">
+                                                <!-- Role Selection (Radio Buttons - Side by Side) -->
+                                                <div class="mb-3">
+                                                    <label class="form-label">Select Role:</label>
+                                                    <div class="d-flex gap-3"> <!-- Flexbox to align radio buttons side by side -->
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="role" id="roleBuyer" value="buyer" required>
+                                                            <label class="form-check-label" for="roleBuyer">Buyer</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="role" id="roleFarmer" value="farmer" required>
+                                                            <label class="form-check-label" for="roleFarmer">Farmer</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="invalid-feedback">Please select a role.</div>
+                                                </div>
 
+                                                  <!-- Full name Input -->
+                                                  <div class="mb-3">
+                                                    <label for="fullName" class="form-label">Full name</label>
+                                                    <input type="text" class="form-control" id="fullName" placeholder="Enter full name" required>
+                                                    <div class="invalid-feedback">Please enter your full name.</div>
+                                                </div>
+                                    
+                                                <!-- Email Input -->
+                                                <div class="mb-3">
+                                                    <label for="useremail" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="useremail" placeholder="Enter email" required>
+                                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                                </div>
+                                              
+                                                <!-- Password Input -->
+                                                <div class="mb-3">
+                                                    <label for="userpassword" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="userpassword" placeholder="Enter password" required>
+                                                    <div class="invalid-feedback">Please enter a password.</div>
+                                                </div>
+                                    
+                                                <!-- Terms of Use -->
+                                                <div>
+                                                    <p class="mb-0">By registering you agree to the<a href="#" class="text-primary">Terms of Use</a></p>
+                                                </div>
+                                    
+                                                <!-- Register Button -->
+                                                <div class="mt-4 d-grid">
+                                                    <button class="btn btn-primary waves-effect waves-light" type="submit">Register</button>
+                                                </div>
+                                    
+                                                <!-- Social Sign-Up Options -->
+                                                <div class="mt-4 text-center">
+                                                    <h5 class="font-size-14 mb-3">Sign up using</h5>
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)" class="social-list-item bg-primary text-white border-primary">
+                                                                <i class="mdi mdi-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)" class="social-list-item bg-info text-white border-info">
+                                                                <i class="mdi mdi-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)" class="social-list-item bg-danger text-white border-danger">
+                                                                <i class="mdi mdi-google"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </form>
+                                    
+                                            <!-- Login Link -->
+                                            <div class="mt-5 text-center">
+                                                <p>Already have an account? <a href="auth-login.html" class="fw-medium text-primary">Login</a></p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 

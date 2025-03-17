@@ -27,6 +27,11 @@
     <!-- custom Css-->
     <link href="assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    
+
 
 </head>
 
@@ -219,157 +224,176 @@
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
                     <ul class="metismenu list-unstyled text-capitalize" id="side-menu">
-        
+            
                         <!-- Dashboard -->
                         <li>
                             <a href="index.html" class="waves-effect">
-                                <i class="bx bx-home"></i><span>Dashboard Overview</span>
+                                <i class="bx bx-home"></i><span>Dashboard</span>
                             </a>
                         </li>
-        
+                    
+                        <li>
+                            <a href="add_new_livestock.html" class="waves-effect">
+                                <i class="bx bx-plus"></i> <span> Add Livestock</span>
+                            </a>
+                        </li>
+
+                        <li><a href="production_weight.html"><i class="fas fa-weight"></i> Weight</a></li>
+                        <li><a href="RFID.html"><i class="fas fa-id-card"></i> RFID</a></li>
+
+
+
+                        <li><a href="breeding_pregnancy.html"><i class="fas fa-baby-carriage"></i> Pregnancy</a></li>
+            
                         <!-- Livestock Inventory -->
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="fas fa-cow"></i>
-                                <span>Livestock Inventory</span>
+                                <span>Livestock</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="animals.html"><i class="fas fa-paw"></i> Animals</a></li>
-                                <li><a href="breeds.html"><i class="fas fa-dna"></i> Breeds</a></li>
-                                <li><a href="groups.html"><i class="fas fa-object-group"></i> Groups/Pens</a></li>
+                                <li><a href="livestock_animals.html"><i class="fas fa-paw"></i> Animals</a></li>
+                                <li><a href="livestock_breeds.html"><i class="fas fa-dna"></i> Breeds</a></li>
+                                <li><a href="livestock_groups.html"><i class="fas fa-object-group"></i> Groups</a></li>
                             </ul>
                         </li>
-        
+            
                         <!-- Vaccine Management -->
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="fas fa-heartbeat"></i>
-                                <span>Vaccine Management</span>
+                                <span>Vaccines</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="health-records.html"><i class="fas fa-file-medical"></i> Health Records</a></li>
-                                <li><a href="vaccine-management-schedule-vaccine.html"><i class="fas fa-calendar-alt"></i> Vaccinations Schedule</a></li>
-                                <li><a href="vet-contacts.html"><i class="fas fa-address-book"></i> Veterinary Contacts</a></li>
+                                <li><a href="vaccines_health.html"><i class="fas fa-file-medical"></i> Health</a></li>
+                                <li><a href="vaccines_schedule.html"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                                <li><a href="vaccines_contacts.html"><i class="fas fa-address-book"></i> Contacts</a></li>
                             </ul>
                         </li>
-        
+            
                         <!-- Breeding & Reproduction -->
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="fas fa-baby"></i>
-                                <span>Breeding & Reproduction</span>
+                                <span>Breeding</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="breeding-schedule.html"><i class="fas fa-calendar-check"></i> Breeding Schedule</a></li>
-                                <li><a href="pregnancy_records.html"><i class="fas fa-baby-carriage"></i> Pregnancy Tracking</a></li>
-                                <li><a href="birth-records.html"><i class="fas fa-birthday-cake"></i> Birth Records</a></li>
+                                <li><a href="breeding_schedule.html"><i class="fas fa-calendar-check"></i> Schedule</a></li>
+                           
+                                <li><a href="breeding_birth.html"><i class="fas fa-birthday-cake"></i> Birth</a></li>
                             </ul>
                         </li>
-        
+            
                         <!-- Health Management -->
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="fas fa-drumstick-bite"></i>
-                                <span>Health Management</span>
+                                <span>Health</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="feed-inventory.html"><i class="fas fa-utensils"></i> Feed Inventory</a></li>
-                                <li><a href="feeding-schedule.html"><i class="fas fa-clock"></i> Feeding Schedule</a></li>
-                                <li><a href="nutrition-plans.html"><i class="fas fa-clipboard-list"></i> Nutrition Plans</a></li>
+                                <li><a href="health_feed.html"><i class="fas fa-utensils"></i> Feed</a></li>
+                                <li><a href="health_feeding.html"><i class="fas fa-clock"></i> Feeding</a></li>
+                                <li><a href="health_nutrition.html"><i class="fas fa-clipboard-list"></i> Nutrition</a></li>
                             </ul>
                         </li>
-        
+            
                         <!-- Production & Performance -->
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="fas fa-chart-line"></i>
-                                <span>Production & Performance</span>
+                                <span>Production</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="weight-tracking.html"><i class="fas fa-weight"></i> Weight Tracking</a></li>
+                                <li><a href="production_weight.html"><i class="fas fa-weight"></i> Weight</a></li>
                             </ul>
                         </li>
-        
+            
                         <!-- Sales Management -->
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="fas fa-dollar-sign"></i>
-                                <span>Sales Management</span>
+                                <span>Sales</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="buyers.html"><i class="fas fa-users"></i> Buyers</a></li>
-                                <li><a href="sellers.html"><i class="fas fa-user-tie"></i> Sellers</a></li>
-                                <li><a href="sales.html"><i class="fas fa-shopping-cart"></i> Livestock Sale List</a></li>
-                                <li><a href="profit-analysis.html"><i class="fas fa-chart-pie"></i> Profit Analysis</a></li>
+                                <li><a href="sales_buyers.html"><i class="fas fa-users"></i> Buyers</a></li>
+                                <li><a href="sales_sellers.html"><i class="fas fa-user-tie"></i> Sellers</a></li>
+                                <li><a href="sales_livestock.html"><i class="fas fa-shopping-cart"></i> Livestock</a></li>
+                                <li><a href="sales_profit.html"><i class="fas fa-chart-pie"></i> Profit</a></li>
                             </ul>
                         </li>
-        
+                        <li>
+                            <a href="death.html" class="waves-effect">
+                                <i class="bx bx-skull"></i> <span>  Death</span>
+                            </a>
+                        </li>
+                        
+            
                         <!-- Reports & Analytics -->
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="fas fa-chart-bar"></i>
-                                <span>Reports & Analytics</span>
+                                <span>Reports</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="health-reports.html"><i class="fas fa-file-medical-alt"></i> Health Reports</a></li>
-                                <li><a href="production-reports.html"><i class="fas fa-chart-line"></i> Production Reports</a></li>
-                                <li><a href="financial-reports.html"><i class="fas fa-coins"></i> Financial Reports</a></li>
+                                <li><a href="reports_health.html"><i class="fas fa-file-medical-alt"></i> Health</a></li>
+                                <li><a href="reports_production.html"><i class="fas fa-chart-line"></i> Production</a></li>
+                                <li><a href="reports_financial.html"><i class="fas fa-coins"></i> Financial</a></li>
                             </ul>
                         </li>
-        
+            
                         <!-- Settings & Configuration -->
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="fas fa-cog"></i>
-                                <span>Settings & Configuration</span>
+                                <span>Settings</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="user-management.html"><i class="fas fa-users-cog"></i> User Management</a></li>
-                                <li><a href="farm-details.html"><i class="fas fa-tractor"></i> Farm Details</a></li>
-                                <li><a href="system-preferences.html"><i class="fas fa-sliders-h"></i> System Preferences</a></li>
+                                <li><a href="settings_users.html"><i class="fas fa-users-cog"></i> Users</a></li>
+                                <li><a href="settings_farm.html"><i class="fas fa-tractor"></i> Farm</a></li>
+                                <li><a href="settings_preferences.html"><i class="fas fa-sliders-h"></i> Preferences</a></li>
                             </ul>
                         </li>
-        
+            
                         <!-- Help & Support -->
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="fas fa-question-circle"></i>
-                                <span>Help & Support</span>
+                                <span>Help</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="user-guides.html"><i class="fas fa-book"></i> User Guides</a></li>
-                                <li><a href="contact-support.html"><i class="fas fa-headset"></i> Contact Support</a></li>
+                                <li><a href="help_guides.html"><i class="fas fa-book"></i> Guides</a></li>
+                                <li><a href="help_support.html"><i class="fas fa-headset"></i> Support</a></li>
                             </ul>
                         </li>
-        
+            
                         <!-- Original HR and System Administration Menus (Hidden) -->
                         <li class="d-none">
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi mdi-sitemap"></i>
-                                <span>Org Structure</span>
+                                <span>Structure</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="org-designations.html"><i class="mdi mdi-account-tie"></i> Designations</a></li>
                                 <li><a href="org-departments.html"><i class="mdi mdi-domain"></i> Departments</a></li>
-                                <li><a href="org-employment-types.html"><i class="mdi mdi-briefcase"></i> Employment Types</a></li>
-                                <li><a href="org-affiliated-institution.html"><i class="mdi mdi-school"></i> Affiliated Institution</a></li>
+                                <li><a href="org-employment-types.html"><i class="mdi mdi-briefcase"></i> Employment</a></li>
+                                <li><a href="org-affiliated-institution.html"><i class="mdi mdi-school"></i> Institution</a></li>
                             </ul>
                         </li>
-        
+            
                         <li class="d-none">
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi mdi-account-multiple"></i>
                                 <span>Users</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="user-registration.html"><i class="mdi mdi-account-plus"></i> Add User</a></li>
-                                <li><a href="user-userlist.html"><i class="mdi mdi-account-group"></i> Manage Users</a></li>
-                                <li><a href="users-deactivated.html"><i class="mdi mdi-account-off"></i> Deactivated Users</a></li>
-                                <li><a href="use-logs.html"><i class="mdi mdi-file-chart"></i> System Logs</a></li>
-                                <li><a href="users-roles.html"><i class="mdi mdi-shield-account"></i> System Roles</a></li>
+                                <li><a href="user-registration.html"><i class="mdi mdi-account-plus"></i> Add</a></li>
+                                <li><a href="user-userlist.html"><i class="mdi mdi-account-group"></i> Manage</a></li>
+                                <li><a href="users-deactivated.html"><i class="mdi mdi-account-off"></i> Deactivated</a></li>
+                                <li><a href="use-logs.html"><i class="mdi mdi-file-chart"></i> Logs</a></li>
+                                <li><a href="users-roles.html"><i class="mdi mdi-shield-account"></i> Roles</a></li>
                             </ul>
                         </li>
-        
+            
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -503,282 +527,124 @@
                     <!-- quick stats -->
                     <div class="row">
                         <div class="col-sm-12 col-md-4">
-                            <div class="card shadow" style="border-radius: 12px; border: none; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);">
-                                <div class="card-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th style="color: #495057; font-weight: 600; border-top: none;">CATEGORY</th>
-                                                <th style="color: #495057; font-weight: 600; border-top: none; text-align: right;">QUANTITY</th>
-                                                <th style="color: #495057; font-weight: 600; border-top: none; text-align: right;">ACTIONS</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="lm-table-data">
-                                            <tr>
-                                                <td style="color: #2C3E50; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2;">Animals at Target Achieved Weight</td>
-                                                <td style="color: #28A745; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">67</td>
-                                                <td style="padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">
-                                                    <button class="btn" style="background-color: #28A745; color: white; border-radius: 5px; padding: 5px 15px; font-size: 14px;">View</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="color: #2C3E50; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2;">Animals Below Target Weight</td>
-                                                <td style="color: #28A745; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">32</td>
-                                                <td style="padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">
-                                                    <button class="btn" style="background-color: #28A745; color: white; border-radius: 5px; padding: 5px 15px; font-size: 14px;">View</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="color: #2C3E50; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2;">Animals Above Target Weight</td>
-                                                <td style="color: #28A745; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">45</td>
-                                                <td style="padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">
-                                                    <button class="btn" style="background-color: #28A745; color: white; border-radius: 5px; padding: 5px 15px; font-size: 14px;">View</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="color: #2C3E50; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2;">Animals At or Near Target Weight</td>
-                                                <td style="color: #28A745; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">54</td>
-                                                <td style="padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">
-                                                    <button class="btn" style="background-color: #28A745; color: white; border-radius: 5px; padding: 5px 15px; font-size: 14px;">View</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="color: #2C3E50; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2;">Pending Vaccinations</td>
-                                                <td style="color: #28A745; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">8</td>
-                                                <td style="padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">
-                                                    <button class="btn" style="background-color: #28A745; color: white; border-radius: 5px; padding: 5px 15px; font-size: 14px;">View</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="color: #2C3E50; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2;">Healthy Animals</td>
-                                                <td style="color: #28A745; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">876</td>
-                                                <td style="padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">
-                                                    <button class="btn" style="background-color: #28A745; color: white; border-radius: 5px; padding: 5px 15px; font-size: 14px;">View</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="color: #2C3E50; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2;">Pregnant Animals</td>
-                                                <td style="color: #28A745; font-weight: 500; padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">13</td>
-                                                <td style="padding: 15px 12px; border-top: 1px solid #f2f2f2; text-align: right;">
-                                                    <button class="btn" style="background-color: #28A745; color: white; border-radius: 5px; padding: 5px 15px; font-size: 14px;">View</button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                       
-                        <div class="col-sm-12 col-md-4">
-                            <div class="card shadow" style="border-radius: 12px; border: none; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);">
-                              <div class="card">
-                                <div class="card-header">
-                                  <h2 class="card-title">Cattle Distribution Overview</h2>
-                                </div>
-                                <div class="card-body">
-                                  <div class="chart-container">
-                                    <canvas id="lm-cattle-chart" style="height: 400px;"></canvas>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <!-- RFID Tags Distribution Panel -->
-<div class="col-xl-4 col-md-5 col-lg-4 px-sm-30px">
-    <div class="card shadow" style="border-radius: 12px; border: none; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);">
+                            <!-- Health Status Chart -->
         <div class="card">
             <div class="card-header">
-                <h2 class="card-title">RFID Tags Distribution</h2>
+                <div class="d-flex flex-wrap align-items-start">
+                    <h5 class="mb-3 me-2 text-black">Animal Health Status</h5>
+                </div>
             </div>
             <div class="card-body">
-                <div class="chart-container">
-                    <canvas id="lm-rfid-chart" style="height: 400px;"></canvas>
-                </div>
-                <div class="lm-stats-container mt-4">
-                    <div class="row">
-                        <div class="col-4 text-center">
-                            <div class="lm-stat-box" style="background-color: #6C757D; color: white;"> 
-                                <div class="lm-stat-value" id="lm-total-animals">150</div>
-                                <div class="lm-stat-text">Total Animals</div>
-                            </div>
+                <div id="HealthStatusChart"></div>
+            </div>
+        </div>
+    
                         </div>
-                        <div class="col-4 text-center">
-                            <div class="lm-stat-box">
-                                <div class="lm-stat-value" id="lm-with-tags">120</div>
-                                <div class="lm-stat-text">With RFID Tags</div>
-                            </div>
-                        </div>
-                        <div class="col-4 text-center">
-                            <div class="lm-stat-box">
-                                <div class="lm-stat-value" id="lm-without-tags">30</div>
-                                <div class="lm-stat-text">Without RFID Tags</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-sm-12 col-md-4">
-    <div class="card">
-        <div class="card-header">
-            <div class="d-flex flex-wrap align-items-start">
-                <h5 class="mb-3 me-2 text-black">Monthly Sales Distribution</h5>
-            </div>
-        </div>
-        <div class="card-body">
-            <div class="controls">
-                <div class="control-group">
-                    <label>Select Year:</label>
-                    <select id="yearSelectMonthly">
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                    </select>
-                </div>
-                <div class="control-group">
-                    <label>Select Month:</label>
-                    <select id="monthSelectMonthly">
-                        <option value="January">January</option>
-                        <option value="February">February</option>
-                        <option value="March">March</option>
-                        <option value="April">April</option>
-                        <option value="May">May</option>
-                        <option value="June">June</option>
-                        <option value="July">July</option>
-                        <option value="August">August</option>
-                        <option value="September">September</option>
-                        <option value="October">October</option>
-                        <option value="November">November</option>
-                        <option value="December">December</option>
-                    </select>
-                </div>
-            </div>
-            <div class="charts-grid">
-                <div class="chart-container">
-                    <div class="chart-title">Monthly Sales Distribution</div>
-                    <div class="chart-wrapper">
-                        <canvas id="salesChart"></canvas>
-                    </div>
-                    <div class="revenue-card monthly">
-                        <span class="revenue-label">Monthly Revenue for <span id="currentMonth">January 2023</span></span>
-                        <span class="revenue-amount" id="monthlyRevenue">KSH 0</span>
-                        <span class="revenue-change" id="monthlyChange">+0% from previous month</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-sm-12 col-md-4">
-    <div class="card">
-        <div class="card-header">
-            <div class="d-flex flex-wrap align-items-start">
-                <h5 class="mb-3 me-2 text-black">Yearly Sales Distribution</h5>
-            </div>
-        </div>
-        <div class="card-body">
-            <div class="controls">
-                <div class="control-group">
-                    <label>Select Year:</label>
-                    <select id="yearSelectYearly">
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                    </select>
-                </div>
-            </div>
-            <div class="charts-grid">
-                <div class="chart-container">
-                    <div class="chart-title">Yearly Sales Distribution</div>
-                    <div class="chart-wrapper">
-                        <canvas id="revenueChart"></canvas>
-                    </div>
-                    <div class="revenue-card yearly">
-                        <span class="revenue-label">Yearly Revenue for <span id="currentYear">2023</span></span>
-                        <span class="revenue-amount" id="yearlyRevenue">KSH 0</span>
-                        <span class="revenue-change" id="yearlyChange">+0% from previous year</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Daily Distribution Modal -->
-<div id="dailyModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h2 id="modalTitle">Daily Distribution</h2>
-        <canvas id="dailyDistributionChart"></canvas>
-    </div>
-</div>
-
+                       
+                       
                         <div class="col-sm-12 col-md-4">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="d-flex flex-wrap align-items-start">
-                                        <h5 class="mb-3 me-2 text-black">Staff Turnover by Department Feb 2025</h5>
+                                        <h5 class="mb-3 me-2 text-black">Livestock Distribution</h5>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <div id="NewContainer"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="d-flex flex-wrap align-items-start">
-                                        <h5 class="mb-3 me-2 text-black">Nature Of Exits</h5>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="ExitChart"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="d-flex flex-wrap align-items-start">
-                                        <h5 class="mb-3 me-2 text-black">Nature of Entries</h5>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="EntryChart"></div>
+                                    <div id="AnimalDistributionChart"></div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-12 col-md-6">
+                          <div class="col-sm-12 col-md-4">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="d-flex flex-wrap align-items-start">
-                                        <h5 class="mb-3 me-2 text-black">Gender Comparissons</h5>
+                                        <h5 class="mb-3 me-2 text-black">Animal RFID Tracking</h5>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <div id="GenderContainer"></div>
+                                    <div id="AnimalRFIDChart"></div>
                                 </div>
                             </div>
-                        </div>
+                        
+                    </div>
 
-                        <div class="col-sm-12 col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="d-flex flex-wrap align-items-start">
-                                        <h5 class="mb-3 me-2 text-black">Distribution of Employees with Disabilities</h5>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="disabilityChart"></div>
+
+
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="d-flex flex-wrap align-items-start">
+                                    <h5 class="mb-3 me-2 text-black">Sales</h5>
                                 </div>
                             </div>
+                            <div class="card-body">
+                                <div id="SalesChart"></div>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="d-flex flex-wrap align-items-start">
+                                    <h5 class="mb-3 me-2 text-black">Gender Distribution of Animals</h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="GenderChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+
+    <!-- Weight Status Chart -->
+    <div class="col-sm-12 col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex flex-wrap align-items-start">
+                    <h5 class="mb-3 me-2 text-black">Animal Weight Status</h5>
+                </div>
+            </div>
+            <div class="card-body">
+                <div id="WeightStatusChart"></div>
+            </div>
+        </div>
+    </div>
+
+      
+                  
+    <div class="col-sm-12 col-md-7 col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex flex-wrap align-items-start">
+                    <h5 class="mb-3 me-2 text-black">Mortality Rate</h5>
+                </div>
+            </div>
+            <div class="card-body">
+                <div id="MortalityRateChart"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex flex-wrap align-items-start">
+                    <h5 class="mb-3 me-2 text-black">Breeding Rates</h5>
+                </div>
+            </div>
+            <div class="card-body">
+                <div id="BreedingRatesChart"></div>
+            </div>
+        </div>
+    </div>
+
+
+                     
+
 
                        
                     </div>
@@ -866,6 +732,10 @@
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/drilldown.js"></script>
 
@@ -880,271 +750,304 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- end of CDNs -->
-<script>
-    Highcharts.chart('AttendanceContainer', {
-     chart: {
-         type: 'column'
-     },
-     title: {
-         text: null
-     },
-     xAxis: {
-         type: 'category',
-         labels: {
-             rotation: -90, // Rotate labels vertically
-             align: 'right',
-             style: {
-                 fontSize: '10px',
-                 fontFamily: 'Verdana, sans-serif'
-             }
-         }
-     },
-     yAxis: {
-         min: 0,
-         title: {
-             text: 'Total Days'
-         },
-         stackLabels: {
-             enabled: true,
-             style: {
-                 fontWeight: 'bold',
-                 color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-             }
-         }
-     },
-     legend: {
-         align: 'center',
-         
-         verticalAlign: 'bottom',
-         floating: false,
-         backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || 'white',
-         borderColor: '#CCC',
-         borderWidth: 1,
-         shadow: false
-     },
-     tooltip: {
-         headerFormat: '<b>Attendance Report For {point.key}</b><br/> ',
-         pointFormatter: function () {
-             const present = this.series.chart.series[0].data[this.index].y;
-             const absent = this.series.chart.series[1].data[this.index].y;
-             const total = present + absent;
-             return '<span style="font-weight: 600; color: #0caf60;">Present:</span> ' + present +
-                 '<br/>' +
-                 '<span style="font-weight: 600; color: #ff3a6e;">Absent:</span> ' + absent + '<br/>' +
-                 '<span style="font-weight: 600;">Total:</span> ' + total;
-         }
-     },
-     plotOptions: {
-         column: {
-             stacking: 'normal',
-             pointPadding: 0.2,
-            borderWidth: 0,
-             dataLabels: {
-                 enabled: true,
-                 rotation: -90, // Rotate data labels vertically
-                 align: 'right',
-                 verticalAlign: 'middle',
-                 y: 10, // Adjust vertical position
-                
-             }
-         },
-        
-     },
-     series: [
-    {
-        name: 'Present',
-        color: '#0caf60',
-        data: [
-            { name: 'JAN', y: 6200, drilldown: 'January-Attendance' },
-            { name: 'FEB', y: 7480, drilldown: 'February-Attendance' },
-            { name: 'MAR', y: 7450, drilldown: 'March-Attendance' },
-            { name: 'APR', y: 7400, drilldown: 'April-Attendance' },
-            { name: 'MAY', y: 7350, drilldown: 'May-Attendance' },
-            { name: 'JUN', y: 7300, drilldown: 'June-Attendance' },
-            { name: 'JUL', y: 7200, drilldown: 'July-Attendance' },
-            { name: 'AUG', y: 7100, drilldown: 'August-Attendance' },
-            { name: 'SEP', y: 6950, drilldown: 'September-Attendance' },
-            { name: 'OCT', y: 6700, drilldown: 'October-Attendance' },
-            { name: 'NOV', y: 6400, drilldown: 'November-Attendance' },
-            { name: 'DEC', y: 6000, drilldown: 'December-Attendance' }
-        ]
-    },
-    {
-        name: 'Absent',
-        color: '#ff3a6e',
-        data: [
-            { name: 'JAN', y: 1820, drilldown: 'January-Absenteeism' },
-            { name: 'FEB', y: 240, drilldown: 'February-Absenteeism' },
-            { name: 'MAR', y: 270, drilldown: 'March-Absenteeism' },
-            { name: 'APR', y: 320, drilldown: 'April-Absenteeism' },
-            { name: 'MAY', y: 370, drilldown: 'May-Absenteeism' },
-            { name: 'JUN', y: 420, drilldown: 'June-Absenteeism' },
-            { name: 'JUL', y: 520, drilldown: 'July-Absenteeism' },
-            { name: 'AUG', y: 620, drilldown: 'August-Absenteeism' },
-            { name: 'SEP', y: 770, drilldown: 'September-Absenteeism' },
-            { name: 'OCT', y: 1020, drilldown: 'October-Absenteeism' },
-            { name: 'NOV', y: 1320, drilldown: 'November-Absenteeism' },
-            { name: 'DEC', y: 1720, drilldown: 'December-Absenteeism' }
-        ]
-    }
-],
-     drilldown: {
-         series: [
-             // January
-             {
-                 id: 'January-Attendance',
-                 name: 'Attendance Data for January',
-                 data: generateDailyData(31, 0.95) // 31 days in January
-             },
-             {
-                 id: 'January-Absenteeism',
-                 name: 'Absenteeism Data for January',
-                 data: generateDailyData(31, 0.05) // 31 days in January
-             },
-             // February
-             {
-                 id: 'February-Attendance',
-                 name: 'Attendance Data for February',
-                 data: generateDailyData(28, 0.65) // 28 days in February
-             },
-             {
-                 id: 'February-Absenteeism',
-                 name: 'Absenteeism Data for February',
-                 data: generateDailyData(28, 0.35) // 28 days in February
-             },
-             // March
-             {
-                 id: 'March-Attendance',
-                 name: 'Attendance Data for March',
-                 data: generateDailyData(31, 0.25) // 31 days in March
-             },
-             {
-                 id: 'March-Absenteeism',
-                 name: 'Absenteeism Data for March',
-                 data: generateDailyData(31, 0.75) // 31 days in March
-             },
-             // April
-             {
-                 id: 'April-Attendance',
-                 name: 'Attendance Data for April',
-                 data: generateDailyData(30, 0.85) // 30 days in April
-             },
-             {
-                 id: 'April-Absenteeism',
-                 name: 'Absenteeism Data for April',
-                 data: generateDailyData(30, 0.15) // 30 days in April
-             },
-             // May
-             {
-                 id: 'May-Attendance',
-                 name: 'Attendance Data for May',
-                 data: generateDailyData(31, 0.95) // 31 days in May
-             },
-             {
-                 id: 'May-Absenteeism',
-                 name: 'Absenteeism Data for May',
-                 data: generateDailyData(31, 0.05) // 31 days in May
-             },
-             // June
-             {
-                 id: 'June-Attendance',
-                 name: 'Attendance Data for June',
-                 data: generateDailyData(30, 0.5) // 30 days in June
-             },
-             {
-                 id: 'June-Absenteeism',
-                 name: 'Absenteeism Data for June',
-                 data: generateDailyData(30, 0.50) // 30 days in June
-             },
-             // July
-             {
-                 id: 'July-Attendance',
-                 name: 'Attendance Data for July',
-                 data: generateDailyData(31, 0.95) // 31 days in July
-             },
-             {
-                 id: 'July-Absenteeism',
-                 name: 'Absenteeism Data for July',
-                 data: generateDailyData(31, 0.05) // 31 days in July
-             },
-             // August
-             {
-                 id: 'August-Attendance',
-                 name: 'Attendance Data for August',
-                 data: generateDailyData(31, 0.95) // 31 days in August
-             },
-             {
-                 id: 'August-Absenteeism',
-                 name: 'Absenteeism Data for August',
-                 data: generateDailyData(31, 0.05) // 31 days in August
-             },
-             // September
-             {
-                 id: 'September-Attendance',
-                 name: 'Attendance Data for September',
-                 data: generateDailyData(30, 0.95) // 30 days in September
-             },
-             {
-                 id: 'September-Absenteeism',
-                 name: 'Absenteeism Data for September',
-                 data: generateDailyData(30, 0.05) // 30 days in September
-             },
-             // October
-             {
-                 id: 'October-Attendance',
-                 name: 'Attendance Data for October',
-                 data: generateDailyData(31, 0.95) // 31 days in October
-             },
-             {
-                 id: 'October-Absenteeism',
-                 name: 'Absenteeism Data for October',
-                 data: generateDailyData(31, 0.05) // 31 days in October
-             },
-             // November
-             {
-                 id: 'November-Attendance',
-                 name: 'Attendance Data for November',
-                 data: generateDailyData(30, 0.95) // 30 days in November
-             },
-             {
-                 id: 'November-Absenteeism',
-                 name: 'Absenteeism Data for November',
-                 data: generateDailyData(30, 0.05) // 30 days in November
-             },
-             // December
-             {
-                 id: 'December-Attendance',
-                 name: 'Attendance Data for December',
-                 data: generateDailyData(31, 0.95) // 31 days in December
-             },
-             {
-                 id: 'December-Absenteeism',
-                 name: 'Absenteeism Data for December',
-                 data: generateDailyData(31, 0.05) // 31 days in December
-             }
-         ]
-     }
- });
- 
- // Helper function to generate daily data
- function generateDailyData(daysInMonth, ratio) {
-     const data = [];
-     for (let day = 1; day <= daysInMonth; day++) {
-         data.push([`${day}`, Math.round(7720 * ratio)]);
-     }
-     return data;
- }
- </script>
 
- <script>
+   
     
- </script>
+    <script>
+    // Create the chart
+    Highcharts.chart('AnimalDistributionChart', {
+        chart: {
+            type: 'column',
+            backgroundColor: '#f9f8fa',
+            borderRadius: 8,
+            spacing: [30, 30, 30, 30]
+        },
+        colors: ['#4285F4', '#EA4335', '#FBBC05', '#34A853', '#FF6D01'],
+        title: {
+            text: 'Livestock Distribution',
+            style: {
+                fontWeight: 'bold',
+                fontSize: '18px'
+            }
+        },
+        subtitle: {
+            text: 'Click on bars to view yearly and monthly breakdown',
+            style: {
+                color: '#666',
+                fontSize: '14px'
+            }
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: 'Number of Animals'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y}'
+                }
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b> animals<br/>'
+        },
+        series: [{
+            name: 'Animals',
+            colorByPoint: true,
+            data: [{
+                name: 'Cattle',
+                y: 230,
+                drilldown: 'Cattle'
+            }, {
+                name: 'Bulls',
+                y: 55,
+                drilldown: 'Bulls'
+            }, {
+                name: 'Cows',
+                y: 175,
+                drilldown: 'Cows'
+            }, {
+                name: 'Goats',
+                y: 150,
+                drilldown: 'Goats'
+            }, {
+                name: 'Sheep',
+                y: 120,
+                drilldown: 'Sheep'
+            }]
+        }],
+        drilldown: {
+            breadcrumbs: {
+                position: {
+                    align: 'right'
+                }
+            },
+            series: [
+                // Cattle Drilldown
+                {
+                    name: 'Cattle',
+                    id: 'Cattle',
+                    data: [
+                        {
+                            name: '2023',
+                            y: 230,
+                            drilldown: 'Cattle-2023'
+                        },
+                        {
+                            name: '2022',
+                            y: 210,
+                            drilldown: 'Cattle-2022'
+                        },
+                        {
+                            name: '2021',
+                            y: 195,
+                            drilldown: 'Cattle-2021'
+                        }
+                    ]
+                },
+                {
+                    name: 'Cattle-2023',
+                    id: 'Cattle-2023',
+                    data: [
+                        ['January', 20],
+                        ['February', 19],
+                        ['March', 20],
+                        ['April', 18],
+                        ['May', 19],
+                        ['June', 19],
+                        ['July', 20],
+                        ['August', 19],
+                        ['September', 19],
+                        ['October', 19],
+                        ['November', 19],
+                        ['December', 19]
+                    ]
+                },
+                // Bulls Drilldown
+                {
+                    name: 'Bulls',
+                    id: 'Bulls',
+                    data: [
+                        {
+                            name: '2023',
+                            y: 55,
+                            drilldown: 'Bulls-2023'
+                        },
+                        {
+                            name: '2022',
+                            y: 50,
+                            drilldown: 'Bulls-2022'
+                        },
+                        {
+                            name: '2021',
+                            y: 45,
+                            drilldown: 'Bulls-2021'
+                        }
+                    ]
+                },
+                {
+                    name: 'Bulls-2023',
+                    id: 'Bulls-2023',
+                    data: [
+                        ['January', 5],
+                        ['February', 4],
+                        ['March', 5],
+                        ['April', 4],
+                        ['May', 5],
+                        ['June', 4],
+                        ['July', 5],
+                        ['August', 4],
+                        ['September', 5],
+                        ['October', 5],
+                        ['November', 4],
+                        ['December', 5]
+                    ]
+                },
+                // Cows Drilldown
+                {
+                    name: 'Cows',
+                    id: 'Cows',
+                    data: [
+                        {
+                            name: '2023',
+                            y: 175,
+                            drilldown: 'Cows-2023'
+                        },
+                        {
+                            name: '2022',
+                            y: 165,
+                            drilldown: 'Cows-2022'
+                        },
+                        {
+                            name: '2021',
+                            y: 155,
+                            drilldown: 'Cows-2021'
+                        }
+                    ]
+                },
+                {
+                    name: 'Cows-2023',
+                    id: 'Cows-2023',
+                    data: [
+                        ['January', 15],
+                        ['February', 14],
+                        ['March', 15],
+                        ['April', 14],
+                        ['May', 15],
+                        ['June', 14],
+                        ['July', 15],
+                        ['August', 14],
+                        ['September', 15],
+                        ['October', 15],
+                        ['November', 14],
+                        ['December', 15]
+                    ]
+                },
+                // Goats Drilldown
+                {
+                    name: 'Goats',
+                    id: 'Goats',
+                    data: [
+                        {
+                            name: '2023',
+                            y: 150,
+                            drilldown: 'Goats-2023'
+                        },
+                        {
+                            name: '2022',
+                            y: 140,
+                            drilldown: 'Goats-2022'
+                        },
+                        {
+                            name: '2021',
+                            y: 130,
+                            drilldown: 'Goats-2021'
+                        }
+                    ]
+                },
+                {
+                    name: 'Goats-2023',
+                    id: 'Goats-2023',
+                    data: [
+                        ['January', 13],
+                        ['February', 12],
+                        ['March', 13],
+                        ['April', 12],
+                        ['May', 13],
+                        ['June', 12],
+                        ['July', 13],
+                        ['August', 12],
+                        ['September', 13],
+                        ['October', 13],
+                        ['November', 12],
+                        ['December', 12]
+                    ]
+                },
+                // Sheep Drilldown
+                {
+                    name: 'Sheep',
+                    id: 'Sheep',
+                    data: [
+                        {
+                            name: '2023',
+                            y: 120,
+                            drilldown: 'Sheep-2023'
+                        },
+                        {
+                            name: '2022',
+                            y: 110,
+                            drilldown: 'Sheep-2022'
+                        },
+                        {
+                            name: '2021',
+                            y: 100,
+                            drilldown: 'Sheep-2021'
+                        }
+                    ]
+                },
+                {
+                    name: 'Sheep-2023',
+                    id: 'Sheep-2023',
+                    data: [
+                        ['January', 10],
+                        ['February', 10],
+                        ['March', 10],
+                        ['April', 10],
+                        ['May', 10],
+                        ['June', 10],
+                        ['July', 10],
+                        ['August', 10],
+                        ['September', 10],
+                        ['October', 10],
+                        ['November', 10],
+                        ['December', 10]
+                    ]
+                }
+            ]
+        }
+    });
+</script>
+
+
+
+
 
 <!-- gender comparrisons -->
  <script>
   Highcharts.chart('GenderContainer', {
     chart: {
-        type: 'pie'
+        type: 'pie',
+        backgroundColor: '#f9f8fa',
     },
     title: {
         text: null
@@ -1250,1038 +1153,164 @@
  </script>
 <!-- end of gender comparissons -->
 
-<!-- todays attendance chart -->
- <script>
-    Highcharts.chart('TodayAttendanceContainer', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: null
-    },
-    subtitle: {
-        text: 'Click the columns to view department-wise attendance.'
-    },
 
-    accessibility: {
-        announceNewData: {
-            enabled: true
-        },
-        point: {
-            valueSuffix: '%'
-        }
-    },
-
-    xAxis: {
-        type: 'category',
-        title: {
-            text: 'Attendance Status'
-        }
-    },
-    yAxis: {
-        title: {
-            text: 'Number of Employees'
-        }
-    },
-
-    plotOptions: {
-        column: {
-            dataLabels: {
-                enabled: true,
-                formatter: function() {
-                    let percentage = (this.y / 7689 * 100).toFixed(1);
-                    return `${this.y} (${percentage}%)`;
-                }
-            }
-        }
-    },
-
-    plotOptions: {
-         column: {
-             stacking: 'normal',
-             pointPadding: 0.2,
-            borderWidth: 0,
-             dataLabels: {
-                 enabled: true,
-                 rotation: -90, // Rotate data labels vertically
-                 align: 'right',
-                 verticalAlign: 'middle',
-                 y: 10, // Adjust vertical position
-                
-             }
-         },
-        
-     },
-
-    tooltip: {
-        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-        pointFormat: '<span style="color:{point.color}">{point.name}</span>: ' +
-            '<b>{point.y} ({(point.y / 7689 * 100).toFixed(1)}%)</b> of total<br/>'
-    },
-
-    series: [
-        {
-            name: 'Attendance',
-            colorByPoint: true,
-            data: [
-                {
-                    name: 'Present',
-                    y: 6500,
-                    drilldown: 'Present'
-                },
-                {
-                    name: 'Absent',
-                    y: 1189,
-                    drilldown: 'Absent'
-                }
-            ]
-        }
-    ],
-    
-    drilldown: {
-        series: [
-            {
-                name: 'Present Employees',
-                id: 'Present',
-                type: 'column',
-                data: [
-                    ['Health Services', 2200],
-                    ['Education & ICT', 1500],
-                    ['Finance & Economic Planning', 900],
-                    ['Agriculture, Livestock & Fisheries', 600],
-                    ['Transport & Infrastructure', 300],
-                    ['Trade, Industry & Cooperatives', 800],
-                    ['Other', 200]
-                ]
-            },
-            {
-                name: 'Absent Employees',
-                id: 'Absent',
-                type: 'column',
-                data: [
-                    ['Health Services', 200],
-                    ['Education & ICT', 300],
-                    ['Finance & Economic Planning', 100],
-                    ['Agriculture, Livestock & Fisheries', 50],
-                    ['Transport & Infrastructure', 50],
-                    ['Trade, Industry & Cooperatives', 400],
-                    ['Other', 89]
-                ]
-            }
-        ]
-    }
-});
-
- </script>
  <!-- end of attendance -->
-
- <!-- newley hired staff distribution bey department start -->
- <script>
-    Highcharts.chart('NewContainer', {
-     chart: {
-         type: 'bar'
-     },
-     title: {
-         text: null
-     },
-     subtitle: {
-         text: 'Comparison of new hires and exits across departments'
-     },
-     xAxis: {
-         categories: [
-             'Health Services',
-             'Education & ICT',
-             'Finance & Economic Planning',
-             'Agriculture, Livestock & Fisheries',
-             'Transport & Infrastructure',
-             'Trade, Industry & Cooperatives',
-             'Other'
-         ],
-         title: {
-             text: 'Departments'
-         }
-     },
-     yAxis: {
-         min: 0,
-         title: {
-             text: 'Number of Employees'
-         }
-     },
-     legend: {
-         enabled: true
-     },
-     tooltip: {
-         shared: true,
-         pointFormat: '<b>{series.name}: {point.y}</b>'
-     },
-     plotOptions: {
-         bar: {
-             dataLabels: {
-                 enabled: true
-             },
-             stacking: 'normal'
-         }
-     },
-     series: [{
-         name: 'New Hires',
-         data: [12, 10, 8, 7, 6, 5, 5], // Adjusted new hires to sum up to 53
-         color: '#33FF57'
-     }, {
-         name: 'Exits',
-         data: [3, 2, 2, 2, 2, 1, 1], // Total exits remain 13
-         color: '#FF5733'
-     }],
-     
-     // Display total hires and exits at the bottom in bold, visible, and right-aligned
-     caption: {
-         text: '<div style="text-align: right; font-size: 16px; font-weight: bold; color: #000;">Total New Hires: 53 | Total Exits: 13</div>',
-         useHTML: true
-     }
- });
- </script>
+>
  
  
 
  <!-- newley hired staff distribution bey department End -->
 
 
-
  <script>
-    Highcharts.chart('ExitChart', {
-        chart: {
-            type: 'pie'
-        },
-        title: {
-            text: 'Nature of Exits'
-        },
-        subtitle: {
-            text: 'Click on a category to view department-wise breakdown'
-        },
-        accessibility: {
-            announceNewData: {
-                enabled: true
-            }
-        },
-        plotOptions: {
-            pie: {
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.name}: {point.y}'
-                }
-            }
-        },
-        series: [{
-            name: 'Exits',
-            colorByPoint: true,
-            data: [
-                {
-                    name: 'Death',
-                    y: 1,
-                    drilldown: 'death'
-                },
-                {
-                    name: 'Dismissal',
-                    y: 4,
-                    drilldown: 'dismissal'
-                },
-                {
-                    name: 'Resignation',
-                    y: 5,
-                    drilldown: 'resignation'
-                },
-                {
-                    name: 'Transfers',
-                    y: 2,
-                    drilldown: 'transfers'
-                },
-                {
-                    name: 'Other',
-                    y: 1,
-                    drilldown: 'other'
-                }
-            ]
-        }],
-        drilldown: {
-            series: [
-                {
-                    id: 'death',
-                    name: 'Death - Department Breakdown',
-                    data: [
-                        ['Health Services', 1]
-                    ]
-                },
-                {
-                    id: 'dismissal',
-                    name: 'Dismissal - Department Breakdown',
-                    data: [
-                        ['Health Services', 1],
-                        ['Education & ICT', 1],
-                        ['Finance & Economic Planning', 1],
-                        ['Agriculture, Livestock & Fisheries', 1]
-                    ]
-                },
-                {
-                    id: 'resignation',
-                    name: 'Resignation - Department Breakdown',
-                    data: [
-                        ['Health Services', 2],
-                        ['Education & ICT', 1],
-                        ['Finance & Economic Planning', 1],
-                        ['Agriculture, Livestock & Fisheries', 1]
-                    ]
-                },
-                {
-                    id: 'transfers',
-                    name: 'Transfers - Department Breakdown',
-                    data: [
-                        ['Health Services', 1],
-                        ['Education & ICT', 1]
-                    ]
-                },
-                {
-                    id: 'other',
-                    name: 'Other - Department Breakdown',
-                    data: [
-                        ['Health Services', 1]
-                    ]
-                }
-            ]
-        }
-    });
-</script>
-
-<script>
-    Highcharts.chart('EntryChart', {
-        chart: {
-            type: 'pie'
-        },
-        title: {
-            text: 'Nature of New Hires'
-        },
-        subtitle: {
-            text: 'Click on a category to view department-wise breakdown'
-        },
-        accessibility: {
-            announceNewData: {
-                enabled: true
-            }
-        },
-        plotOptions: {
-            pie: {
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.name}: {point.y}'
-                }
-            }
-        },
-        series: [{
-            name: 'New Hires',
-            colorByPoint: true,
-            data: [
-                {
-                    name: 'Direct Recruitment',
-                    y: 30,
-                    drilldown: 'direct'
-                },
-                {
-                    name: 'Transfers In',
-                    y: 10,
-                    drilldown: 'transfers_in'
-                },
-                {
-                    name: 'Rehired',
-                    y: 8,
-                    drilldown: 'rehired'
-                },
-                {
-                    name: 'Other',
-                    y: 5,
-                    drilldown: 'other'
-                }
-            ]
-        }],
-        drilldown: {
-            series: [
-                {
-                    id: 'direct',
-                    name: 'Direct Recruitment - Department Breakdown',
-                    data: [
-                        ['Health Services', 10],
-                        ['Education & ICT', 8],
-                        ['Finance & Economic Planning', 5],
-                        ['Agriculture, Livestock & Fisheries', 3],
-                        ['Transport & Infrastructure', 2],
-                        ['Trade, Industry & Cooperatives', 1],
-                        ['Other', 1]
-                    ]
-                },
-                {
-                    id: 'transfers_in',
-                    name: 'Transfers In - Department Breakdown',
-                    data: [
-                        ['Health Services', 3],
-                        ['Education & ICT', 2],
-                        ['Finance & Economic Planning', 2],
-                        ['Agriculture, Livestock & Fisheries', 1],
-                        ['Transport & Infrastructure', 1],
-                        ['Trade, Industry & Cooperatives', 1]
-                    ]
-                },
-                {
-                    id: 'rehired',
-                    name: 'Rehired - Department Breakdown',
-                    data: [
-                        ['Health Services', 3],
-                        ['Education & ICT', 2],
-                        ['Finance & Economic Planning', 2],
-                        ['Agriculture, Livestock & Fisheries', 1]
-                    ]
-                },
-                {
-                    id: 'other',
-                    name: 'Other - Department Breakdown',
-                    data: [
-                        ['Health Services', 2],
-                        ['Education & ICT', 1],
-                        ['Finance & Economic Planning', 1],
-                        ['Agriculture, Livestock & Fisheries', 1]
-                    ]
-                }
-            ]
-        }
-    });
-</script>
-
-
-
-
-
-
-
-<script>
-    Highcharts.chart('disabilityChart', {
+    Highcharts.chart('AnimalRFIDChart', {
         chart: {
             type: 'pie',
-            backgroundColor: 'transparent',
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false
+            backgroundColor: '#f9f8fa',
+            borderRadius: 8,
+            spacing: [30, 30, 30, 30]
         },
+        colors: ['#4285F4', '#EA4335', '#FBBC05', '#34A853', '#FF6D01', '#46BDC6'],
         title: {
-            text: null
+            text: 'Animals with RFID Tags',
+            style: {
+                fontWeight: 'bold',
+                fontSize: '18px'
+            }
         },
         subtitle: {
-            text: 'Click to see department-wise distribution'
+            text: 'Click on a category to view animal type breakdown',
+            style: {
+                color: '#666',
+                fontSize: '14px'
+            }
+        },
+        tooltip: {
+            pointFormat: '<b>{point.name}</b>: <b>{point.y}</b> animals ({point.percentage:.1f}%)'
         },
         accessibility: {
+            announceNewData: {
+                enabled: true
+            },
             point: {
-                valueSuffix: ''
+                valueSuffix: 'animals'
             }
         },
         plotOptions: {
             pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                depth: 35,
                 dataLabels: {
                     enabled: true,
-                    format: '{point.name}: {point.y} ({point.percentage:.1f}%)' // Shows count + percentage
+                    format: '{point.name}: {point.y}',
+                    style: {
+                        fontWeight: 'normal',
+                        textOutline: '1px contrast'
+                    }
                 },
-                startAngle: -90,
-                endAngle: 90,
-                center: ['50%', '75%'],
-                size: '110%'
+                showInLegend: true
+            },
+            series: {
+                borderRadius: 5,
+                animation: {
+                    duration: 1000
+                }
             }
         },
+        legend: {
+            enabled: true,
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom',
+            itemStyle: {
+                fontWeight: 'normal'
+            }
+        },
+        credits: {
+            enabled: false
+        },
         series: [{
-            name: 'Gender',
+            name: 'Animals',
             colorByPoint: true,
-            innerSize: '50%', // Donut effect
             data: [
                 {
-                    name: 'Male',
-                    y: 35,
-                    drilldown: 'male'
+                    name: 'With RFID Tags',
+                    y: 350,
+                    drilldown: 'with_rfid',
+                    sliced: true,
+                    selected: true
                 },
                 {
-                    name: 'Female',
-                    y: 24,
-                    drilldown: 'female'
+                    name: 'Without RFID Tags',
+                    y: 150,
+                    drilldown: 'without_rfid'
                 }
             ]
         }],
         drilldown: {
+            activeDataLabelStyle: {
+                color: '#333',
+                textDecoration: 'none',
+                fontWeight: 'bold'
+            },
+            drillUpButton: {
+                relativeTo: 'spacingBox',
+                position: {
+                    align: 'right',
+                    y: 10,
+                    x: -10
+                },
+                theme: {
+                    fill: '#f8f9fa',
+                    'stroke-width': 1,
+                    stroke: '#ccc',
+                    r: 5,
+                    states: {
+                        hover: {
+                            fill: '#e8e8e8'
+                        }
+                    }
+                }
+            },
             series: [
                 {
-                    id: 'male',
-                    name: 'Male Employees with Disabilities - Department Breakdown',
-                    dataLabels: {
-                        format: '{point.name}: {point.y} ({point.percentage:.1f}%)' // Percentage for drilldown
-                    },
+                    id: 'with_rfid',
+                    name: 'Animals with RFID - Type Breakdown',
                     data: [
-                        ['Health Services', 10],
-                        ['Education & ICT', 6],
-                        ['Finance & Economic Planning', 5],
-                        ['Agriculture, Livestock & Fisheries', 4],
-                        ['Transport & Infrastructure', 4],
-                        ['Trade, Industry & Cooperatives', 3],
-                        ['Other', 3]
+                        ['Cattle', 180],
+                        ['Goats', 90],
+                        ['Bulls', 40],
+                        ['Pigs', 40]
                     ]
                 },
                 {
-                    id: 'female',
-                    name: 'Female Employees with Disabilities - Department Breakdown',
-                    dataLabels: {
-                        format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
-                    },
+                    id: 'without_rfid',
+                    name: 'Animals without RFID - Type Breakdown',
                     data: [
-                        ['Health Services', 8],
-                        ['Education & ICT', 4],
-                        ['Finance & Economic Planning', 3],
-                        ['Agriculture, Livestock & Fisheries', 2],
-                        ['Transport & Infrastructure', 3],
-                        ['Trade, Industry & Cooperatives', 2],
-                        ['Other', 2]
+                        ['Cattle', 50],
+                        ['Goats', 60],
+                        ['Bulls', 15],
+                        ['Pigs', 25]
                     ]
                 }
             ]
         }
     });
 </script>
+
+
+
+
+
+
+
+
 
 
 <!--script for livestock okay-->
 
-<script>
-    const months = [
-"January", "February", "March", "April", "May", "June",
-"July", "August", "September", "October", "November", "December"
-];
 
-const livestockData = {
-prices: {
-    cattle: 100000,
-    sheep: 20000,
-    pigs: 15000
-},
-sales: {}
-};
-
-// Generate data for 2023-2025
-["2023", "2024", "2025"].forEach(year => {
-livestockData.sales[year] = {};
-months.forEach(month => {
-    livestockData.sales[year][month] = generateMonthData(year, month);
-});
-});
-
-let salesChart = null;
-let revenueChart = null;
-let dailyChart = null;
-
-const chartColors = {
-cattle: {
-    background: 'rgba(255, 99, 132, 0.8)',
-    border: 'rgba(255, 99, 132, 1)'
-},
-sheep: {
-    background: 'rgba(54, 162, 235, 0.8)',
-    border: 'rgba(54, 162, 235, 1)'
-},
-pigs: {
-    background: 'rgba(75, 192, 192, 0.8)',
-    border: 'rgba(75, 192, 192, 1)'
-},
-'2023': {
-    background: 'rgba(255, 159, 64, 0.8)',
-    border: 'rgba(255, 159, 64, 1)'
-},
-'2024': {
-    background: 'rgba(153, 102, 255, 0.8)',
-    border: 'rgba(153, 102, 255, 1)'
-},
-'2025': {
-    background: 'rgba(75, 192, 192, 0.8)',
-    border: 'rgba(75, 192, 192, 1)'
-}
-};
-
-function formatDate(day, month, year) {
-const date = new Date(year, months.indexOf(month), day);
-return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-});
-}
-
-function generateMonthData(year, month) {
-const daysInMonth = new Date(year, months.indexOf(month) + 1, 0).getDate();
-const monthData = {};
-
-for (let day = 1; day <= daysInMonth; day++) {
-    monthData[day] = {
-        cattle: Math.floor(Math.random() * 10) + 1,
-        sheep: Math.floor(Math.random() * 20) + 5,
-        pigs: Math.floor(Math.random() * 15) + 3
-    };
-}
-
-return monthData;
-}
-
-function calculateYearlySales(year) {
-const yearSales = {
-    cattle: 0,
-    sheep: 0,
-    pigs: 0
-};
-
-const yearData = livestockData.sales[year];
-
-Object.keys(yearData).forEach(month => {
-    const monthData = yearData[month];
-    Object.values(monthData).forEach(day => {
-        yearSales.cattle += day.cattle;
-        yearSales.sheep += day.sheep;
-        yearSales.pigs += day.pigs;
-    });
-});
-
-return yearSales;
-}
-
-function calculateMonthlySales(year, month) {
-const monthlySales = {
-    cattle: 0,
-    sheep: 0,
-    pigs: 0
-};
-
-const monthData = livestockData.sales[year][month];
-
-Object.values(monthData).forEach(day => {
-    monthlySales.cattle += day.cattle;
-    monthlySales.sheep += day.sheep;
-    monthlySales.pigs += day.pigs;
-});
-
-return monthlySales;
-}
-
-function calculateYearlyRevenue(year) {
-let total = 0;
-const yearData = livestockData.sales[year];
-
-Object.keys(yearData).forEach(month => {
-    const monthData = yearData[month];
-    Object.values(monthData).forEach(day => {
-        total += (day.cattle * livestockData.prices.cattle) +
-                (day.sheep * livestockData.prices.sheep) +
-                (day.pigs * livestockData.prices.pigs);
-    });
-});
-
-return total;
-}
-
-function calculateMonthlyRevenue(year, month) {
-let total = 0;
-const monthData = livestockData.sales[year][month];
-
-Object.values(monthData).forEach(day => {
-    total += (day.cattle * livestockData.prices.cattle) +
-            (day.sheep * livestockData.prices.sheep) +
-            (day.pigs * livestockData.prices.pigs);
-});
-
-return total;
-}
-
-function calculateRevenueChange(currentValue, previousValue) {
-if (!previousValue) return 0;
-return ((currentValue - previousValue) / previousValue) * 100;
-}
-
-function updateRevenueDisplay(year, month) {
-const yearlyRevenue = calculateYearlyRevenue(year);
-const monthlyRevenue = calculateMonthlyRevenue(year, month);
-
-// Calculate previous year's revenue
-const prevYear = (parseInt(year) - 1).toString();
-const prevYearRevenue = prevYear >= "2023" ? calculateYearlyRevenue(prevYear) : yearlyRevenue;
-
-// Calculate previous month's revenue
-const monthIndex = months.indexOf(month);
-let prevMonth, prevMonthYear = year;
-if (monthIndex === 0) {
-    prevMonth = months[11];
-    prevMonthYear = (parseInt(year) - 1).toString();
-} else {
-    prevMonth = months[monthIndex - 1];
-}
-const prevMonthRevenue = prevMonthYear >= "2023" ? calculateMonthlyRevenue(prevMonthYear, prevMonth) : monthlyRevenue;
-
-// Update revenue amounts
-document.getElementById('yearlyRevenue').textContent = `KSH ${yearlyRevenue.toLocaleString()}`;
-document.getElementById('monthlyRevenue').textContent = `KSH ${monthlyRevenue.toLocaleString()}`;
-
-// Update current year and month display
-document.getElementById('currentYear').textContent = year;
-document.getElementById('currentMonth').textContent = month;
-
-// Update change percentages
-const yearlyChange = calculateRevenueChange(yearlyRevenue, prevYearRevenue);
-const monthlyChange = calculateRevenueChange(monthlyRevenue, prevMonthRevenue);
-
-const yearlyChangeElement = document.getElementById('yearlyChange');
-const monthlyChangeElement = document.getElementById('monthlyChange');
-
-yearlyChangeElement.textContent = `${yearlyChange >= 0 ? '+' : ''}${yearlyChange.toFixed(1)}% from previous year`;
-monthlyChangeElement.textContent = `${monthlyChange >= 0 ? '+' : ''}${monthlyChange.toFixed(1)}% from previous month`;
-
-yearlyChangeElement.className = `revenue-change ${yearlyChange >= 0 ? 'positive' : 'negative'}`;
-monthlyChangeElement.className = `revenue-change ${monthlyChange >= 0 ? 'positive' : 'negative'}`;
-}
-
-function updateLegend(revenues) {
-const legend = document.getElementById('revenueLegend');
-legend.innerHTML = '';
-
-const animals = ['Cattle', 'Sheep', 'Pigs'];
-const colors = [chartColors.cattle, chartColors.sheep, chartColors.pigs];
-
-animals.forEach((animal, index) => {
-    const item = document.createElement('div');
-    item.className = 'legend-item';
-    
-    const colorBox = document.createElement('span');
-    colorBox.className = 'legend-color';
-    colorBox.style.backgroundColor = colors[index].background;
-    
-    const label = document.createElement('span');
-    const animalLower = animal.toLowerCase();
-    label.textContent = `${animal}: KSH ${revenues[animalLower].toLocaleString()}`;
-    
-    item.appendChild(colorBox);
-    item.appendChild(label);
-    legend.appendChild(item);
-});
-}
-
-function initializeCharts(year, month) {
-const monthData = livestockData.sales[year][month];
-const prices = livestockData.prices;
-
-const monthlySales = calculateMonthlySales(year, month);
-
-const revenues = {
-    cattle: monthlySales.cattle * prices.cattle,
-    sheep: monthlySales.sheep * prices.sheep,
-    pigs: monthlySales.pigs * prices.pigs
-};
-
-// Update chart titles
-document.querySelector('.chart-container:nth-child(1) .chart-title').textContent = 
-    `Monthly Sales Distribution for ${month}, ${year}`;
-document.querySelector('.chart-container:nth-child(2) .chart-title').textContent = 
-    `Yearly Sales Distribution (${year})`;
-
-// Update Sales Chart
-if (salesChart) {
-    salesChart.destroy();
-}
-
-const salesCtx = document.getElementById('salesChart').getContext('2d');
-salesChart = new Chart(salesCtx, {
-    type: 'bar',
-    data: {
-        labels: ['Cattle', 'Sheep', 'Pigs'],
-        datasets: [{
-            label: `Sales for ${month} ${year}`,
-            data: [monthlySales.cattle, monthlySales.sheep, monthlySales.pigs],
-            backgroundColor: [
-                chartColors.cattle.background,
-                chartColors.sheep.background,
-                chartColors.pigs.background
-            ],
-            borderColor: [
-                chartColors.cattle.border,
-                chartColors.sheep.border,
-                chartColors.pigs.border
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        onClick: (event, elements) => {
-            if (elements.length > 0) {
-                const index = elements[0].index;
-                const animalType = ['cattle', 'sheep', 'pigs'][index];
-                showDailyDistribution(year, month, animalType);
-            }
-        },
-        plugins: {
-            legend: {
-                display: false
-            },
-            tooltip: {
-                callbacks: {
-                    label: function(context) {
-                        const animalType = ['cattle', 'sheep', 'pigs'][context.dataIndex];
-                        const quantity = context.parsed.y;
-                        const price = prices[animalType];
-                        const revenue = quantity * price;
-                        return [
-                            `${context.label}: ${quantity} animals`,
-                            `Revenue: KSH ${revenue.toLocaleString()}`
-                        ];
-                    }
-                }
-            }
-        },
-        scales: {
-            y: {
-                beginAtZero: true,
-                title: {
-                    display: true,
-                    text: 'Number of Animals'
-                }
-            }
-        }
-    }
-});
-
-// Update Revenue Chart to show yearly animal sales distribution
-if (revenueChart) {
-    revenueChart.destroy();
-}
-
-// Get yearly sales data
-const yearlySales = calculateYearlySales(year);
-
-const revenueCtx = document.getElementById('revenueChart').getContext('2d');
-revenueChart = new Chart(revenueCtx, {
-    type: 'bar',
-    data: {
-        labels: ['Cattle', 'Sheep', 'Pigs'],
-        datasets: [{
-            label: `Yearly Sales for ${year}`,
-            data: [yearlySales.cattle, yearlySales.sheep, yearlySales.pigs],
-            backgroundColor: [
-                chartColors.cattle.background,
-                chartColors.sheep.background,
-                chartColors.pigs.background
-            ],
-            borderColor: [
-                chartColors.cattle.border,
-                chartColors.sheep.border,
-                chartColors.pigs.border
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        onClick: (event, elements) => {
-            if (elements.length > 0) {
-                const index = elements[0].index;
-                const animalType = ['cattle', 'sheep', 'pigs'][index];
-                showYearlyAnimalDistribution(year, animalType);
-            }
-        },
-        plugins: {
-            legend: {
-                display: false
-            },
-            tooltip: {
-                callbacks: {
-                    label: function(context) {
-                        const animalType = ['cattle', 'sheep', 'pigs'][context.dataIndex];
-                        const quantity = context.parsed.y;
-                        const price = prices[animalType];
-                        const revenue = quantity * price;
-                        return [
-                            `${context.label}: ${quantity} animals`,
-                            `Revenue: KSH ${revenue.toLocaleString()}`
-                        ];
-                    }
-                }
-            }
-        },
-        scales: {
-            y: {
-                beginAtZero: true,
-                title: {
-                    display: true,
-                    text: 'Number of Animals'
-                }
-            }
-        }
-    }
-});
-
-updateRevenueDisplay(year, month);
-updateLegend(revenues);
-}
-
-function showDailyDistribution(year, month, animalType) {
-const modal = document.getElementById('dailyModal');
-const monthData = livestockData.sales[year][month];
-
-const daysInMonth = new Date(year, months.indexOf(month) + 1, 0).getDate();
-const days = Array.from({length: daysInMonth}, (_, i) => i + 1);
-const dailySales = days.map(day => monthData[day][animalType]);
-
-if (dailyChart) {
-    dailyChart.destroy();
-}
-
-const ctx = document.getElementById('dailyDistributionChart').getContext('2d');
-dailyChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: days.map(day => formatDate(day, month, year)),
-        datasets: [{
-            label: `Daily ${animalType.charAt(0).toUpperCase() + animalType.slice(1)} Sales`,
-            data: dailySales,
-            backgroundColor: chartColors[animalType].background,
-            borderColor: chartColors[animalType].border,
-            borderWidth: 1
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            tooltip: {
-                callbacks: {
-                    label: function(context) {
-                        const value = context.parsed.y;
-                        const revenue = value * livestockData.prices[animalType];
-                        return [
-                            `${value} ${animalType}`,
-                            `Revenue: KSH ${revenue.toLocaleString()}`
-                        ];
-                    }
-                }
-            }
-        },
-        scales: {
-            x: {
-                ticks: {
-                    maxRotation: 45,
-                    minRotation: 45
-                }
-            },
-            y: {
-                beginAtZero: true,
-                title: {
-                    display: true,
-                    text: 'Number of Animals'
-                }
-            }
-        }
-    }
-});
-
-modal.style.display = 'block';
-document.getElementById('modalTitle').textContent = 
-    `Daily ${animalType.charAt(0).toUpperCase() + animalType.slice(1)} Sales for ${month} ${year}`;
-}
-
-function showYearlyAnimalDistribution(year, animalType) {
-const modal = document.getElementById('dailyModal');
-const yearData = livestockData.sales[year];
-
-const monthlyData = months.map(month => {
-    return Object.values(yearData[month]).reduce((sum, day) => {
-        return sum + day[animalType];
-    }, 0);
-});
-
-const monthlyRevenues = monthlyData.map(qty => qty * livestockData.prices[animalType]);
-
-if (dailyChart) {
-    dailyChart.destroy();
-}
-
-const ctx = document.getElementById('dailyDistributionChart').getContext('2d');
-dailyChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: months,
-        datasets: [{
-            label: `Monthly ${animalType.charAt(0).toUpperCase() + animalType.slice(1)} Sales for ${year}`,
-            data: monthlyData,
-            backgroundColor: chartColors[animalType].background,
-            borderColor: chartColors[animalType].border,
-            borderWidth: 1
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            tooltip: {
-                callbacks: {
-                    title: function(context) {
-                        // Return the month and year
-                        return `${context[0].label} ${year}`;
-                    },
-                    label: function(context) {
-                        const monthIndex = context.dataIndex;
-                        const quantity = monthlyData[monthIndex];
-                        const revenue = monthlyRevenues[monthIndex];
-                        
-                        // Return the detailed information in three lines
-                        return [
-                            `${quantity} ${animalType}`,
-                            `Revenue: KSH ${revenue.toLocaleString()}`
-                        ];
-                    }
-                }
-            }
-        },
-        scales: {
-            y: {
-                beginAtZero: true,
-                title: {
-                    display: true,
-                    text: 'Number of Animals'
-                }
-            }
-        }
-    }
-});
-
-modal.style.display = 'block';
-document.getElementById('modalTitle').textContent = 
-    `Monthly ${animalType.charAt(0).toUpperCase() + animalType.slice(1)} Sales for ${year}`;
-}
-
-// Event Listeners
-document.querySelector('.close-button').addEventListener('click', () => {
-document.getElementById('dailyModal').style.display = 'none';
-});
-
-window.addEventListener('click', (event) => {
-const modal = document.getElementById('dailyModal');
-if (event.target === modal) {
-    modal.style.display = 'none';
-}
-});
-
-document.getElementById('yearSelect').addEventListener('change', updateChart);
-document.getElementById('monthSelect').addEventListener('change', updateChart);
-
-function updateChart() {
-const year = document.getElementById('yearSelect').value;
-const month = document.getElementById('monthSelect').value;
-initializeCharts(year, month);
-}
-
-// Initialize charts with default values
-updateChart();
-</script>
 <script>
     function viewMoreAnimal(animalId) {
         // Redirect to the Livestock_details.html page with the animal ID as a query parameter
@@ -2380,235 +1409,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-<!--morality rate script-->
-<script>
-// Mortality data
-const mortalityData = {
-    2024: {
-        cattle: [45, 38, 42, 35, 40, 37, 43, 39, 41, 36, 44, 40],
-        sheep: [28, 25, 30, 27, 29, 26, 31, 28, 27, 24, 29, 26],
-        pigs: [35, 32, 38, 34, 36, 33, 37, 35, 34, 31, 36, 33]
-    },
-    2023: {
-        cattle: [42, 39, 44, 38, 41, 37, 43, 40, 42, 36, 41, 38],
-        sheep: [26, 23, 28, 25, 27, 24, 29, 26, 25, 22, 27, 24],
-        pigs: [33, 30, 36, 32, 34, 31, 35, 33, 32, 29, 34, 31]
-    },
-    2022: {
-        cattle: [40, 37, 41, 36, 39, 35, 40, 38, 39, 34, 38, 36],
-        sheep: [24, 21, 26, 23, 25, 22, 27, 24, 23, 20, 25, 22],
-        pigs: [31, 28, 34, 30, 32, 29, 33, 31, 30, 27, 32, 29]
-    },
-    2021: {
-        cattle: [38, 35, 39, 34, 37, 33, 38, 36, 37, 32, 36, 34],
-        sheep: [22, 19, 24, 21, 23, 20, 25, 22, 21, 18, 23, 20],
-        pigs: [29, 26, 32, 28, 30, 27, 31, 29, 28, 25, 30, 27]
-    }
-};
 
-// Initialize mortality chart
-let mortalityChart;
-
-function initializeMortalityChart() {
-    const ctx = document.getElementById('mortalityChart').getContext('2d');
-    mortalityChart = new Chart(ctx, {
-        type: 'line',
-        data: {},
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            interaction: {
-                intersect: false,
-                mode: 'index'
-            },
-            plugins: {
-                legend: {
-                    position: 'top',
-                    labels: {
-                        usePointStyle: true,
-                        padding: 20,
-                        font: { size: 13 }
-                    }
-                },
-                datalabels: {
-                    backgroundColor: function(context) {
-                        return context.dataset.borderColor;
-                    },
-                    borderRadius: 4,
-                    color: 'white',
-                    font: { weight: 'bold' },
-                    padding: 6,
-                    formatter: function(value) {
-                        return value;
-                    },
-                    display: function(context) {
-                        return context.dataIndex === context.dataset.data.length - 1;
-                    }
-                }
-            },
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    title: {
-                        display: true,
-                        text: 'Number of Deaths',
-                        font: {
-                            size: 14,
-                            weight: 'bold'
-                        }
-                    }
-                }
-            }
-        }
-    });
-}
-
-function updateMortalityChart() {
-    const selectedYear = document.getElementById('yearSelect').value;
-    const viewType = document.getElementById('viewSelect').value;
-    const livestockType = document.getElementById('livestockSelect').value;
-    
-    let chartData = {
-        labels: viewType === 'monthly' 
-            ? ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-            : Object.keys(mortalityData),
-        datasets: []
-    };
-
-    const colors = {
-        cattle: { color: '#e74c3c', bgColor: 'rgba(231, 76, 60, 0.1)' },
-        sheep: { color: '#3498db', bgColor: 'rgba(52, 152, 219, 0.1)' },
-        pigs: { color: '#2ecc71', bgColor: 'rgba(46, 204, 113, 0.1)' }
-    };
-
-    if (viewType === 'monthly') {
-        if (livestockType === 'all') {
-            Object.entries(colors).forEach(([type, color]) => {
-                chartData.datasets.push({
-                    label: `${type.charAt(0).toUpperCase() + type.slice(1)} Deaths`,
-                    data: mortalityData[selectedYear][type],
-                    borderColor: color.color,
-                    backgroundColor: color.bgColor,
-                    tension: 0.4,
-                    fill: true
-                });
-            });
-        } else {
-            chartData.datasets.push({
-                label: `${livestockType.charAt(0).toUpperCase() + livestockType.slice(1)} Deaths`,
-                data: mortalityData[selectedYear][livestockType],
-                borderColor: colors[livestockType].color,
-                backgroundColor: colors[livestockType].bgColor,
-                tension: 0.4,
-                fill: true
-            });
-        }
-    } else {
-        if (livestockType === 'all') {
-            Object.entries(colors).forEach(([type, color]) => {
-                const yearlyTotals = Object.keys(mortalityData).map(year => 
-                    mortalityData[year][type].reduce((a, b) => a + b, 0)
-                );
-                chartData.datasets.push({
-                    label: `${type.charAt(0).toUpperCase() + type.slice(1)} Total Deaths`,
-                    data: yearlyTotals,
-                    backgroundColor: color.color,
-                    type: 'bar'
-                });
-            });
-        } else {
-            const yearlyTotals = Object.keys(mortalityData).map(year => 
-                mortalityData[year][livestockType].reduce((a, b) => a + b, 0)
-            );
-            chartData.datasets.push({
-                label: `${livestockType.charAt(0).toUpperCase() + livestockType.slice(1)} Total Deaths`,
-                data: yearlyTotals,
-                backgroundColor: colors[livestockType].color,
-                type: 'bar'
-            });
-        }
-    }
-
-    mortalityChart.data = chartData;
-    mortalityChart.options.scales.y.title.text = viewType === 'monthly' ? 'Monthly Deaths' : 'Yearly Deaths';
-    mortalityChart.update();
-
-    document.getElementById('chartSubtitle').textContent = viewType === 'monthly' 
-        ? `Monthly mortality data for ${selectedYear}` 
-        : 'Yearly mortality summary';
-}
-
-// Initialize chart and add event listeners
-document.addEventListener('DOMContentLoaded', function() {
-    initializeMortalityChart();
-    document.getElementById('yearSelect').addEventListener('change', updateMortalityChart);
-    document.getElementById('viewSelect').addEventListener('change', updateMortalityChart);
-    document.getElementById('livestockSelect').addEventListener('change', updateMortalityChart);
-    updateMortalityChart();
-});
-</script>
-
-<!--rfid script-->
-
-<script>
-    // Data for the pie chart
-    const data = {
-        withTags: 120,
-        withoutTags: 30
-    };
-    
-    // Update statistics
-    document.getElementById('lm-total-animals').textContent = data.withTags + data.withoutTags;
-    document.getElementById('lm-with-tags').textContent = data.withTags;
-    document.getElementById('lm-without-tags').textContent = data.withoutTags;
-    
-    // Create the pie chart
-    const ctx = document.getElementById('lm-rfid-chart').getContext('2d');
-    new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ['With RFID Tags', 'Without RFID Tags'],
-            datasets: [{
-                data: [data.withTags, data.withoutTags],
-                backgroundColor: [
-                    '#28a745',  // Green for tagged
-                    '#dc3545'   // Red for untagged
-                ],
-                borderColor: [
-                    '#ffffff',
-                    '#ffffff'
-                ],
-                borderWidth: 2
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    position: 'bottom',
-                    labels: {
-                        font: {
-                            size: 14
-                        },
-                        padding: 20
-                    }
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function(context) {
-                            const label = context.label || '';
-                            const value = context.raw || 0;
-                            const total = data.withTags + data.withoutTags;
-                            const percentage = Math.round((value / total) * 100);
-                            return `${label}: ${value} (${percentage}%)`;
-                        }
-                    }
-                }
-            }
-        }
-    });
-    </script>
 <!--cattle distribution script-->
 
 <script>
@@ -2695,550 +1496,1391 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
 <script>
-const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-];
-
-const livestockData = {
-    prices: {
-        cattle: 100000,
-        sheep: 20000,
-        pigs: 15000
+Highcharts.chart('BreedingRatesChart', {
+    chart: {
+        type: 'pie',
+        backgroundColor: '#f9f8fa',
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false
     },
-    sales: {}
-};
-
-// Generate data for 2023-2025
-["2023", "2024", "2025"].forEach(year => {
-    livestockData.sales[year] = {};
-    months.forEach(month => {
-        livestockData.sales[year][month] = generateMonthData(year, month);
-    });
+    title: {
+        text: 'Breeding Success Rates'
+    },
+    subtitle: {
+        text: 'Click to see monthly, breed-wise, and specific breed distribution'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: ''
+        }
+    },
+    plotOptions: {
+        pie: {
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
+            },
+            startAngle: -90,
+            endAngle: 90,
+            center: ['50%', '75%'],
+            size: '110%'
+        }
+    },
+    series: [{
+        name: 'Breeding Rates',
+        colorByPoint: true,
+        innerSize: '50%',
+        colors: ['#4CAF50', '#FF5252'],
+        data: [
+            {
+                name: 'Successful Breeding',
+                y: 65,
+                drilldown: 'successful'
+            },
+            {
+                name: 'Unsuccessful Breeding',
+                y: 35,
+                drilldown: 'unsuccessful'
+            }
+        ]
+    }],
+    drilldown: {
+        series: [
+            // Successful breeding by month
+            {
+                id: 'successful',
+                name: 'Successful Breeding - Monthly Breakdown',
+                dataLabels: {
+                    format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
+                },
+                data: [
+                    {
+                        name: 'January',
+                        y: 10,
+                        drilldown: 'successful-january'
+                    },
+                    {
+                        name: 'February',
+                        y: 15,
+                        drilldown: 'successful-february'
+                    },
+                    {
+                        name: 'March',
+                        y: 20,
+                        drilldown: 'successful-march'
+                    },
+                    {
+                        name: 'April',
+                        y: 20,
+                        drilldown: 'successful-april'
+                    }
+                ]
+            },
+            // Unsuccessful breeding by month
+            {
+                id: 'unsuccessful',
+                name: 'Unsuccessful Breeding - Monthly Breakdown',
+                dataLabels: {
+                    format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
+                },
+                data: [
+                    {
+                        name: 'January',
+                        y: 5,
+                        drilldown: 'unsuccessful-january'
+                    },
+                    {
+                        name: 'February',
+                        y: 10,
+                        drilldown: 'unsuccessful-february'
+                    },
+                    {
+                        name: 'March',
+                        y: 10,
+                        drilldown: 'unsuccessful-march'
+                    },
+                    {
+                        name: 'April',
+                        y: 10,
+                        drilldown: 'unsuccessful-april'
+                    }
+                ]
+            },
+            // Successful breeding by breed for each month
+            {
+                id: 'successful-january',
+                name: 'January - Successful Breeding by Breed',
+                dataLabels: {
+                    format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
+                },
+                data: [
+                    {
+                        name: 'Cattle',
+                        y: 4,
+                        drilldown: 'successful-january-cattle'
+                    },
+                    {
+                        name: 'Sheep',
+                        y: 5,
+                        drilldown: 'successful-january-sheep'
+                    },
+                    {
+                        name: 'Goats',
+                        y: 1,
+                        drilldown: null // No further drilldown for goats
+                    }
+                ]
+            },
+            {
+                id: 'successful-february',
+                name: 'February - Successful Breeding by Breed',
+                dataLabels: {
+                    format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
+                },
+                data: [
+                    {
+                        name: 'Cattle',
+                        y: 7,
+                        drilldown: 'successful-february-cattle'
+                    },
+                    {
+                        name: 'Sheep',
+                        y: 6,
+                        drilldown: 'successful-february-sheep'
+                    },
+                    {
+                        name: 'Goats',
+                        y: 2,
+                        drilldown: null // No further drilldown for goats
+                    }
+                ]
+            },
+            {
+                id: 'successful-march',
+                name: 'March - Successful Breeding by Breed',
+                dataLabels: {
+                    format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
+                },
+                data: [
+                    {
+                        name: 'Cattle',
+                        y: 10,
+                        drilldown: 'successful-march-cattle'
+                    },
+                    {
+                        name: 'Sheep',
+                        y: 8,
+                        drilldown: 'successful-march-sheep'
+                    },
+                    {
+                        name: 'Goats',
+                        y: 2,
+                        drilldown: null // No further drilldown for goats
+                    }
+                ]
+            },
+            {
+                id: 'successful-april',
+                name: 'April - Successful Breeding by Breed',
+                dataLabels: {
+                    format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
+                },
+                data: [
+                    {
+                        name: 'Cattle',
+                        y: 8,
+                        drilldown: 'successful-april-cattle'
+                    },
+                    {
+                        name: 'Sheep',
+                        y: 9,
+                        drilldown: 'successful-april-sheep'
+                    },
+                    {
+                        name: 'Goats',
+                        y: 3,
+                        drilldown: null // No further drilldown for goats
+                    }
+                ]
+            },
+            // Unsuccessful breeding by breed for each month
+            {
+                id: 'unsuccessful-january',
+                name: 'January - Unsuccessful Breeding by Breed',
+                dataLabels: {
+                    format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
+                },
+                data: [
+                    {
+                        name: 'Cattle',
+                        y: 2,
+                        drilldown: 'unsuccessful-january-cattle'
+                    },
+                    {
+                        name: 'Sheep',
+                        y: 2,
+                        drilldown: 'unsuccessful-january-sheep'
+                    },
+                    {
+                        name: 'Goats',
+                        y: 1,
+                        drilldown: null // No further drilldown for goats
+                    }
+                ]
+            },
+            {
+                id: 'unsuccessful-february',
+                name: 'February - Unsuccessful Breeding by Breed',
+                dataLabels: {
+                    format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
+                },
+                data: [
+                    {
+                        name: 'Cattle',
+                        y: 3,
+                        drilldown: 'unsuccessful-february-cattle'
+                    },
+                    {
+                        name: 'Sheep',
+                        y: 4,
+                        drilldown: 'unsuccessful-february-sheep'
+                    },
+                    {
+                        name: 'Goats',
+                        y: 3,
+                        drilldown: null // No further drilldown for goats
+                    }
+                ]
+            },
+            {
+                id: 'unsuccessful-march',
+                name: 'March - Unsuccessful Breeding by Breed',
+                dataLabels: {
+                    format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
+                },
+                data: [
+                    {
+                        name: 'Cattle',
+                        y: 4,
+                        drilldown: 'unsuccessful-march-cattle'
+                    },
+                    {
+                        name: 'Sheep',
+                        y: 3,
+                        drilldown: 'unsuccessful-march-sheep'
+                    },
+                    {
+                        name: 'Goats',
+                        y: 3,
+                        drilldown: null // No further drilldown for goats
+                    }
+                ]
+            },
+            {
+                id: 'unsuccessful-april',
+                name: 'April - Unsuccessful Breeding by Breed',
+                dataLabels: {
+                    format: '{point.name}: {point.y} ({point.percentage:.1f}%)'
+                },
+                data: [
+                    {
+                        name: 'Cattle',
+                        y: 3,
+                        drilldown: 'unsuccessful-april-cattle'
+                    },
+                    {
+                        name: 'Sheep',
+                        y: 4,
+                        drilldown: 'unsuccessful-april-sheep'
+                    },
+                    {
+                        name: 'Goats',
+                        y: 3,
+                        drilldown: null // No further drilldown for goats
+                    }
+                ]
+            },
+            // Drilldown for specific breeds of Cattle and Sheep (successful)
+            {
+                id: 'successful-january-cattle',
+                name: 'January - Successful Cattle Breeds',
+                data: [
+                    ['Angus', 2],
+                    ['Holstein', 1],
+                    ['Hereford', 1]
+                ]
+            },
+            {
+                id: 'successful-february-cattle',
+                name: 'February - Successful Cattle Breeds',
+                data: [
+                    ['Angus', 3],
+                    ['Holstein', 2],
+                    ['Hereford', 2]
+                ]
+            },
+            {
+                id: 'successful-march-cattle',
+                name: 'March - Successful Cattle Breeds',
+                data: [
+                    ['Angus', 5],
+                    ['Holstein', 3],
+                    ['Hereford', 2]
+                ]
+            },
+            {
+                id: 'successful-april-cattle',
+                name: 'April - Successful Cattle Breeds',
+                data: [
+                    ['Angus', 4],
+                    ['Holstein', 3],
+                    ['Hereford', 1]
+                ]
+            },
+            {
+                id: 'successful-january-sheep',
+                name: 'January - Successful Sheep Breeds',
+                data: [
+                    ['Merino', 3],
+                    ['Suffolk', 2]
+                ]
+            },
+            {
+                id: 'successful-february-sheep',
+                name: 'February - Successful Sheep Breeds',
+                data: [
+                    ['Merino', 4],
+                    ['Suffolk', 2]
+                ]
+            },
+            {
+                id: 'successful-march-sheep',
+                name: 'March - Successful Sheep Breeds',
+                data: [
+                    ['Merino', 5],
+                    ['Suffolk', 3]
+                ]
+            },
+            {
+                id: 'successful-april-sheep',
+                name: 'April - Successful Sheep Breeds',
+                data: [
+                    ['Merino', 6],
+                    ['Suffolk', 3]
+                ]
+            },
+            // Drilldown for specific breeds of Cattle and Sheep (unsuccessful)
+            {
+                id: 'unsuccessful-january-cattle',
+                name: 'January - Unsuccessful Cattle Breeds',
+                data: [
+                    ['Angus', 1],
+                    ['Holstein', 1]
+                ]
+            },
+            {
+                id: 'unsuccessful-february-cattle',
+                name: 'February - Unsuccessful Cattle Breeds',
+                data: [
+                    ['Angus', 2],
+                    ['Holstein', 1]
+                ]
+            },
+            {
+                id: 'unsuccessful-march-cattle',
+                name: 'March - Unsuccessful Cattle Breeds',
+                data: [
+                    ['Angus', 2],
+                    ['Holstein', 2]
+                ]
+            },
+            {
+                id: 'unsuccessful-april-cattle',
+                name: 'April - Unsuccessful Cattle Breeds',
+                data: [
+                    ['Angus', 1],
+                    ['Holstein', 2]
+                ]
+            },
+            {
+                id: 'unsuccessful-january-sheep',
+                name: 'January - Unsuccessful Sheep Breeds',
+                data: [
+                    ['Merino', 1],
+                    ['Suffolk', 1]
+                ]
+            },
+            {
+                id: 'unsuccessful-february-sheep',
+                name: 'February - Unsuccessful Sheep Breeds',
+                data: [
+                    ['Merino', 2],
+                    ['Suffolk', 2]
+                ]
+            },
+            {
+                id: 'unsuccessful-march-sheep',
+                name: 'March - Unsuccessful Sheep Breeds',
+                data: [
+                    ['Merino', 2],
+                    ['Suffolk', 1]
+                ]
+            },
+            {
+                id: 'unsuccessful-april-sheep',
+                name: 'April - Unsuccessful Sheep Breeds',
+                data: [
+                    ['Merino', 2],
+                    ['Suffolk', 2]
+                ]
+            }
+        ]
+    }
 });
 
-let salesChart = null;
-let revenueChart = null;
-let dailyChart = null;
-
-const chartColors = {
-    cattle: {
-        background: 'rgba(255, 99, 132, 0.8)',
-        border: 'rgba(255, 99, 132, 1)'
+</script>
+<script>
+    Highcharts.chart('SalesChart', {
+    chart: {
+        type: 'column',
+        backgroundColor: '#f9f8fa',
+        borderRadius: 12,
+        spacing: [40, 40, 40, 40],
+        style: {
+            fontFamily: 'Arial, sans-serif'
+        }
     },
-    sheep: {
-        background: 'rgba(54, 162, 235, 0.8)',
-        border: 'rgba(54, 162, 235, 1)'
+    colors: ['#D32F2F', '#1976D2', '#388E3C'], // Deeper, more professional colors
+    title: {
+        text: 'Yearly Sales Distribution',
+        style: {
+            fontWeight: 'bold',
+            fontSize: '22px',
+            color: '#333'
+        }
     },
-    pigs: {
-        background: 'rgba(75, 192, 192, 0.8)',
-        border: 'rgba(75, 192, 192, 1)'
+    subtitle: {
+        text: 'Click on bars to view monthly breakdown',
+        style: {
+            color: '#666',
+            fontSize: '14px',
+            fontStyle: 'italic'
+        }
+    },
+    xAxis: {
+        type: 'category',
+        title: {
+            text: 'Year',
+            style: {
+                fontWeight: 'bold',
+                color: '#555'
+            }
+        },
+        labels: {
+            style: {
+                color: '#0000FF', // Blue year labels as shown in your image
+                fontWeight: 'bold'
+            }
+        },
+        lineWidth: 1,
+        lineColor: '#ddd'
+    },
+    yAxis: {
+        title: {
+            text: 'Number of Animals',
+            style: {
+                fontWeight: 'bold',
+                color: '#555'
+            }
+        },
+        gridLineColor: '#e9e9e9',
+        gridLineDashStyle: 'dash'
+    },
+    legend: {
+        enabled: true,
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'top',
+        backgroundColor: 'rgba(255, 255, 255, 0.8)',
+        borderRadius: 5,
+        itemStyle: {
+            fontWeight: 'normal'
+        }
+    },
+    plotOptions: {
+        series: {
+            borderWidth: 0,
+            borderRadius: 4,
+            dataLabels: {
+                enabled: true,
+                format: '{point.y}',
+                style: {
+                    fontWeight: 'bold',
+                    color: '#fff',
+                    textOutline: '1px contrast'
+                }
+            },
+            states: {
+                hover: {
+                    brightness: 0.1
+                }
+            },
+            animation: {
+                duration: 1000
+            }
+        }
+    },
+    tooltip: {
+        shared: true,
+        crosshairs: true,
+        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+        borderWidth: 1,
+        borderRadius: 8,
+        shadow: true,
+        headerFormat: '<span style="font-size: 14px; font-weight: bold">{point.key}</span><br/>',
+        pointFormat: '<span style="color:{series.color}">●</span> <span style="font-weight: bold">{series.name}</span>: {point.y} animals<br/>'
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Cattle Sales',
+        data: [{
+            name: '2023',
+            y: 450,
+            drilldown: 'Cattle-2023'
+        }, {
+            name: '2022',
+            y: 420,
+            drilldown: 'Cattle-2022'
+        }, {
+            name: '2021',
+            y: 390,
+            drilldown: 'Cattle-2021'
+        }]
+    }, {
+        name: 'Sheep Sales',
+        data: [{
+            name: '2023',
+            y: 360,
+            drilldown: 'Sheep-2023'
+        }, {
+            name: '2022',
+            y: 340,
+            drilldown: 'Sheep-2022'
+        }, {
+            name: '2021',
+            y: 320,
+            drilldown: 'Sheep-2021'
+        }]
+    }, {
+        name: 'Pigs Sales',
+        data: [{
+            name: '2023',
+            y: 400,
+            drilldown: 'Pigs-2023'
+        }, {
+            name: '2022',
+            y: 380,
+            drilldown: 'Pigs-2022'
+        }, {
+            name: '2021',
+            y: 360,
+            drilldown: 'Pigs-2021'
+        }]
+    }],
+    drilldown: {
+        activeDataLabelStyle: {
+            color: '#333',
+            textDecoration: 'none',
+            fontWeight: 'bold'
+        },
+        drillUpButton: {
+            theme: {
+                fill: '#f8f9fa',
+                'stroke-width': 1,
+                stroke: '#ccc',
+                r: 4,
+                states: {
+                    hover: {
+                        fill: '#eee'
+                    }
+                }
+            }
+        },
+        breadcrumbs: {
+            position: {
+                align: 'right'
+            },
+            buttonTheme: {
+                fill: '#f8f9fa',
+                stroke: '#ccc',
+                'stroke-width': 1,
+                style: {
+                    color: '#333'
+                },
+                states: {
+                    hover: {
+                        fill: '#eee'
+                    }
+                }
+            }
+        },
+        series: [
+            // Cattle Drilldown
+            {
+                name: 'Cattle Sales',
+                id: 'Cattle-2023',
+                data: [
+                    ['Jan', 40],
+                    ['Feb', 38],
+                    ['Mar', 39],
+                    ['Apr', 37],
+                    ['May', 38],
+                    ['Jun', 37],
+                    ['Jul', 39],
+                    ['Aug', 38],
+                    ['Sep', 39],
+                    ['Oct', 37],
+                    ['Nov', 38],
+                    ['Dec', 37]
+                ]
+            },
+            {
+                name: 'Cattle Sales',
+                id: 'Cattle-2022',
+                data: [
+                    ['Jan', 35],
+                    ['Feb', 34],
+                    ['Mar', 35],
+                    ['Apr', 33],
+                    ['May', 34],
+                    ['Jun', 33],
+                    ['Jul', 35],
+                    ['Aug', 34],
+                    ['Sep', 35],
+                    ['Oct', 33],
+                    ['Nov', 34],
+                    ['Dec', 33]
+                ]
+            },
+            {
+                name: 'Cattle Sales',
+                id: 'Cattle-2021',
+                data: [
+                    ['Jan', 30],
+                    ['Feb', 29],
+                    ['Mar', 30],
+                    ['Apr', 28],
+                    ['May', 29],
+                    ['Jun', 28],
+                    ['Jul', 30],
+                    ['Aug', 29],
+                    ['Sep', 30],
+                    ['Oct', 28],
+                    ['Nov', 29],
+                    ['Dec', 28]
+                ]
+            },
+            // Sheep Drilldown
+            {
+                name: 'Sheep Sales',
+                id: 'Sheep-2023',
+                data: [
+                    ['Jan', 30],
+                    ['Feb', 28],
+                    ['Mar', 29],
+                    ['Apr', 27],
+                    ['May', 28],
+                    ['Jun', 27],
+                    ['Jul', 29],
+                    ['Aug', 28],
+                    ['Sep', 29],
+                    ['Oct', 27],
+                    ['Nov', 28],
+                    ['Dec', 27]
+                ]
+            },
+            {
+                name: 'Sheep Sales',
+                id: 'Sheep-2022',
+                data: [
+                    ['Jan', 28],
+                    ['Feb', 26],
+                    ['Mar', 27],
+                    ['Apr', 25],
+                    ['May', 26],
+                    ['Jun', 25],
+                    ['Jul', 27],
+                    ['Aug', 26],
+                    ['Sep', 27],
+                    ['Oct', 25],
+                    ['Nov', 26],
+                    ['Dec', 25]
+                ]
+            },
+            {
+                name: 'Sheep Sales',
+                id: 'Sheep-2021',
+                data: [
+                    ['Jan', 26],
+                    ['Feb', 24],
+                    ['Mar', 25],
+                    ['Apr', 23],
+                    ['May', 24],
+                    ['Jun', 23],
+                    ['Jul', 25],
+                    ['Aug', 24],
+                    ['Sep', 25],
+                    ['Oct', 23],
+                    ['Nov', 24],
+                    ['Dec', 23]
+                ]
+            },
+            // Pigs Drilldown
+            {
+                name: 'Pigs Sales',
+                id: 'Pigs-2023',
+                data: [
+                    ['Jan', 35],
+                    ['Feb', 33],
+                    ['Mar', 34],
+                    ['Apr', 32],
+                    ['May', 33],
+                    ['Jun', 32],
+                    ['Jul', 34],
+                    ['Aug', 33],
+                    ['Sep', 34],
+                    ['Oct', 32],
+                    ['Nov', 33],
+                    ['Dec', 32]
+                ]
+            },
+            {
+                name: 'Pigs Sales',
+                id: 'Pigs-2022',
+                data: [
+                    ['Jan', 33],
+                    ['Feb', 31],
+                    ['Mar', 32],
+                    ['Apr', 30],
+                    ['May', 31],
+                    ['Jun', 30],
+                    ['Jul', 32],
+                    ['Aug', 31],
+                    ['Sep', 32],
+                    ['Oct', 30],
+                    ['Nov', 31],
+                    ['Dec', 30]
+                ]
+            },
+            {
+                name: 'Pigs Sales',
+                id: 'Pigs-2021',
+                data: [
+                    ['Jan', 31],
+                    ['Feb', 29],
+                    ['Mar', 30],
+                    ['Apr', 28],
+                    ['May', 29],
+                    ['Jun', 28],
+                    ['Jul', 30],
+                    ['Aug', 29],
+                    ['Sep', 30],
+                    ['Oct', 28],
+                    ['Nov', 29],
+                    ['Dec', 28]
+                ]
+            }
+        ]
+    },
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
     }
-};
+});
+</script>
+<script>
+   // Create the main chart with drill-down functionality
+Highcharts.chart('MortalityRateChart', {
+    chart: {
+        type: 'line',
+           type: 'line',
+        backgroundColor: '#f8f9fa',
+        spacing: [30, 30, 30, 30]
+    },
+    colors: ['#EA4335', '#4285F4', '#34A853'],
+    title: {
+        text: 'Mortality Analysis',
+        style: {
+            fontWeight: 'bold',
+            fontSize: '18px'
+        }
+    },
+    subtitle: {
+        text: 'Click on a data point to see weekly breakdown',
+        style: {
+            color: '#666',
+            fontSize: '14px'
+        }
+    },
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        title: {
+            text: 'Month'
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'Monthly Deaths'
+        }
+    },
+    legend: {
+        enabled: true,
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'top'
+    },
+    plotOptions: {
+        series: {
+            cursor: 'pointer',
+            point: {
+                events: {
+                    click: function() {
+                        // When a point is clicked, call the drill-down function
+                        drillDown(this.category, this.series.name);
+                    }
+                }
+            },
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: true
+        }
+    },
+    tooltip: {
+        shared: true,
+        crosshairs: true,
+        headerFormat: '<b>{point.key}</b><br>',
+        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b><br/>'
+    },
+    series: [{
+        name: 'Cattle Deaths',
+        data: [40, 38, 39, 37, 38, 37, 39, 38, 39, 37, 38, 37]
+    }, {
+        name: 'Sheep Deaths',
+        data: [30, 28, 29, 27, 28, 27, 29, 28, 29, 27, 28, 27]
+    }, {
+        name: 'Pigs Deaths',
+        data: [35, 33, 34, 32, 33, 32, 34, 33, 34, 32, 33, 32]
+    }],
+    drilldown: {
+        series: [
+            // Drill-down data for Cattle
+            {
+                id: 'Cattle Deaths-Jan',
+                name: 'Weekly Cattle Deaths - January',
+                data: [
+                    ['Week 1', 10],
+                    ['Week 2', 11],
+                    ['Week 3', 9],
+                    ['Week 4', 10]
+                ]
+            },
+            {
+                id: 'Cattle Deaths-Feb',
+                name: 'Weekly Cattle Deaths - February',
+                data: [
+                    ['Week 1', 9],
+                    ['Week 2', 10],
+                    ['Week 3', 9],
+                    ['Week 4', 10]
+                ]
+            },
+            // Continue with other months for Cattle
+            
+            // Drill-down data for Sheep
+            {
+                id: 'Sheep Deaths-Jan',
+                name: 'Weekly Sheep Deaths - January',
+                data: [
+                    ['Week 1', 8],
+                    ['Week 2', 7],
+                    ['Week 3', 8],
+                    ['Week 4', 7]
+                ]
+            },
+            {
+                id: 'Sheep Deaths-Feb',
+                name: 'Weekly Sheep Deaths - February',
+                data: [
+                    ['Week 1', 7],
+                    ['Week 2', 7],
+                    ['Week 3', 7],
+                    ['Week 4', 7]
+                ]
+            },
+            // Continue with other months for Sheep
+            
+            // Drill-down data for Pigs
+            {
+                id: 'Pigs Deaths-Jan',
+                name: 'Weekly Pigs Deaths - January',
+                data: [
+                    ['Week 1', 9],
+                    ['Week 2', 8],
+                    ['Week 3', 9],
+                    ['Week 4', 9]
+                ]
+            },
+            {
+                id: 'Pigs Deaths-Feb',
+                name: 'Weekly Pigs Deaths - February',
+                data: [
+                    ['Week 1', 8],
+                    ['Week 2', 9],
+                    ['Week 3', 8],
+                    ['Week 4', 8]
+                ]
+            }
+            // Continue with other months for Pigs
+        ]
+    }
+});
+
+// Function to handle the drill-down
+function drillDown(month, seriesName) {
+    const chart = $('#MortalityRateChart').highcharts();
+    const drilldownId = seriesName + '-' + month;
+    
+    // Look for the drill-down series with matching ID
+    const series = chart.options.drilldown.series.find(s => s.id === drilldownId);
+    
+    if (series) {
+        // Hide the current series
+        chart.series.forEach(s => s.hide());
+        
+        // Add the drill-down series
+        chart.addSingleSeriesAsDrilldown(null, series);
+        
+        // Update chart title and subtitle
+        chart.setTitle({
+            text: 'Mortality Analysis - ' + month + ' 2023'
+        }, {
+            text: 'Weekly breakdown for ' + seriesName
+        });
+        
+        // Add a back button
+        if (!$('#backButton').length) {
+            $('<button id="backButton" class="btn btn-primary mt-3">Back to Overview</button>')
+                .insertBefore('#MortalityRateChart')
+                .on('click', function() {
+                    resetDrilldown();
+                });
+        }
+        
+        // Apply the drill-down
+        chart.applyDrilldown();
+    }
+}
+
+// Function to reset the chart to its original state
+function resetDrilldown() {
+    const chart = $('#MortalityRateChart').highcharts();
+    
+    // Remove any drill-down series
+    while(chart.series.length > 3) {
+        chart.series[3].remove(false);
+    }
+    
+    // Show the original series
+    chart.series.forEach(s => s.show());
+    
+    // Reset the title and subtitle
+    chart.setTitle({
+        text: 'Mortality Analysis'
+    }, {
+        text: 'Click on a data point to see weekly breakdown'
+    });
+    
+    // Remove the back button
+    $('#backButton').remove();
+    
+    // Redraw the chart
+    chart.redraw();
+}
+
+// Function to update chart data based on selected year
+function updateChartForYear(year) {
+    const chart = $('#MortalityRateChart').highcharts();
+    
+    // Simulated data for different years
+    const yearlyData = {
         '2023': {
-            background: 'rgba(255, 159, 64, 0.8)',
-            border: 'rgba(255, 159, 64, 1)'
+            'Cattle Deaths': [40, 38, 39, 37, 38, 37, 39, 38, 39, 37, 38, 37],
+            'Sheep Deaths': [30, 28, 29, 27, 28, 27, 29, 28, 29, 27, 28, 27],
+            'Pigs Deaths': [35, 33, 34, 32, 33, 32, 34, 33, 34, 32, 33, 32]
         },
-        '2024': {
-            background: 'rgba(153, 102, 255, 0.8)',
-            border: 'rgba(153, 102, 255, 1)'
+        '2022': {
+            'Cattle Deaths': [42, 40, 41, 39, 40, 39, 41, 40, 41, 39, 40, 39],
+            'Sheep Deaths': [32, 30, 31, 29, 30, 29, 31, 30, 31, 29, 30, 29],
+            'Pigs Deaths': [37, 35, 36, 34, 35, 34, 36, 35, 36, 34, 35, 34]
         },
-        '2025': {
-            background: 'rgba(75, 192, 192, 0.8)',
-            border: 'rgba(75, 192, 192, 1)'
+        '2021': {
+            'Cattle Deaths': [38, 36, 37, 35, 36, 35, 37, 36, 37, 35, 36, 35],
+            'Sheep Deaths': [28, 26, 27, 25, 26, 25, 27, 26, 27, 25, 26, 25],
+            'Pigs Deaths': [33, 31, 32, 30, 31, 30, 32, 31, 32, 30, 31, 30]
         }
     };
-
-    function formatDate(day, month, year) {
-        const date = new Date(year, months.indexOf(month), day);
-        return date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        });
-    }
-
-    function generateMonthData(year, month) {
-        const daysInMonth = new Date(year, months.indexOf(month) + 1, 0).getDate();
-        const monthData = {};
-
-        for (let day = 1; day <= daysInMonth; day++) {
-            monthData[day] = {
-                cattle: Math.floor(Math.random() * 10) + 1,
-                sheep: Math.floor(Math.random() * 20) + 5,
-                pigs: Math.floor(Math.random() * 15) + 3
-            };
-        }
-
-        return monthData;
-    }
-
-    function calculateYearlySales(year) {
-        const yearSales = {
-            cattle: 0,
-            sheep: 0,
-            pigs: 0
-        };
-
-        const yearData = livestockData.sales[year];
-
-        Object.keys(yearData).forEach(month => {
-            const monthData = yearData[month];
-            Object.values(monthData).forEach(day => {
-                yearSales.cattle += day.cattle;
-                yearSales.sheep += day.sheep;
-                yearSales.pigs += day.pigs;
-            });
-        });
-
-        return yearSales;
-    }
-
-    function calculateMonthlySales(year, month) {
-        const monthlySales = {
-            cattle: 0,
-            sheep: 0,
-            pigs: 0
-        };
-
-        const monthData = livestockData.sales[year][month];
-
-        Object.values(monthData).forEach(day => {
-            monthlySales.cattle += day.cattle;
-            monthlySales.sheep += day.sheep;
-            monthlySales.pigs += day.pigs;
-        });
-
-        return monthlySales;
-    }
-
-    function calculateYearlyRevenue(year) {
-        let total = 0;
-        const yearData = livestockData.sales[year];
-
-        Object.keys(yearData).forEach(month => {
-            const monthData = yearData[month];
-            Object.values(monthData).forEach(day => {
-                total += (day.cattle * livestockData.prices.cattle) +
-                        (day.sheep * livestockData.prices.sheep) +
-                        (day.pigs * livestockData.prices.pigs);
-            });
-        });
-
-        return total;
-    }
-
-    function calculateMonthlyRevenue(year, month) {
-        let total = 0;
-        const monthData = livestockData.sales[year][month];
-
-        Object.values(monthData).forEach(day => {
-            total += (day.cattle * livestockData.prices.cattle) +
-                    (day.sheep * livestockData.prices.sheep) +
-                    (day.pigs * livestockData.prices.pigs);
-        });
-
-        return total;
-    }
-
-    function calculateRevenueChange(currentValue, previousValue) {
-        if (!previousValue) return 0;
-        return ((currentValue - previousValue) / previousValue) * 100;
-    }
-
-    function updateRevenueDisplay(year, month) {
-        const yearlyRevenue = calculateYearlyRevenue(year);
-        const monthlyRevenue = calculateMonthlyRevenue(year, month);
-
-        // Calculate previous year's revenue
-        const prevYear = (parseInt(year) - 1).toString();
-        const prevYearRevenue = prevYear >= "2023" ? calculateYearlyRevenue(prevYear) : yearlyRevenue;
-
-        // Calculate previous month's revenue
-        const monthIndex = months.indexOf(month);
-        let prevMonth, prevMonthYear = year;
-        if (monthIndex === 0) {
-            prevMonth = months[11];
-            prevMonthYear = (parseInt(year) - 1).toString();
-        } else {
-            prevMonth = months[monthIndex - 1];
-        }
-        const prevMonthRevenue = prevMonthYear >= "2023" ? calculateMonthlyRevenue(prevMonthYear, prevMonth) : monthlyRevenue;
-
-        // Update revenue amounts
-        document.getElementById('yearlyRevenue').textContent = `KSH ${yearlyRevenue.toLocaleString()}`;
-        document.getElementById('monthlyRevenue').textContent = `KSH ${monthlyRevenue.toLocaleString()}`;
-
-        // Update current year and month display
-        document.getElementById('currentYear').textContent = year;
-        document.getElementById('currentMonth').textContent = month;
-
-        // Update change percentages
-        const yearlyChange = calculateRevenueChange(yearlyRevenue, prevYearRevenue);
-        const monthlyChange = calculateRevenueChange(monthlyRevenue, prevMonthRevenue);
-
-        const yearlyChangeElement = document.getElementById('yearlyChange');
-        const monthlyChangeElement = document.getElementById('monthlyChange');
-
-        yearlyChangeElement.textContent = `${yearlyChange >= 0 ? '+' : ''}${yearlyChange.toFixed(1)}% from previous year`;
-        monthlyChangeElement.textContent = `${monthlyChange >= 0 ? '+' : ''}${monthlyChange.toFixed(1)}% from previous month`;
-
-        yearlyChangeElement.className = `revenue-change ${yearlyChange >= 0 ? 'positive' : 'negative'}`;
-        monthlyChangeElement.className = `revenue-change ${monthlyChange >= 0 ? 'positive' : 'negative'}`;
-    }
-
-    function updateLegend(revenues) {
-        const legend = document.getElementById('revenueLegend');
-        legend.innerHTML = '';
-
-        const animals = ['Cattle', 'Sheep', 'Pigs'];
-        const colors = [chartColors.cattle, chartColors.sheep, chartColors.pigs];
-
-        animals.forEach((animal, index) => {
-            const item = document.createElement('div');
-            item.className = 'legend-item';
-            
-            const colorBox = document.createElement('span');
-            colorBox.className = 'legend-color';
-            colorBox.style.backgroundColor = colors[index].background;
-            
-            const label = document.createElement('span');
-            const animalLower = animal.toLowerCase();
-            label.textContent = `${animal}: KSH ${revenues[animalLower].toLocaleString()}`;
-            
-            item.appendChild(colorBox);
-            item.appendChild(label);
-            legend.appendChild(item);
-        });
-    }
-
-    function initializeCharts(year, month) {
-        console.log("Initializing charts for:", year, month);
-        const monthData = livestockData.sales[year][month];
-        console.log("Month Data:", monthData);
-        const prices = livestockData.prices;
-
-        const monthlySales = calculateMonthlySales(year, month);
-
-        const revenues = {
-            cattle: monthlySales.cattle * prices.cattle,
-            sheep: monthlySales.sheep * prices.sheep,
-            pigs: monthlySales.pigs * prices.pigs
-        };
-
-        // Update chart titles
-        document.querySelector('.chart-container:nth-child(1) .chart-title').textContent = 
-            `Monthly Sales Distribution for ${month}, ${year}`;
-        document.querySelector('.chart-container:nth-child(2) .chart-title').textContent = 
-            `Yearly Sales Distribution (${year})`;
-
-        // Update Sales Chart
-        if (salesChart) {
-            salesChart.destroy();
-        }
-
-        const salesCtx = document.getElementById('salesChart').getContext('2d');
-        salesChart = new Chart(salesCtx, {
-            type: 'bar',
-            data: {
-                labels: ['Cattle', 'Sheep', 'Pigs'],
-                datasets: [{
-                    label: `Sales for ${month} ${year}`,
-                    data: [monthlySales.cattle, monthlySales.sheep, monthlySales.pigs],
-                    backgroundColor: [
-                        chartColors.cattle.background,
-                        chartColors.sheep.background,
-                        chartColors.pigs.background
-                    ],
-                    borderColor: [
-                        chartColors.cattle.border,
-                        chartColors.sheep.border,
-                        chartColors.pigs.border
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                onClick: (event, elements) => {
-                    if (elements.length > 0) {
-                        const index = elements[0].index;
-                        const animalType = ['cattle', 'sheep', 'pigs'][index];
-                        showDailyDistribution(year, month, animalType);
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                const animalType = ['cattle', 'sheep', 'pigs'][context.dataIndex];
-                                const quantity = context.parsed.y;
-                                const price = prices[animalType];
-                                const revenue = quantity * price;
-                                return [
-                                    `${context.label}: ${quantity} animals`,
-                                    `Revenue: KSH ${revenue.toLocaleString()}`
-                                ];
-                            }
-                        }
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Number of Animals'
-                        }
-                    }
-                }
-            }
-        });
-
-        // Update Revenue Chart to show yearly animal sales distribution
-        if (revenueChart) {
-            revenueChart.destroy();
-        }
-
-        // Get yearly sales data
-        const yearlySales = calculateYearlySales(year);
-
-        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
-        revenueChart = new Chart(revenueCtx, {
-            type: 'bar',
-            data: {
-                labels: ['Cattle', 'Sheep', 'Pigs'],
-                datasets: [{
-                    label: `Yearly Sales for ${year}`,
-                    data: [yearlySales.cattle, yearlySales.sheep, yearlySales.pigs],
-                    backgroundColor: [
-                        chartColors.cattle.background,
-                        chartColors.sheep.background,
-                        chartColors.pigs.background
-                    ],
-                    borderColor: [
-                        chartColors.cattle.border,
-                        chartColors.sheep.border,
-                        chartColors.pigs.border
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                onClick: (event, elements) => {
-                    if (elements.length > 0) {
-                        const index = elements[0].index;
-                        const animalType = ['cattle', 'sheep', 'pigs'][index];
-                        showYearlyAnimalDistribution(year, animalType);
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                const animalType = ['cattle', 'sheep', 'pigs'][context.dataIndex];
-                                const quantity = context.parsed.y;
-                                const price = prices[animalType];
-                                const revenue = quantity * price;
-                                return [
-                                    `${context.label}: ${quantity} animals`,
-                                    `Revenue: KSH ${revenue.toLocaleString()}`
-                                ];
-                            }
-                        }
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Number of Animals'
-                        }
-                    }
-                }
-            }
-        });
-
-        updateRevenueDisplay(year, month);
-        updateLegend(revenues);
-    }
-
-    function showDailyDistribution(year, month, animalType) {
-        const modal = document.getElementById('dailyModal');
-        const monthData = livestockData.sales[year][month];
-
-        const daysInMonth = new Date(year, months.indexOf(month) + 1, 0).getDate();
-        const days = Array.from({length: daysInMonth}, (_, i) => i + 1);
-        const dailySales = days.map(day => monthData[day][animalType]);
-
-        if (dailyChart) {
-            dailyChart.destroy();
-        }
-
-        const ctx = document.getElementById('dailyDistributionChart').getContext('2d');
-        dailyChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: days.map(day => formatDate(day, month, year)),
-                datasets: [{
-                    label: `Daily ${animalType.charAt(0).toUpperCase() + animalType.slice(1)} Sales`,
-                    data: dailySales,
-                    backgroundColor: chartColors[animalType].background,
-                    borderColor: chartColors[animalType].border,
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                const value = context.parsed.y;
-                                const revenue = value * livestockData.prices[animalType];
-                                return [
-                                    `${value} ${animalType}`,
-                                    `Revenue: KSH ${revenue.toLocaleString()}`
-                                ];
-                            }
-                        }
-                    }
-                },
-                scales: {
-                    x: {
-                        ticks: {
-                            maxRotation: 45,
-                            minRotation: 45
-                        }
-                    },
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Number of Animals'
-                        }
-                    }
-                }
-            }
-        });
-
-        modal.style.display = 'block';
-        document.getElementById('modalTitle').textContent = 
-            `Daily ${animalType.charAt(0).toUpperCase() + animalType.slice(1)} Sales for ${month} ${year}`;
-    }
-
-    function showYearlyAnimalDistribution(year, animalType) {
-        const modal = document.getElementById('dailyModal');
-        const yearData = livestockData.sales[year];
-
-        const monthlyData = months.map(month => {
-            return Object.values(yearData[month]).reduce((sum, day) => {
-                return sum + day[animalType];
-            }, 0);
-        });
-
-        const monthlyRevenues = monthlyData.map(qty => qty * livestockData.prices[animalType]);
-
-        if (dailyChart) {
-            dailyChart.destroy();
-        }
-
-        const ctx = document.getElementById('dailyDistributionChart').getContext('2d');
-        dailyChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: months,
-                datasets: [{
-                    label: `Monthly ${animalType.charAt(0).toUpperCase() + animalType.slice(1)} Sales for ${year}`,
-                    data: monthlyData,
-                    backgroundColor: chartColors[animalType].background,
-                    borderColor: chartColors[animalType].border,
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    tooltip: {
-                        callbacks: {
-                            title: function(context) {
-                                // Return the month and year
-                                return `${context[0].label} ${year}`;
-                            },
-                            label: function(context) {
-                                const monthIndex = context.dataIndex;
-                                const quantity = monthlyData[monthIndex];
-                                const revenue = monthlyRevenues[monthIndex];
-                                
-                                // Return the detailed information in three lines
-                                return [
-                                    `${quantity} ${animalType}`,
-                                    `Revenue: KSH ${revenue.toLocaleString()}`
-                                ];
-                            }
-                        }
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Number of Animals'
-                        }
-                    }
-                }
-            }
-        });
-
-        modal.style.display = 'block';
-        document.getElementById('modalTitle').textContent = 
-            `Monthly ${animalType.charAt(0).toUpperCase() + animalType.slice(1)} Sales for ${year}`;
-    }
-
-    // Event Listeners
-    document.querySelector('.close-button').addEventListener('click', () => {
-        document.getElementById('dailyModal').style.display = 'none';
+    
+    // Update each series with new data
+    chart.series.forEach(series => {
+        series.setData(yearlyData[year][series.name], false);
     });
+    
+    // Update subtitle
+    chart.setSubtitle({
+        text: 'Monthly mortality data for ' + year
+    });
+    
+    // Redraw the chart
+    chart.redraw();
+    
+    // Reset any drill-down view
+    resetDrilldown();
+}
+</script>
 
-    window.addEventListener('click', (event) => {
-        const modal = document.getElementById('dailyModal');
-        if (event.target === modal) {
-            modal.style.display = 'none';
+<script>
+
+Highcharts.chart('HealthStatusChart', {
+    chart: {
+        type: 'column',
+        backgroundColor: '#f9f8fa',
+        borderRadius: 12,
+        spacing: [40, 40, 40, 40],
+        style: {
+            fontFamily: 'Arial, sans-serif'
         }
-    });
-
-    document.getElementById('yearSelectMonthly').addEventListener('change', updateChart);
-    document.getElementById('monthSelectMonthly').addEventListener('change', updateChart);
-
-    function updateChart() {
-        const year = document.getElementById('yearSelectMonthly').value;
-        const month = document.getElementById('monthSelectMonthly').value;
-        initializeCharts(year, month);
+    },
+    colors: ['#388E3C', '#FFC107', '#D32F2F'], // Green (Healthy), Yellow (Under Observation), Red (Sick)
+    title: {
+        text: 'Animal Health Status',
+        style: {
+            fontWeight: 'bold',
+            fontSize: '20px',
+            color: '#333'
+        }
+    },
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        title: {
+            text: 'Month',
+            style: {
+                fontWeight: 'bold',
+                color: '#555'
+            }
+        },
+        labels: {
+            style: {
+                color: '#333',
+                fontWeight: 'bold'
+            }
+        },
+        lineWidth: 1,
+        lineColor: '#ddd'
+    },
+    yAxis: {
+        title: {
+            text: 'Number of Animals',
+            style: {
+                fontWeight: 'bold',
+                color: '#555'
+            }
+        },
+        gridLineColor: '#e9e9e9',
+        gridLineDashStyle: 'dash'
+    },
+    legend: {
+        enabled: true,
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'top',
+        backgroundColor: 'rgba(255, 255, 255, 0.8)',
+        borderRadius: 5,
+        itemStyle: {
+            fontWeight: 'normal'
+        }
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            borderWidth: 0,
+            borderRadius: 4,
+            dataLabels: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    brightness: 0.1
+                }
+            }
+        },
+        series: {
+            animation: {
+                duration: 1000
+            }
+        }
+    },
+    tooltip: {
+        shared: true,
+        crosshairs: true,
+        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+        borderWidth: 1,
+        borderRadius: 8,
+        shadow: true,
+        headerFormat: '<span style="font-size: 14px; font-weight: bold">{point.key}</span><br/>',
+        pointFormat: '<span style="color:{series.color}">●</span> <span style="font-weight: bold">{series.name}</span>: {point.y} animals<br/><span style="font-weight: bold">Total</span>: {point.stackTotal} animals'
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Healthy',
+        data: [85, 82, 87, 89, 92, 94, 96, 95, 93, 94, 92, 90]
+    }, {
+        name: 'Under Observation',
+        data: [12, 14, 11, 10, 8, 6, 5, 6, 8, 7, 9, 11]
+    }, {
+        name: 'Sick',
+        data: [3, 4, 2, 1, 0, 0, 1, 2, 1, 2, 3, 4]
+    }],
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
     }
+});
+</script>
 
-    // Initialize charts with default values
-    document.addEventListener('DOMContentLoaded', function() {
-        const year = document.getElementById('yearSelectMonthly').value;
-        const month = document.getElementById('monthSelectMonthly').value;
-        initializeCharts(year, month);
-    });
+<script>
+    Highcharts.chart('WeightStatusChart', {
+    chart: {
+        type: 'pie',
+        backgroundColor: '#f9f8fa',
+        borderRadius: 12,
+        spacing: [40, 40, 40, 40],
+        style: {
+            fontFamily: 'Arial, sans-serif'
+        }
+    },
+    colors: ['#388E3C', '#D32F2F', '#1976D2', '#FFC107'], // Green, Red, Blue, Yellow
+    title: {
+        text: 'Animal Weight Status Distribution',
+        style: {
+            fontWeight: 'bold',
+            fontSize: '20px',
+            color: '#333'
+        }
+    },
+    subtitle: {
+        text: 'Click on segments for detailed information',
+        style: {
+            color: '#666',
+            fontSize: '14px',
+            fontStyle: 'italic'
+        }
+    },
+    tooltip: {
+        pointFormat: '<b>{point.name}</b>: <b>{point.y}</b> animals ({point.percentage:.1f}%)',
+        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+        borderWidth: 1,
+        borderRadius: 8,
+        shadow: true
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.y} ({point.percentage:.1f}%)',
+                style: {
+                    fontWeight: 'bold'
+                },
+                distance: 20
+            },
+            showInLegend: true,
+            size: '80%'
+        },
+        series: {
+            animation: {
+                duration: 1000
+            },
+            point: {
+                events: {
+                    click: function() {
+                        // Function for drill-down could be implemented here
+                        alert('Clicked on: ' + this.name + '\nCount: ' + this.y + ' animals');
+                    }
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Weight Status',
+        colorByPoint: true,
+        data: [
+            {
+                name: 'At Target Weight',
+                y: 67,
+                sliced: true,
+                selected: true
+            },
+            {
+                name: 'Below Target Weight',
+                y: 32
+            },
+            {
+                name: 'Above Target Weight',
+                y: 45
+            }
+        ]
+    }],
+    legend: {
+        enabled: true,
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'bottom',
+        itemStyle: {
+            fontWeight: 'normal'
+        }
+    },
+    credits: {
+        enabled: false
+    },
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                plotOptions: {
+                    pie: {
+                        dataLabels: {
+                            distance: 10
+                        }
+                    }
+                }
+            }
+        }]
+    }
+});
 </script>
 
 
-
+<script>
+    Highcharts.chart('GenderChart', { // Changed ID to GenderChart
+        chart: {
+            type: 'pie', 
+            backgroundColor: '#f9f8fa',// Use a pie chart for gender distribution
+            borderRadius: 12,
+            spacing: [40, 40, 40, 40],
+            style: {
+                fontFamily: 'Arial, sans-serif'
+            }
+        },
+        colors: ['#D32F2F', '#1976D2'], // Red for Female, Blue for Male
+        title: {
+            text: 'Gender Distribution of Animals',
+            style: {
+                fontWeight: 'bold',
+                fontSize: '22px',
+                color: '#333'
+            }
+        },
+        subtitle: {
+            text: 'Proportion of Male and Female Animals',
+            style: {
+                color: '#666',
+                fontSize: '14px',
+                fontStyle: 'italic'
+            }
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        fontWeight: 'bold',
+                        color: '#333'
+                    }
+                },
+                innerSize: '50%', // Makes it a donut chart
+                showInLegend: true
+            }
+        },
+        series: [{
+            name: 'Gender',
+            colorByPoint: true,
+            data: [{
+                name: 'Female',
+                y: 60, // Example data: 60% female
+                color: '#D32F2F' // Red for Female
+            }, {
+                name: 'Male',
+                y: 40, // Example data: 40% male
+                color: '#1976D2' // Blue for Male
+            }]
+        }],
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'bottom'
+                    }
+                }
+            }]
+        }
+    });
+</script>
 
 
 </body>

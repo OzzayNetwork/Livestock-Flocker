@@ -1,0 +1,222 @@
+// Mortality data
+const mortalityData = {
+    2024: {
+        cattle: [45, 38, 42, 35, 40, 37, 43, 39, 41, 36, 44, 40],
+        sheep: [28, 25, 30, 27, 29, 26, 31, 28, 27, 24, 29, 26],
+        pigs: [35, 32, 38, 34, 36, 33, 37, 35, 34, 31, 36, 33]
+    },
+    2023: {
+        cattle: [42, 39, 44, 38, 41, 37, 43, 40, 42, 36, 41, 38],
+        sheep: [26, 23, 28, 25, 27, 24, 29, 26, 25, 22, 27, 24],
+        pigs: [33, 30, 36, 32, 34, 31, 35, 33, 32, 29, 34, 31]
+    },
+    2022: {
+        cattle: [40, 37, 41, 36, 39, 35, 40, 38, 39, 34, 38, 36],
+        sheep: [24, 21, 26, 23, 25, 22, 27, 24, 23, 20, 25, 22],
+        pigs: [31, 28, 34, 30, 32, 29, 33, 31, 30, 27, 32, 29]
+    },
+    2021: {
+        cattle: [38, 35, 39, 34, 37, 33, 38, 36, 37, 32, 36, 34],
+        sheep: [22, 19, 24, 21, 23, 20, 25, 22, 21, 18, 23, 20],
+        pigs: [29, 26, 32, 28, 30, 27, 31, 29, 28, 25, 30, 27]
+    }
+};
+
+let mortalityChart;
+
+function initializeMortalityChart() {
+    const ctx = document.getElementById('mortalityChart').getContext('2d');
+    
+    Chart.defaults.font.family = "'Arial', sans-serif";
+    Chart.defaults.font.size = 12;
+    
+    mortalityChart = new Chart(ctx, {
+        type: 'line',
+        data: {},
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: {
+                intersect: false,
+                mode: 'index'
+            },
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        usePointStyle: true,
+                        padding: 20,
+                        font: { 
+                            size: 13,
+                            family: "'Arial', sans-serif"
+                        }
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                    titleColor: '#333',
+                    titleFont: {
+                        size: 14,
+                        weight: 'bold'
+                    },
+                    bodyColor: '#666',
+                    bodyFont: {
+                        size: 13
+                    },
+                    borderColor: '#ddd',
+                    borderWidth: 1,
+                    padding: 12,
+                    cornerRadius: 8,
+                    displayColors: true,
+                    usePointStyle: true
+                }
+            },
+            scales: {
+                x: {
+                    grid: {
+                        color: 'rgba(0,0,0,0.05)',
+                        drawBorder: false
+                    },
+                    ticks: {
+                        color: '#666'
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    grid: {
+                        color: 'rgba(0,0,0,0.05)',
+                        drawBorder: false
+                    },
+                    ticks: {
+                        color: '#666',
+                        padding: 10
+                    },
+                    title: {
+                        display: true,
+                        text: 'Number of Deaths',
+                        color: '#666',
+                        font: {
+                            size: 14,
+                            weight: 'bold',
+                            family: "'Arial', sans-serif"
+                        }
+                    }
+                }
+            },
+            elements: {
+                line: {
+                    tension: 0, // Set tension to 0
+                    borderWidth: 2
+                },
+                point: {
+                    radius: 4,
+                    hitRadius: 6,
+                    hoverRadius: 6,
+                    hoverBorderWidth: 2
+                }
+            }
+        }
+    });
+}
+
+function updateMortalityChart() {
+    if (!mortalityChart) return;
+
+    const selectedYear = document.getElementById('yearSelect').value;
+    const viewType = document.getElementById('viewSelect').value;
+    const livestockType = document.getElementById('livestockSelect').value;
+    
+    let chartData = {
+        labels: viewType === 'monthly' 
+            ? ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+            : Object.keys(mortalityData),
+        datasets: []
+    };
+
+    const colors = {
+        cattle: { 
+            color: '#2E93fA',
+            bgColor: 'rgba(46, 147, 250, 0.1)'
+        },
+        sheep: { 
+            color: '#66DA26',
+            bgColor: 'rgba(102, 218, 38, 0.1)'
+        },
+        pigs: { 
+            color: '#E91E63',
+            bgColor: 'rgba(233, 30, 99, 0.1)'
+        }
+    };
+
+    if (viewType === 'monthly') {
+        if (livestockType === 'all') {
+            Object.entries(colors).forEach(([type, color]) => {
+                chartData.datasets.push({
+                    label: `${type.charAt(0).toUpperCase() + type.slice(1)}`,
+                    data: mortalityData[selectedYear][type],
+                    borderColor: color.color,
+                    backgroundColor: color.bgColor,
+                    tension: 0, // Set tension to 0
+                    fill: true,
+                    pointBackgroundColor: color.color
+                });
+            });
+        } else {
+            chartData.datasets.push({
+                label: `${livestockType.charAt(0).toUpperCase() + livestockType.slice(1)}`,
+                data: mortalityData[selectedYear][livestockType],
+                borderColor: colors[livestockType].color,
+                backgroundColor: colors[livestockType].bgColor,
+                tension: 0, // Set tension to 0
+                fill: true,
+                pointBackgroundColor: colors[livestockType].color
+            });
+        }
+    } else {
+        chartData.type = 'bar';
+        if (livestockType === 'all') {
+            Object.entries(colors).forEach(([type, color]) => {
+                const yearlyTotals = Object.keys(mortalityData).map(year => 
+                    mortalityData[year][type].reduce((a, b) => a + b, 0)
+                );
+                chartData.datasets.push({
+                    label: `${type.charAt(0).toUpperCase() + type.slice(1)}`,
+                    data: yearlyTotals,
+                    backgroundColor: color.color,
+                    borderColor: color.color,
+                    borderWidth: 1,
+                    borderRadius: 4
+                });
+            });
+        } else {
+            const yearlyTotals = Object.keys(mortalityData).map(year => 
+                mortalityData[year][livestockType].reduce((a, b) => a + b, 0)
+            );
+            chartData.datasets.push({
+                label: `${livestockType.charAt(0).toUpperCase() + livestockType.slice(1)}`,
+                data: yearlyTotals,
+                backgroundColor: colors[livestockType].color,
+                borderColor: colors[livestockType].color,
+                borderWidth: 1,
+                borderRadius: 4
+            });
+        }
+    }
+
+    mortalityChart.data = chartData;
+    mortalityChart.options.scales.y.title.text = viewType === 'monthly' ? 'Monthly Deaths' : 'Yearly Deaths';
+    mortalityChart.update();
+
+    document.getElementById('chartSubtitle').textContent = viewType === 'monthly' 
+        ? `Monthly mortality data for ${selectedYear}` 
+        : 'Yearly mortality summary';
+}
+
+// Initialize chart and add event listeners
+document.addEventListener('DOMContentLoaded', function() {
+    initializeMortalityChart();
+    document.getElementById('yearSelect').addEventListener('change', updateMortalityChart);
+    document.getElementById('viewSelect').addEventListener('change', updateMortalityChart);
+    document.getElementById('livestockSelect').addEventListener('change', updateMortalityChart);
+    updateMortalityChart();
+});
