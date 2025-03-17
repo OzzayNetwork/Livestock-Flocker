@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
 
+
+<!-- By Kelvin Njuguna   13:53:02 GMT -->
+
 <head>
 
     <meta charset="utf-8" />
@@ -18,8 +21,6 @@
     <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
     <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Bootstrap select styling -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
@@ -30,8 +31,6 @@
      <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.carousel.min.css">
 
      <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.theme.default.min.css">
-     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/tutorials/timelines/timeline-7/assets/css/timeline-7.css">
-     
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
@@ -225,229 +224,288 @@
         </header>
 
         <!-- ========== Left Sidebar Start ========== -->
-        <div class="vertical-menu">
+       <div class="vertical-menu">
+
             <div data-simplebar class="h-100">
+
                 <!--- Sidemenu -->
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
                     <ul class="metismenu list-unstyled text-capitalize" id="side-menu">
-            
-                        <!-- Dashboard -->
+                        <li class="menu-title" key="t-pages">Hospital Management Information system </li>
+
+                         <li class="side-bar-button" >
+                            <a href="outpatient-checkin.html" class="waves-effect btn btn-light btn-rounded text-left write-msg-btn">
+                                <i class=""><img src="assets/images/plus-icon.svg" alt=""></i>
+                                <span class="text-capitalize">Patient Chekin</span>
+                            </a>
+                        </li>
+
                         <li>
                             <a href="index.html" class="waves-effect">
-                                <i class="bx bx-home"></i><span>Dashboard</span>
-                            </a>
-                        </li>
-                    
-                        <li>
-                            <a href="livestock.html" class="waves-effect">
-                                <i class="bx bx-plus"></i> <span> Add Livestock</span>
+                                <i class="bx bx-home-circle"></i><span>Dashboard</span>
                             </a>
                         </li>
 
-                        <li><a href="production_weight.html"><i class="fas fa-weight"></i> Weight</a></li>
-                        <li><a href="RFID.html"><i class="fas fa-id-card"></i> RFID</a></li>
+                       <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-hand-heart"></i>
+                                <span>Community Health</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="community-anlytics.html">Analytics</a></li>      
+                                <li><a href="community-members.html">Member Register</a></li>
+                                <li><a href="community-deposits.html">Member Deposits</a></li>
+                                <li><a href="community-visit.html">Visit Coverage Log</a></li>
+                                <li><a href="community-setUp.html">Set Up</a></li> 
+                            </ul>
+                        </li>
 
+                        <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="bx bxs-user-detail"></i>
+                                <span>Master Patient Index</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="patient-new.html">Patient Registration</a></li>      
+                                <li><a href="patients.html">MPI Register</a></li> 
+                            </ul>
+                        </li>
 
+                      <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow" data-toggle="tooltip" title="Insurance Processing">
+                                <i class="mdi mdi-shield-cross-outline"></i> <!-- Insurance-related icon -->
+                                <span>Insurance Processing</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="insurance-quick-stats.html" data-toggle="tooltip" title="View quick statistics on cases">Quick Stats</a></li>
+                                <li><a href="insurance-cases-all.html" data-toggle="tooltip" title="View quick statistics on cases">All cases</a></li>
+                                <li><a href="insurance-pending-approval.html" data-toggle="tooltip" title="View cases pending approval">Pending Approval</a></li>      
+                                <li><a href="insurance-rejected-approvals.html" data-toggle="tooltip" title="View cases rejected from approval">Rejected Approvals</a></li> 
+                                <li><a href="insurance-approved-processing.html" data-toggle="tooltip" title="View cases approved for processing">Approved for Processing</a></li> 
+                                <li><a href="insurance-reverted-approvals.html" data-toggle="tooltip" title="View cases reverted after approval">Reverted Approvals</a></li>
+                                <li><a href="insurance-awaiting-closure.html" data-toggle="tooltip" title="View cases awaiting closure">Awaiting Closure</a></li>   
+                                <li><a href="insurance-closed-cases.html" data-toggle="tooltip" title="View fully closed cases">Closed Cases</a></li>    
+                                <li><a href="insurance-archived-cases.html" data-toggle="tooltip" title="View fully closed cases">Archived Cases</a></li>      
+                                <li><a href="insurance-user-logs.html" data-toggle="tooltip" title="View fully closed cases">User Logs</a></li>     
+                                <li><a href="insurance-preferences.html" data-toggle="tooltip" title="View fully closed cases">Preferences</a></li>    
 
-                        <li><a href="breeding_pregnancy.html"><i class="fas fa-baby-carriage"></i> Pregnancy</a></li>
-            
-                        <!-- Livestock Inventory -->
+                            </ul>
+                            
+                        </li>
+                        
+                        
+
                        
-            
-                        <!-- Vaccine Management -->
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="fas fa-heartbeat"></i>
-                                <span>Vaccines</span>
+
+                        <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage Clinical Activities">
+                                <i class="mdi mdi-hospital-building"></i> <!-- Hospital Building Icon -->
+                                <span>Clinical Management</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="vaccines_health.html"><i class="fas fa-file-medical"></i> Health</a></li>
-                                <li><a href="vaccines_schedule.html"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
-                                <li><a href="vaccines_contacts.html"><i class="fas fa-address-book"></i> Contacts</a></li>
+                                <li><a href="clinical-quick-stats.html" title="View Quick Stats">Quick Stats</a></li>
+                                <li><a href="clinical-new-encounter.html" title="Log New Encounters">New Encounters</a></li>
+                                <li><a href="clinical-pending-consultation.html" title="View Pending Consultations">Pending Consults</a></li>
+                                <li><a href="clinical-active-consultation.html" title="View Active Consultations">Active Consults</a></li>
+                                <li><a href="clinical-lab-list.html" title="List of patients sent to the Lab for examination">To Lab</a></li>
+                                <li><a href="clinical-awaiting-interpretation.html" title="Patients results Awaiting Lab Interpretation">Pending Lab Review</a></li>
+                                <li><a href="clinical-discharged.html" title="Completed Visits Summary">Completed Visits</a></li>
                             </ul>
                         </li>
-            
-                        <!-- Breeding & Reproduction -->
+                        
+
                         <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="fas fa-baby"></i>
-                                <span>Breeding</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="breeding_schedule.html"><i class="fas fa-calendar-check"></i> Schedule</a></li>
-                           
-                                <li><a href="breeding_birth.html"><i class="fas fa-birthday-cake"></i> Birth</a></li>
-                            </ul>
-                        </li>
-            
-                        <!-- Health Management -->
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="fas fa-drumstick-bite"></i>
-                                <span>Health</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="health_feed.html"><i class="fas fa-utensils"></i> Feed</a></li>
-                                <li><a href="health_feeding.html"><i class="fas fa-clock"></i> Feeding</a></li>
-                                <li><a href="health_nutrition.html"><i class="fas fa-clipboard-list"></i> Nutrition</a></li>
-                            </ul>
-                        </li>
-            
-                        <!-- Production & Performance -->
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="fas fa-chart-line"></i>
-                                <span>Production</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="production_weight.html"><i class="fas fa-weight"></i> Weight</a></li>
-                            </ul>
-                        </li>
-            
-                        <!-- Sales Management -->
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="fas fa-dollar-sign"></i>
-                                <span>Sales</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="sales_buyers.html"><i class="fas fa-users"></i> Buyers</a></li>
-                                <li><a href="sales_sellers.html"><i class="fas fa-user-tie"></i> Sellers</a></li>
-                                <li><a href="sales_livestock.html"><i class="fas fa-shopping-cart"></i> Livestock</a></li>
-                                <li><a href="sales_profit.html"><i class="fas fa-chart-pie"></i> Profit</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="death.html" class="waves-effect">
-                                <i class="bx bx-skull"></i> <span>  Death</span>
+                            <a href="encounter-all.html" class="waves-effect">
+                                <i class="bx bx bx-list-ul"></i><span>Encounter List</span>
                             </a>
                         </li>
                         
-            
-                        <!-- Reports & Analytics -->
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="fas fa-chart-bar"></i>
-                                <span>Reports</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="reports_health.html"><i class="fas fa-file-medical-alt"></i> Health</a></li>
-                                <li><a href="reports_production.html"><i class="fas fa-chart-line"></i> Production</a></li>
-                                <li><a href="reports_financial.html"><i class="fas fa-coins"></i> Financial</a></li>
-                            </ul>
-                        </li>
-            
-                        <!-- Settings & Configuration -->
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="fas fa-cog"></i>
-                                <span>Settings</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="settings_users.html"><i class="fas fa-users-cog"></i> Users</a></li>
-                                <li><a href="settings_farm.html"><i class="fas fa-tractor"></i> Farm</a></li>
-                                <li><a href="settings_preferences.html"><i class="fas fa-sliders-h"></i> Preferences</a></li>
-                            </ul>
-                        </li>
-            
-                        <!-- Help & Support -->
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="fas fa-question-circle"></i>
-                                <span>Help</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="help_guides.html"><i class="fas fa-book"></i> Guides</a></li>
-                                <li><a href="help_support.html"><i class="fas fa-headset"></i> Support</a></li>
-                            </ul>
-                        </li>
-            
-                        <!-- Original HR and System Administration Menus (Hidden) -->
-                        <li class="d-none">
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-sitemap"></i>
-                                <span>Structure</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="org-designations.html"><i class="mdi mdi-account-tie"></i> Designations</a></li>
-                                <li><a href="org-departments.html"><i class="mdi mdi-domain"></i> Departments</a></li>
-                                <li><a href="org-employment-types.html"><i class="mdi mdi-briefcase"></i> Employment</a></li>
-                                <li><a href="org-affiliated-institution.html"><i class="mdi mdi-school"></i> Institution</a></li>
-                            </ul>
-                        </li>
-            
-                       <li class="menu-title" key="t-pages">System Administration</li>
-                        <li>
-                           <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage Organizational Structure">
-                               <i class="mdi mdi-sitemap"></i>
-                               <span>Org Structure</span>
-                           </a>
-                           <ul class="sub-menu" aria-expanded="false">
-                               <li><a href="org-designations.html" title="Manage Designations">Designations</a></li>
-                               <li><a href="org-zones.html" title="Manage Operational Zones/Extension Areas">Operational Zones</a></li>
-                               <li><a href="org-departments.html" title="Manage Departments">Extension Areas</a></li>
-                               <li><a href="org-employment-types.html" title="Manage Employment Types">Employment Types</a></li>
-                               <li><a href="org-affiliated-institution.html" title="Manage Affiliated Institutions">Affiliated Institution</a></li>
-                           </ul>
-                       </li>
-                       <li>
-                           <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage System Users">
-                               <i class="mdi mdi-account-multiple-outline"></i>
-                               <span>Users</span>
-                           </a>
-                           <ul class="sub-menu" aria-expanded="false">
-                               <li><a href="user-registration.html" title="Add New User">Add User</a></li>
-                               <li><a href="user-userlist.html" title="Add New User">Manage Users</a></li>
-                               <li><a href="users-deactivated.html" title="View Deactivated Users">Deactivated Users</a></li>
-                               <li><a href="use-logs.html" title="View System Logs">System Logs</a></li>
-                               <li><a href="users-roles.html" title="Manage User Roles">System Roles</a></li>
-                           </ul>
-                       </li>
-
-                        <li class="menu-title" key="t-pages">System Administration</li>
-                        <li>
-                           <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage Organizational Structure">
-                               <i class="mdi mdi-sitemap"></i>
-                               <span>Org Structure</span>
-                           </a>
-                           <ul class="sub-menu" aria-expanded="false">
-                               <li><a href="org-designations.html" title="Manage Designations">Designations</a></li>
-                               <li><a href="org-zones.html" title="Manage Operational Zones/Extension Areas">Operational Zones</a></li>
-                               <li><a href="org-departments.html" title="Manage Departments">Extension Areas</a></li>
-                               <li><a href="org-employment-types.html" title="Manage Employment Types">Employment Types</a></li>
-                               <li><a href="org-affiliated-institution.html" title="Manage Affiliated Institutions">Affiliated Institution</a></li>
-                           </ul>
-                       </li>
-                       <li>
-                           <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage System Users">
-                               <i class="mdi mdi-account-multiple-outline"></i>
-                               <span>Users</span>
-                           </a>
-                           <ul class="sub-menu" aria-expanded="false">
-                               <li><a href="user-registration.html" title="Add New User">Add User</a></li>
-                               <li><a href="user-userlist.html" title="Add New User">Manage Users</a></li>
-                               <li><a href="users-deactivated.html" title="View Deactivated Users">Deactivated Users</a></li>
-                               <li><a href="use-logs.html" title="View System Logs">System Logs</a></li>
-                               <li><a href="users-roles.html" title="Manage User Roles">System Roles</a></li>
-                           </ul>
-                       </li>
+                        
+                        
+                        
+                        
+                        
+                        
 
                        
 
-                        <li class="mm-active">
-                            <a href="javascript: void(0);" class="has-arrow waves-effect mm-active">
-                                <i class="bx bx-aperture"></i>
-                                <span key="t-icons">Icons</span>
+                        <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi-human-queue mdi"></i>
+                                <span>Patient's Queue</span>
                             </a>
-                            <ul class="sub-menu mm-collapse mm-show" aria-expanded="false">
-                                <li><a href="icons-boxicons.html" key="t-boxicons">Boxicons</a></li>
-                                <li class="mm-active"><a href="icons-materialdesign.html" key="t-material-design" class="active">Material Design</a></li>
-                                <li><a href="icons-dripicons.html" key="t-dripicons">Dripicons</a></li>
-                                <li><a href="icons-fontawesome.html" key="t-font-awesome">Font Awesome</a></li>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="out-Patient-visits.html">Out Patient Visits Queue</a></li> 
+                                <li><a href="queue-triage.html">Triage</a></li>      
+                                <li><a href="queue-OPD.html">Consaltation </a></li> 
+                                <li><a href="queue-cashier.html">Cashier </a></li> 
+                                <li><a href="queue-lab-schedule.html">Scheduled lab Tests</a></li> 
+                                <li><a href="queue-ongoing-schedule.html">Ongoing lab Tests</a></li> 
+                                <li><a href="queue-test-interpratation-schedule.html">Lab Test Interpratation</a></li> 
+                                <li><a href="queue-scan-exam-schedule.html">Scheduled Scan Exams</a></li> 
+                                <li><a href="queue-scan-exam-ongoing.html">Ongoing Scan Exams</a></li> 
+                                <li><a href="queue-scan-exam-interpratation.html">Scan exam Interpratation</a></li> 
+                                <li><a href="queue-pharmacey.html">Pharmacy</a></li> 
+                               
                             </ul>
                         </li>
-            
+
+                         <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="fas fa-flask"></i>
+                                <span>Medical Lab</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="lab-stats.html" title="Get a quick overview of lab activities and statistics">Lab Quick Stats</a></li>
+                                <li><a href="lab-orders-pending-payment.html" title="View tests awaiting payment or waiver before scheduling">Tests Pending Payment</a></li>
+                                <li><a href="lab-orders.html" title="Check all scheduled lab tests awaiting processing">Scheduled Lab Tests</a></li>
+                                <li><a href="lab-orders-acknowledged.html" title="See lab tests acknowledged and ready for processing">Acknowledged Lab Tests</a></li>
+                                <li><a href="lab-orders-collected-sample.html" title="View samples collected and ready for testing">Collected Samples</a></li>
+                                <li><a href="lab-orders-pending-results.html" title="Track lab tests with results pending">Pending Lab Results</a></li>
+                                <li><a href="lab-orders-released-tests.html" title="Access lab test results that have been finalized and released">Results Released</a></li>
+                                <li><a href="lab-setup.html" title="Manage and configure lab tests and settings">Lab Test Setup</a></li>
+                                <li><a href="patients.html" title="View patient lab reports and detailed results">Lab Reports</a></li>
+                            </ul>
+                        </li>
+
+                         <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi-calendar-month mdi"></i>
+                                <span>Appointments</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="appointments-pending.html">Pending Appointments</a></li>      
+                                <li><a href="appointments-fullfiled.html">Fullfiled AAppointments</a></li> 
+                                <li><a href="appointments-due.html">Due Appointments</a></li> 
+                            </ul>
+                        </li>
+                         <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi-clipboard-edit mdi"></i>
+                                <span>Stock Management</span>
+                            </a>
+                            <ul class="sub-menu text-capitalize" aria-expanded="false">
+                                <li><a href="stock-ordering.html">Stock Enquiry</a></li>     
+                                <li><a href="stock-taking.html">Stock Taking</a></li>                       
+                            </ul>
+                        </li>
+
+                        <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi-cog-outline mdi"></i>
+                                <span>Setups</span>
+                            </a>
+                           <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="set-up-departments.html">Departments</a></li>
+                                <li><a href="set-up-pricing.html">Pricing & Charges</a></li>
+                                <li><a href="set-up-equipments.html">Equipments</a></li>
+                                <li><a href="set-up-wards.html">Ward Set Up</a></li>
+                                <li><a href="set-up-bed.html">Beds Setup</a></li>
+                                <li><a href="set-Pharmacy.html">Pharmacy inventory</a></li>
+                                <li><a href="lab-setup-new.html">New Lab test Setup</a></li>
+                            </ul>
+                        </li>
+                       
+                        <li class="menu-title" key="t-pages">Reports</li>
+
+                        <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-credit-card-outline"></i>
+                                <span>NHIF Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="nhif-reports.html">NHIF Payments</a></li>   
+                                <li><a href="nhif-cleared.html">Cleared Payemtnts</a></li>      
+                             
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="reports-outpatient.html" class="waves-effect">
+                                <i class="bx bx-clinic"></i><span>Outpatient Reports</span>
+                            </a>
+                        </li>
+
+                         <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-clipboard-text-outline"></i>
+                                <span>Stock Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="stock-daily-rep.html">Daily Reports</a></li>   
+                                <li><a href="stock-manual-exits.html">Manual Exits</a></li>      
+                                <li><a href="stock-order-enquarry.html">Order Enquarries</a></li>      
+                                                             
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="reports-inpatient.html" class="waves-effect">
+                                <i class="mdi mdi-bed-outline"></i><span>Inpatient Reports</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="reports-revenue-streams.html" class="waves-effect">
+                                <i class="mdi mdi-bank-transfer"></i><span>Revenue Perfomance</span>
+                            </a>
+                        </li>
+
+                      <li>
+                            <a href="reports-physician.html" class="waves-effect">
+                                <i class="mdi mdi-doctor"></i><span>Physician Reports</span>
+                            </a>
+                        </li>
+
+                        <li class="d-none">
+                            <a href="reports-physician.html" class="waves-effect">
+                                <i class="mdi mdi-office-building"></i><span>Departmental Reports</span>
+                            </a>
+                        </li>
+
+                        <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="bx bx-receipt"></i>
+                                <span>Bills</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                               
+                                <li><a href="bills-receipted.html">Receipted Bills</a></li>      
+                                <li><a href="bills-unpaid.html">Unpaid Bills</a></li>                               
+
+                            </ul>
+                        </li>
+
+                         <li class="menu-title" key="t-pages">System Administration</li>
+                         <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage Organizational Structure">
+                                <i class="mdi mdi-sitemap"></i>
+                                <span>Org Structure</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="org-designations.html" title="Manage Designations">Designations</a></li>
+                                <li><a href="org-departments.html" title="Manage Departments">Departments</a></li>
+                                <li><a href="org-employment-types.html" title="Manage Employment Types">Employment Types</a></li>
+                                <li><a href="org-affiliated-institution.html" title="Manage Affiliated Institutions">Affiliated Institution</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage System Users">
+                                <i class="mdi mdi-account-multiple-outline"></i>
+                                <span>Users</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="user-registration.html" title="Add New User">Add User</a></li>
+                                <li><a href="user-userlist.html" title="Add New User">Manage Users</a></li>
+                                <li><a href="users-deactivated.html" title="View Deactivated Users">Deactivated Users</a></li>
+                                <li><a href="use-logs.html" title="View System Logs">System Logs</a></li>
+                                <li><a href="users-roles.html" title="Manage User Roles">System Roles</a></li>
+                            </ul>
+                        </li>
+
+
+                        
+
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -476,7 +534,6 @@
                                     <li class="breadcrumb-item"><a href="#">Org Structure</a></li>
                                     <li class="breadcrumb-item"><a href="org-affiliated-institution.html">Affiliated Institutions</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Craft Silicon Limited</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Assigned Users</li>
                                 </ol>
                             </div>
                         </div>
@@ -510,7 +567,7 @@
                                 <div class="card-body bg-white text-uppercase">
                                     <ul class="nav nav-tabs" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <a class="nav-link " href="org-affiliated-institution-details.html" role="tab">
+                                            <a class="nav-link active" href="org-affiliated-institution-details.html" role="tab">
                                                 <span class="d-block d-sm-none"><i class="fas fa-info-circle"></i></span>
                                                 <span class="d-none d-sm-block">Details</span>    
                                             </a>
@@ -522,505 +579,70 @@
                                             </a>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <a class="nav-link  active" href="org-affiliated-institution-logs.html">
+                                            <a class="nav-link" href="org-affiliated-institution-logs.html">
                                                 <span class="d-block d-sm-none"><i class="fas fa-history"></i></span>
                                                 <span class="d-none d-sm-block">Activity Log</span>    
                                             </a>
                                         </li>
                                     </ul>
                                     
+                                    
                                     <div class="col-12 according-body-kev">
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="bg-info border-2 bg-soft p-3 mb-4 d-flex align-items-center">
-                                                    <p class="fw-semibold mb-0 pb-0 text-uppercase">Activity Log</p>
+                                                    <p class="fw-semibold mb-0 pb-0 text-uppercase">Affiliated Institution Information</p>
                                                 </div>
-
+                                        
                                                 <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="d-flex justify-content-between">
-                                                            <ul class="pagination mb-0">
-                                                                <li class="page-item disabled">
-                                                                    <span class="page-link "><i class="mdi mdi-chevron-left"></i></span>
-                                                                </li>
-                                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                                                <li class="page-item ">
-                                                                    <span class="page-link">
-                                                                        2
-                                                                        <span class="sr-only">(current)</span>
-                                                                    </span>
-                                                                </li>
-                                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                                <li class="page-item">
-                                                                    <a class="page-link" href="#"><i class="mdi mdi-chevron-right"></i></a>
-                                                                </li>
-                                                            </ul>
-
-                                                            <div >
-                                                                <div class="input-group mx-3 text-uppercase flex-grow-0">
-                                                                    <label class="input-group-text">Rows</label>
-                                                                    <select class="form-select " aria-label="Select number of rows">
-                                                                        <option value="" disabled selected>Select Rows</option>
-                                                                        <option value="10" selected>10</option>
-                                                                        <option value="15">15</option>
-                                                                        <option value="20">20</option>
-                                                                        <option value="50">50</option>
-                                                                        <option value="100">100</option>
-                                                                        <option value="all">All Rows</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="mx-4" >
-                                                                <div class="input-group  text-uppercase flex-grow-0">
-                                                                    <label class="input-group-text">Action</label>
-                                                                    <select class="form-select " aria-label="Select number of rows">
-                                                                        <option value="" disabled selected>Select Rows</option>
-                                                                        <option value="10" selected>All Actions</option>
-                                                                        <option value="15">Added Designation</option>
-                                                                        <option value="20">Updated Designation</option>
-                                                                        
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="d-flex me-3">
-                                                                <div class="input-group fw-semibold text-uppercase">
-                                                                    <label class="input-group-text text-uppercase">FROM:</label>
-                                                                    <input class="form-control form-control" type="date" value="2019-08-19" id="example-date-input">
-                                                                </div>
-
-                                                                <div class="input-group fw-semibold text-uppercase">
-                                                                    <label class="input-group-text text-uppercase">TO:</label>
-                                                                    <input class="form-control form-control" type="date" value="2019-08-19" id="example-date-input">
-                                                                </div>
-                                                            </div>
-
-                                                            <div>
-                                                                <button data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector text-capitalize">
-                                                                    <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline text-uppercase">Download</span>
-                                                                </button>
-                                                            </div>
-                                                            
-
-                                                            
-                                                        </div>
+                                                    <div class="col-auto">
+                                                        <h4 class="card-title">Institution Name</h4>
+                                                        <p class="card-title-desc">Craft Silicon Limited</p>
                                                     </div>
-
-                                                    <div class="col-12 pt-4">
-                                                        <section class="bsb-timeline-7 bg-light py-3 ">
-                                                            <div class="container">
-                                                            <div class="row justify-content-center">
-                                                                <div class="col-12 col-md-12 col-xl-12 col-xxl-12">
-                                                                    <ul class="timeline">
-                                                                        <li class="timeline-item">
-                                                                            <div class="timeline-body">
-                                                                                <div class="timeline-meta">
-                                                                                    <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
-                                                                                        <span class="fw-bold">11:15 AM</span>
-                                                                                        <span>12 January 2024</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="timeline-content timeline-indicator">
-                                                                                    <div class="card border-0 shadow">
-                                                                                        <div class="card-body p-xl-4">
-                                                                                            <h2 class="card-title mb-2">Kelvin Njuguna Updated Designation <span class="text-decoration-underline">Heart Surgeons Guild</span></h2>
-                                                                                            <h6 class="card-subtitle text-secondary mb-3">By Mary Mathioya</h6>
-                                                                                            <hr>
-                                                                                            <div class="row ">
-                                                                                                <div class="col-auto d-flex align-items-center mb-3">
-                                                                                                    <h6 class="mb-0 me-1 fs-6">Status: </h6>
-                                                                                                    <div class="d-inline-flex changes-line">
-                                                                                                        <span class="badge badge-soft-danger old text-dark fs-6 strike text-decoration-line-through">Active</span>
-                                                                                                        <span class="icon px-2"><i class="bx bx-right-arrow-alt"></i></span>
-                                                                                                        <span class="badge badge-soft-success old text-dark fs-6">Inactive</span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                    
-                                                                                                <div class="col-12 mt-3 d-flex">
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Platform Used"><i class="bx bxs-devices fs-6 me-1"></i> Web Portal</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device IP address"><i class="bx bx-globe fs-6 me-1"></i> IP:123.567.90.00</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Log Location"><i class="bx bx-map fs-6 me-1"></i> Keyplace, Homa Bay town</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device ID used"><i class="mdi mdi-tablet-ipad fs-6 me-1"></i> ID:yttuytuu78678u</span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    
-                                                                        <li class="timeline-item">
-                                                                            <div class="timeline-body">
-                                                                                <div class="timeline-meta">
-                                                                                    <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
-                                                                                        <span class="fw-bold">10:34 AM</span>
-                                                                                        <span>12 January 2024</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="timeline-content timeline-indicator">
-                                                                                    <div class="card border-0 shadow">
-                                                                                        <div class="card-body p-xl-4">
-                                                                                            <h2 class="card-title mb-2">Kelvin Njuguna Updated Designation <span class="text-decoration-underline">Cool Doctors Club</span></h2>
-                                                                                            <h6 class="card-subtitle text-secondary mb-3">By Mary Mathioya</h6>
-                                                                                            <hr>
-                                                                                            <div class="row ">
-                                                                                                <div class="col-auto d-flex align-items-center mb-3">
-                                                                                                    <h6 class="mb-0 me-1 fs-6">Status: </h6>
-                                                                                                    <div class="d-inline-flex changes-line">
-                                                                                                        <span class="badge badge-soft-danger old text-dark fs-6 strike text-decoration-line-through">Active</span>
-                                                                                                        <span class="icon px-2"><i class="bx bx-right-arrow-alt"></i></span>
-                                                                                                        <span class="badge badge-soft-success old text-dark fs-6">Inactive</span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                    
-                                                                                                <div class="col-12 mt-3 d-flex">
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Platform Used"><i class="bx bxs-devices fs-6 me-1"></i> Web Portal</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device IP address"><i class="bx bx-globe fs-6 me-1"></i> IP:123.567.90.00</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Log Location"><i class="bx bx-map fs-6 me-1"></i> Keyplace, Homa Bay town</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device ID used"><i class="mdi mdi-tablet-ipad fs-6 me-1"></i> ID:yttuytuu78678u</span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    
-                                                                        <li class="timeline-item">
-                                                                            <div class="timeline-body">
-                                                                                <div class="timeline-meta">
-                                                                                    <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
-                                                                                        <span class="fw-bold">09:50 AM</span>
-                                                                                        <span>11 January 2024</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="timeline-content timeline-indicator">
-                                                                                    <div class="card border-0 shadow">
-                                                                                        <div class="card-body p-xl-4">
-                                                                                            <h2 class="card-title mb-2">Kelvin Njuguna Added Designation <span class="text-decoration-underline">Pediatric Team</span></h2>
-                                                                                            <h6 class="card-subtitle text-secondary mb-3">By Mary Mathioya</h6>
-                                                                                            <hr>
-                                                                                            <div class="row ">
-                                                                                                <div class="col-auto d-flex align-items-center mb-3">
-                                                                                                    <h6 class="mb-0 me-1 fs-6">Status: </h6>
-                                                                                                    <div class="d-inline-flex changes-line">
-                                                                                                        <span class="badge badge-soft-success old text-dark fs-6">Active</span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                    
-                                                                                                <div class="col-12 mt-3 d-flex">
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Platform Used"><i class="bx bxs-devices fs-6 me-1"></i> Web Portal</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device IP address"><i class="bx bx-globe fs-6 me-1"></i> IP:123.567.90.00</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Log Location"><i class="bx bx-map fs-6 me-1"></i> Keyplace, Homa Bay town</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device ID used"><i class="mdi mdi-tablet-ipad fs-6 me-1"></i> ID:yttuytuu78678u</span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    
-                                                                        <li class="timeline-item">
-                                                                            <div class="timeline-body">
-                                                                                <div class="timeline-meta">
-                                                                                    <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
-                                                                                        <span class="fw-bold">08:45 AM</span>
-                                                                                        <span>10 January 2024</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="timeline-content timeline-indicator">
-                                                                                    <div class="card border-0 shadow">
-                                                                                        <div class="card-body p-xl-4">
-                                                                                            <h2 class="card-title mb-2">Kelvin Njuguna Updated Designation <span class="text-decoration-underline">Emergency Response Team</span></h2>
-                                                                                            <h6 class="card-subtitle text-secondary mb-3">By Mary Mathioya</h6>
-                                                                                            <hr>
-                                                                                            <div class="row ">
-                                                                                                <div class="col-auto d-flex align-items-center mb-3">
-                                                                                                    <h6 class="mb-0 me-1 fs-6">Status: </h6>
-                                                                                                    <div class="d-inline-flex changes-line">
-                                                                                                        <span class="badge badge-soft-danger old text-dark fs-6 strike text-decoration-line-through">Active</span>
-                                                                                                        <span class="icon px-2"><i class="bx bx-right-arrow-alt"></i></span>
-                                                                                                        <span class="badge badge-soft-success old text-dark fs-6">Inactive</span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                    
-                                                                                                <div class="col-12 mt-3 d-flex">
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Platform Used"><i class="bx bxs-devices fs-6 me-1"></i> Web Portal</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device IP address"><i class="bx bx-globe fs-6 me-1"></i> IP:123.567.90.00</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Log Location"><i class="bx bx-map fs-6 me-1"></i> Keyplace, Homa Bay town</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device ID used"><i class="mdi mdi-tablet-ipad fs-6 me-1"></i> ID:yttuytuu78678u</span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    
-                                                                        <li class="timeline-item">
-                                                                            <div class="timeline-body">
-                                                                                <div class="timeline-meta">
-                                                                                    <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
-                                                                                        <span class="fw-bold">10:10 AM</span>
-                                                                                        <span>9 January 2024</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="timeline-content timeline-indicator">
-                                                                                    <div class="card border-0 shadow">
-                                                                                        <div class="card-body p-xl-4">
-                                                                                            <h2 class="card-title mb-2">Kelvin Njuguna Added Designation <span class="text-decoration-underline">Neurosurgery Team</span></h2>
-                                                                                            <h6 class="card-subtitle text-secondary mb-3">By Mary Mathioya</h6>
-                                                                                            <hr>
-                                                                                            <div class="row ">
-                                                                                                <div class="col-auto d-flex align-items-center mb-3">
-                                                                                                    <h6 class="mb-0 me-1 fs-6">Status: </h6>
-                                                                                                    <div class="d-inline-flex changes-line">
-                                                                                                        <span class="badge badge-soft-success old text-dark fs-6">Active</span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                    
-                                                                                                <div class="col-12 mt-3 d-flex">
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Platform Used"><i class="bx bxs-devices fs-6 me-1"></i> Web Portal</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device IP address"><i class="bx bx-globe fs-6 me-1"></i> IP:123.567.90.00</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Log Location"><i class="bx bx-map fs-6 me-1"></i> Keyplace, Homa Bay town</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device ID used"><i class="mdi mdi-tablet-ipad fs-6 me-1"></i> ID:yttuytuu78678u</span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    
-                                                                        <li class="timeline-item">
-                                                                            <div class="timeline-body">
-                                                                                <div class="timeline-meta">
-                                                                                    <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
-                                                                                        <span class="fw-bold">09:05 AM</span>
-                                                                                        <span>8 January 2024</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="timeline-content timeline-indicator">
-                                                                                    <div class="card border-0 shadow">
-                                                                                        <div class="card-body p-xl-4">
-                                                                                            <h2 class="card-title mb-2">Kelvin Njuguna Updated Designation <span class="text-decoration-underline">Rehabilitation Team</span></h2>
-                                                                                            <h6 class="card-subtitle text-secondary mb-3">By Mary Mathioya</h6>
-                                                                                            <hr>
-                                                                                            <div class="row ">
-                                                                                                <div class="col-auto d-flex align-items-center mb-3">
-                                                                                                    <h6 class="mb-0 me-1 fs-6">Status: </h6>
-                                                                                                    <div class="d-inline-flex changes-line">
-                                                                                                        <span class="badge badge-soft-danger old text-dark fs-6 strike text-decoration-line-through">Active</span>
-                                                                                                        <span class="icon px-2"><i class="bx bx-right-arrow-alt"></i></span>
-                                                                                                        <span class="badge badge-soft-success old text-dark fs-6">Inactive</span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                    
-                                                                                                <div class="col-12 mt-3 d-flex">
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Platform Used"><i class="bx bxs-devices fs-6 me-1"></i> Web Portal</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device IP address"><i class="bx bx-globe fs-6 me-1"></i> IP:123.567.90.00</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Log Location"><i class="bx bx-map fs-6 me-1"></i> Keyplace, Homa Bay town</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device ID used"><i class="mdi mdi-tablet-ipad fs-6 me-1"></i> ID:yttuytuu78678u</span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    
-                                                                        <li class="timeline-item">
-                                                                            <div class="timeline-body">
-                                                                                <div class="timeline-meta">
-                                                                                    <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
-                                                                                        <span class="fw-bold">08:30 AM</span>
-                                                                                        <span>7 January 2024</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="timeline-content timeline-indicator">
-                                                                                    <div class="card border-0 shadow">
-                                                                                        <div class="card-body p-xl-4">
-                                                                                            <h2 class="card-title mb-2">Kelvin Njuguna Added Designation <span class="text-decoration-underline">Oncology Specialists</span></h2>
-                                                                                            <h6 class="card-subtitle text-secondary mb-3">By Mary Mathioya</h6>
-                                                                                            <hr>
-                                                                                            <div class="row ">
-                                                                                                <div class="col-auto d-flex align-items-center mb-3">
-                                                                                                    <h6 class="mb-0 me-1 fs-6">Status: </h6>
-                                                                                                    <div class="d-inline-flex changes-line">
-                                                                                                        <span class="badge badge-soft-success old text-dark fs-6">Active</span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                    
-                                                                                                <div class="col-12 mt-3 d-flex">
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Platform Used"><i class="bx bxs-devices fs-6 me-1"></i> Web Portal</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device IP address"><i class="bx bx-globe fs-6 me-1"></i> IP:123.567.90.00</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Log Location"><i class="bx bx-map fs-6 me-1"></i> Keyplace, Homa Bay town</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device ID used"><i class="mdi mdi-tablet-ipad fs-6 me-1"></i> ID:yttuytuu78678u</span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    
-                                                                        <li class="timeline-item">
-                                                                            <div class="timeline-body">
-                                                                                <div class="timeline-meta">
-                                                                                    <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
-                                                                                        <span class="fw-bold">10:00 AM</span>
-                                                                                        <span>6 January 2024</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="timeline-content timeline-indicator">
-                                                                                    <div class="card border-0 shadow">
-                                                                                        <div class="card-body p-xl-4">
-                                                                                            <h2 class="card-title mb-2">Kelvin Njuguna Updated Designation <span class="text-decoration-underline">Pediatric Team</span></h2>
-                                                                                            <h6 class="card-subtitle text-secondary mb-3">By Mary Mathioya</h6>
-                                                                                            <hr>
-                                                                                            <div class="row ">
-                                                                                                <div class="col-auto d-flex align-items-center mb-3">
-                                                                                                    <h6 class="mb-0 me-1 fs-6">Status: </h6>
-                                                                                                    <div class="d-inline-flex changes-line">
-                                                                                                        <span class="badge badge-soft-danger old text-dark fs-6 strike text-decoration-line-through">Active</span>
-                                                                                                        <span class="icon px-2"><i class="bx bx-right-arrow-alt"></i></span>
-                                                                                                        <span class="badge badge-soft-success old text-dark fs-6">Inactive</span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                    
-                                                                                                <div class="col-12 mt-3 d-flex">
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Platform Used"><i class="bx bxs-devices fs-6 me-1"></i> Web Portal</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device IP address"><i class="bx bx-globe fs-6 me-1"></i> IP:123.567.90.00</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Log Location"><i class="bx bx-map fs-6 me-1"></i> Keyplace, Homa Bay town</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device ID used"><i class="mdi mdi-tablet-ipad fs-6 me-1"></i> ID:yttuytuu78678u</span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    
-                                                                        <li class="timeline-item">
-                                                                            <div class="timeline-body">
-                                                                                <div class="timeline-meta">
-                                                                                    <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
-                                                                                        <span class="fw-bold">09:45 AM</span>
-                                                                                        <span>5 January 2024</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="timeline-content timeline-indicator">
-                                                                                    <div class="card border-0 shadow">
-                                                                                        <div class="card-body p-xl-4">
-                                                                                            <h2 class="card-title mb-2">Kelvin Njuguna Added Designation <span class="text-decoration-underline">Cardiology Team</span></h2>
-                                                                                            <h6 class="card-subtitle text-secondary mb-3">By Mary Mathioya</h6>
-                                                                                            <hr>
-                                                                                            <div class="row ">
-                                                                                                <div class="col-auto d-flex align-items-center mb-3">
-                                                                                                    <h6 class="mb-0 me-1 fs-6">Status: </h6>
-                                                                                                    <div class="d-inline-flex changes-line">
-                                                                                                        <span class="badge badge-soft-success old text-dark fs-6">Active</span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                    
-                                                                                                <div class="col-12 mt-3 d-flex">
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Platform Used"><i class="bx bxs-devices fs-6 me-1"></i> Web Portal</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device IP address"><i class="bx bx-globe fs-6 me-1"></i> IP:123.567.90.00</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Log Location"><i class="bx bx-map fs-6 me-1"></i> Keyplace, Homa Bay town</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device ID used"><i class="mdi mdi-tablet-ipad fs-6 me-1"></i> ID:yttuytuu78678u</span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    
-                                                                        <li class="timeline-item">
-                                                                            <div class="timeline-body">
-                                                                                <div class="timeline-meta">
-                                                                                    <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
-                                                                                        <span class="fw-bold">10:30 AM</span>
-                                                                                        <span>4 January 2024</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="timeline-content timeline-indicator">
-                                                                                    <div class="card border-0 shadow">
-                                                                                        <div class="card-body p-xl-4">
-                                                                                            <h2 class="card-title mb-2">Kelvin Njuguna Updated Designation <span class="text-decoration-underline">Orthopedic Team</span></h2>
-                                                                                            <h6 class="card-subtitle text-secondary mb-3">By Mary Mathioya</h6>
-                                                                                            <hr>
-                                                                                            <div class="row ">
-                                                                                                <div class="col-auto d-flex align-items-center mb-3">
-                                                                                                    <h6 class="mb-0 me-1 fs-6">Status: </h6>
-                                                                                                    <div class="d-inline-flex changes-line">
-                                                                                                        <span class="badge badge-soft-danger old text-dark fs-6 strike text-decoration-line-through">Active</span>
-                                                                                                        <span class="icon px-2"><i class="bx bx-right-arrow-alt"></i></span>
-                                                                                                        <span class="badge badge-soft-success old text-dark fs-6">Inactive</span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                    
-                                                                                                <div class="col-12 mt-3 d-flex">
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Platform Used"><i class="bx bxs-devices fs-6 me-1"></i> Web Portal</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device IP address"><i class="bx bx-globe fs-6 me-1"></i> IP:123.567.90.00</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Log Location"><i class="bx bx-map fs-6 me-1"></i> Keyplace, Homa Bay town</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device ID used"><i class="mdi mdi-tablet-ipad fs-6 me-1"></i> ID:yttuytuu78678u</span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    
-                                                                        <li class="timeline-item">
-                                                                            <div class="timeline-body">
-                                                                                <div class="timeline-meta">
-                                                                                    <div class="d-inline-flex flex-column px-2 py-1 text-success-emphasis bg-success-subtle border border-success-subtle rounded-2 text-md-end">
-                                                                                        <span class="fw-bold">09:15 AM</span>
-                                                                                        <span>3 January 2024</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="timeline-content timeline-indicator">
-                                                                                    <div class="card border-0 shadow">
-                                                                                        <div class="card-body p-xl-4">
-                                                                                            <h2 class="card-title mb-2">Kelvin Njuguna Added Designation <span class="text-decoration-underline">Gastroenterology Team</span></h2>
-                                                                                            <h6 class="card-subtitle text-secondary mb-3">By Mary Mathioya</h6>
-                                                                                            <hr>
-                                                                                            <div class="row ">
-                                                                                                <div class="col-auto d-flex align-items-center mb-3">
-                                                                                                    <h6 class="mb-0 me-1 fs-6">Status: </h6>
-                                                                                                    <div class="d-inline-flex changes-line">
-                                                                                                        <span class="badge badge-soft-success old text-dark fs-6">Active</span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                    
-                                                                                                <div class="col-12 mt-3 d-flex">
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Platform Used"><i class="bx bxs-devices fs-6 me-1"></i> Web Portal</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device IP address"><i class="bx bx-globe fs-6 me-1"></i> IP:123.567.90.00</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Log Location"><i class="bx bx-map fs-6 me-1"></i> Keyplace, Homa Bay town</span>
-                                                                                                    <span class="badge badge-soft-info old text-dark fw-bold me-1 align-items-center mb-2 d-flex" title="Device ID used"><i class="mdi mdi-tablet-ipad fs-6 me-1"></i> ID:yttuytuu78678u</span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                        </section>
+                                        
+                                                    <div class="col-auto">
+                                                        <h4 class="card-title">Country</h4>
+                                                        <p class="card-title-desc">Kenya</p>
+                                                    </div>
+                                        
+                                                    <div class="col-auto">
+                                                        <h4 class="card-title">Is Active?</h4>
+                                                        <p class="card-title-desc">Yes</p>
+                                                    </div>
+                                        
+                                                    <div class="col-auto">
+                                                        <h4 class="card-title">Employees Count</h4>
+                                                        <p class="card-title-desc">100</p>
+                                                    </div>
+                                        
+                                                    <div class="col-auto">
+                                                        <h4 class="card-title">Institution Description</h4>
+                                                        <p class="card-title-desc">This institution specializes in innovative technology solutions and software development.</p>
+                                                    </div>
+                                        
+                                                    <div class="col-auto">
+                                                        <h4 class="card-title">Added By</h4>
+                                                        <p class="card-title-desc">Alex Wanjala</p>
+                                                    </div>
+                                        
+                                                    <div class="col-auto">
+                                                        <h4 class="card-title">Last Edited By</h4>
+                                                        <p class="card-title-desc">John Doe</p>
+                                                    </div>
+                                        
+                                                    <div class="col-auto">
+                                                        <h4 class="card-title">Date Added</h4>
+                                                        <p class="card-title-desc">1st Jan 2023 12:45 AM</p>
+                                                    </div>
+                                        
+                                                    <div class="col-auto">
+                                                        <h4 class="card-title">Date Last Edited</h4>
+                                                        <p class="card-title-desc">15th Oct 2024 10:45 PM</p>
                                                     </div>
                                                 </div>
-
-                                                
                                             </div>
                                         </div>
+                                        
                                     </div>
                                     
                                 </div>
