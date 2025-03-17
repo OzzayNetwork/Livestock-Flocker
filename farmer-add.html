@@ -391,7 +391,7 @@
                            <ul class="sub-menu" aria-expanded="false">
                                <li><a href="org-designations.html" title="Manage Designations">Designations</a></li>
                                <li><a href="org-zones.html" title="Manage Operational Zones/Extension Areas">Operational Zones</a></li>
-                               <li><a href="org-departments.html" title="Manage Departments">Department</a></li>
+                               <li><a href="org-departments.html" title="Manage Departments">Departments</a></li>
                                <li><a href="org-employment-types.html" title="Manage Employment Types">Employment Types</a></li>
                                <li><a href="org-affiliated-institution.html" title="Manage Affiliated Institutions">Affiliated Institution</a></li>
                            </ul>
@@ -446,13 +446,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Member Registration</h4>
+                                <h4 class="mb-sm-0 font-size-18">Farmer Registration</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="community-members.html">Members</a></li>
-                                        <li class="breadcrumb-item active">Add Member</li>
+                                        <li class="breadcrumb-item active">Farmers</li>
+                                        <li class="breadcrumb-item active">Add Farmer</li>
                                     </ol>
                                 </div>
 
@@ -470,7 +470,7 @@
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                         <h4 class="card-title text-uppercase mb-0 ">
-                                            Add Member
+                                            Add New User
                                         </h4>
 
                                     </div>
@@ -529,9 +529,17 @@
                                     </div>
                                 
                                 
-                                  
-                                    
-                                    
+                                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                                        <div class="mb-3">
+                                            <label for="system-role-input" class="form-label">System Role <strong class="text-danger fw-bold">*</strong></label>
+                                            <select id="system-role-input" class="form-select" required>
+                                                <option value="">Select Role</option>
+                                                <option value="Admin">Admin</option>
+                                                <option value="User">Accountant</option>
+                                                <option value="Guest">Extension Officer</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 
                                     <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                                         <div class="mb-3">
@@ -549,131 +557,374 @@
 
                                     <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                                         <div class="mb-3">
-                                            <label for="cbhi-premium-input" class="form-label">CBHI Premium Amount <strong class="text-danger fw-bold">*</strong></label>
-                                            <select id="cbhi-premium-input" class="form-select" required>
-                                                <option value="">Select Premium Amount</option>
-                                                <option value="ETB 300">ETB 300 - Individual (Low Tier)</option>
-                                                <option value="ETB 500">ETB 500 - Individual (Medium Tier)</option>
-                                                <option value="ETB 1,200">ETB 1,200 - Family (Small Family)</option>
-                                                <option value="ETB 1,500">ETB 1,500 - Family (Average Family)</option>
-                                                <option value="ETB 2,000">ETB 2,000 - Family (Large Family)</option>
-                                                <option value="ETB 1,500 (Subsidized)">ETB 1,500 - Family (Subsidized)</option>
-                                                <option value="ETB 500 (Subsidized)">ETB 500 - Individual (Subsidized)</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                                        <div class="mb-3">
-                                            <label for="region-input" class="form-label">Region<strong class="text-danger fw-bold">*</strong></label>
-                                            <select id="region-input" class="form-select" required>
-                                                <option value="">Select Region</option>
-                                                <option value="Addis Ababa">Addis Ababa</option>
-                                                <option value="Amhara">Amhara</option>
-                                                <option value="Oromia">Oromia</option>
-                                                <option value="Tigray">Tigray</option>
-                                                <option value="Sidama">Sidama</option>
-                                                <option value="Somali">Somali</option>
-                                                <option value="Southern Nations, Nationalities, and Peoples' Region">Southern Nations, Nationalities, and Peoples' Region</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                                        <div class="mb-3">
-                                            <label for="zone-input" class="form-label">Zone<strong class="text-danger fw-bold">*</strong></label>
-                                            <select id="zone-input" class="form-select" required>
-                                                <option value="">Select Zone</option>
-                                                <option value="West Shewa">West Shewa</option>
-                                                <option value="East Shewa">East Shewa</option>
-                                                <option value="Arsi">Arsi</option>
-                                                <option value="Jima">Jima</option>
-                                                <option value="Oromia Special Zone">Oromia Special Zone</option>
-                                                <option value="West Hararghe">West Hararghe</option>
-                                                <option value="Guji">Guji</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                                        <div class="mb-3">
-                                            <label for="woreda-input" class="form-label">Woreda<strong class="text-danger fw-bold">*</strong></label>
-                                            <select id="woreda-input" class="form-select" required>
-                                                <option value="">Select Woreda</option>
-                                                <option value="Ambo">Ambo</option>
-                                                <option value="Gindeberet">Gindeberet</option>
-                                                <option value="Dugda">Dugda</option>
-                                                <option value="Walmara">Walmara</option>
-                                                <option value="Cheliya">Cheliya</option>
-                                                <option value="Dandi">Dandi</option>
-                                                <option value="Tulu Bolo">Tulu Bolo</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                                        <div class="mb-3">
-                                            <label for="kebele-input" class="form-label">Kebele<strong class="text-danger fw-bold">*</strong></label>
-                                            <select id="kebele-input" class="form-select" required>
-                                                <option value="">Select Kebele</option>
-                                                <option value="Kebele 01">Kebele 01</option>
-                                                <option value="Kebele 02">Kebele 02</option>
-                                                <option value="Kebele 03">Kebele 03</option>
-                                                <option value="Kebele 04">Kebele 04</option>
-                                                <option value="Kebele 05">Kebele 05</option>
-                                                <option value="Kebele 06">Kebele 06</option>
-                                                <option value="Kebele 07">Kebele 07</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                                        <div class="mb-3">
-                                            <label for="health-center-input" class="form-label">Closest Health Center<strong class="text-danger fw-bold">*</strong></label>
-                                            <select id="health-center-input" class="form-select" required>
-                                                <option value="">Select Health Center</option>
-                                                <option value="Ambo Health Center">Ambo Health Center</option>
-                                                <option value="Addis Ketema Health Center">Addis Ketema Health Center</option>
-                                                <option value="Bahir Dar Health Center">Bahir Dar Health Center</option>
-                                                <option value="Hawassa Health Center">Hawassa Health Center</option>
-                                                <option value="Wukro Health Center">Wukro Health Center</option>
-                                                <option value="Jima Health Center">Jima Health Center</option>
-                                                <option value="Harar Health Center">Harar Health Center</option>
-                                                <option value="Debre Berhan Health Center">Debre Berhan Health Center</option>
-                                                <option value="Gondar Health Center">Gondar Health Center</option>
-                                                <option value="Mekelle Health Center">Mekelle Health Center</option>
-                                                <option value="Dire Dawa Health Center">Dire Dawa Health Center</option>
-                                                <option value="Dilla Health Center">Dilla Health Center</option>
-                                                <option value="Adama Health Center">Adama Health Center</option>
-                                                <option value="Jimma University Health Center">Jimma University Health Center</option>
-                                                <option value="Asella Health Center">Asella Health Center</option>
-                                                <option value="Shashemene Health Center">Shashemene Health Center</option>
-                                                <option value="Bishoftu Health Center">Bishoftu Health Center</option>
-                                                <option value="Mizan Teferi Health Center">Mizan Teferi Health Center</option>
-                                                <option value="Welenchiti Health Center">Welenchiti Health Center</option>
-                                                <option value="Goba Health Center">Goba Health Center</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                                        <div class="mb-3">
                                             <label for="phone-input" class="form-label">National ID<strong class="text-danger fw-bold">*</strong></label>
                                             <input type="tel" class="form-control" id="phone-input" placeholder="Enter Phone Number" spellcheck="false" required>
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-6 col-lg-4">
-                                                <div class="mb-3">
-                                                    <label for="phone-input" class="form-label">Important Notes</label>
-                                                    <textarea name="" cols="50" rows="6"  class="form-control" id="" placeholder="Start Typing Details"></textarea>
-                                                    <small>Provide further details, Particuler to the Principle owner</small>
-                                                </div>
-                                            </div>
+                                    
+                                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                                        <div class="mb-3">
+                                            <label for="country-input" class="form-label">Country <strong class="text-danger fw-bold">*</strong></label>
+                                            <select id="institution-country" class="form-select" required>
+                                                <option value="KE" selected>Kenya</option>
+                                                <option value="AF">Afghanistan</option>
+                                                <option value="AL">Albania</option>
+                                                <option value="DZ">Algeria</option>
+                                                <option value="AS">American Samoa</option>
+                                                <option value="AD">Andorra</option>
+                                                <option value="AO">Angola</option>
+                                                <option value="AI">Anguilla</option>
+                                                <option value="AQ">Antarctica</option>
+                                                <option value="AG">Antigua and Barbuda</option>
+                                                <option value="AR">Argentina</option>
+                                                <option value="AM">Armenia</option>
+                                                <option value="AW">Aruba</option>
+                                                <option value="AU">Australia</option>
+                                                <option value="AT">Austria</option>
+                                                <option value="AZ">Azerbaijan</option>
+                                                <option value="BS">Bahamas</option>
+                                                <option value="BH">Bahrain</option>
+                                                <option value="BD">Bangladesh</option>
+                                                <option value="BB">Barbados</option>
+                                                <option value="BY">Belarus</option>
+                                                <option value="BE">Belgium</option>
+                                                <option value="BZ">Belize</option>
+                                                <option value="BJ">Benin</option>
+                                                <option value="BM">Bermuda</option>
+                                                <option value="BT">Bhutan</option>
+                                                <option value="BO">Bolivia</option>
+                                                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                                <option value="BA">Bosnia and Herzegovina</option>
+                                                <option value="BW">Botswana</option>
+                                                <option value="BV">Bouvet Island</option>
+                                                <option value="BR">Brazil</option>
+                                                <option value="IO">British Indian Ocean Territory</option>
+                                                <option value="BN">Brunei Darussalam</option>
+                                                <option value="BG">Bulgaria</option>
+                                                <option value="BF">Burkina Faso</option>
+                                                <option value="BI">Burundi</option>
+                                                <option value="CV">Cabo Verde</option>
+                                                <option value="KH">Cambodia</option>
+                                                <option value="CM">Cameroon</option>
+                                                <option value="CA">Canada</option>
+                                                <option value="KY">Cayman Islands</option>
+                                                <option value="CF">Central African Republic</option>
+                                                <option value="TD">Chad</option>
+                                                <option value="CL">Chile</option>
+                                                <option value="CN">China</option>
+                                                <option value="CX">Christmas Island</option>
+                                                <option value="CC">Cocos (Keeling) Islands</option>
+                                                <option value="CO">Colombia</option>
+                                                <option value="KM">Comoros</option>
+                                                <option value="CG">Congo</option>
+                                                <option value="CD">Congo, Democratic Republic of the</option>
+                                                <option value="CK">Cook Islands</option>
+                                                <option value="CR">Costa Rica</option>
+                                                <option value="HR">Croatia</option>
+                                                <option value="CU">Cuba</option>
+                                                <option value="CW">Curaçao</option>
+                                                <option value="CY">Cyprus</option>
+                                                <option value="CZ">Czech Republic</option>
+                                                <option value="DK">Denmark</option>
+                                                <option value="DJ">Djibouti</option>
+                                                <option value="DM">Dominica</option>
+                                                <option value="DO">Dominican Republic</option>
+                                                <option value="EC">Ecuador</option>
+                                                <option value="EG">Egypt</option>
+                                                <option value="SV">El Salvador</option>
+                                                <option value="GQ">Equatorial Guinea</option>
+                                                <option value="ER">Eritrea</option>
+                                                <option value="EE">Estonia</option>
+                                                <option value="SZ">Eswatini</option>
+                                                <option value="ET">Ethiopia</option>
+                                                <option value="FK">Falkland Islands (Malvinas)</option>
+                                                <option value="FO">Faroe Islands</option>
+                                                <option value="FJ">Fiji</option>
+                                                <option value="FI">Finland</option>
+                                                <option value="FR">France</option>
+                                                <option value="GF">French Guiana</option>
+                                                <option value="PF">French Polynesia</option>
+                                                <option value="TF">French Southern Territories</option>
+                                                <option value="GA">Gabon</option>
+                                                <option value="GM">Gambia</option>
+                                                <option value="GE">Georgia</option>
+                                                <option value="DE">Germany</option>
+                                                <option value="GH">Ghana</option>
+                                                <option value="GI">Gibraltar</option>
+                                                <option value="GR">Greece</option>
+                                                <option value="GL">Greenland</option>
+                                                <option value="GD">Grenada</option>
+                                                <option value="GP">Guadeloupe</option>
+                                                <option value="GU">Guam</option>
+                                                <option value="GT">Guatemala</option>
+                                                <option value="GG">Guernsey</option>
+                                                <option value="GN">Guinea</option>
+                                                <option value="GW">Guinea-Bissau</option>
+                                                <option value="GY">Guyana</option>
+                                                <option value="HT">Haiti</option>
+                                                <option value="HM">Heard Island and McDonald Islands</option>
+                                                <option value="VA">Holy See</option>
+                                                <option value="HN">Honduras</option>
+                                                <option value="HK">Hong Kong</option>
+                                                <option value="HU">Hungary</option>
+                                                <option value="IS">Iceland</option>
+                                                <option value="IN">India</option>
+                                                <option value="ID">Indonesia</option>
+                                                <option value="IR">Iran, Islamic Republic of</option>
+                                                <option value="IQ">Iraq</option>
+                                                <option value="IE">Ireland</option>
+                                                <option value="IM">Isle of Man</option>
+                                                <option value="IL">Israel</option>
+                                                <option value="IT">Italy</option>
+                                                <option value="JM">Jamaica</option>
+                                                <option value="JP">Japan</option>
+                                                <option value="JE">Jersey</option>
+                                                <option value="JO">Jordan</option>
+                                                <option value="KZ">Kazakhstan</option>
+                                                <option value="KE" selected>Kenya</option>
+                                                <option value="KI">Kiribati</option>
+                                                <option value="KP">Korea, Democratic People's Republic of</option>
+                                                <option value="KR">Korea, Republic of</option>
+                                                <option value="KW">Kuwait</option>
+                                                <option value="KG">Kyrgyzstan</option>
+                                                <option value="LA">Lao People's Democratic Republic</option>
+                                                <option value="LV">Latvia</option>
+                                                <option value="LB">Lebanon</option>
+                                                <option value="LS">Lesotho</option>
+                                                <option value="LR">Liberia</option>
+                                                <option value="LY">Libya</option>
+                                                <option value="LI">Liechtenstein</option>
+                                                <option value="LT">Lithuania</option>
+                                                <option value="LU">Luxembourg</option>
+                                                <option value="MO">Macao</option>
+                                                <option value="MG">Madagascar</option>
+                                                <option value="MW">Malawi</option>
+                                                <option value="MY">Malaysia</option>
+                                                <option value="MV">Maldives</option>
+                                                <option value="ML">Mali</option>
+                                                <option value="MT">Malta</option>
+                                                <option value="MH">Marshall Islands</option>
+                                                <option value="MQ">Martinique</option>
+                                                <option value="MR">Mauritania</option>
+                                                <option value="MU">Mauritius</option>
+                                                <option value="YT">Mayotte</option>
+                                                <option value="MX">Mexico</option>
+                                                <option value="FM">Micronesia</option>
+                                                <option value="MD">Moldova</option>
+                                                <option value="MC">Monaco</option>
+                                                <option value="MN">Mongolia</option>
+                                                <option value="ME">Montenegro</option>
+                                                <option value="MS">Montserrat</option>
+                                                <option value="MA">Morocco</option>
+                                                <option value="MZ">Mozambique</option>
+                                                <option value="MM">Myanmar</option>
+                                                <option value="NA">Namibia</option>
+                                                <option value="NR">Nauru</option>
+                                                <option value="NP">Nepal</option>
+                                                <option value="NL">Netherlands</option>
+                                                <option value="NC">New Caledonia</option>
+                                                <option value="NZ">New Zealand</option>
+                                                <option value="NI">Nicaragua</option>
+                                                <option value="NE">Niger</option>
+                                                <option value="NG">Nigeria</option>
+                                                <option value="NU">Niue</option>
+                                                <option value="NF">Norfolk Island</option>
+                                                <option value="MP">Northern Mariana Islands</option>
+                                                <option value="NO">Norway</option>
+                                                <option value="OM">Oman</option>
+                                                <option value="PK">Pakistan</option>
+                                                <option value="PW">Palau</option>
+                                                <option value="PS">Palestine, State of</option>
+                                                <option value="PA">Panama</option>
+                                                <option value="PG">Papua New Guinea</option>
+                                                <option value="PY">Paraguay</option>
+                                                <option value="PE">Peru</option>
+                                                <option value="PH">Philippines</option>
+                                                <option value="PN">Pitcairn</option>
+                                                <option value="PL">Poland</option>
+                                                <option value="PT">Portugal</option>
+                                                <option value="PR">Puerto Rico</option>
+                                                <option value="QA">Qatar</option>
+                                                <option value="RE">Réunion</option>
+                                                <option value="RO">Romania</option>
+                                                <option value="RU">Russian Federation</option>
+                                                <option value="RW">Rwanda</option>
+                                                <option value="BL">Saint Barthélemy</option>
+                                                <option value="KN">Saint Kitts and Nevis</option>
+                                                <option value="LC">Saint Lucia</option>
+                                                <option value="MF">Saint Martin (French part)</option>
+                                                <option value="SX">Saint Maarten (Dutch part)</option>
+                                                <option value="WS">Samoa</option>
+                                                <option value="SM">San Marino</option>
+                                                <option value="ST">Sao Tome and Principe</option>
+                                                <option value="SA">Saudi Arabia</option>
+                                                <option value="SN">Senegal</option>
+                                                <option value="RS">Serbia</option>
+                                                <option value="SC">Seychelles</option>
+                                                <option value="SL">Sierra Leone</option>
+                                                <option value="SG">Singapore</option>
+                                                <option value="SX">Sint Maarten</option>
+                                                <option value="SK">Slovakia</option>
+                                                <option value="SI">Slovenia</option>
+                                                <option value="SB">Solomon Islands</option>
+                                                <option value="SO">Somalia</option>
+                                                <option value="ZA">South Africa</option>
+                                                <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                                <option value="SS">South Sudan</option>
+                                                <option value="ES">Spain</option>
+                                                <option value="LK">Sri Lanka</option>
+                                                <option value="SD">Sudan</option>
+                                                <option value="SR">Suriname</option>
+                                                <option value="SJ">Svalbard and Jan Mayen</option>
+                                                <option value="SE">Sweden</option>
+                                                <option value="CH">Switzerland</option>
+                                                <option value="SY">Syrian Arab Republic</option>
+                                                <option value="TW">Taiwan</option>
+                                                <option value="TJ">Tajikistan</option>
+                                                <option value="TZ">Tanzania, United Republic of</option>
+                                                <option value="TH">Thailand</option>
+                                                <option value="TL">Timor-Leste</option>
+                                                <option value="TG">Togo</option>
+                                                <option value="TK">Tokelau</option>
+                                                <option value="TO">Tonga</option>
+                                                <option value="TT">Trinidad and Tobago</option>
+                                                <option value="TN">Tunisia</option>
+                                                <option value="TR">Turkey</option>
+                                                <option value="TM">Turkmenistan</option>
+                                                <option value="TC">Turks and Caicos Islands</option>
+                                                <option value="TV">Tuvalu</option>
+                                                <option value="UG">Uganda</option>
+                                                <option value="UA">Ukraine</option>
+                                                <option value="AE">United Arab Emirates</option>
+                                                <option value="GB">United Kingdom</option>
+                                                <option value="US">United States</option>
+                                                <option value="UY">Uruguay</option>
+                                                <option value="UZ">Uzbekistan</option>
+                                                <option value="VU">Vanuatu</option>
+                                                <option value="VE">Venezuela</option>
+                                                <option value="VN">Viet Nam</option>
+                                                <option value="WF">Wallis and Futuna</option>
+                                                <option value="EH">Western Sahara</option>
+                                                <option value="YE">Yemen</option>
+                                                <option value="ZM">Zambia</option>
+                                                <option value="ZW">Zimbabwe</option>
+                                            </select>
                                         </div>
                                     </div>
+
+                                    <div class="col-12">
+                                        <div class="bg-info border-2 bg-soft p-3 mb-4 d-flex align-items-center">
+                                            <p class="fw-semibold mb-0 pb-0 text-uppercase">Work Information</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-8">
+                                       <div class="row">
+                                        <div class="col-sm-6 col-md-6 mb-3">
+                                            <div class="mb-3">
+                                                <label for="designation-input" class="form-label">Designation <strong class="text-danger fw-bold">*</strong></label>
+                                                <select id="designation-input" class="form-select" required>
+                                                    <option value="">Select Designation</option>
+                                                    <option value="Veterinary Officer">Veterinary Officer</option>
+                                                    <option value="Animal Health Technician">Animal Health Technician</option>
+                                                    <option value="Livestock Extension Officer">Livestock Extension Officer</option>
+                                                    <option value="Dairy Farm Manager">Dairy Farm Manager</option>
+                                                    <option value="Poultry Specialist">Poultry Specialist</option>
+                                                    <option value="Livestock Inspector">Livestock Inspector</option>
+                                                    <option value="Animal Feeds Specialist">Animal Feeds Specialist</option>
+                                                    <option value="Meat Inspector">Meat Inspector</option>
+                                                    <option value="Artificial Insemination Technician">Artificial Insemination Technician</option>
+                                                    <option value="Ranch Manager">Ranch Manager</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-sm-6 col-md-6 mb-3">
+                                            <div class="mb-3">
+                                                <label for="department-input" class="form-label">Department <strong class="text-danger fw-bold">*</strong></label>
+                                                <select id="department-input" class="form-select" required>
+                                                    <option value="">Select Department</option>
+                                                    <option value="Animal Husbandry">Animal Husbandry</option>
+                                                    <option value="Livestock Production">Livestock Production</option>
+                                                    <option value="Veterinary Services">Veterinary Services</option>
+                                                    <option value="Breeding & Genetics">Breeding & Genetics</option>
+                                                    <option value="Dairy Production">Dairy Production</option>
+                                                    <option value="Meat Processing">Meat Processing</option>
+                                                    <option value="Grazing & Pasture Management">Grazing & Pasture Management</option>
+                                                    <option value="Feed & Nutrition">Feed & Nutrition</option>
+                                                    <option value="Logistics & Transport">Logistics & Transport</option>
+                                                    <option value="Sales & Distribution">Sales & Distribution</option>
+                                                    <option value="Customer Relations">Customer Relations</option>
+                                                    <option value="Marketing & Branding">Marketing & Branding</option>
+                                                    <option value="Finance & Administration">Finance & Administration</option>
+                                                    <option value="Human Resources">Human Resources</option>
+                                                    <option value="Security & Compliance">Security & Compliance</option>
+                                                    <option value="Research & Development">Research & Development</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-sm-6 col-md-6 mb-3">
+                                            <div class="mb-3">
+                                                <label for="employment-type-input" class="form-label">Employment Type <strong class="text-danger fw-bold">*</strong></label>
+                                                <select id="employment-type-input" class="form-select" required>
+                                                    <option value="">Select Employment Type</option>
+                                                    <option value="Full-time">Full-time</option>
+                                                    <option value="Part-time">Part-time</option>
+                                                    <option value="Contract">Contract</option>
+                                                    <option value="Intern">Intern</option>
+                                                    <option value="Consultant">Consultant</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-6 col-md-6 mb-3">
+                                            <div class="mb-3">
+                                                <label for="affiliation-input" class="form-label">Affiliation <strong class="text-danger fw-bold">*</strong></label>
+                                                <select id="affiliation-input" class="form-select" required>
+                                                    <option value="Homa Bay Referral and Training Hospital" selected>Ranch Experts</option>
+                                                    <option value="KMTC Homabay">Kenya Meats Authority</option>
+                                                   
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-12 mb-3">
+                                            <div class="mb-3">
+                                                <label for="affiliation-input" class="form-label">Operational Zone <strong class="text-danger fw-bold">*</strong></label>
+                                                <select id="affiliation-input" class="form-select" required multiple>
+                                                    <option value="">Select Operational Zone</option>
+                                                    <option value="Mavoko">Mavoko</option>
+                                                    <option value="Kipirirpiri">Kipirirpiri</option>
+                                                    <option value="Kieni">Kieni</option>
+                                                    <option value="Turbo">Turbo</option>
+                                                    <option value="Narok Plains">Narok Plains</option>
+                                                    <option value="Laikipia Range">Laikipia Range</option>
+                                                    <option value="Kajiado Belt">Kajiado Belt</option>
+                                                    <option value="Isiolo Feedlot">Isiolo Feedlot</option>
+                                                    <option value="Eldoret Depot">Eldoret Depot</option>
+                                                    <option value="Naivasha Breeding Unit">Naivasha Breeding Unit</option>
+                                                    <option value="Machakos Ranch">Machakos Ranch</option>
+                                                    <option value="Nakuru Holding Grounds">Nakuru Holding Grounds</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                       </div>
+                                        
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-4">
+                                        <div class="mb-3">
+                                            <label for="phone-input" class="form-label">Notes</label>
+                                            <textarea name="" cols="50" rows="6"  class="form-control" id="" placeholder="Start Typing Details"></textarea>
+                                            <small>Provide further details, including terms of work if necessary.</small>
+                                        </div>
+                                    </div>
+                                    
+                                    
                                 </div>
                                 
                                </div>
