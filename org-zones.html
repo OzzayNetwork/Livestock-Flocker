@@ -461,11 +461,11 @@
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                         <h4 class="card-title text-uppercase mb-0 ">
-                                            All Available Employment Types
+                                            All Zones
                                         </h4>
 
                                         <div class="d-flex">
-                                            <button data-bs-toggle="modal" data-bs-target=".new-employment-type" type="button" class="btn btn-primary waves-effect btn-label waves-light text-uppercase"><i class="bx bx-plus label-icon "></i> New Employment Type</button>
+                                            <button data-bs-toggle="modal" data-bs-target=".new-employment-type" type="button" class="btn btn-primary waves-effect btn-label waves-light text-uppercase"><i class="bx bx-plus label-icon "></i> Add Zone</button>
                                         </div>
 
 
@@ -524,26 +524,34 @@
                                             <thead class="table-light">
                                                 <tr>
                                                     <th scope="col">SN</th>
-                                                    <th scope="col">Employment Type</th>
-                                                    <th scope="col">Employees Count</th>
+                                                    <th scope="col">Zone Name</th>
+                                                    <th scope="col">County</th>
+                                                    <th scope="col">Sub-County</th>
+                                                    <th scope="col">Ward</th>
+                                                    <th scope="col">Personnel Count</th>
+                                                    <th scope="col">Farmers Count</th>
+                                                    <th scope="col">Total Livestock Count</th>
                                                     <th scope="col">Status</th>
-                                                    <th>Last Updated</th>
+                                                    <th scope="col">Date Added</th>
                                                     <th class="text-right">Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody class="border">
                                                 <tr>
                                                     <td>1.</td>
-                                                    <td>Full-Time</td>
-                                                    <td>25</td>
-                                                    <td class="fw-bold text-black">
-                                                        <p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p>
-                                                    </td>
-                                                    <td>01 Oct 2023 08:30 AM</td>
+                                                    <td>Mavoko</td>
+                                                    <td>Machakos</td>
+                                                    <td>Athi River</td>
+                                                    <td>Syokimau</td>
+                                                    <td>12</td>
+                                                    <td>340</td>
+                                                    <td>1250</td>
+                                                    <td><i class="mdi mdi-circle text-success me-1"></i> Active</td>
+                                                    <td>01 Jan 2024</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal" data-bs-target=".edit-employment-type" class="btn btn-sm btn-success text-uppercase" title="Edit Employment Type">Edit</button>
-                                                            <a href="org-employment-type-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
+                                                            <a href="org-zone-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".deactivate-employment-type" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Employment Type">
                                                                 <div>Deactivate</div>
                                                                 <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
@@ -555,16 +563,19 @@
                                                 </tr>
                                                 <tr>
                                                     <td>2.</td>
-                                                    <td>Part-Time</td>
-                                                    <td>15</td>
-                                                    <td class="fw-bold text-black">
-                                                        <p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p>
-                                                    </td>
-                                                    <td>05 Oct 2023 09:00 AM</td>
+                                                    <td>Kipipiri</td>
+                                                    <td>Nyandarua</td>
+                                                    <td>Ol Kalou</td>
+                                                    <td>Githioro</td>
+                                                    <td>8</td>
+                                                    <td>210</td>
+                                                    <td>980</td>
+                                                    <td><i class="mdi mdi-circle text-success me-1"></i> Active</td>
+                                                    <td>05 Jan 2024</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal" data-bs-target=".edit-employment-type" class="btn btn-sm btn-success text-uppercase" title="Edit Employment Type">Edit</button>
-                                                            <a href="org-employment-type-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
+                                                            <a href="org-zone-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".deactivate-employment-type" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Employment Type">
                                                                 <div>Deactivate</div>
                                                                 <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
@@ -576,16 +587,19 @@
                                                 </tr>
                                                 <tr>
                                                     <td>3.</td>
-                                                    <td>Contract</td>
+                                                    <td>Kieni</td>
+                                                    <td>Nyeri</td>
+                                                    <td>Kieni West</td>
+                                                    <td>Mugunda</td>
                                                     <td>10</td>
-                                                    <td class="fw-bold text-black">
-                                                        <p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p>
-                                                    </td>
-                                                    <td>10 Oct 2023 10:30 AM</td>
-                                                    <td class="text-uppercase text-right">
+                                                    <td>400</td>
+                                                    <td>1500</td>
+                                                    <td><i class="mdi mdi-circle text-danger me-1"></i> Inactive</td>
+                                                    <td>10 Jan 2024</td>
+                                                   <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal" data-bs-target=".edit-employment-type" class="btn btn-sm btn-success text-uppercase" title="Edit Employment Type">Edit</button>
-                                                            <a href="org-employment-type-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
+                                                            <a href="org-zone-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".deactivate-employment-type" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Employment Type">
                                                                 <div>Deactivate</div>
                                                                 <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
@@ -597,16 +611,19 @@
                                                 </tr>
                                                 <tr>
                                                     <td>4.</td>
-                                                    <td>Internship</td>
-                                                    <td>5</td>
-                                                    <td class="fw-bold text-black">
-                                                        <p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p>
-                                                    </td>
-                                                    <td>15 Oct 2023 01:00 PM</td>
+                                                    <td>Marigat</td>
+                                                    <td>Baringo</td>
+                                                    <td>Baringo South</td>
+                                                    <td>Ilchamus</td>
+                                                    <td>7</td>
+                                                    <td>180</td>
+                                                    <td>870</td>
+                                                    <td><i class="mdi mdi-circle text-success me-1"></i> Active</td>
+                                                    <td>15 Jan 2024</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal" data-bs-target=".edit-employment-type" class="btn btn-sm btn-success text-uppercase" title="Edit Employment Type">Edit</button>
-                                                            <a href="org-employment-type-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
+                                                            <a href="org-zone-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".deactivate-employment-type" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Employment Type">
                                                                 <div>Deactivate</div>
                                                                 <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
@@ -618,16 +635,91 @@
                                                 </tr>
                                                 <tr>
                                                     <td>5.</td>
-                                                    <td>Freelance</td>
-                                                    <td>8</td>
-                                                    <td class="fw-bold text-black">
-                                                        <p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p>
-                                                    </td>
-                                                    <td>20 Oct 2023 11:45 AM</td>
+                                                    <td>Kitui Central</td>
+                                                    <td>Kitui</td>
+                                                    <td>Kitui Central</td>
+                                                    <td>Kyangwithya</td>
+                                                    <td>15</td>
+                                                    <td>500</td>
+                                                    <td>2000</td>
+                                                    <td><i class="mdi mdi-circle text-success me-1"></i> Active</td>
+                                                    <td>20 Jan 2024</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal" data-bs-target=".edit-employment-type" class="btn btn-sm btn-success text-uppercase" title="Edit Employment Type">Edit</button>
-                                                            <a href="org-employment-type-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
+                                                            <a href="org-zone-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-employment-type" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Employment Type">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6.</td>
+                                                    <td>Turbo</td>
+                                                    <td>Uasin Gishu</td>
+                                                    <td>Turbo</td>
+                                                    <td>Tapsagoi</td>
+                                                    <td>9</td>
+                                                    <td>320</td>
+                                                    <td>1150</td>
+                                                    <td><i class="mdi mdi-circle text-danger me-1"></i> Inactive</td>
+                                                    <td>25 Jan 2024</td>
+                                                   <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button data-bs-toggle="modal" data-bs-target=".edit-employment-type" class="btn btn-sm btn-success text-uppercase" title="Edit Employment Type">Edit</button>
+                                                            <a href="org-zone-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-employment-type" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Employment Type">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7.</td>
+                                                    <td>Maua</td>
+                                                    <td>Meru</td>
+                                                    <td>Igembe South</td>
+                                                    <td>Akachiu</td>
+                                                    <td>6</td>
+                                                    <td>190</td>
+                                                    <td>720</td>
+                                                    <td><i class="mdi mdi-circle text-success me-1"></i> Active</td>
+                                                    <td>30 Jan 2024</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button data-bs-toggle="modal" data-bs-target=".edit-employment-type" class="btn btn-sm btn-success text-uppercase" title="Edit Employment Type">Edit</button>
+                                                            <a href="org-zone-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-employment-type" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Employment Type">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8.</td>
+                                                    <td>Mbita</td>
+                                                    <td>Homa Bay</td>
+                                                    <td>Suba North</td>
+                                                    <td>Rusinga</td>
+                                                    <td>11</td>
+                                                    <td>280</td>
+                                                    <td>960</td>
+                                                    <td><i class="mdi mdi-circle text-success me-1"></i> Active</td>
+                                                    <td>05 Feb 2024</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button data-bs-toggle="modal" data-bs-target=".edit-employment-type" class="btn btn-sm btn-success text-uppercase" title="Edit Employment Type">Edit</button>
+                                                            <a href="org-zone-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Employment Type Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".deactivate-employment-type" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Employment Type">
                                                                 <div>Deactivate</div>
                                                                 <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
@@ -639,6 +731,7 @@
                                                 </tr>
                                             </tbody>
                                         </table>
+                                        
                                         
                                     </div>
                                 </div>
@@ -658,36 +751,77 @@
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content modal-md">
                         <div class="modal-header border-bottom-0">
-                            <h4 class="modal-title text-uppercase">Create New Employment Type</h4>
+                            <h4 class="modal-title text-uppercase">Add Operational Zone</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-6 mb-3">
+                                <div class="col-12 mb-3">
                                     <div class="mb-3">
-                                        <label for="employment-type-name" class="form-label">Employment Type Name<strong class="text-danger fw-bold">*</strong></label>
-                                        <input type="text" class="form-control" id="employment-type-name" placeholder="Enter Employment Type Name" spellcheck="false" required>
+                                        <label for="zone-name" class="form-label">Zone/Area Name<strong class="text-danger fw-bold">*</strong></label>
+                                        <input type="text" class="form-control" id="zone-name" placeholder="Enter Zone/Area Name" spellcheck="false" required>
                                     </div>
                                 </div>
-
-                                <div class="col-6 mb-3">
+                                
+                                <div class="col-12 mb-3">
                                     <div class="mb-3">
-                                        <label for="employment-type-status" class="form-label">Status<strong class="text-danger fw-bold">*</strong></label>
-                                        <select id="employment-type-status" class="form-select" required>
-                                            <option disabled selected>Select Status</option>
-                                            <option>Active</option>
-                                            <option>Inactive</option>
+                                        <label for="county" class="form-label">County<strong class="text-danger fw-bold">*</strong></label>
+                                        <select id="county" class="form-select" required>
+                                            <option disabled selected>Select County</option>
+                                            <option value="nairobi">Nairobi</option>
+                                            <option value="mombasa">Mombasa</option>
+                                            <option value="kisumu">Kisumu</option>
+                                            <option value="nakuru">Nakuru</option>
+                                            <option value="kiambu">Kiambu</option>
+                                            <!-- Add all 47 counties here -->
                                         </select>
                                     </div>
                                 </div>
-
+                                
                                 <div class="col-12 mb-3">
                                     <div class="mb-3">
-                                        <label for="employment-type-description" class="form-label">Description</label>
-                                        <textarea id="employment-type-description" placeholder="Enter Description" class="form-control" rows="3" spellcheck="false" required></textarea>
+                                        <label for="sub-county" class="form-label">Sub County<strong class="text-danger fw-bold">*</strong></label>
+                                        <select id="sub-county" class="form-select" required>
+                                            <option disabled selected>Select Sub County</option>
+                                            <optgroup label="Nairobi">
+                                                <option value="westlands">Westlands</option>
+                                                <option value="langata">Lang'ata</option>
+                                                <option value="starehe">Starehe</option>
+                                            </optgroup>
+                                            <optgroup label="Mombasa">
+                                                <option value="mvita">Mvita</option>
+                                                <option value="changamwe">Changamwe</option>
+                                            </optgroup>
+                                            <optgroup label="Kisumu">
+                                                <option value="kisumu-central">Kisumu Central</option>
+                                                <option value="nyando">Nyando</option>
+                                            </optgroup>
+                                            <!-- Add more sub-counties per county -->
+                                        </select>
                                     </div>
                                 </div>
-
+                                
+                                <div class="col-12 mb-3">
+                                    <div class="mb-3">
+                                        <label for="ward" class="form-label">Ward<strong class="text-danger fw-bold">*</strong></label>
+                                        <select id="ward" class="form-select" multiple required>
+                                            <option disabled>Select Ward</option>
+                                            <optgroup label="Westlands">
+                                                <option value="karura">Karura</option>
+                                                <option value="kangemi">Kangemi</option>
+                                            </optgroup>
+                                            <optgroup label="Lang'ata">
+                                                <option value="south-c">South C</option>
+                                                <option value="nyayo-highrise">Nyayo Highrise</option>
+                                            </optgroup>
+                                            <optgroup label="Mvita">
+                                                <option value="tudor">Tudor</option>
+                                                <option value="tononoka">Tononoka</option>
+                                            </optgroup>
+                                            <!-- Add more wards per sub-county -->
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -713,38 +847,80 @@
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content modal-md">
                         <div class="modal-header border-bottom-0">
-                            <h4 class="modal-title text-uppercase">Edit Employment Type</h4>
+                            <h4 class="modal-title text-uppercase">Edit Operational Zone</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-6 mb-3">
+                                <div class="col-12 mb-3">
                                     <div class="mb-3">
-                                        <label for="employment-type-name" class="form-label">Employment Type Name<strong class="text-danger fw-bold">*</strong></label>
-                                        <input type="text" class="form-control" id="employment-type-name" placeholder="Enter Employment Type Name" spellcheck="false" required>
+                                        <label for="zone-name" class="form-label">Zone/Area Name<strong class="text-danger fw-bold">*</strong></label>
+                                        <input type="text" class="form-control" id="zone-name" placeholder="Enter Zone/Area Name" spellcheck="false" value="Westlands Zone" required>
                                     </div>
                                 </div>
-
-                                <div class="col-6 mb-3">
+                                
+                                <div class="col-12 mb-3">
                                     <div class="mb-3">
-                                        <label for="employment-type-status" class="form-label">Status<strong class="text-danger fw-bold">*</strong></label>
-                                        <select id="employment-type-status" class="form-select" required>
-                                            <option disabled selected>Select Status</option>
-                                            <option>Active</option>
-                                            <option>Inactive</option>
+                                        <label for="county" class="form-label">County<strong class="text-danger fw-bold">*</strong></label>
+                                        <select id="county" class="form-select" required>
+                                            <option disabled>Select County</option>
+                                            <option value="nairobi" selected>Nairobi</option>
+                                            <option value="mombasa">Mombasa</option>
+                                            <option value="kisumu">Kisumu</option>
+                                            <option value="nakuru">Nakuru</option>
+                                            <option value="kiambu">Kiambu</option>
+                                            <!-- Add all 47 counties here -->
                                         </select>
                                     </div>
                                 </div>
-
+                                
                                 <div class="col-12 mb-3">
                                     <div class="mb-3">
-                                        <label for="employment-type-description" class="form-label">Description</label>
-                                        <textarea id="employment-type-description" placeholder="Enter Description" class="form-control" rows="3" spellcheck="false" required></textarea>
+                                        <label for="sub-county" class="form-label">Sub County<strong class="text-danger fw-bold">*</strong></label>
+                                        <select id="sub-county" class="form-select" required>
+                                            <option disabled>Select Sub County</option>
+                                            <optgroup label="Nairobi">
+                                                <option value="westlands" selected>Westlands</option>
+                                                <option value="langata">Lang'ata</option>
+                                                <option value="starehe">Starehe</option>
+                                            </optgroup>
+                                            <optgroup label="Mombasa">
+                                                <option value="mvita">Mvita</option>
+                                                <option value="changamwe">Changamwe</option>
+                                            </optgroup>
+                                            <optgroup label="Kisumu">
+                                                <option value="kisumu-central">Kisumu Central</option>
+                                                <option value="nyando">Nyando</option>
+                                            </optgroup>
+                                            <!-- Add more sub-counties per county -->
+                                        </select>
                                     </div>
                                 </div>
-
+                                
+                                <div class="col-12 mb-3">
+                                    <div class="mb-3">
+                                        <label for="ward" class="form-label">Ward<strong class="text-danger fw-bold">*</strong></label>
+                                        <select id="ward" class="form-select" multiple required>
+                                            <option disabled>Select Ward</option>
+                                            <optgroup label="Westlands">
+                                                <option value="karura" selected>Karura</option>
+                                                <option value="kangemi">Kangemi</option>
+                                            </optgroup>
+                                            <optgroup label="Lang'ata">
+                                                <option value="south-c">South C</option>
+                                                <option value="nyayo-highrise">Nyayo Highrise</option>
+                                            </optgroup>
+                                            <optgroup label="Mvita">
+                                                <option value="tudor">Tudor</option>
+                                                <option value="tononoka">Tononoka</option>
+                                            </optgroup>
+                                            <!-- Add more wards per sub-county -->
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        
                         <div class="modal-footer">
                             <div class="d-flex flex-wrap gap-2 text-uppercase">
                                 <button type="submit" class="btn btn-primary waves-effect waves-light">
@@ -768,11 +944,11 @@
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content modal-md">
                         <div class="modal-header border-bottom-0">
-                            <h4 class="modal-title text-uppercase">Deactivate Employment Type</h4>
+                            <h4 class="modal-title text-uppercase">Deactivate Zone</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Are you sure you want to deactivate the employment type <strong class="text-primary">Medical Employment Type</strong>?</p>
+                            <p>Are you sure you want to deactivate the zone <strong class="text-primary">Northern Agricultural Zone</strong>?</p>
                             <div class="row">
                                 <div class="col-12 mb-3">
                                     <label for="deactivation-reason" class="form-label">Reason for Deactivation (Optional)</label>
@@ -792,6 +968,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-- /.modal-dialog -->
             </div>
             <!-- end of deactivation -->
