@@ -519,180 +519,169 @@
                                       </div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="table-responsive ">
-                                        <table class="table align-middle table-hover contacts-table text-uppercase border" id="datatable-button">
-                                            <thead class="table-light">
-                                                <tr>
-                                                    <th scope="col">SN</th>
-                                                    <th scope="col">Name</th>
-                                                    <th scope="col">Abr</th>
-                                                    <th scope="col">Is Clinic</th>
-                                                    <th scope="col">Employees Count</th>
-                                                    <th scope="col">Manager</th>
-                                                    <th scope="col">Status</th>
-                                                    <th>Last Updated</th>
-                                                    <th class="text-right">Actions</th>                                                    
-                                                </tr>
-                                            </thead>
-                                            <tbody class="border">
-                                                <tr>
-                                                    <td>1.</td>
-                                                    <td>Pediatrics</td>
-                                                    <td>PED</td>
-                                                    <td>Yes</td>
-                                                    <td>10</td>
-                                                    <td>Dr. Aisha Nyambura</td>
-                                                    <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
-                                                    <td>01 Oct 2023 08:30 AM</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Designation">Edit</button>
-                                                            <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Designation Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Designation">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2.</td>
-                                                    <td>Cardiology</td>
-                                                    <td>CAR</td>
-                                                    <td>Yes</td>
-                                                    <td>8</td>
-                                                    <td>Dr. Juma Mwangi</td>
-                                                    <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
-                                                    <td>05 Oct 2023 09:00 AM</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Designation">Edit</button>
-                                                            <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Designation Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Designation">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3.</td>
-                                                    <td>Gynecology</td>
-                                                    <td>GYNE</td>
-                                                    <td>Yes</td>
-                                                    <td>6</td>
-                                                    <td>Dr. Wanjiku Njeri</td>
-                                                    <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
-                                                    <td>10 Oct 2023 10:30 AM</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Designation">Edit</button>
-                                                            <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Designation Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Designation">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4.</td>
-                                                    <td>Radiology</td>
-                                                    <td>RAD</td>
-                                                    <td>No</td>
-                                                    <td>5</td>
-                                                    <td>Dr. Peter Mugo</td>
-                                                    <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
-                                                    <td>15 Oct 2023 01:00 PM</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Designation">Edit</button>
-                                                            <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Designation Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Designation">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5.</td>
-                                                    <td>Emergency</td>
-                                                    <td>EMG</td>
-                                                    <td>Yes</td>
-                                                    <td>14</td>
-                                                    <td>Dr. Lucy Wambui</td>
-                                                    <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
-                                                    <td>20 Oct 2023 11:45 AM</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Designation">Edit</button>
-                                                            <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Designation Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Designation">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>6.</td>
-                                                    <td>Oncology</td>
-                                                    <td>ONC</td>
-                                                    <td>No</td>
-                                                    <td>12</td>
-                                                    <td>Dr. Adhiambo Atuma</td>
-                                                    <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
-                                                    <td>15 Jan 2024 04:45 PM</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Designation">Edit</button>
-                                                            <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Designation Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Designation">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>7.</td>
-                                                    <td>Urology</td>
-                                                    <td>URO</td>
-                                                    <td>Yes</td>
-                                                    <td>7</td>
-                                                    <td>Dr. Kevin Karanja</td>
-                                                    <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
-                                                    <td>10 Jan 2024 02:30 PM</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Designation">Edit</button>
-                                                            <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Designation Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Designation">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        
-                                    </div>
+                                    <table class="table align-middle table-hover contacts-table text-uppercase border" id="datatable-button">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th scope="col">SN</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Designation</th>
+                                                <th scope="col">Employees Count</th>
+                                                <th scope="col">Manager</th>
+                                                <th scope="col">Status</th>
+                                                <th>Last Updated</th>
+                                                <th class="text-right">Actions</th>                                                    
+                                            </tr>
+                                        </thead>
+                                        <tbody class="border">
+                                            <tr>
+                                                <td>1.</td>
+                                                <td>Cattle Ranch</td>
+                                                <td>Livestock Officer</td>
+                                                <td>10</td>
+                                                <td>Mr. James Kariuki</td>
+                                                <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                <td>01 Oct 2023 08:30 AM</td>
+                                                <td class="text-uppercase text-right">
+                                                    <div class="d-flex justify-content-end">
+                                                        <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</button>
+                                                        <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                        <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                            <div>Deactivate</div>
+                                                            <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                <span class="sr-only">Loading...</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2.</td>
+                                                <td>Sheep Farm</td>
+                                                <td>Animal Health Specialist</td>
+                                                <td>8</td>
+                                                <td>Miss Mary Wanjiku</td>
+                                                <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                <td>05 Oct 2023 09:00 AM</td>
+                                                <td class="text-uppercase text-right">
+                                                    <div class="d-flex justify-content-end">
+                                                        <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</button>
+                                                        <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                        <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                            <div>Deactivate</div>
+                                                            <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                <span class="sr-only">Loading...</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3.</td>
+                                                <td>Goat Farm</td>
+                                                <td>Nutrition Officer</td>
+                                                <td>6</td>
+                                                <td>Mr. Peter Kamau</td>
+                                                <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                <td>10 Oct 2023 10:30 AM</td>
+                                                <td class="text-uppercase text-right">
+                                                    <div class="d-flex justify-content-end">
+                                                        <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</button>
+                                                        <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                        <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                            <div>Deactivate</div>
+                                                            <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                <span class="sr-only">Loading...</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4.</td>
+                                                <td>Dairy Farm</td>
+                                                <td>Animal Reproduction Expert</td>
+                                                <td>5</td>
+                                                <td>Dr. Lucy Muthoni</td>
+                                                <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                <td>15 Oct 2023 01:00 PM</td>
+                                                <td class="text-uppercase text-right">
+                                                    <div class="d-flex justify-content-end">
+                                                        <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</button>
+                                                        <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                        <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                            <div>Deactivate</div>
+                                                            <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                <span class="sr-only">Loading...</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5.</td>
+                                                <td>Poultry Farm</td>
+                                                <td>Field Operations Manager</td>
+                                                <td>14</td>
+                                                <td>Mr. John Omondi</td>
+                                                <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                <td>20 Oct 2023 11:45 AM</td>
+                                                <td class="text-uppercase text-right">
+                                                    <div class="d-flex justify-content-end">
+                                                        <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</button>
+                                                        <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                        <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                            <div>Deactivate</div>
+                                                            <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                <span class="sr-only">Loading...</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6.</td>
+                                                <td>Livestock Market</td>
+                                                <td>Sales and Marketing Officer</td>
+                                                <td>12</td>
+                                                <td>Miss Grace Njeri</td>
+                                                <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                <td>15 Jan 2024 04:45 PM</td>
+                                                <td class="text-uppercase text-right">
+                                                    <div class="d-flex justify-content-end">
+                                                        <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</button>
+                                                        <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                        <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                            <div>Deactivate</div>
+                                                            <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                <span class="sr-only">Loading...</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7.</td>
+                                                <td>Feed Production</td>
+                                                <td>Nutrition Logistics Officer</td>
+                                                <td>7</td>
+                                                <td>Mr. David Mwangi</td>
+                                                <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                <td>10 Jan 2024 02:30 PM</td>
+                                                <td class="text-uppercase text-right">
+                                                    <div class="d-flex justify-content-end">
+                                                        <button data-bs-toggle="modal" data-bs-target=".edit-department" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</button>
+                                                        <a href="org-department-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                        <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                            <div>Deactivate</div>
+                                                            <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                <span class="sr-only">Loading...</span>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -722,12 +711,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6 mb-3">
-                                    <div class="mb-3">
-                                        <label for="abbreviation" class="form-label">Abbreviation<strong class="text-danger fw-bold">*</strong></label>
-                                        <input type="text" class="form-control" id="abbreviation" placeholder="Enter Abbreviation" spellcheck="false" required>
-                                    </div>
-                                </div>
+                              
 
                                 <div class="col-6 mb-3">
                                     <div class="mb-3">
@@ -747,26 +731,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 mb-3">
-                                    <div class="mb-3">
-                                        <label class="form-label">Is this a Clinic?<strong class="text-danger fw-bold">*</strong></label>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="clinic-option" id="clinic-yes" value="yes" required>
-                                                <label class="form-check-label" for="clinic-yes">
-                                                    Yes
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="clinic-option" id="clinic-no" value="no" checked>
-                                                <label class="form-check-label" for="clinic-no">
-                                                    No
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                            
                                 <div class="col-12 mb-3">
                                     <div class="mb-3">
                                         <label for="role-description" class="form-label">Department Description</label>
@@ -807,16 +772,11 @@
                                 <div class="col-6 mb-3">
                                     <div class="mb-3">
                                         <label for="department-name" class="form-label">Department Name<strong class="text-danger fw-bold">*</strong></label>
-                                        <input type="text" class="form-control" id="department-name" value="Pediatrics">
+                                        <input type="text" class="form-control" id="department-name" value="Marketing Department">
                                     </div>
                                 </div>
 
-                                <div class="col-6 mb-3">
-                                    <div class="mb-3">
-                                        <label for="abbreviation" class="form-label">Abbreviation<strong class="text-danger fw-bold">*</strong></label>
-                                        <input type="text" class="form-control" id="abbreviation" value="PED">
-                                    </div>
-                                </div>
+                              
 
                                 <div class="col-6 mb-3">
                                     <div class="mb-3">
@@ -835,28 +795,15 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 mb-3">
-                                    <div class="mb-3">
-                                        <label class="form-label">Is this a Clinic?<strong class="text-danger fw-bold">*</strong></label>
-                                        <div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="clinic-option" id="clinic-yes" value="yes" checked >
-                                                <label class="form-check-label" for="clinic-yes">Yes</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="clinic-option" id="clinic-no" value="no" >
-                                                <label class="form-check-label" for="clinic-no">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               
 
                                 <div class="col-12 mb-3">
                                     <div class="mb-3">
                                         <label for="role-description" class="form-label">Department Description</label>
-                                        <textarea id="role-description" class="form-control" rows="3" >Pediatric department focusing on children's health and wellness.</textarea>
+                                        <textarea id="role-description" class="form-control" rows="3">Marketing department responsible for promoting company products and managing brand visibility.</textarea>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -887,7 +834,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Are you sure you want to deactivate the department <strong class="text-primary">Medical Department</strong>?</p>
+                            <p>Are you sure you want to deactivate the department <strong class="text-primary">Marketing  Department</strong>?</p>
                             <div class="row">
                                 <div class="col-12 mb-3">
                                     <label for="deactivation-reason" class="form-label">Reason for Deactivation (Optional)</label>
