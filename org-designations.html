@@ -524,7 +524,7 @@
                                                 <tr class="">
                                                     <th scope="col">SN</th>
                                                     <th scope="col">Name</th>
-                                                    <th scope="col">Employees Count</th>
+                                                    <th scope="col">Livestock specialists</th>
                                                     <th scope="col">Status</th>
                                                     <th class="text-right">Actions</th>                                                    
                                                 </tr>
@@ -532,8 +532,8 @@
                                             <tbody class="border">
                                                 <tr>
                                                     <td>1.</td>
-                                                    <td>Surgeon</td>
-                                                    <td>1</td>
+                                                    <td>Veterinary</td>
+                                                    <td>20</td>
                                                     <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
@@ -550,7 +550,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td>2.</td>
-                                                    <td>Nurse</td>
+                                                    <td>Feed Specialist</td>
                                                     <td>15</td>
                                                     <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
                                                     <td class="text-uppercase text-right">
@@ -566,28 +566,11 @@
                                                         </div>
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <td>3.</td>
-                                                    <td>Pharmacist</td>
-                                                    <td>3</td>
-                                                    <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-danger me-1"></i> Inactive</p></td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button data-bs-toggle="modal" data-bs-target=".edit-designation" class="btn btn-sm btn-success text-uppercase" title="Edit Designation">Edit</button>
-                                                            <a href="org-designations-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Designation Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-designation" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Designation">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4.</td>
-                                                    <td>Radiologist</td>
-                                                    <td>2</td>
+                                                    <td>Breeding and Genetics Manager</td>
+                                                    <td>10</td>
                                                     <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
@@ -602,24 +585,7 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>5.</td>
-                                                    <td>Laboratory Technician</td>
-                                                    <td>5</td>
-                                                    <td class="fw-bold text-black"><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-danger me-1"></i> Inactive</p></td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <button data-bs-toggle="modal" data-bs-target=".edit-designation" class="btn btn-sm btn-success text-uppercase" title="Edit Designation">Edit</button>
-                                                            <a href="org-designations-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Designation Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-designation" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Designation">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
+                                               
                                             </tbody>
                                         </table>
                                         
@@ -668,7 +634,7 @@
 
                                 <div class="col-12 mb-3">
                                     <div class="mb-3">
-                                        <label for="formrow-firstname-input" class="form-label">Role Description</label>
+                                        <label for="formrow-firstname-input" class="form-label">Designation Description</label>
                                         <textarea placeholder="Enter Description" class="form-control" rows="3" spellcheck="false" data-ms-editor="true"></textarea>
                                     </div>
                                 </div>
@@ -703,10 +669,10 @@
                                 <div class="col-6 mb-3">
                                     <div class="mb-3">
                                         <label for="designation-name" class="form-label">Name <strong class="text-danger fw-bold">*</strong></label>
-                                        <input type="text" class="form-control" id="designation-name" value="Medical Officer" placeholder="Enter Designation Name" spellcheck="false" data-ms-editor="true">
+                                        <input type="text" class="form-control" id="designation-name" value="" placeholder="Enter Designation Name" spellcheck="false" data-ms-editor="true">
                                     </div>
                                 </div>
-            
+                
                                 <div class="col-6 mb-3">
                                     <div class="mb-3">
                                         <label for="designation-status" class="form-label">Status <strong class="text-danger fw-bold">*</strong></label>
@@ -717,11 +683,11 @@
                                         </select>
                                     </div>
                                 </div>
-            
+                
                                 <div class="col-12 mb-3">
                                     <div class="mb-3">
-                                        <label for="designation-description" class="form-label">Role Description</label>
-                                        <textarea id="designation-description" placeholder="Enter Description" class="form-control" rows="3" spellcheck="false" data-ms-editor="true">Responsible for patient diagnosis and treatment planning</textarea>
+                                        <label for="designation-description" class="form-label">Designation Description</label>
+                                        <textarea id="designation-description" placeholder="Enter Description" class="form-control" rows="3" spellcheck="false" data-ms-editor="true">Responsible for managing livestock health, feeding, and breeding programs.</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -752,7 +718,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Are you sure you want to deactivate the designation <strong class="text-primary">Medical Officer</strong>?</p>
+                            <p>Are you sure you want to deactivate the designation <strong class="text-primary">Veterinary</strong>?</p>
                             <div class="row">
                                 <div class="col-12 mb-3">
                                     <label for="deactivation-reason" class="form-label">Reason for Deactivation (Optional)</label>
@@ -784,7 +750,7 @@
                         <div class="col-sm-6 ">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> © Hospital Management Information System
+                            </script> © Livestock Management System
                         </div>
                         <div class="col-sm-6 ">
                             <div class="text-sm-end d-sm-block ">
