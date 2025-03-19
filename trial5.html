@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livestock Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .table-responsive {
+            overflow-x: auto;
+        }
+        @media (max-width: 992px) {
+            .mobile-hide {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <h2 class="mb-4">Livestock Breeding Management</h2>
+        
+        <div class="table-responsive">
+            <table class="table align-middle table-hover contacts-table table-striped text-nowrap text-uppercase" id="datatable-buttons">
+                <thead class="table-light">
+                    <tr class="table-dark">
+                        <th scope="col">Sno</th>
+                        <th scope="col">Tag</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Rfid No.</th>
+                        <th scope="col" class="mobile-hide">Category</th>
+                        <th scope="col" class="mobile-hide">Breed</th>
+                        <th scope="col" class="mobile-hide">Gender</th>
+                        <th scope="col" class="mobile-hide">Age</th>
+                        <th scope="col" class="mobile-hide">Weight</th>
+                        <th scope="col" class="mobile-hide">Conception Date</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col" class="mobile-hide">Progress</th>
+                        <th scope="col" class="mobile-hide">Breeding Method</th>
+                        <th scope="col" class="mobile-hide">Sire Details</th>
+                        <th scope="col" class="mobile-hide">Pregnancy Confirmation</th>
+                        <th scope="col">Pregnancy Status</th>
+                        <th scope="col" class="mobile-hide">Birth Records</th>
+                        <th scope="col">Status</th>
+                        <th scope="col" class="mobile-hide">Ranch</th>
+                        <th scope="col" class="mobile-hide">Zone</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                        <td>1</td>
+                        <td class="fw-bold">#00123</td>
+                        <td>Bella</td>
+                        <td>RFID-12345</td>
+                        <td class="mobile-hide">Cattle</td>
+                        <td class="mobile-hide">Angus</td>
+                        <td class="mobile-hide">Female</td>
+                        <td class="mobile-hide">2Y, 3M, 1W</td>
+                        <td class="mobile-hide">500 kg</td>
+                        <td class="mobile-hide">Dec 15, 2024</td>
+                        <td>May 10, 2025</td>
+                        <td class="mobile-hide">
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="ms-2">50 days (50%)</span>
+                        </td>
+                        <td class="mobile-hide">Natural Breeding</td>
+                        <td class="mobile-hide">Bull #00124 - Angus</td>
+                        <td class="mobile-hide">Visual Observation</td>
+                        <td><span class="badge bg-warning">Mid Pregnancy</span></td>
+                        <td class="mobile-hide">
+                            <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-record-birth">Record Birth</button>
+                        </td>
+                        <td><span class="badge bg-success">Healthy</span></td>
+                        <td class="mobile-hide">North Ranch</td>
+                        <td class="mobile-hide">MAVOKO</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#viewDetailsModal" data-animal-id="1">
+                                    <i class="bi bi-eye"></i> View
+                                </button>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-edit-details">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal-delete-details">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr>
+                        <td>2</td>
+                        <td class="fw-bold">#00456</td>
+                        <td>Max</td>
+                        <td>RFID-67890</td>
+                        <td class="mobile-hide">Goat</td>
+                        <td class="mobile-hide">Boer</td>
+                        <td class="mobile-hide">Male</td>
+                        <td class="mobile-hide">1Y, 6M, 0W</td>
+                        <td class="mobile-hide">45 kg</td>
+                        <td class="mobile-hide">Jan 10, 2024</td>
+                        <td>Jun 5, 2024</td>
+                        <td class="mobile-hide">
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="ms-2">30 days (30%)</span>
+                        </td>
+                        <td class="mobile-hide">Artificial Insemination</td>
+                        <td class="mobile-hide">Buck #00455 - Boer</td>
+                        <td class="mobile-hide">Ultrasound</td>
+                        <td><span class="badge bg-info">Early Pregnancy</span></td>
+                        <td class="mobile-hide">
+                            <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-record-birth">Record Birth</button>
+                        </td>
+                        <td><span class="badge bg-danger">Sick</span></td>
+                        <td class="mobile-hide">East Ranch</td>
+                        <td class="mobile-hide">KIPIPIRI</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#viewDetailsModal" data-animal-id="2">
+                                    <i class="bi bi-eye"></i> View
+                                </button>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-edit-details">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal-delete-details">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr>
+                        <td>3</td>
+                        <td class="fw-bold">#00789</td>
+                        <td>Woolly</td>
+                        <td>RFID-11223</td>
+                        <td class="mobile-hide">Sheep</td>
+                        <td class="mobile-hide">Dorper</td>
+                        <td class="mobile-hide">Female</td>
+                        <td class="mobile-hide">3Y, 1M, 2W</td>
+                        <td class="mobile-hide">60 kg</td>
+                        <td class="mobile-hide">Feb 1, 2024</td>
+                        <td>Jul 1, 2024</td>
+                        <td class="mobile-hide">
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="ms-2">40 days (40%)</span>
+                        </td>
+                        <td class="mobile-hide">Natural Breeding</td>
+                        <td class="mobile-hide">Ram #00788 - Dorper</td>
+                        <td class="mobile-hide">Blood Test</td>
+                        <td><span class="badge bg-warning">Mid Pregnancy</span></td>
+                        <td class="mobile-hide">
+                            <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-record-birth">Record Birth</button>
+                        </td>
+                        <td><span class="badge bg-danger">Sick</span></td>
+                        <td class="mobile-hide">South Ranch</td>
+                        <td class="mobile-hide">KIENI</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#viewDetailsModal" data-animal-id="3">
+                                    <i class="bi bi-eye"></i> View
+                                </button>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-edit-details">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal-delete-details">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Row 4 -->
+                    <tr>
+                        <td>4</td>
+                        <td class="fw-bold">#00987</td>
+                        <td>Piggy</td>
+                        <td>RFID-00987</td>
+                        <td class="mobile-hide">Pig</td>
+                        <td class="mobile-hide">Duroc</td>
+                        <td class="mobile-hide">Male</td>
+                        <td class="mobile-hide">0Y, 6M, 2W</td>
+                        <td class="mobile-hide">80 kg</td>
+                        <td class="mobile-hide">Mar 1, 2024</td>
+                        <td>Aug 1, 2024</td>
+                        <td class="mobile-hide">
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="ms-2">20 days (20%)</span>
+                        </td>
+                        <td class="mobile-hide">Natural Breeding</td>
+                        <td class="mobile-hide">Boar #00986 - Duroc</td>
+                        <td class="mobile-hide">Visual Observation</td>
+                        <td><span class="badge bg-info">Early Pregnancy</span></td>
+                        <td class="mobile-hide">
+                            <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-record-birth">Record Birth</button>
+                        </td>
+                        <td><span class="badge bg-success">Healthy</span></td>
+                        <td class="mobile-hide">West Ranch</td>
+                        <td class="mobile-hide">MARIGAT</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#viewDetailsModal" data-animal-id="4">
+                                    <i class="bi bi-eye"></i> View
+                                </button>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-edit-details">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal-delete-details">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Row 5 -->
+                    <tr>
+                        <td>5</td>
+                        <td class="fw-bold">#00555</td>
+                        <td>Clucky</td>
+                        <td>RFID-55667</td>
+                        <td class="mobile-hide">Chicken</td>
+                        <td class="mobile-hide">Broiler</td>
+                        <td class="mobile-hide">Female</td>
+                        <td class="mobile-hide">0Y, 4M, 1W</td>
+                        <td class="mobile-hide">2.5 kg</td>
+                        <td class="mobile-hide">Apr 1, 2024</td>
+                        <td>Sep 1, 2024</td>
+                        <td class="mobile-hide">
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="ms-2">10 days (10%)</span>
+                        </td>
+                        <td class="mobile-hide">Natural Breeding</td>
+                        <td class="mobile-hide">Rooster #00554 - Broiler</td>
+                        <td class="mobile-hide">Egg Candling</td>
+                        <td><span class="badge bg-info">Early Pregnancy</span></td>
+                        <td class="mobile-hide">
+                            <button class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-record-birth">Record Birth</button>
+                        </td>
+                        <td><span class="badge bg-danger">Sick</span></td>
+                        <td class="mobile-hide">Central Ranch</td>
+                        <td class="mobile-hide">KITUI CENTRAL</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#viewDetailsModal" data-animal-id="5">
+                                    <i class="bi bi-eye"></i> View
+                                </button>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-edit-details">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal-delete-details">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- View Details Modal -->
+    <div class="modal fade" id="viewDetailsModal" tabindex="-1" aria-labelledby="viewDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewDetailsModalLabel">Animal Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!-- Basic Information -->
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-header bg-primary text-white">
+                                        <h5 class="mb-0">Basic Information</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Tag:</div>
+                                            <div class="col-7" id="modal-tag">#00123</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Name:</div>
+                                            <div class="col-7" id="modal-name">Bella</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">RFID No:</div>
+                                            <div class="col-7" id="modal-rfid">RFID-12345</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Category:</div>
+                                            <div class="col-7" id="modal-category">Cattle</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Breed:</div>
+                                            <div class="col-7" id="modal-breed">Angus</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Gender:</div>
+                                            <div class="col-7" id="modal-gender">Female</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Age:</div>
+                                            <div class="col-7" id="modal-age">2Y, 3M, 1W</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Weight:</div>
+                                            <div class="col-7" id="modal-weight">500 kg</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Status:</div>
+                                            <div class="col-7" id="modal-status"><span class="badge bg-success">Healthy</span></div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Ranch:</div>
+                                            <div class="col-7" id="modal-ranch">North Ranch</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Zone:</div>
+                                            <div class="col-7" id="modal-zone">MAVOKO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Pregnancy Information -->
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-header bg-info text-white">
+                                        <h5 class="mb-0">Pregnancy Information</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Conception Date:</div>
+                                            <div class="col-7" id="modal-conception-date">Dec 15, 2024</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Due Date:</div>
+                                            <div class="col-7" id="modal-due-date">May 10, 2025</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Progress:</div>
+                                            <div class="col-7" id="modal-progress">
+                                                <div class="progress" style="height: 10px;">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span class="ms-2">50 days (50%)</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Breeding Method:</div>
+                                            <div class="col-7" id="modal-breeding-method">Natural Breeding</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Sire Details:</div>
+                                            <div class="col-7" id="modal-sire-details">Bull #00124 - Angus</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Pregnancy Confirmation:</div>
+                                            <div class="col-7" id="modal-pregnancy-confirmation">Visual Observation</div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5 fw-bold">Pregnancy Status:</div>
+                                            <div class="col-7" id="modal-pregnancy-status"><span class="badge bg-warning">Mid Pregnancy</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional Notes -->
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="card-header bg-secondary text-white">
+                                        <h5 class="mb-0">Additional Notes</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p id="modal-notes">Regular checkups scheduled. No issues reported.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit-details">Edit Details</button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal-record-birth">Record Birth</button>
+                    <button type="button" class="btn btn-success">Mark as Delivered</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to populate the modal with animal data -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Sample data for demonstration
+        const animalData = [
+            {
+                id: 1,
+                tag: "#00123",
+                name: "Bella",
+                rfid: "RFID-12345",
+                category: "Cattle",
+                breed: "Angus",
+                gender: "Female",
+                age: "2Y, 3M, 1W",
+                weight: "500 kg",
+                conceptionDate: "Dec 15, 2024",
+                dueDate: "May 10, 2025",
+                progress: 50,
+                progressClass: "bg-success",
+                breedingMethod: "Natural Breeding",
+                sireDetails: "Bull #00124 - Angus",
+                pregnancyConfirmation: "Visual Observation",
+                pregnancyStatus: "Mid Pregnancy",
+                pregnancyStatusClass: "bg-warning",
+                status: "Healthy",
+                statusClass: "bg-success",
+                ranch: "North Ranch",
+                zone: "MAVOKO",
+                notes: "Regular checkups scheduled. No issues reported."
+            },
+            {
+                id: 2,
+                tag: "#00456",
+                name: "Max",
+                rfid: "RFID-67890",
+                category: "Goat",
+                breed: "Boer",
+                gender: "Male",
+                age: "1Y, 6M, 0W",
+                weight: "45 kg",
+                conceptionDate: "Jan 10, 2024",
+                dueDate: "Jun 5, 2024",
+                progress: 30,
+                progressClass: "bg-warning",
+                breedingMethod: "Artificial Insemination",
+                sireDetails: "Buck #00455 - Boer",
+                pregnancyConfirmation: "Ultrasound",
+                pregnancyStatus: "Early Pregnancy",
+                pregnancyStatusClass: "bg-info",
+                status: "Sick",
+                statusClass: "bg-danger",
+                ranch: "East Ranch",
+                zone: "KIPIPIRI",
+                notes: "Under treatment for respiratory infection. Responding well to medication."
+            },
+            {
+                id: 3,
+                tag: "#00789",
+                name: "Woolly",
+                rfid: "RFID-11223",
+                category: "Sheep",
+                breed: "Dorper",
+                gender: "Female",
+                age: "3Y, 1M, 2W",
+                weight: "60 kg",
+                conceptionDate: "Feb 1, 2024",
+                dueDate: "Jul 1, 2024",
+                progress: 40,
+                progressClass: "bg-success",
+                breedingMethod: "Natural Breeding",
+                sireDetails: "Ram #00788 - Dorper",
+                pregnancyConfirmation: "Blood Test",
+                pregnancyStatus: "Mid Pregnancy",
+                pregnancyStatusClass: "bg-warning",
+                status: "Sick",
+                statusClass: "bg-danger",
+                ranch: "South Ranch",
+                zone: "KIENI",
+                notes: "Recovering from foot rot. Isolated for treatment."
+            },
+            {
+                id: 4,
+                tag: "#00987",
+                name: "Piggy",
+                rfid: "RFID-00987",
+                category: "Pig",
+                breed: "Duroc",
+                gender: "Male",
+                age: "0Y, 6M, 2W",
+                weight: "80 kg",
+                conceptionDate: "Mar 1, 2024",
+                dueDate: "Aug 1, 2024",
+                progress: 20,
+                progressClass: "bg-info",
+                breedingMethod: "Natural Breeding",
+                sireDetails: "Boar #00986 - Duroc",
+                pregnancyConfirmation: "Visual Observation",
+                pregnancyStatus: "Early Pregnancy",
+                pregnancyStatusClass: "bg-info",
+                status: "Healthy",
+                statusClass: "bg-success",
+                ranch: "West Ranch",
+                zone: "MARIGAT",
+                notes: "Growing well. No health issues reported."
+            },
+            {
+                id: 5,
+                tag: "#00555",
+                name: "Clucky",
+                rfid: "RFID-55667",
+                category: "Chicken",
+                breed: "Broiler",
+                gender: "Female",
+                age: "0Y, 4M, 1W",
+                weight: "2.5 kg",
+                conceptionDate: "Apr 1, 2024",
+                dueDate: "Sep 1, 2024",
+                progress: 10,
+                progressClass: "bg-danger",
+                breedingMethod: "Natural Breeding",
+                sireDetails: "Rooster #00554 - Broiler",
+                pregnancyConfirmation: "Egg Candling",
+                pregnancyStatus: "Early Pregnancy",
+                pregnancyStatusClass: "bg-info",
+                status: "Sick",
+                statusClass: "bg-danger",
+                ranch: "Central Ranch",
+                zone: "KITUI CENTRAL",
+                notes: "Under observation for lethargy. Administered vitamins."
+            }
+        ];
+
+        // Event listener for the modal
+        document.getElementById('viewDetailsModal').addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            const button = event.relatedTarget;
+            
+            // Extract animal ID from data-* attributes
+            const animalId = button.getAttribute('data-animal-id');
+            
+            // Find the animal data
+            const animal = animalData.find(a => a.id == animalId);
+            
+            if (animal) {
+                // Update the modal's content
+                const modal = document.getElementById('viewDetailsModal');
+                
+                // Set modal title
+                modal.querySelector('.modal-title').textContent = `${animal.tag} - ${animal.name}`;
+                
+                // Basic Information
+                document.getElementById('modal-tag').textContent = animal.tag;
+                document.getElementById('modal-name').textContent = animal.name;
+                document.getElementById('modal-rfid').textContent = animal.rfid;
+                document.getElementById('modal-category').textContent = animal.category;
+                document.getElementById('modal-breed').textContent = animal.breed;
+                document.getElementById('modal-gender').textContent = animal.gender;
+                document.getElementById('modal-age').textContent = animal.age;
+                document.getElementById('modal-weight').textContent = animal.weight;
+                document.getElementById('modal-status').innerHTML = `<span class="badge ${animal.statusClass}">${animal.status}</span>`;
+                document.getElementById('modal-ranch').textContent = animal.ranch;
+                document.getElementById('modal-zone').textContent = animal.zone;
+                
+                // Pregnancy Information
+                document.getElementById('modal-conception-date').textContent = animal.conceptionDate;
+                document.getElementById('modal-due-date').textContent = animal.dueDate;
+                document.getElementById('modal-progress').innerHTML = `
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar ${animal.progressClass}" role="progressbar" style="width: ${animal.progress}%;" aria-valuenow="${animal.progress}" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="ms-2">${animal.progress} days (${animal.progress}%)</span>
+                `;
+                document.getElementById('modal-breeding-method').textContent = animal.breedingMethod;
+                document.getElementById('modal-sire-details').textContent = animal.sireDetails;
+                document.getElementById('modal-pregnancy-confirmation').textContent = animal.pregnancyConfirmation;
+                document.getElementById('modal-pregnancy-status').innerHTML = `<span class="badge ${animal.pregnancyStatusClass}">${animal.pregnancyStatus}</span>`;
+                
+                // Additional Notes
+                document.getElementById('modal-notes').textContent = animal.notes;
+            }
+        });
+    </script>
+</body>
+</html>
+
