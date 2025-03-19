@@ -550,13 +550,15 @@
                                                 <a class="nav-item nav-link" href="farmer-details.html">Profile</a>
                                                 <a class="nav-item nav-link" href="farmer-ranches.html">Ranches</a>
                                                 <a class="nav-item nav-link" href="farmer-livestock.html">Livestock</a>
-                                                <a class="nav-item nav-link" href="farmer-livestock-weight.html">Weight Tracking</a>
+                                                <a class="nav-item nav-link" href="farmer-deliveries.html">Purchases</a>
+                                                <a class="nav-item nav-link" href="farmer-livestock-weight.html">Weight</a>
                                                 <a class="nav-item nav-link" href="farmer-livestock-breeding.html">Breeding</a>
                                                 <a class="nav-item nav-link" href="farmer-livestock-pregnancy.html">Pregnancies</a>
-                                                <a class="nav-item nav-link" href="farmer-livestock-birth.html">Farm Births</a>
+                                                <a class="nav-item nav-link" href="farmer-livestock-birth.html">Births</a>
+                                                <a class="nav-item nav-link" href="farmer-livestock-sick.html">Sick Animals</a>
+                                                <a class="nav-item nav-link" href="farmer-livestock-vaccines-meds.html">Vaccines & Meds</a>
                                                 <a class="nav-item nav-link" href="farmer-livestock-removed.html">Removed</a>
                                                 <a class="nav-item nav-link" href="farmer-livestock-death.html">Deceased</a>
-                                                <a class="nav-item nav-link" href="farmer-deliveries.html">Purchased Livestock</a>
                                             </div>
                                             <div class="navbar-nav">
                                                 <a href="farmer-add.html" type="button"
@@ -860,11 +862,15 @@
                                                                         title="Record new weight measurement">
                                                                         <i class="font-size-15 mdi mdi-scale me-3 text-info"></i>Record Weight
                                                                     </a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-mark-sick"
+                                                                        title="Record illness or health issue">
+                                                                        <i class="font-size-15 mdi mdi-medical-bag me-3 text-danger"></i>Mark as Sick
+                                                                    </a>
                                                                     <a class="dropdown-item" href="#" data-toggle="modal" data-target=".modal-pregnant"
                                                                         title="Mark this animal as pregnant">
                                                                         <i class="font-size-15 mdi mdi-heart-pulse me-3 text-success"></i>Mark as Pregnant
                                                                     </a>
-                                                                    <div class="dropdown-divider"></div>
                                                                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-mark-deceased"
                                                                         title="Record animal death">
                                                                         <i class="font-size-15 mdi mdi-emoticon-sad me-3 text-dark"></i>Mark as Deceased
@@ -888,7 +894,6 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                     </td>
 
                                                 </tr>
@@ -2584,7 +2589,7 @@
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="myLargeModalLabel">Food Handler Certificate Details
                                     </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    <button type="button" class="btn-close" data-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -2838,7 +2843,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="myLargeModalLabel">Invoice Details</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    <button type="button" class="btn-close" data-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -2979,7 +2984,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="myLargeModalLabel">More Details On Jane</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    <button type="button" class="btn-close" data-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -3174,7 +3179,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="myLargeModalLabel">Jane's Kin Details</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    <button type="button" class="btn-close" data-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -3884,7 +3889,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="recordBirthModalLabel">Record Birth</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    <button type="button" class="btn-close" data-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -3974,7 +3979,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cancel</button>
+                                        data-dismiss="modal">Cancel</button>
                                     <button type="button" class="btn btn-primary">Record Birth</button>
                                 </div>
                             </div>
@@ -3989,7 +3994,7 @@
                                     <h5 class="modal-title " id="editDetailsModalLabel">
                                         <i class="mdi mdi-pencil me-1"></i> Edit Livestock Details
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal"
                                         aria-bs-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -4199,7 +4204,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
                                         <i class="mdi mdi-close me-1"></i> Cancel
                                     </button>
                                     <button type="button" class="btn btn-primary" id="saveEditDetails">
@@ -4220,7 +4225,7 @@
                                     <h5 class="modal-title text-white" id="deleteDetailsModalLabel">
                                         <i class="mdi mdi-alert-circle me-1"></i> Remove Animal
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-bs-label="Close"></button>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-bs-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <p class="fw-bold">Are you sure you want to remove this animal from the system?</p>
@@ -4262,7 +4267,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
                                         <i class="mdi mdi-close me-1"></i> Cancel
                                     </button>
                                     <button type="button" class="btn btn-danger" id="confirmDeleteDetails">
@@ -4311,7 +4316,7 @@
                                     <h5 class="modal-title text-white" id="markDeceasedModalLabel">
                                         <i class="mdi mdi-emoticon-sad me-1"></i> Mark Animal as Deceased
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="alert alert-secondary">
@@ -4446,7 +4451,7 @@
                                     <h5 class="modal-title text-white" id="pregnantModalLabel">
                                         <i class="mdi mdi-heart-pulse me-1"></i> Mark Animal as Pregnant
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-bs-label="Close"></button>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-bs-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="alert alert-info">
@@ -4542,7 +4547,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
                                         <i class="mdi mdi-close me-1"></i> Cancel
                                     </button>
                                     <button type="button" class="btn btn-success" id="confirmPregnancy">
@@ -4637,7 +4642,7 @@
                                     <h5 class="modal-title text-white" id="vaccinationMedicationModalLabel">
                                         <i class="mdi mdi-needle me-1"></i> Update Vaccination & Medication
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form id="vaccinationMedicationForm">
@@ -4722,7 +4727,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
                                         <i class="mdi mdi-close me-1"></i> Cancel
                                     </button>
                                     <button type="button" class="btn btn-primary" id="saveVaccinationMedication">
@@ -4848,7 +4853,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
                                         <i class="mdi mdi-close me-1"></i> Cancel
                                     </button>
                                     <button type="button" class="btn btn-info" id="saveWeightRecord">
@@ -4933,7 +4938,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="addAssetModalLabel">Add New Pregnancy</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    <button type="button" class="btn-close" data-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -5014,7 +5019,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cancel</button>
+                                        data-dismiss="modal">Cancel</button>
                                     <button type="button" class="btn btn-primary">Save Changes</button>
                                 </div>
                             </div>
@@ -5050,7 +5055,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cancel</button>
+                                        data-dismiss="modal">Cancel</button>
                                     <button type="button" class="btn btn-primary">Add Vaccine</button>
                                 </div>
                             </div>
@@ -5063,7 +5068,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="editProjectModalLabel">Edit Project</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    <button type="button" class="btn-close" data-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -5118,13 +5123,172 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cancel</button>
+                                        data-dismiss="modal">Cancel</button>
                                     <button type="button" class="btn btn-primary">Save Changes</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- end of editing modal -->
+
+                    <!-- marking animal as sick -->
+                    <div class="modal fade" id="modal-mark-sick" tabindex="-1" aria-labelledby="markSickModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger text-white">
+                                    <h5 class="modal-title text-white" id="markSickModalLabel">
+                                        <i class="mdi mdi-medical-bag me-1"></i> Mark Animal as Sick
+                                    </h5>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="markSickForm">
+                                        <!-- Animal Information -->
+                                        <div class="mb-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="mb-1"><strong>Tag:</strong> <span id="sickTagNumber">#00123</span></p>
+                                                    <p class="mb-1"><strong>Name:</strong> <span id="sickAnimalName">Bella</span></p>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <p class="mb-1"><strong>Type:</strong> <span id="sickCategory">Cattle</span></p>
+                                                    <p class="mb-1"><strong>Current Status:</strong> <span class="badge bg-success">Healthy</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Illness Information -->
+                                        <div class="mb-3">
+                                            <label for="illnessType" class="form-label">Type of Illness/Condition*</label>
+                                            <select class="form-select" id="illnessType" required onchange="toggleOtherIllness()">
+                                                <option value="" selected disabled>Select illness or condition</option>
+                                                <option value="Fever">Fever</option>
+                                                <option value="Respiratory">Respiratory Issues</option>
+                                                <option value="Digestive">Digestive Problems</option>
+                                                <option value="Lameness">Lameness</option>
+                                                <option value="Injury">Injury</option>
+                                                <option value="Parasites">Parasites</option>
+                                                <option value="Mastitis">Mastitis</option>
+                                                <option value="Eye">Eye Problems</option>
+                                                <option value="Reproductive">Reproductive Issues</option>
+                                                <option value="Skin">Skin Condition</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <!-- Other Illness Field (hidden by default) -->
+                                        <div class="mb-3" id="otherIllnessDiv" style="display: none;">
+                                            <label for="otherIllness" class="form-label">Specify Other Illness/Condition*</label>
+                                            <input type="text" class="form-control" id="otherIllness" placeholder="Specify the illness or condition">
+                                        </div>
+                                        
+                                        <!-- Onset Date -->
+                                        <div class="mb-3">
+                                            <label for="onsetDate" class="form-label">Onset Date*</label>
+                                            <input type="date" class="form-control" id="onsetDate" required>
+                                            <small class="text-muted">When symptoms were first noticed</small>
+                                        </div>
+                                        
+                                        <!-- Severity -->
+                                        <div class="mb-3">
+                                            <label for="severity" class="form-label">Severity*</label>
+                                            <select class="form-select" id="severity" required>
+                                                <option value="" selected disabled>Select severity</option>
+                                                <option value="Mild">Mild - Minor symptoms, animal functioning normally</option>
+                                                <option value="Moderate">Moderate - Noticeable symptoms, some functional impairment</option>
+                                                <option value="Severe">Severe - Significant symptoms, major functional impairment</option>
+                                                <option value="Critical">Critical - Life-threatening condition</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <!-- Symptoms -->
+                                        <div class="mb-3">
+                                            <label for="symptoms" class="form-label">Symptoms*</label>
+                                            <textarea class="form-control" id="symptoms" rows="2" placeholder="Describe the symptoms observed" required></textarea>
+                                        </div>
+                                        
+                                        <!-- Treatment Plan -->
+                                        <div class="mb-3">
+                                            <label for="treatmentPlan" class="form-label">Treatment Plan</label>
+                                            <textarea class="form-control" id="treatmentPlan" rows="2" placeholder="Describe any treatment being given"></textarea>
+                                        </div>
+                                        
+                                        <!-- Veterinary Attention -->
+                                        <div class="mb-3">
+                                            <label for="vetAttention" class="form-label">Veterinary Attention*</label>
+                                            <select class="form-select" id="vetAttention" required>
+                                                <option value="" selected disabled>Select option</option>
+                                                <option value="Yes">Yes - Veterinarian has been consulted</option>
+                                                <option value="Pending">Pending - Will consult veterinarian soon</option>
+                                                <option value="No">No - Veterinary consultation not needed at this time</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <!-- Isolation Required -->
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="requiresIsolation">
+                                                <label class="form-check-label" for="requiresIsolation">
+                                                    Animal requires isolation
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Notes -->
+                                        <div class="mb-3">
+                                            <label for="sickNotes" class="form-label">Additional Notes</label>
+                                            <textarea class="form-control" id="sickNotes" rows="2" placeholder="Any additional information about the condition"></textarea>
+                                        </div>
+                                        
+                                        <!-- Reported By -->
+                                        <div class="mb-3">
+                                            <label for="reportedBy" class="form-label">Reported By*</label>
+                                            <input type="text" class="form-control" id="reportedBy" placeholder="Person reporting this health issue" required>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        <i class="mdi mdi-close me-1"></i> Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-danger" id="confirmSickStatus">
+                                        <i class="mdi mdi-check me-1"></i> Confirm Sick Status
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        function toggleOtherIllness() {
+                            const illnessSelect = document.getElementById('illnessType');
+                            const otherIllnessDiv = document.getElementById('otherIllnessDiv');
+                            const otherIllnessInput = document.getElementById('otherIllness');
+                            
+                            if (illnessSelect.value === 'Other') {
+                                otherIllnessDiv.style.display = 'block';
+                                otherIllnessInput.setAttribute('required', 'required');
+                            } else {
+                                otherIllnessDiv.style.display = 'none';
+                                otherIllnessInput.removeAttribute('required');
+                            }
+                        }
+                        
+                        document.addEventListener('DOMContentLoaded', function() {
+                            // Set today's date as default for onset date
+                            const today = new Date();
+                            const yyyy = today.getFullYear();
+                            const mm = String(today.getMonth() + 1).padStart(2, '0');
+                            const dd = String(today.getDate()).padStart(2, '0');
+                            
+                            const todayFormatted = `${yyyy}-${mm}-${dd}`;
+                            document.getElementById('onsetDate').value = todayFormatted;
+                            
+                            // Initialize illness field
+                            toggleOtherIllness();
+                        });
+                    </script>
+                     <!-- end of marking sick -->
 
                     <footer class="footer ">
                         <div class="container-fluid ">
