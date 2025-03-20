@@ -551,23 +551,36 @@
                                                 <a class="nav-item nav-link" href="farmer-ranches.html">Ranches</a>
                                                 <a class="nav-item nav-link" href="farmer-livestock.html">Livestock</a>
                                                 <a class="nav-item nav-link" href="farmer-deliveries.html">Purchases</a>
-                                                <a class="nav-item nav-link" href="farmer-livestock-weight.html">Weight</a>
-                                                <a class="nav-item nav-link" href="farmer-livestock-breeding.html">Breeding</a>
-                                                <a class="nav-item nav-link" href="farmer-livestock-pregnancy.html">Pregnancies</a>
-                                                <a class="nav-item nav-link" href="farmer-livestock-birth.html">Births</a>
+                                                <a class="nav-item nav-link"
+                                                    href="farmer-livestock-weight.html">Weight</a>
+                                                <a class="nav-item nav-link"
+                                                    href="farmer-livestock-breeding.html">Breeding</a>
+                                                <a class="nav-item nav-link"
+                                                    href="farmer-livestock-pregnancy.html">Pregnancies</a>
+                                                <a class="nav-item nav-link"
+                                                    href="farmer-livestock-birth.html">Births</a>
                                                 <li class="nav-item dropdown">
-                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                      Sick Animals
+                                                    <a class="nav-link dropdown-toggle" href="#"
+                                                        id="navbarScrollingDropdown" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Sick Animals
                                                     </a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                                      <li><a class="dropdown-item" href="farmer-livestock-sick.html">Currently Sick Animals</a></li>
-                                                      <li><a class="dropdown-item" href="farmer-livestock-sick-history.html">Sick Animals Records</a></li>
-                                                      
+                                                        <li><a class="dropdown-item"
+                                                                href="farmer-livestock-sick.html">Currently Sick
+                                                                Animals</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="farmer-livestock-sick-history.html">Sick Animals
+                                                                Records</a></li>
+
                                                     </ul>
                                                 </li>
-                                                <a class="nav-item nav-link" href="farmer-livestock-vaccines-meds.html">Vaccines & Meds</a>
-                                                <a class="nav-item nav-link" href="farmer-livestock-removed.html">Removed</a>
-                                                <a class="nav-item nav-link" href="farmer-livestock-death.html">Deceased</a>
+                                                <a class="nav-item nav-link"
+                                                    href="farmer-livestock-vaccines-meds.html">Vaccines & Meds</a>
+                                                <a class="nav-item nav-link"
+                                                    href="farmer-livestock-removed.html">Removed</a>
+                                                <a class="nav-item nav-link"
+                                                    href="farmer-livestock-death.html">Deceased</a>
                                             </div>
                                             <div class="navbar-nav">
                                                 <a href="farmer-add.html" type="button"
@@ -589,36 +602,89 @@
 
                     <!-- stats cards -->
                     <!-- Livestock Stats -->
-                    <div class="row ">
-                        <!-- Total Livestock Card -->
+                    <div class="row">
+                        <!-- Weight Progress Status Card -->
                         <div class="col-lg-3 col-md-6">
                             <div class="card mini-stats-wid">
                                 <div class="card-body">
                                     <div class="d-flex flex-wrap">
                                         <div class="me-3">
-                                            <p class="text-muted mb-2">TOTAL LIVESTOCK</p>
-                                            <h5 class="mb-0">25</h5>
+                                            <p class="text-muted mb-2">WEIGHT PROGRESS</p>
+                                            <h5 class="mb-0">88%</h5>
                                         </div>
                                         <div class="avatar-sm ms-auto">
                                             <div class="avatar-title bg-primary rounded-circle text-white font-size-20">
-                                                <i class="mdi mdi-cow"></i>
+                                                <i class="mdi mdi-chart-line"></i>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-
                                 <div class="card-body border-top py-3">
                                     <p class="text-muted mb-0">
                                         <span class="text-success me-1">
-                                            <i class="mdi mdi-arrow-up"></i> 76%
-                                        </span> from previous month
+                                            <i class="mdi mdi-arrow-up"></i> 5%
+                                        </span> improvement from last month
                                     </p>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Livestock Health Status Card (including deceased) -->
+                    
+                        <!-- Weight Status Distribution Card -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card blog-stats-wid">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="me-3">
+                                            <p class="text-muted mb-2">WEIGHT STATUS</p>
+                                            <h5 class="mb-0">
+                                                <span class="text-primary">2</span> /
+                                                <span class="text-warning">4</span>
+                                            </h5>
+                                        </div>
+                                        <div class="avatar-sm ms-auto">
+                                            <div class="avatar-title bg-info rounded-circle text-white font-size-20">
+                                                <i class="mdi mdi-weight"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body border-top py-3">
+                                    <span class="badge bg-primary me-1">Ready Soon: 2</span>
+                                    <span class="badge bg-warning">Need Attention: 4</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Total Livestock & Targets Card -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card blog-stats-wid">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="me-3">
+                                            <p class="text-muted mb-2">AVG LIVESTOCK WEIGHT</p>
+                                            <h5 class="mb-0">
+                                                <span class="text-success">122.6</span> / 
+                                                <span class="text-muted">138.8</span> KG
+                                            </h5>
+                                        </div>
+                                        <div class="avatar-sm ms-auto">
+                                            <div class="avatar-title bg-success rounded-circle text-white font-size-20">
+                                                <i class="mdi mdi-scale"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body border-top py-3">
+                                    <p class="text-muted mb-0">
+                                        <span class="text-success me-1">
+                                            <i class="mdi mdi-arrow-up"></i> 88%
+                                        </span> of average target weight
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Health Impact on Weight Card -->
                         <div class="col-lg-3 col-md-6">
                             <div class="card blog-stats-wid">
                                 <div class="card-body">
@@ -626,83 +692,24 @@
                                         <div class="me-3">
                                             <p class="text-muted mb-2">HEALTH STATUS</p>
                                             <h5 class="mb-0">
-                                                <span class="text-success">19</span> /
-                                                <span class="text-danger">2</span> /
-                                                <span class="text-secondary">3</span>
+                                                <span class="text-success">4</span> /
+                                                <span class="text-danger">3</span>
                                             </h5>
                                         </div>
                                         <div class="avatar-sm ms-auto">
-                                            <div class="avatar-title bg-success rounded-circle text-white font-size-20">
+                                            <div class="avatar-title bg-warning rounded-circle text-white font-size-20">
                                                 <i class="mdi mdi-medical-bag"></i>
                                             </div>
                                         </div>
                                     </div>
-
-                                </div>
-
-                                <div class="card-body border-top py-3">
-                                    <span class="badge bg-success me-1">Healthy: 76%</span>
-                                    <span class="badge bg-danger me-1">Sick: 8%</span>
-                                    <span class="badge bg-secondary">Deceased: 3</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Livestock by Type Card -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="card blog-stats-wid">
-                                <div class="card-body">
-                                    <div class="d-flex flex-wrap">
-                                        <div class="me-3">
-                                            <p class="text-muted mb-2">LIVESTOCK BY TYPE</p>
-                                            <h5 class="mb-0">5 Categories</h5>
-                                        </div>
-                                        <div class="avatar-sm ms-auto">
-                                            <div class="avatar-title bg-info rounded-circle text-white font-size-20">
-                                                <i class="mdi mdi-scale-balance"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
                                 <div class="card-body border-top py-3">
-                                    <div class="mb-0">
-                                        <span class="me-2">Goats: 20</span>
-                                        <span class="me-2">Cattle: 1</span>
-                                        <span class="me-2">Others: 4</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Total Weight & Value Card -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="card blog-stats-wid">
-                                <div class="card-body">
-                                    <div class="d-flex flex-wrap">
-                                        <div class="me-3">
-                                            <p class="text-muted mb-2">TOTAL WEIGHT</p>
-                                            <h5 class="mb-0">1,494.5 KG</h5>
-                                        </div>
-                                        <div class="avatar-sm ms-auto">
-                                            <div class="avatar-title bg-warning rounded-circle text-white font-size-20">
-                                                <i class="mdi mdi-cash-multiple"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="card-body border-top py-3">
-                                    <p class="text-muted fw-bold mb-0">
-                                        <span class="text-success me-1">
-                                            <i class="mdi mdi-arrow-up"></i> KES 214,945
-                                        </span> estimated value
-                                    </p>
+                                    <span class="badge bg-success me-1">Healthy: 57%</span>
+                                    <span class="badge bg-danger">Sick: 43%</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
 
 
 
@@ -810,6 +817,7 @@
                                 </div>
                                 <div class="card-body">
 
+
                                     <div class="table-responsive">
                                         <table class="table align-middle table-hover table-striped text-nowrap text-uppercase">
                                             <thead class="table-light">
@@ -822,6 +830,7 @@
                                                     <th scope="col">Target Weight</th>
                                                     <th scope="col">Weight Progress</th>
                                                     <th scope="col">Health Status</th>
+                                                    <th scope="col">Weight Status</th>
                                                     <th scope="col">Age</th>
                                                     <th scope="col">Zone</th>
                                                     <th scope="col">Actions</th>
@@ -842,15 +851,18 @@
                                                         <small class="text-muted fw-bold">91% of target</small>
                                                     </td>
                                                     <td><span class="badge bg-success">Healthy</span></td>
+                                                    <td><span class="badge bg-primary">Ready Soon</span></td>
                                                     <td>2Y, 3M, 1W</td>
                                                     <td>MAVOKO</td>
                                                     <td>
                                                         <div class="d-flex">
                                                             <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                                                                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
+                                                                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i>
+                                                                Record
                                                             </button>
                                                             <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                                                                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
+                                                                <i class="mdi mdi-history font-size-16 align-middle me-1"></i>
+                                                                History
                                                             </button>
                                                         </div>
                                                     </td>
@@ -869,15 +881,18 @@
                                                         <small class="text-muted fw-bold">75% of target</small>
                                                     </td>
                                                     <td><span class="badge bg-danger">Sick</span></td>
+                                                    <td><span class="badge bg-warning">Need Attention</span></td>
                                                     <td>1Y, 6M, 0W</td>
                                                     <td>KIPIPIRI</td>
                                                     <td>
                                                         <div class="d-flex">
-                                                            <button class="btn btn-sm btn-info me-2" title="Record new weight">
-                                                                <i class="mdi mdi-scale"></i>
+                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
+                                                                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i>
+                                                                Record
                                                             </button>
-                                                            <button class="btn btn-sm btn-primary" title="View weight history">
-                                                                <i class="mdi mdi-history"></i>
+                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
+                                                                <i class="mdi mdi-history font-size-16 align-middle me-1"></i>
+                                                                History
                                                             </button>
                                                         </div>
                                                     </td>
@@ -896,15 +911,18 @@
                                                         <small class="text-muted fw-bold">92% of target</small>
                                                     </td>
                                                     <td><span class="badge bg-danger">Sick</span></td>
+                                                    <td><span class="badge bg-primary">Ready Soon</span></td>
                                                     <td>3Y, 1M, 2W</td>
                                                     <td>KIENI</td>
                                                     <td>
                                                         <div class="d-flex">
-                                                            <button class="btn btn-sm btn-info me-2" title="Record new weight">
-                                                                <i class="mdi mdi-scale"></i>
+                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
+                                                                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i>
+                                                                Record
                                                             </button>
-                                                            <button class="btn btn-sm btn-primary" title="View weight history">
-                                                                <i class="mdi mdi-history"></i>
+                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
+                                                                <i class="mdi mdi-history font-size-16 align-middle me-1"></i>
+                                                                History
                                                             </button>
                                                         </div>
                                                     </td>
@@ -923,15 +941,18 @@
                                                         <small class="text-muted fw-bold">80% of target</small>
                                                     </td>
                                                     <td><span class="badge bg-success">Healthy</span></td>
+                                                    <td><span class="badge bg-warning">Need Attention</span></td>
                                                     <td>0Y, 6M, 2W</td>
                                                     <td>MARIGAT</td>
                                                     <td>
                                                         <div class="d-flex">
-                                                            <button class="btn btn-sm btn-info me-2" title="Record new weight">
-                                                                <i class="mdi mdi-scale"></i>
+                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
+                                                                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i>
+                                                                Record
                                                             </button>
-                                                            <button class="btn btn-sm btn-primary" title="View weight history">
-                                                                <i class="mdi mdi-history"></i>
+                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
+                                                                <i class="mdi mdi-history font-size-16 align-middle me-1"></i>
+                                                                History
                                                             </button>
                                                         </div>
                                                     </td>
@@ -950,15 +971,18 @@
                                                         <small class="text-muted fw-bold">83% of target</small>
                                                     </td>
                                                     <td><span class="badge bg-danger">Sick</span></td>
+                                                    <td><span class="badge bg-warning">Need Attention</span></td>
                                                     <td>0Y, 4M, 1W</td>
                                                     <td>KITUI CENTRAL</td>
                                                     <td>
                                                         <div class="d-flex">
-                                                            <button class="btn btn-sm btn-info me-2" title="Record new weight">
-                                                                <i class="mdi mdi-scale"></i>
+                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
+                                                                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i>
+                                                                Record
                                                             </button>
-                                                            <button class="btn btn-sm btn-primary" title="View weight history">
-                                                                <i class="mdi mdi-history"></i>
+                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
+                                                                <i class="mdi mdi-history font-size-16 align-middle me-1"></i>
+                                                                History
                                                             </button>
                                                         </div>
                                                     </td>
@@ -977,15 +1001,18 @@
                                                         <small class="text-muted fw-bold">87% of target</small>
                                                     </td>
                                                     <td><span class="badge bg-success">Healthy</span></td>
+                                                    <td><span class="badge bg-warning">Need Attention</span></td>
                                                     <td>2Y, 1M, 2W</td>
                                                     <td>KIENI</td>
                                                     <td>
                                                         <div class="d-flex">
-                                                            <button class="btn btn-sm btn-info me-2" title="Record new weight">
-                                                                <i class="mdi mdi-scale"></i>
+                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
+                                                                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i>
+                                                                Record
                                                             </button>
-                                                            <button class="btn btn-sm btn-primary" title="View weight history">
-                                                                <i class="mdi mdi-history"></i>
+                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
+                                                                <i class="mdi mdi-history font-size-16 align-middle me-1"></i>
+                                                                History
                                                             </button>
                                                         </div>
                                                     </td>
@@ -1006,14 +1033,14 @@
                                                         <span class="badge bg-success">4 Healthy</span><br>
                                                         <span class="badge bg-danger">3 Sick</span>
                                                     </td>
+                                                    <td>
+                                                        <span class="badge bg-primary">2 Ready Soon</span><br>
+                                                        <span class="badge bg-warning">4 Need Attention</span>
+                                                    </td>
                                                     <td colspan="3"></td>
                                                 </tr>
                                             </tfoot>
                                         </table>
-                                        
-                                        
-                                        
-                                      
                                     </div>
                                 </div> <!-- end col -->
                             </div>
@@ -2421,8 +2448,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                                     <button type="button" class="btn btn-primary">Record Birth</button>
                                 </div>
                             </div>
@@ -2661,26 +2687,31 @@
 
 
                     <!-- Delete Modal -->
-                    <div class="modal fade" id="modal-delete-details" tabindex="-1" aria-labelledby="deleteDetailsModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="modal-delete-details" tabindex="-1"
+                        aria-labelledby="deleteDetailsModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header bg-danger text-white">
                                     <h5 class="modal-title text-white" id="deleteDetailsModalLabel">
                                         <i class="mdi mdi-alert-circle me-1"></i> Remove Animal
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-bs-label="Close"></button>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal"
+                                        aria-bs-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <p class="fw-bold">Are you sure you want to remove this animal from the system?</p>
-                                    
+
                                     <div class="alert alert-warning">
-                                        <i class="mdi mdi-information-outline me-1"></i> This action cannot be undone. All data associated with this animal will be archived.
+                                        <i class="mdi mdi-information-outline me-1"></i> This action cannot be undone.
+                                        All data associated with this animal will be archived.
                                     </div>
-                                    
+
                                     <form id="removeAnimalForm">
                                         <div class="mb-3">
-                                            <label for="removalReason" class="form-label fw-bold">Reason for Removal*</label>
-                                            <select class="form-select" id="removalReason" onchange="toggleOtherReason()" required>
+                                            <label for="removalReason" class="form-label fw-bold">Reason for
+                                                Removal*</label>
+                                            <select class="form-select" id="removalReason"
+                                                onchange="toggleOtherReason()" required>
                                                 <option value="" selected disabled>Select a reason</option>
                                                 <option value="Sold">Sold</option>
                                                 <option value="Slaughtered">Slaughtered (For Consumption)</option>
@@ -2692,20 +2723,24 @@
                                                 <option value="Other">Other</option>
                                             </select>
                                         </div>
-                                        
+
                                         <div class="mb-3" id="otherReasonDiv" style="display: none;">
-                                            <label for="otherReason" class="form-label fw-bold">Specify Other Reason*</label>
-                                            <input type="text" class="form-control" id="otherReason" placeholder="Please specify reason">
+                                            <label for="otherReason" class="form-label fw-bold">Specify Other
+                                                Reason*</label>
+                                            <input type="text" class="form-control" id="otherReason"
+                                                placeholder="Please specify reason">
                                         </div>
-                                        
+
                                         <div class="mb-3">
                                             <label for="removalDate" class="form-label fw-bold">Date of Removal*</label>
                                             <input type="date" class="form-control" id="removalDate" value="" required>
                                         </div>
-                                        
+
                                         <div class="mb-3">
-                                            <label for="removalDescription" class="form-label fw-bold">Additional Details</label>
-                                            <textarea class="form-control" id="removalDescription" rows="3" placeholder="Enter any additional details about the removal"></textarea>
+                                            <label for="removalDescription" class="form-label fw-bold">Additional
+                                                Details</label>
+                                            <textarea class="form-control" id="removalDescription" rows="3"
+                                                placeholder="Enter any additional details about the removal"></textarea>
                                         </div>
                                     </form>
                                 </div>
@@ -2720,13 +2755,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <script>
                         function toggleOtherReason() {
                             const removalReason = document.getElementById('removalReason').value;
                             const otherReasonDiv = document.getElementById('otherReasonDiv');
                             const otherReasonInput = document.getElementById('otherReason');
-                            
+
                             if (removalReason === 'Other') {
                                 otherReasonDiv.style.display = 'block';
                                 otherReasonInput.setAttribute('required', 'required');
@@ -2735,46 +2770,50 @@
                                 otherReasonInput.removeAttribute('required');
                             }
                         }
-                        
+
                         // Initialize on page load
-                        document.addEventListener('DOMContentLoaded', function() {
+                        document.addEventListener('DOMContentLoaded', function () {
                             // Set today's date as default removal date
                             const today = new Date();
                             const yyyy = today.getFullYear();
                             const mm = String(today.getMonth() + 1).padStart(2, '0');
                             const dd = String(today.getDate()).padStart(2, '0');
-                            
+
                             document.getElementById('removalDate').value = `${yyyy}-${mm}-${dd}`;
-                            
+
                             // Initialize the other reason field visibility
                             toggleOtherReason();
                         });
                     </script>
 
                     <!-- decesed modal -->
-                    <div class="modal fade" id="modal-mark-deceased" tabindex="-1" aria-labelledby="markDeceasedModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="modal-mark-deceased" tabindex="-1"
+                        aria-labelledby="markDeceasedModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header bg-dark text-white">
                                     <h5 class="modal-title text-white" id="markDeceasedModalLabel">
                                         <i class="mdi mdi-emoticon-sad me-1"></i> Mark Animal as Deceased
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="alert alert-secondary">
-                                        <i class="mdi mdi-information-outline me-1"></i> Recording accurate death information helps with farm management and analysis.
+                                        <i class="mdi mdi-information-outline me-1"></i> Recording accurate death
+                                        information helps with farm management and analysis.
                                     </div>
-                                    
+
                                     <form id="deceasedAnimalForm">
                                         <div class="mb-3">
                                             <label for="deathDate" class="form-label fw-bold">Date of Death*</label>
                                             <input type="date" class="form-control" id="deathDate" required>
                                         </div>
-                                        
+
                                         <div class="mb-3">
                                             <label for="causeOfDeath" class="form-label fw-bold">Cause of Death*</label>
-                                            <select class="form-select" id="causeOfDeath" onchange="toggleOtherCause()" required>
+                                            <select class="form-select" id="causeOfDeath" onchange="toggleOtherCause()"
+                                                required>
                                                 <option value="" selected disabled>Select cause of death</option>
                                                 <option value="Disease">Disease/Illness</option>
                                                 <option value="Age">Old Age</option>
@@ -2787,17 +2826,21 @@
                                                 <option value="Other">Other</option>
                                             </select>
                                         </div>
-                                        
+
                                         <div class="mb-3" id="otherCauseDiv" style="display: none;">
-                                            <label for="otherCause" class="form-label fw-bold">Specify Other Cause*</label>
-                                            <input type="text" class="form-control" id="otherCause" placeholder="Please specify cause">
+                                            <label for="otherCause" class="form-label fw-bold">Specify Other
+                                                Cause*</label>
+                                            <input type="text" class="form-control" id="otherCause"
+                                                placeholder="Please specify cause">
                                         </div>
-                                        
+
                                         <div class="mb-3">
-                                            <label for="specificDiagnosis" class="form-label">Specific Diagnosis/Condition</label>
-                                            <input type="text" class="form-control" id="specificDiagnosis" placeholder="Enter specific condition if known">
+                                            <label for="specificDiagnosis" class="form-label">Specific
+                                                Diagnosis/Condition</label>
+                                            <input type="text" class="form-control" id="specificDiagnosis"
+                                                placeholder="Enter specific condition if known">
                                         </div>
-                                        
+
                                         <div class="mb-3">
                                             <label for="vetConsulted" class="form-label">Veterinarian Consulted</label>
                                             <select class="form-select" id="vetConsulted">
@@ -2805,21 +2848,23 @@
                                                 <option value="Yes">Yes</option>
                                             </select>
                                         </div>
-                                        
+
                                         <div class="mb-3">
                                             <label for="deathDescription" class="form-label">Additional Details</label>
-                                            <textarea class="form-control" id="deathDescription" rows="3" placeholder="Enter any additional details about the animal's death"></textarea>
+                                            <textarea class="form-control" id="deathDescription" rows="3"
+                                                placeholder="Enter any additional details about the animal's death"></textarea>
                                         </div>
-                                        
+
                                         <div class="mb-3">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="postmortemPerformed">
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="postmortemPerformed">
                                                 <label class="form-check-label" for="postmortemPerformed">
                                                     Post-mortem examination performed
                                                 </label>
                                             </div>
                                         </div>
-                                        
+
                                         <div class="mb-3">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="recordsAttached">
@@ -2828,7 +2873,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        
+
                                         <div class="mb-3" id="attachmentDiv" style="display: none;">
                                             <label for="attachRecords" class="form-label">Attach Files</label>
                                             <input type="file" class="form-control" id="attachRecords" multiple>
@@ -2846,13 +2891,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <script>
                         function toggleOtherCause() {
                             const causeOfDeath = document.getElementById('causeOfDeath').value;
                             const otherCauseDiv = document.getElementById('otherCauseDiv');
                             const otherCauseInput = document.getElementById('otherCause');
-                            
+
                             if (causeOfDeath === 'Other') {
                                 otherCauseDiv.style.display = 'block';
                                 otherCauseInput.setAttribute('required', 'required');
@@ -2861,75 +2906,87 @@
                                 otherCauseInput.removeAttribute('required');
                             }
                         }
-                        
+
                         // Show attachment div when records checkbox is checked
-                        document.addEventListener('DOMContentLoaded', function() {
+                        document.addEventListener('DOMContentLoaded', function () {
                             // Set today's date as default death date
                             const today = new Date();
                             const yyyy = today.getFullYear();
                             const mm = String(today.getMonth() + 1).padStart(2, '0');
                             const dd = String(today.getDate()).padStart(2, '0');
-                            
+
                             document.getElementById('deathDate').value = `${yyyy}-${mm}-${dd}`;
-                            
+
                             // Initialize cause field visibility
                             toggleOtherCause();
-                            
+
                             // Toggle attachment field
                             const recordsAttached = document.getElementById('recordsAttached');
                             const attachmentDiv = document.getElementById('attachmentDiv');
-                            
-                            recordsAttached.addEventListener('change', function() {
+
+                            recordsAttached.addEventListener('change', function () {
                                 attachmentDiv.style.display = this.checked ? 'block' : 'none';
                             });
                         });
                     </script>
-                     <!-- end of deceased modal -->
+                    <!-- end of deceased modal -->
 
-                     <!-- pregnancy modal -->
-                     <div class="modal fade modal-pregnant" id="modal-pregnant" tabindex="-1" aria-labelledby="pregnantModalLabel" aria-hidden="true">
+                    <!-- pregnancy modal -->
+                    <div class="modal fade modal-pregnant" id="modal-pregnant" tabindex="-1"
+                        aria-labelledby="pregnantModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header bg-success text-white">
                                     <h5 class="modal-title text-white" id="pregnantModalLabel">
                                         <i class="mdi mdi-heart-pulse me-1"></i> Mark Animal as Pregnant
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-bs-label="Close"></button>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal"
+                                        aria-bs-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="alert alert-info">
-                                        <i class="mdi mdi-information-outline me-1"></i> Recording pregnancy information helps with breeding management and future planning.
+                                        <i class="mdi mdi-information-outline me-1"></i> Recording pregnancy information
+                                        helps with breeding management and future planning.
                                     </div>
-                                    
+
                                     <form id="pregnantAnimalForm">
                                         <div class="mb-3">
-                                            <label for="animalInfo" class="form-label fw-bold">Animal Information</label>
+                                            <label for="animalInfo" class="form-label fw-bold">Animal
+                                                Information</label>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <p class="mb-1"><strong>Tag Number:</strong> <span id="pregTagNumber">#00123</span></p>
-                                                    <p class="mb-1"><strong>Name:</strong> <span id="pregAnimalName">Bella</span></p>
+                                                    <p class="mb-1"><strong>Tag Number:</strong> <span
+                                                            id="pregTagNumber">#00123</span></p>
+                                                    <p class="mb-1"><strong>Name:</strong> <span
+                                                            id="pregAnimalName">Bella</span></p>
                                                 </div>
                                                 <div class="col-6">
-                                                    <p class="mb-1"><strong>Breed:</strong> <span id="pregBreed">Angus</span></p>
-                                                    <p class="mb-1"><strong>Age:</strong> <span id="pregAge">2Y, 3M, 1W</span></p>
+                                                    <p class="mb-1"><strong>Breed:</strong> <span
+                                                            id="pregBreed">Angus</span></p>
+                                                    <p class="mb-1"><strong>Age:</strong> <span id="pregAge">2Y, 3M,
+                                                            1W</span></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <div class="mb-3">
-                                            <label for="conceptionDate" class="form-label fw-bold">Conception Date*</label>
+                                            <label for="conceptionDate" class="form-label fw-bold">Conception
+                                                Date*</label>
                                             <input type="date" class="form-control" id="conceptionDate" required>
-                                            <small class="text-muted">Date animal was bred or estimated conception date</small>
+                                            <small class="text-muted">Date animal was bred or estimated conception
+                                                date</small>
                                         </div>
-                                        
+
                                         <div class="mb-3">
                                             <label for="dueDate" class="form-label fw-bold">Expected Due Date*</label>
                                             <input type="date" class="form-control" id="dueDate" readonly>
-                                            <small class="text-muted">Automatically calculated based on conception date and species</small>
+                                            <small class="text-muted">Automatically calculated based on conception date
+                                                and species</small>
                                         </div>
-                                        
+
                                         <div class="mb-3">
-                                            <label for="sireInformation" class="form-label fw-bold">Sire Information*</label>
+                                            <label for="sireInformation" class="form-label fw-bold">Sire
+                                                Information*</label>
                                             <select class="form-select" id="sireInformation" required>
                                                 <option value="" selected disabled>Select sire/breeding method</option>
                                                 <option value="AI">Artificial Insemination</option>
@@ -2937,7 +2994,7 @@
                                                 <option value="Unknown">Unknown</option>
                                             </select>
                                         </div>
-                                        
+
                                         <div class="mb-3" id="sireDetailsDiv">
                                             <label for="sireDetails" class="form-label">Sire Details</label>
                                             <select class="form-select" id="sireDetails">
@@ -2947,14 +3004,16 @@
                                                 <option value="other">Other (not in inventory)</option>
                                             </select>
                                         </div>
-                                        
+
                                         <div class="mb-3" id="otherSireDiv" style="display: none;">
                                             <label for="otherSireDetails" class="form-label">Other Sire Details</label>
-                                            <input type="text" class="form-control" id="otherSireDetails" placeholder="Enter sire information">
+                                            <input type="text" class="form-control" id="otherSireDetails"
+                                                placeholder="Enter sire information">
                                         </div>
-                                        
+
                                         <div class="mb-3">
-                                            <label for="pregnancyConfirmation" class="form-label fw-bold">Pregnancy Confirmation</label>
+                                            <label for="pregnancyConfirmation" class="form-label fw-bold">Pregnancy
+                                                Confirmation</label>
                                             <select class="form-select" id="pregnancyConfirmation">
                                                 <option value="Visual">Visual Observation</option>
                                                 <option value="VetConfirmed">Veterinarian Confirmed</option>
@@ -2963,17 +3022,18 @@
                                                 <option value="NotConfirmed">Not Yet Confirmed</option>
                                             </select>
                                         </div>
-                                        
+
                                         <div class="mb-3">
                                             <label for="confirmationDate" class="form-label">Confirmation Date</label>
                                             <input type="date" class="form-control" id="confirmationDate">
                                         </div>
-                                        
+
                                         <div class="mb-3">
                                             <label for="pregnancyNotes" class="form-label">Additional Notes</label>
-                                            <textarea class="form-control" id="pregnancyNotes" rows="3" placeholder="Enter any additional notes about the pregnancy"></textarea>
+                                            <textarea class="form-control" id="pregnancyNotes" rows="3"
+                                                placeholder="Enter any additional notes about the pregnancy"></textarea>
                                         </div>
-                                        
+
                                         <div class="mb-3">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="specialCare">
@@ -2982,10 +3042,12 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        
+
                                         <div class="mb-3" id="specialCareDiv" style="display: none;">
-                                            <label for="specialCareDetails" class="form-label">Special Care Details</label>
-                                            <textarea class="form-control" id="specialCareDetails" rows="2" placeholder="Describe special care required"></textarea>
+                                            <label for="specialCareDetails" class="form-label">Special Care
+                                                Details</label>
+                                            <textarea class="form-control" id="specialCareDetails" rows="2"
+                                                placeholder="Describe special care required"></textarea>
                                         </div>
                                     </form>
                                 </div>
@@ -3000,20 +3062,20 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <script>
-                        document.addEventListener('DOMContentLoaded', function() {
+                        document.addEventListener('DOMContentLoaded', function () {
                             // Calculate due date based on conception date and animal type
                             const conceptionDateInput = document.getElementById('conceptionDate');
                             const dueDateInput = document.getElementById('dueDate');
-                            
-                            conceptionDateInput.addEventListener('change', function() {
+
+                            conceptionDateInput.addEventListener('change', function () {
                                 if (!this.value) return;
-                                
+
                                 // Get the animal type (this would normally come from the selected animal)
                                 // For this example, we'll assume it's a cow with 283 days gestation
                                 const animalType = 'Cattle'; // This would be dynamic in a real implementation
-                                
+
                                 // Gestation periods in days for different livestock
                                 const gestationPeriods = {
                                     'Cattle': 283,
@@ -3021,71 +3083,73 @@
                                     'Sheep': 152,
                                     'Pig': 114
                                 };
-                                
+
                                 const gestationDays = gestationPeriods[animalType] || 283;
-                                
+
                                 // Calculate due date
                                 const conceptionDate = new Date(this.value);
                                 const dueDate = new Date(conceptionDate);
                                 dueDate.setDate(dueDate.getDate() + gestationDays);
-                                
+
                                 // Format date for input
                                 const yyyy = dueDate.getFullYear();
                                 const mm = String(dueDate.getMonth() + 1).padStart(2, '0');
                                 const dd = String(dueDate.getDate()).padStart(2, '0');
-                                
+
                                 dueDateInput.value = `${yyyy}-${mm}-${dd}`;
                             });
-                            
+
                             // Toggle sire details
                             const sireInformation = document.getElementById('sireInformation');
                             const sireDetailsDiv = document.getElementById('sireDetailsDiv');
-                            
-                            sireInformation.addEventListener('change', function() {
+
+                            sireInformation.addEventListener('change', function () {
                                 sireDetailsDiv.style.display = (this.value === 'AI' || this.value === 'Natural') ? 'block' : 'none';
                             });
-                            
+
                             // Toggle other sire details
                             const sireDetails = document.getElementById('sireDetails');
                             const otherSireDiv = document.getElementById('otherSireDiv');
-                            
-                            sireDetails.addEventListener('change', function() {
+
+                            sireDetails.addEventListener('change', function () {
                                 otherSireDiv.style.display = (this.value === 'other') ? 'block' : 'none';
                             });
-                            
+
                             // Toggle special care details
                             const specialCare = document.getElementById('specialCare');
                             const specialCareDiv = document.getElementById('specialCareDiv');
-                            
-                            specialCare.addEventListener('change', function() {
+
+                            specialCare.addEventListener('change', function () {
                                 specialCareDiv.style.display = this.checked ? 'block' : 'none';
                             });
-                            
+
                             // Set today's date as default for relevant date fields
                             const today = new Date();
                             const yyyy = today.getFullYear();
                             const mm = String(today.getMonth() + 1).padStart(2, '0');
                             const dd = String(today.getDate()).padStart(2, '0');
-                            
+
                             const todayFormatted = `${yyyy}-${mm}-${dd}`;
                             document.getElementById('conceptionDate').value = todayFormatted;
                             document.getElementById('confirmationDate').value = todayFormatted;
-                            
+
                             // Trigger the due date calculation
                             conceptionDateInput.dispatchEvent(new Event('change'));
                         });
                     </script>
-                      <!-- end of pregnancy modal -->
+                    <!-- end of pregnancy modal -->
 
-                      <!-- vaccination modal -->
-                      <div class="modal fade modal-vaccination-medication" id="modal-vaccination-medication" tabindex="-1" aria-labelledby="vaccinationMedicationModalLabel" aria-hidden="true">
+                    <!-- vaccination modal -->
+                    <div class="modal fade modal-vaccination-medication" id="modal-vaccination-medication" tabindex="-1"
+                        aria-labelledby="vaccinationMedicationModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header bg-primary text-white">
                                     <h5 class="modal-title text-white" id="vaccinationMedicationModalLabel">
                                         <i class="mdi mdi-needle me-1"></i> Update Vaccination & Medication
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form id="vaccinationMedicationForm">
@@ -3093,15 +3157,18 @@
                                         <div class="mb-3">
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <p class="mb-1"><strong>Tag:</strong> <span id="vaccTagNumber">#00123</span></p>
-                                                    <p class="mb-1"><strong>Name:</strong> <span id="vaccAnimalName">Bella</span></p>
+                                                    <p class="mb-1"><strong>Tag:</strong> <span
+                                                            id="vaccTagNumber">#00123</span></p>
+                                                    <p class="mb-1"><strong>Name:</strong> <span
+                                                            id="vaccAnimalName">Bella</span></p>
                                                 </div>
                                                 <div class="col-6 text-end">
-                                                    <p class="mb-1"><strong>Type:</strong> <span id="vaccCategory">Cattle</span></p>
+                                                    <p class="mb-1"><strong>Type:</strong> <span
+                                                            id="vaccCategory">Cattle</span></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Treatment Type Selection -->
                                         <div class="mb-3">
                                             <label for="treatmentType" class="form-label">Treatment Type*</label>
@@ -3113,59 +3180,68 @@
                                                 <option value="Other">Other Treatment</option>
                                             </select>
                                         </div>
-                                        
+
                                         <!-- Product Name -->
                                         <div class="mb-3">
                                             <label for="productName" class="form-label">Product Name*</label>
-                                            <input type="text" class="form-control" id="productName" placeholder="Enter product/vaccine name" required>
+                                            <input type="text" class="form-control" id="productName"
+                                                placeholder="Enter product/vaccine name" required>
                                         </div>
-                                        
+
                                         <!-- Condition/Disease -->
                                         <div class="mb-3">
                                             <label for="condition" class="form-label">For Disease/Condition*</label>
-                                            <select class="form-select" id="condition" required onchange="toggleOtherCondition()">
+                                            <select class="form-select" id="condition" required
+                                                onchange="toggleOtherCondition()">
                                                 <option value="" selected disabled>Select disease or condition</option>
-                                                <option value="Foot and Mouth Disease">Foot and Mouth Disease (FMD)</option>
+                                                <option value="Foot and Mouth Disease">Foot and Mouth Disease (FMD)
+                                                </option>
                                                 <option value="Anthrax">Anthrax</option>
                                                 <option value="Brucellosis">Brucellosis</option>
                                                 <option value="Black Quarter">Black Quarter</option>
                                                 <option value="Respiratory Disease">Respiratory Disease</option>
                                                 <option value="Mastitis">Mastitis</option>
                                                 <option value="Parasites">Internal Parasites</option>
-                                                <option value="External Parasites">External Parasites (Ticks, Mites)</option>
+                                                <option value="External Parasites">External Parasites (Ticks, Mites)
+                                                </option>
                                                 <option value="Lumpy Skin Disease">Lumpy Skin Disease</option>
                                                 <option value="Other">Other</option>
                                             </select>
                                         </div>
-                                        
+
                                         <!-- Other Condition Field (hidden by default) -->
                                         <div class="mb-3" id="otherConditionDiv" style="display: none;">
-                                            <label for="otherCondition" class="form-label">Specify Other Condition*</label>
-                                            <input type="text" class="form-control" id="otherCondition" placeholder="Specify the disease or condition">
+                                            <label for="otherCondition" class="form-label">Specify Other
+                                                Condition*</label>
+                                            <input type="text" class="form-control" id="otherCondition"
+                                                placeholder="Specify the disease or condition">
                                         </div>
-                                        
+
                                         <!-- Administration Date -->
                                         <div class="mb-3">
                                             <label for="administrationDate" class="form-label">Date Given*</label>
                                             <input type="date" class="form-control" id="administrationDate" required>
                                         </div>
-                                        
+
                                         <!-- Next Due Date (if applicable) -->
                                         <div class="mb-3">
-                                            <label for="nextDueDate" class="form-label">Next Due Date (if applicable)</label>
+                                            <label for="nextDueDate" class="form-label">Next Due Date (if
+                                                applicable)</label>
                                             <input type="date" class="form-control" id="nextDueDate">
                                         </div>
-                                        
+
                                         <!-- Given By -->
                                         <div class="mb-3">
                                             <label for="givenBy" class="form-label">Given By*</label>
-                                            <input type="text" class="form-control" id="givenBy" placeholder="Who administered this treatment?" required>
+                                            <input type="text" class="form-control" id="givenBy"
+                                                placeholder="Who administered this treatment?" required>
                                         </div>
-                                        
+
                                         <!-- Notes -->
                                         <div class="mb-3">
                                             <label for="notes" class="form-label">Additional Notes</label>
-                                            <textarea class="form-control" id="notes" rows="2" placeholder="Any additional information or observations"></textarea>
+                                            <textarea class="form-control" id="notes" rows="2"
+                                                placeholder="Any additional information or observations"></textarea>
                                         </div>
                                     </form>
                                 </div>
@@ -3180,13 +3256,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <script>
                         function toggleOtherCondition() {
                             const conditionSelect = document.getElementById('condition');
                             const otherConditionDiv = document.getElementById('otherConditionDiv');
                             const otherConditionInput = document.getElementById('otherCondition');
-                            
+
                             if (conditionSelect.value === 'Other') {
                                 otherConditionDiv.style.display = 'block';
                                 otherConditionInput.setAttribute('required', 'required');
@@ -3195,32 +3271,34 @@
                                 otherConditionInput.removeAttribute('required');
                             }
                         }
-                        
-                        document.addEventListener('DOMContentLoaded', function() {
+
+                        document.addEventListener('DOMContentLoaded', function () {
                             // Set today's date as default for administration date
                             const today = new Date();
                             const yyyy = today.getFullYear();
                             const mm = String(today.getMonth() + 1).padStart(2, '0');
                             const dd = String(today.getDate()).padStart(2, '0');
-                            
+
                             const todayFormatted = `${yyyy}-${mm}-${dd}`;
                             document.getElementById('administrationDate').value = todayFormatted;
-                            
+
                             // Initialize condition field
                             toggleOtherCondition();
                         });
                     </script>
-                       <!-- end of vaccinations -->
+                    <!-- end of vaccinations -->
 
-                       <!-- recording new weight modal -->
-                       <div class="modal fade" id="modal-record-weight" tabindex="-1" aria-labelledby="recordWeightModalLabel" aria-hidden="true">
+                    <!-- recording new weight modal -->
+                    <div class="modal fade" id="modal-record-weight" tabindex="-1"
+                        aria-labelledby="recordWeightModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header bg-info text-white">
                                     <h5 class="modal-title text-white" id="recordWeightModalLabel">
                                         <i class="mdi mdi-scale me-1"></i> Record Weight Measurement
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form id="recordWeightForm">
@@ -3228,25 +3306,30 @@
                                         <div class="mb-3">
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <p class="mb-1"><strong>Tag:</strong> <span id="weightTagNumber">#00123</span></p>
-                                                    <p class="mb-1"><strong>Name:</strong> <span id="weightAnimalName">Bella</span></p>
+                                                    <p class="mb-1"><strong>Tag:</strong> <span
+                                                            id="weightTagNumber">#00123</span></p>
+                                                    <p class="mb-1"><strong>Name:</strong> <span
+                                                            id="weightAnimalName">Bella</span></p>
                                                 </div>
                                                 <div class="col-6 text-end">
-                                                    <p class="mb-1"><strong>Type:</strong> <span id="weightCategory">Cattle</span></p>
-                                                    <p class="mb-1"><strong>Previous:</strong> <span id="previousWeight">500 kg</span></p>
+                                                    <p class="mb-1"><strong>Type:</strong> <span
+                                                            id="weightCategory">Cattle</span></p>
+                                                    <p class="mb-1"><strong>Previous:</strong> <span
+                                                            id="previousWeight">500 kg</span></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Weight Information -->
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label for="newWeight" class="form-label">New Weight (kg)*</label>
-                                                    <input type="number" step="0.1" class="form-control" id="newWeight" placeholder="Enter weight in kg" required>
+                                                    <input type="number" step="0.1" class="form-control" id="newWeight"
+                                                        placeholder="Enter weight in kg" required>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label for="weightDate" class="form-label">Measurement Date*</label>
@@ -3254,11 +3337,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Measurement Method -->
                                         <div class="mb-3">
-                                            <label for="measurementMethod" class="form-label">Measurement Method*</label>
-                                            <select class="form-select" id="measurementMethod" required onchange="toggleOtherMethod()">
+                                            <label for="measurementMethod" class="form-label">Measurement
+                                                Method*</label>
+                                            <select class="form-select" id="measurementMethod" required
+                                                onchange="toggleOtherMethod()">
                                                 <option value="" selected disabled>Select measurement method</option>
                                                 <option value="Digital Scale">Digital Scale</option>
                                                 <option value="Analog Scale">Analog Scale</option>
@@ -3269,25 +3354,28 @@
                                                 <option value="Other">Other</option>
                                             </select>
                                         </div>
-                                        
+
                                         <!-- Other Method Field (hidden by default) -->
                                         <div class="mb-3" id="otherMethodDiv" style="display: none;">
                                             <label for="otherMethod" class="form-label">Specify Other Method*</label>
-                                            <input type="text" class="form-control" id="otherMethod" placeholder="Specify the method used">
+                                            <input type="text" class="form-control" id="otherMethod"
+                                                placeholder="Specify the method used">
                                         </div>
-                                        
+
                                         <!-- Recorded By -->
                                         <div class="mb-3">
                                             <label for="recordedBy" class="form-label">Recorded By*</label>
-                                            <input type="text" class="form-control" id="recordedBy" placeholder="Person who took the measurement" required>
+                                            <input type="text" class="form-control" id="recordedBy"
+                                                placeholder="Person who took the measurement" required>
                                         </div>
-                                        
+
                                         <!-- Notes -->
                                         <div class="mb-3">
                                             <label for="weightNotes" class="form-label">Notes</label>
-                                            <textarea class="form-control" id="weightNotes" rows="2" placeholder="Any additional notes about the weight measurement"></textarea>
+                                            <textarea class="form-control" id="weightNotes" rows="2"
+                                                placeholder="Any additional notes about the weight measurement"></textarea>
                                         </div>
-                                        
+
                                         <!-- Weight Change Indicator (calculated automatically) -->
                                         <div class="alert" id="weightChangeAlert" style="display: none;">
                                             <i class="mdi mdi-information-outline me-1"></i>
@@ -3306,13 +3394,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <script>
                         function toggleOtherMethod() {
                             const methodSelect = document.getElementById('measurementMethod');
                             const otherMethodDiv = document.getElementById('otherMethodDiv');
                             const otherMethodInput = document.getElementById('otherMethod');
-                            
+
                             if (methodSelect.value === 'Other') {
                                 otherMethodDiv.style.display = 'block';
                                 otherMethodInput.setAttribute('required', 'required');
@@ -3321,17 +3409,17 @@
                                 otherMethodInput.removeAttribute('required');
                             }
                         }
-                        
+
                         function calculateWeightChange() {
                             const newWeightValue = parseFloat(document.getElementById('newWeight').value);
                             const previousWeightValue = parseFloat(document.getElementById('previousWeight').textContent);
                             const weightChangeAlert = document.getElementById('weightChangeAlert');
                             const weightChangeText = document.getElementById('weightChangeText');
-                            
+
                             if (!isNaN(newWeightValue) && !isNaN(previousWeightValue)) {
                                 const difference = newWeightValue - previousWeightValue;
                                 const percentChange = (difference / previousWeightValue) * 100;
-                                
+
                                 if (difference > 0) {
                                     weightChangeAlert.className = 'alert alert-success';
                                     weightChangeText.textContent = `Weight gain: ${difference.toFixed(1)} kg (${percentChange.toFixed(1)}%)`;
@@ -3342,35 +3430,35 @@
                                     weightChangeAlert.className = 'alert alert-info';
                                     weightChangeText.textContent = 'No weight change detected';
                                 }
-                                
+
                                 weightChangeAlert.style.display = 'block';
                             } else {
                                 weightChangeAlert.style.display = 'none';
                             }
                         }
-                        
-                        document.addEventListener('DOMContentLoaded', function() {
+
+                        document.addEventListener('DOMContentLoaded', function () {
                             // Set today's date as default for measurement date
                             const today = new Date();
                             const yyyy = today.getFullYear();
                             const mm = String(today.getMonth() + 1).padStart(2, '0');
                             const dd = String(today.getDate()).padStart(2, '0');
-                            
+
                             const todayFormatted = `${yyyy}-${mm}-${dd}`;
                             document.getElementById('weightDate').value = todayFormatted;
-                            
+
                             // Initialize method field
                             toggleOtherMethod();
-                            
+
                             // Setup weight change calculation
                             document.getElementById('newWeight').addEventListener('input', calculateWeightChange);
-                            
+
                             // Extract previous weight from display
                             const previousWeightText = document.getElementById('previousWeight').textContent;
                             document.getElementById('previousWeight').textContent = previousWeightText.replace(/[^0-9.]/g, '');
                         });
                     </script>
-                        <!-- end of recording weight -->
+                    <!-- end of recording weight -->
 
 
 
@@ -3461,8 +3549,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                                     <button type="button" class="btn btn-primary">Save Changes</button>
                                 </div>
                             </div>
@@ -3497,8 +3584,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                                     <button type="button" class="btn btn-primary">Add Vaccine</button>
                                 </div>
                             </div>
@@ -3565,8 +3651,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                                     <button type="button" class="btn btn-primary">Save Changes</button>
                                 </div>
                             </div>
@@ -3575,14 +3660,16 @@
                     <!-- end of editing modal -->
 
                     <!-- marking animal as sick -->
-                    <div class="modal fade" id="modal-mark-sick" tabindex="-1" aria-labelledby="markSickModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="modal-mark-sick" tabindex="-1" aria-labelledby="markSickModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header bg-danger text-white">
                                     <h5 class="modal-title text-white" id="markSickModalLabel">
                                         <i class="mdi mdi-medical-bag me-1"></i> Mark Animal as Sick
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form id="markSickForm">
@@ -3590,20 +3677,26 @@
                                         <div class="mb-3">
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <p class="mb-1"><strong>Tag:</strong> <span id="sickTagNumber">#00123</span></p>
-                                                    <p class="mb-1"><strong>Name:</strong> <span id="sickAnimalName">Bella</span></p>
+                                                    <p class="mb-1"><strong>Tag:</strong> <span
+                                                            id="sickTagNumber">#00123</span></p>
+                                                    <p class="mb-1"><strong>Name:</strong> <span
+                                                            id="sickAnimalName">Bella</span></p>
                                                 </div>
                                                 <div class="col-6 text-end">
-                                                    <p class="mb-1"><strong>Type:</strong> <span id="sickCategory">Cattle</span></p>
-                                                    <p class="mb-1"><strong>Current Status:</strong> <span class="badge bg-success">Healthy</span></p>
+                                                    <p class="mb-1"><strong>Type:</strong> <span
+                                                            id="sickCategory">Cattle</span></p>
+                                                    <p class="mb-1"><strong>Current Status:</strong> <span
+                                                            class="badge bg-success">Healthy</span></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Illness Information -->
                                         <div class="mb-3">
-                                            <label for="illnessType" class="form-label">Type of Illness/Condition*</label>
-                                            <select class="form-select" id="illnessType" required onchange="toggleOtherIllness()">
+                                            <label for="illnessType" class="form-label">Type of
+                                                Illness/Condition*</label>
+                                            <select class="form-select" id="illnessType" required
+                                                onchange="toggleOtherIllness()">
                                                 <option value="" selected disabled>Select illness or condition</option>
                                                 <option value="Fever">Fever</option>
                                                 <option value="Respiratory">Respiratory Issues</option>
@@ -3618,55 +3711,64 @@
                                                 <option value="Other">Other</option>
                                             </select>
                                         </div>
-                                        
+
                                         <!-- Other Illness Field (hidden by default) -->
                                         <div class="mb-3" id="otherIllnessDiv" style="display: none;">
-                                            <label for="otherIllness" class="form-label">Specify Other Illness/Condition*</label>
-                                            <input type="text" class="form-control" id="otherIllness" placeholder="Specify the illness or condition">
+                                            <label for="otherIllness" class="form-label">Specify Other
+                                                Illness/Condition*</label>
+                                            <input type="text" class="form-control" id="otherIllness"
+                                                placeholder="Specify the illness or condition">
                                         </div>
-                                        
+
                                         <!-- Onset Date -->
                                         <div class="mb-3">
                                             <label for="onsetDate" class="form-label">Onset Date*</label>
                                             <input type="date" class="form-control" id="onsetDate" required>
                                             <small class="text-muted">When symptoms were first noticed</small>
                                         </div>
-                                        
+
                                         <!-- Severity -->
                                         <div class="mb-3">
                                             <label for="severity" class="form-label">Severity*</label>
                                             <select class="form-select" id="severity" required>
                                                 <option value="" selected disabled>Select severity</option>
-                                                <option value="Mild">Mild - Minor symptoms, animal functioning normally</option>
-                                                <option value="Moderate">Moderate - Noticeable symptoms, some functional impairment</option>
-                                                <option value="Severe">Severe - Significant symptoms, major functional impairment</option>
+                                                <option value="Mild">Mild - Minor symptoms, animal functioning normally
+                                                </option>
+                                                <option value="Moderate">Moderate - Noticeable symptoms, some functional
+                                                    impairment</option>
+                                                <option value="Severe">Severe - Significant symptoms, major functional
+                                                    impairment</option>
                                                 <option value="Critical">Critical - Life-threatening condition</option>
                                             </select>
                                         </div>
-                                        
+
                                         <!-- Symptoms -->
                                         <div class="mb-3">
                                             <label for="symptoms" class="form-label">Symptoms*</label>
-                                            <textarea class="form-control" id="symptoms" rows="2" placeholder="Describe the symptoms observed" required></textarea>
+                                            <textarea class="form-control" id="symptoms" rows="2"
+                                                placeholder="Describe the symptoms observed" required></textarea>
                                         </div>
-                                        
+
                                         <!-- Treatment Plan -->
                                         <div class="mb-3">
                                             <label for="treatmentPlan" class="form-label">Treatment Plan</label>
-                                            <textarea class="form-control" id="treatmentPlan" rows="2" placeholder="Describe any treatment being given"></textarea>
+                                            <textarea class="form-control" id="treatmentPlan" rows="2"
+                                                placeholder="Describe any treatment being given"></textarea>
                                         </div>
-                                        
+
                                         <!-- Veterinary Attention -->
                                         <div class="mb-3">
                                             <label for="vetAttention" class="form-label">Veterinary Attention*</label>
                                             <select class="form-select" id="vetAttention" required>
                                                 <option value="" selected disabled>Select option</option>
                                                 <option value="Yes">Yes - Veterinarian has been consulted</option>
-                                                <option value="Pending">Pending - Will consult veterinarian soon</option>
-                                                <option value="No">No - Veterinary consultation not needed at this time</option>
+                                                <option value="Pending">Pending - Will consult veterinarian soon
+                                                </option>
+                                                <option value="No">No - Veterinary consultation not needed at this time
+                                                </option>
                                             </select>
                                         </div>
-                                        
+
                                         <!-- Isolation Required -->
                                         <div class="mb-3">
                                             <div class="form-check">
@@ -3676,17 +3778,19 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Notes -->
                                         <div class="mb-3">
                                             <label for="sickNotes" class="form-label">Additional Notes</label>
-                                            <textarea class="form-control" id="sickNotes" rows="2" placeholder="Any additional information about the condition"></textarea>
+                                            <textarea class="form-control" id="sickNotes" rows="2"
+                                                placeholder="Any additional information about the condition"></textarea>
                                         </div>
-                                        
+
                                         <!-- Reported By -->
                                         <div class="mb-3">
                                             <label for="reportedBy" class="form-label">Reported By*</label>
-                                            <input type="text" class="form-control" id="reportedBy" placeholder="Person reporting this health issue" required>
+                                            <input type="text" class="form-control" id="reportedBy"
+                                                placeholder="Person reporting this health issue" required>
                                         </div>
                                     </form>
                                 </div>
@@ -3701,13 +3805,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <script>
                         function toggleOtherIllness() {
                             const illnessSelect = document.getElementById('illnessType');
                             const otherIllnessDiv = document.getElementById('otherIllnessDiv');
                             const otherIllnessInput = document.getElementById('otherIllness');
-                            
+
                             if (illnessSelect.value === 'Other') {
                                 otherIllnessDiv.style.display = 'block';
                                 otherIllnessInput.setAttribute('required', 'required');
@@ -3716,32 +3820,34 @@
                                 otherIllnessInput.removeAttribute('required');
                             }
                         }
-                        
-                        document.addEventListener('DOMContentLoaded', function() {
+
+                        document.addEventListener('DOMContentLoaded', function () {
                             // Set today's date as default for onset date
                             const today = new Date();
                             const yyyy = today.getFullYear();
                             const mm = String(today.getMonth() + 1).padStart(2, '0');
                             const dd = String(today.getDate()).padStart(2, '0');
-                            
+
                             const todayFormatted = `${yyyy}-${mm}-${dd}`;
                             document.getElementById('onsetDate').value = todayFormatted;
-                            
+
                             // Initialize illness field
                             toggleOtherIllness();
                         });
                     </script>
-                     <!-- end of marking sick -->
+                    <!-- end of marking sick -->
 
-                     <!-- for marking animal as recovered -->
-                     <div class="modal fade" id="modal-mark-recovered" tabindex="-1" aria-labelledby="markRecoveredModalLabel" aria-hidden="true">
+                    <!-- for marking animal as recovered -->
+                    <div class="modal fade" id="modal-mark-recovered" tabindex="-1"
+                        aria-labelledby="markRecoveredModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header bg-success text-white">
                                     <h5 class="modal-title text-white" id="markRecoveredModalLabel">
                                         <i class="mdi mdi-shield-check me-1"></i> Mark Animal as Recovered
                                     </h5>
-                                    <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form id="markRecoveredForm">
@@ -3749,31 +3855,37 @@
                                         <div class="mb-3">
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <p class="mb-1"><strong>Tag:</strong> <span id="recoveredTagNumber">#00456</span></p>
-                                                    <p class="mb-1"><strong>Name:</strong> <span id="recoveredAnimalName">Unnamed</span></p>
+                                                    <p class="mb-1"><strong>Tag:</strong> <span
+                                                            id="recoveredTagNumber">#00456</span></p>
+                                                    <p class="mb-1"><strong>Name:</strong> <span
+                                                            id="recoveredAnimalName">Unnamed</span></p>
                                                 </div>
                                                 <div class="col-6 text-end">
-                                                    <p class="mb-1"><strong>Type:</strong> <span id="recoveredCategory">Goat</span></p>
-                                                    <p class="mb-1"><strong>Current Status:</strong> <span class="badge bg-danger">Sick</span></p>
+                                                    <p class="mb-1"><strong>Type:</strong> <span
+                                                            id="recoveredCategory">Goat</span></p>
+                                                    <p class="mb-1"><strong>Current Status:</strong> <span
+                                                            class="badge bg-danger">Sick</span></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Recovery Information -->
                                         <div class="mb-3">
                                             <label for="recoveryDate" class="form-label">Recovery Date*</label>
                                             <input type="date" class="form-control" id="recoveryDate" required>
                                         </div>
-                                        
+
                                         <!-- Treatment Information -->
                                         <div class="mb-3">
                                             <label for="treatmentDetails" class="form-label">Treatment Details</label>
-                                            <textarea class="form-control" id="treatmentDetails" rows="3" placeholder="Describe the treatment that led to recovery"></textarea>
+                                            <textarea class="form-control" id="treatmentDetails" rows="3"
+                                                placeholder="Describe the treatment that led to recovery"></textarea>
                                         </div>
-                                        
+
                                         <!-- Treatment Effectiveness -->
                                         <div class="mb-3">
-                                            <label for="treatmentEffectiveness" class="form-label">Treatment Effectiveness*</label>
+                                            <label for="treatmentEffectiveness" class="form-label">Treatment
+                                                Effectiveness*</label>
                                             <select class="form-select" id="treatmentEffectiveness" required>
                                                 <option value="" selected disabled>Select effectiveness</option>
                                                 <option value="Excellent">Excellent - Complete recovery</option>
@@ -3782,16 +3894,17 @@
                                                 <option value="Limited">Limited - Minor improvement</option>
                                             </select>
                                         </div>
-                                        
+
                                         <!-- Veterinary Confirmation -->
                                         <div class="mb-3">
-                                            <label for="vetConfirmation" class="form-label">Veterinary Confirmation</label>
+                                            <label for="vetConfirmation" class="form-label">Veterinary
+                                                Confirmation</label>
                                             <select class="form-select" id="vetConfirmation">
                                                 <option value="No" selected>No</option>
                                                 <option value="Yes">Yes - Confirmed by veterinarian</option>
                                             </select>
                                         </div>
-                                        
+
                                         <!-- Follow-up Needed -->
                                         <div class="mb-3">
                                             <div class="form-check">
@@ -3801,23 +3914,26 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Follow-up Details (conditionally shown) -->
                                         <div class="mb-3" id="followupDetailsDiv" style="display: none;">
                                             <label for="followupDetails" class="form-label">Follow-up Details</label>
-                                            <textarea class="form-control" id="followupDetails" rows="2" placeholder="Describe follow-up monitoring needs"></textarea>
+                                            <textarea class="form-control" id="followupDetails" rows="2"
+                                                placeholder="Describe follow-up monitoring needs"></textarea>
                                         </div>
-                                        
+
                                         <!-- Notes -->
                                         <div class="mb-3">
                                             <label for="recoveryNotes" class="form-label">Additional Notes</label>
-                                            <textarea class="form-control" id="recoveryNotes" rows="2" placeholder="Any additional information about the recovery"></textarea>
+                                            <textarea class="form-control" id="recoveryNotes" rows="2"
+                                                placeholder="Any additional information about the recovery"></textarea>
                                         </div>
-                                        
+
                                         <!-- Recorded By -->
                                         <div class="mb-3">
                                             <label for="recordedBy" class="form-label">Recorded By*</label>
-                                            <input type="text" class="form-control" id="recordedBy" placeholder="Person recording the recovery" required>
+                                            <input type="text" class="form-control" id="recordedBy"
+                                                placeholder="Person recording the recovery" required>
                                         </div>
                                     </form>
                                 </div>
@@ -3832,215 +3948,372 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <script>
-                        document.addEventListener('DOMContentLoaded', function() {
+                        document.addEventListener('DOMContentLoaded', function () {
                             // Set today's date as default for recovery date
                             const today = new Date();
                             const yyyy = today.getFullYear();
                             const mm = String(today.getMonth() + 1).padStart(2, '0');
                             const dd = String(today.getDate()).padStart(2, '0');
-                            
+
                             const todayFormatted = `${yyyy}-${mm}-${dd}`;
                             document.getElementById('recoveryDate').value = todayFormatted;
-                            
+
                             // Toggle follow-up details visibility
                             const followupNeeded = document.getElementById('followupNeeded');
                             const followupDetailsDiv = document.getElementById('followupDetailsDiv');
-                            
-                            followupNeeded.addEventListener('change', function() {
+
+                            followupNeeded.addEventListener('change', function () {
                                 followupDetailsDiv.style.display = this.checked ? 'block' : 'none';
                             });
                         });
                     </script>
-                      <!-- end of recovered -->
+                    <!-- end of recovered -->
 
-                      <!-- weight history -->
-                       <!-- Modal for Weight History -->
-                       <!-- Modal for Weight History -->
-<div class="modal fade" id="modal-weight-history" tabindex="-1" aria-labelledby="historyModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content border-none border-0">
-            <div class="modal-header bg-primary radius-0">
-                <h5 class="modal-title text-white" id="historyModalLabel">
-                    <i class="mdi mdi-history me-1"></i> Weight History
-                </h5>
-                <button type="button" class="btn-close bg-white" data-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Animal Information -->
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="card shadow-none border">
-                                    <div class="card-body p-3">
-                                        <div class="">
-                                            
-                                            <div class="avatar-xs me-3 mb-3">
-                                                <div class="avatar-title bg-transparent rounded">
-                                                    <i class="bx bxs-folder font-size-24 text-warning"></i>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex">
-                                                <div class="overflow-hidden me-auto">
-                                                    <h5 class="font-size-14 text-truncate mb-1"><a href="javascript: void(0);" class="text-body">Design</a></h5>
-                                                    <p class="text-muted text-truncate mb-0">12 Files</p>
-                                                </div>
-                                                <div class="align-self-end ms-2">
-                                                    <p class="text-muted mb-0">6GB</p>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    
+                    <!-- weight history -->
+                    <!-- Modal for Weight History -->
+                    <!-- Modal for Weight History -->
+                    <div class="modal fade" id="modal-weight-history" tabindex="-1" aria-labelledby="historyModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content border-none border-0">
+                                <div class="modal-header bg-primary radius-0">
+                                    <h5 class="modal-title text-white" id="historyModalLabel">
+                                        <i class="mdi mdi-history me-1"></i> Weight History
+                                    </h5>
+                                    <button type="button" class="btn-close bg-white" data-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
-                            </div>
+                                <div class="modal-body">
+                                    <!-- Animal Information -->
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="row">
 
-                            <div class="col-6">
-                                <div class="card shadow-none border">
-                                    <div class="card-body p-3">
-                                        <div class="">
-                                            
-                                            <div class="avatar-xs me-3 mb-3">
-                                                <div class="avatar-title bg-transparent rounded">
-                                                    <i class="bx bxs-folder font-size-24 text-warning"></i>
+
+                                                <div class="col-6 text-uppercase">
+                                                    <div class="card shadow-none border border-2">
+                                                        <div class="card-body p-3">
+                                                            <div class="">
+
+
+                                                                <div class="mb-3 d-flex w-100 justify-content-between">
+                                                                    <a href="javascript: void(0);" class="d-flex">
+                                                                        <div class="flex-shrink-0 me-3">
+                                                                            <img class="rounded-circle avatar-sm rounded"
+                                                                                src="assets/images/users/avatar-2.jpg"
+                                                                                alt="Generic placeholder image"
+                                                                                height="36">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 chat-user-box">
+                                                                            <p class="user-title m-0 p-0"><span
+                                                                                    class="p-0 m-0 h5">Bella
+                                                                                    Osama</span></p>
+                                                                            <p class="mb-0 text-muted"><i
+                                                                                    class="bx bx-map text-body align-middle"></i>
+                                                                                Kitui Corner</p>
+                                                                        </div>
+                                                                    </a>
+
+                                                                    <div class=" ms-2">
+                                                                        <span class="badge bg-success">Healthy</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="d-flex font-size-12">
+                                                                    <div class="overflow-hidden me-auto">
+                                                                        <p
+                                                                            class="text-muted text-truncate mb-0 font-size-14 fw-bold">
+                                                                            <span
+                                                                                class="badge bg-soft-info text-info me-1 font-size-14">
+                                                                                <i
+                                                                                    class="mdi mdi-tag-outline font-size-18 me-1"></i>
+                                                                                #00123
+                                                                            </span>
+                                                                            <span
+                                                                                class="badge bg-soft-primary text-primary font-size-14">
+                                                                                <i
+                                                                                    class="mdi mdi-cow font-size-18 me-1"></i>
+                                                                                Cattle
+                                                                            </span>
+                                                                        </p>
+                                                                    </div>
+
+                                                                </div>
+                                                                <hr class="d-none">
+
+                                                                <div class="mt-3">
+                                                                    <div class="row font-size-12">
+                                                                        <div class="col-6 font-18">
+                                                                            <div class="d-flex align-items-center">
+                                                                                <i
+                                                                                    class="mdi mdi-gender-female font-size-18 text-danger me-1"></i>
+                                                                                <span class="text-muted">Female</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <div class="d-flex align-items-center">
+                                                                                <i
+                                                                                    class="mdi mdi-calendar font-size-18 text-warning me-1"></i>
+                                                                                <span class="text-muted">2Y, 3M,
+                                                                                    1W</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row mt-2 font-size-12">
+                                                                        <div class="col-6">
+                                                                            <div class="d-flex align-items-center">
+                                                                                <i
+                                                                                    class="mdi mdi-scale font-size-18 text-success me-1"></i>
+                                                                                <span class="text-muted">500 kg</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <div class="d-flex align-items-center">
+                                                                                <i
+                                                                                    class="mdi mdi-account font-size-18 text-info me-1"></i>
+                                                                                <span class="text-muted">John
+                                                                                    Smith</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
+                                                <div class="col-6 text-uppercase">
+                                                    <div class="card shadow-none border border-2">
+                                                        <div class="card-body p-3">
+                                                            <h5 class="font-size-14 text-truncate mb-1"><a
+                                                                    href="javascript: void(0);"
+                                                                    class="text-body">Livestock Weight Progress</a></h5>
+                                                            <div class="mt-3">
+                                                                <div class="alert alert-info p-2 mb-2" role="alert">
+                                                                    <i class="ri-information-line me-1"></i>
+                                                                    Livestock is approaching target weight for market
+                                                                    sale.
+                                                                </div>
+                                                                <br>
+                                                                <div class="progress animated-progress custom-progress radius-0"
+                                                                    style="height: 20px;">
+                                                                    <div class="progress-bar bg-gradient bg-primary rounded-0"
+                                                                        role="progressbar" style="width: 91%"
+                                                                        aria-valuenow="91" aria-valuemin="0"
+                                                                        aria-valuemax="100">
+                                                                        91%
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="d-flex justify-content-between mt-1 fw-bold text-black">
+                                                                    <small class="text-muted">Current Weight: 500
+                                                                        kg</small>
+                                                                    <small class="text-muted">Target Weight: 550
+                                                                        kg</small>
+                                                                </div>
+                                                                <div class="text-muted text-end mt-2">
+                                                                    <small>Last weighed: March 20, 2024 at 10:45
+                                                                        AM</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
                                             </div>
-                                            <div class="d-flex">
-                                                <div class="overflow-hidden me-auto">
-                                                    <h5 class="font-size-14 text-truncate mb-1"><a href="javascript: void(0);" class="text-body">Design</a></h5>
-                                                    <p class="text-muted text-truncate mb-0">12 Files</p>
-                                                </div>
-                                                <div class="align-self-end ms-2">
-                                                    <p class="text-muted mb-0">6GB</p>
-                                                </div>
-                                            </div>
-                                            
                                         </div>
                                     </div>
-                                    
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-6">
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0">
-                                        <i class="mdi mdi-cow font-size-24 text-primary"></i>
+
+                                    <!-- Weight Chart -->
+                                    <div class="card mb-3 px-3">
+                                        <div class="card-body bg-light ">
+                                            <div>
+                                                <div id="weightChart"></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="flex-grow-1 ms-3">
-                                        <h5 class="mt-0" id="history-animal-name">Bella</h5>
-                                        <p class="mb-1"><strong>Tag:</strong> <span id="history-animal-tag">#00123</span></p>
-                                        <p class="mb-1"><strong>Category:</strong> <span id="history-animal-category">Cattle</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mt-3 mt-md-0">
-                                    <div class="d-flex justify-content-md-end">
-                                        <div>
-                                            <p class="mb-1"><strong>Current Weight:</strong> <span class="fw-bold" id="history-current-weight">500 kg</span></p>
-                                            <p class="mb-1"><strong>Target Weight:</strong> <span class="fw-bold" id="history-target-weight">550 kg</span></p>
-                                            <p class="mb-0">
-                                                <strong>Progress:</strong> 
-                                                <span class="badge bg-success" id="history-progress">91%</span>
-                                            </p>
+
+                                    <!-- Weight History Table -->
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-3">Weight Records</h5>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-bordered align-middle">
+                                                    <thead class="table-dark text-uppercase">
+                                                        <tr>
+                                                            <th>Date & Time</th>
+                                                            <th>Weight (kg)</th>
+                                                            <th>Change</th>
+                                                            <th>Method</th>
+                                                            <th>Recorded By</th>
+                                                            <th>Notes</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>15 Mar 2024 10:30 AM</td>
+                                                            <td class="fw-bold">500 kg</td>
+                                                            <td class="text-success">+15 kg</td>
+                                                            <td>Digital Scale</td>
+                                                            <td>John Smith</td>
+                                                            <td>Regular weight check</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Feb 2024 09:45 AM</td>
+                                                            <td class="fw-bold">485 kg</td>
+                                                            <td class="text-success">+10 kg</td>
+                                                            <td>Platform Scale</td>
+                                                            <td>Maria Wanjiku</td>
+                                                            <td>Supplemented feed increased</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Jan 2024 11:15 AM</td>
+                                                            <td class="fw-bold">475 kg</td>
+                                                            <td class="text-success">+25 kg</td>
+                                                            <td>Digital Scale</td>
+                                                            <td>James Ochieng</td>
+                                                            <td>Recovering well from treatment</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Dec 2023 10:00 AM</td>
+                                                            <td class="fw-bold">450 kg</td>
+                                                            <td class="text-danger">-10 kg</td>
+                                                            <td>Digital Scale</td>
+                                                            <td>Sarah Kamau</td>
+                                                            <td>Slight illness, under treatment</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Nov 2023 09:30 AM</td>
+                                                            <td class="fw-bold">460 kg</td>
+                                                            <td>Initial</td>
+                                                            <td>Digital Scale</td>
+                                                            <td>John Smith</td>
+                                                            <td>First weight record</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Oct 2023 08:15 AM</td>
+                                                            <td class="fw-bold">400 kg</td>
+                                                            <td class="text-success">+20 kg</td>
+                                                            <td>Veterinary Scale</td>
+                                                            <td>Emily Chen</td>
+                                                            <td>Rapid growth phase</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Sep 2023 07:45 AM</td>
+                                                            <td class="fw-bold">380 kg</td>
+                                                            <td class="text-success">+15 kg</td>
+                                                            <td>Platform Scale</td>
+                                                            <td>Michael Njoroge</td>
+                                                            <td>Consistent weight gain</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Aug 2023 11:20 AM</td>
+                                                            <td class="fw-bold">365 kg</td>
+                                                            <td class="text-success">+12 kg</td>
+                                                            <td>Digital Scale</td>
+                                                            <td>Lisa Wong</td>
+                                                            <td>Excellent nutritional program</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Jul 2023 10:10 AM</td>
+                                                            <td class="fw-bold">353 kg</td>
+                                                            <td class="text-success">+8 kg</td>
+                                                            <td>Digital Scale</td>
+                                                            <td>David Mutua</td>
+                                                            <td>Steady growth continues</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Jun 2023 09:55 AM</td>
+                                                            <td class="fw-bold">345 kg</td>
+                                                            <td class="text-success">+10 kg</td>
+                                                            <td>Platform Scale</td>
+                                                            <td>Rachel Kim</td>
+                                                            <td>Summer feeding program</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 May 2023 08:40 AM</td>
+                                                            <td class="fw-bold">335 kg</td>
+                                                            <td class="text-success">+7 kg</td>
+                                                            <td>Veterinary Scale</td>
+                                                            <td>Peter Odhiambo</td>
+                                                            <td>Early growth monitoring</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Apr 2023 07:30 AM</td>
+                                                            <td class="fw-bold">328 kg</td>
+                                                            <td class="text-success">+5 kg</td>
+                                                            <td>Digital Scale</td>
+                                                            <td>Sophia Muthomi</td>
+                                                            <td>Initial care period</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Mar 2023 10:05 AM</td>
+                                                            <td class="fw-bold">330 kg</td>
+                                                            <td>Initial</td>
+                                                            <td>Platform Scale</td>
+                                                            <td>John Smith</td>
+                                                            <td>First recorded measurement</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Feb 2023 11:45 AM</td>
+                                                            <td class="fw-bold">330 kg</td>
+                                                            <td class="text-danger">-2 kg</td>
+                                                            <td>Veterinary Scale</td>
+                                                            <td>Emma Adhiambo</td>
+                                                            <td>Initial adaptation period</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Jan 2023 09:20 AM</td>
+                                                            <td class="fw-bold">332 kg</td>
+                                                            <td>Initial</td>
+                                                            <td>Digital Scale</td>
+                                                            <td>Robert Kimani</td>
+                                                            <td>Baseline measurement</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Dec 2022 08:50 AM</td>
+                                                            <td class="fw-bold">330 kg</td>
+                                                            <td class="text-danger">-5 kg</td>
+                                                            <td>Platform Scale</td>
+                                                            <td>Alice Moraa</td>
+                                                            <td>Initial settling in period</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 Nov 2022 10:15 AM</td>
+                                                            <td class="fw-bold">335 kg</td>
+                                                            <td>Initial</td>
+                                                            <td>Digital Scale</td>
+                                                            <td>Daniel Mwangi</td>
+                                                            <td>First systematic tracking</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        <i class="mdi mdi-close me-1"></i> Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        <i class="mdi mdi-file-export me-1"></i> Export Data
+                                    </button>
+                                    <button type="button" class="btn btn-success">
+                                        <i class="mdi mdi-printer me-1"></i> Print Report
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Weight Chart -->
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Weight Progression</h5>
-                        <div style="height: 250px">
-                            <canvas id="weightChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Weight History Table -->
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">Weight Records</h5>
-                        <div class="table-responsive">
-                            <table class="table table-striped table-bordered align-middle">
-                                <thead class="table-dark text-uppercase">
-                                    <tr>
-                                        <th>Date & Time</th>
-                                        <th>Weight (kg)</th>
-                                        <th>Change</th>
-                                        <th>Method</th>
-                                        <th>Recorded By</th>
-                                        <th>Notes</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>15 Mar 2024 10:30 AM</td>
-                                        <td class="fw-bold">500 kg</td>
-                                        <td class="text-success">+15 kg</td>
-                                        <td>Digital Scale</td>
-                                        <td>John Smith</td>
-                                        <td>Regular weight check</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15 Feb 2024 09:45 AM</td>
-                                        <td class="fw-bold">485 kg</td>
-                                        <td class="text-success">+10 kg</td>
-                                        <td>Platform Scale</td>
-                                        <td>Maria Wanjiku</td>
-                                        <td>Supplemented feed increased</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15 Jan 2024 11:15 AM</td>
-                                        <td class="fw-bold">475 kg</td>
-                                        <td class="text-success">+25 kg</td>
-                                        <td>Digital Scale</td>
-                                        <td>James Ochieng</td>
-                                        <td>Recovering well from treatment</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15 Dec 2023 10:00 AM</td>
-                                        <td class="fw-bold">450 kg</td>
-                                        <td class="text-danger">-10 kg</td>
-                                        <td>Digital Scale</td>
-                                        <td>Sarah Kamau</td>
-                                        <td>Slight illness, under treatment</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15 Nov 2023 09:30 AM</td>
-                                        <td class="fw-bold">460 kg</td>
-                                        <td>Initial</td>
-                                        <td>Digital Scale</td>
-                                        <td>John Smith</td>
-                                        <td>First weight record</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                    <i class="mdi mdi-close me-1"></i> Close
-                </button>
-                <button type="button" class="btn btn-primary">
-                    <i class="mdi mdi-file-export me-1"></i> Export Data
-                </button>
-                <button type="button" class="btn btn-success">
-                    <i class="mdi mdi-printer me-1"></i> Print Report
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+
+
                     <!-- end of weight history -->
 
                     <footer class="footer ">
@@ -4102,10 +4375,10 @@
 
             <!-- highchart cdns -->
             <script src="https://code.highcharts.com/highcharts.js"></script>
-
-            <!-- highchart drill down -->
-            <script src="https://code.highcharts.com/modules/drilldown.js"></script>
-
+            <script src="https://code.highcharts.com/modules/bullet.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
             <!-- Responsive examples -->
             <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js "></script>
             <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js "></script>
@@ -4165,7 +4438,105 @@
                 });
             </script>
 
-            
+            <!-- target weight chart -->
+
+         
+
+            <script>
+                Highcharts.chart('weightChart', {
+                    chart: {
+                        type: 'areaspline',
+                        backgroundColor: '#eff2f7'
+                    },
+                    title: {
+                        text: 'Livestock Weight Progression'
+                    },
+                    subtitle: {
+                        text: 'Tracking Weight Gain Towards Target'
+                    },
+                    xAxis: {
+                        type: 'datetime',
+                        title: {
+                            text: 'Date of Measurement'
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Weight (kg)'
+                        }
+                    },
+                    tooltip: {
+                        formatter: function() {
+                            const actualWeightPoint = this.points.find(p => p.series.name === 'Actual Weight');
+                            
+                            const date = Highcharts.dateFormat('%d %b %Y', this.x);
+                            const actualWeight = actualWeightPoint ? actualWeightPoint.y : '-';
+                            const targetWeight = 550;
+                            const percentageProgress = ((actualWeight / targetWeight) * 100).toFixed(1);
+                            
+                            return `
+                                <b>${date}</b><br>
+                                Actual Weight: <b>${actualWeight} kg</b><br>
+                                Target Weight: <b>${targetWeight} kg</b><br>
+                                Progress: <b>${percentageProgress}%</b>
+                            `;
+                        },
+                        shared: true
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    plotOptions: {
+                        areaspline: {
+                            fillOpacity: 0.3,
+                            marker: {
+                                enabled: true
+                            }
+                        },
+                        line: {
+                            marker: {
+                                enabled: false
+                            }
+                        }
+                    },
+                    series: [{
+                        type: 'areaspline',
+                        name: 'Actual Weight',
+                        color: 'rgba(52, 152, 219, 0.7)',
+                        data: [
+                            [Date.UTC(2022, 10, 15, 10, 15), 335],
+                            [Date.UTC(2022, 11, 15, 8, 50), 330],
+                            [Date.UTC(2023, 0, 15, 9, 20), 332],
+                            [Date.UTC(2023, 1, 15, 11, 45), 330],
+                            [Date.UTC(2023, 2, 15, 10, 5), 330],
+                            [Date.UTC(2023, 3, 15, 7, 30), 328],
+                            [Date.UTC(2023, 4, 15, 8, 40), 335],
+                            [Date.UTC(2023, 5, 15, 9, 55), 345],
+                            [Date.UTC(2023, 6, 15, 10, 10), 353],
+                            [Date.UTC(2023, 7, 15, 11, 20), 365],
+                            [Date.UTC(2023, 8, 15, 7, 45), 380],
+                            [Date.UTC(2023, 9, 15, 8, 15), 400],
+                            [Date.UTC(2023, 10, 15, 9, 30), 460],
+                            [Date.UTC(2023, 11, 15, 10, 0), 450],
+                            [Date.UTC(2024, 0, 15, 11, 15), 475],
+                            [Date.UTC(2024, 1, 15, 9, 45), 485],
+                            [Date.UTC(2024, 2, 15, 10, 30), 500]
+                        ]
+                    }, {
+                        type: 'line',
+                        name: 'Target Weight',
+                        color: 'rgba(231, 76, 60, 1)',
+                        dashStyle: 'dash',
+                        data: [
+                            [Date.UTC(2022, 10, 15, 10, 15), 550],
+                            [Date.UTC(2024, 2, 15, 10, 30), 550]
+                        ]
+                    }]
+                });
+                </script>
 </body>
 
 
