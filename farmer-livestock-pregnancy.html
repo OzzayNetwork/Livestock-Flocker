@@ -2260,7 +2260,10 @@
 
   
   <!-- Modal -->
-  <div class="modal fade" id="modal-record-birth" tabindex="-1" aria-labelledby="livestockModalLabel" aria-hidden="true">
+<!-- Modal -->
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="modal-record-birth" tabindex="-1" aria-labelledby="livestockModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
         <div class="modal-header">
@@ -2268,9 +2271,60 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-        
-  
           <div class="col-12">
+            <!-- Parent Information Section -->
+            <div class="row mb-4">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header bg-light">
+                    <h6 class="mb-0 fw-bold">Parents</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <!-- Father Information -->
+                      <div class="col-md-6">
+                        <div class="parent-card p-3 mb-3 mb-md-0 border">
+                          <h6 class="fw-bold mb-3">Father</h6>
+                          <div class="d-flex flex-column">
+                            <div class="mb-2">
+                              <span class="fw-bold me-2">Tag:</span>
+                              <span>#00100</span>
+                              <input type="hidden" name="father_id" value="00100">
+                            </div>
+                            <div>
+                              <span class="fw-bold me-2">Breed:</span>
+                              <span>Angus</span>
+                              <input type="hidden" name="father_breed" value="Angus">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Mother Information -->
+                      <div class="col-md-6">
+                        <div class="parent-card p-3 border">
+                          <h6 class="fw-bold mb-3">Mother</h6>
+                          <div class="d-flex flex-column">
+                            <div class="mb-2">
+                              <span class="fw-bold me-2">Tag:</span>
+                              <span>#00101</span>
+                              <input type="hidden" name="mother_id" value="00101">
+                            </div>
+                            <div>
+                              <span class="fw-bold me-2">Breed:</span>
+                              <span>Angus</span>
+                              <input type="hidden" name="mother_breed" value="Angus">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Offspring Table -->
             <div class="table-responsive">
               <table class="table table-editable-1 align-middle table-edits">
                 <thead class="table-light">
@@ -2410,7 +2464,7 @@
                 </tbody>
                 <tfoot>
                   <tr>
-                    <td colspan="12" class="bg-light add-field-1 cursor-pointer">
+                    <td colspan="13" class="bg-light add-field-1 cursor-pointer">
                       <span class="d-flex align-items-center">
                         <i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21"></i>
                         <span class="pl-5">Add Row</span>
@@ -2429,7 +2483,6 @@
       </div>
     </div>
   </div>
-
 
   
                     <div class="modal fade" id="modal-record-birth" tabindex="-1"
