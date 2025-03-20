@@ -553,7 +553,7 @@
                                                 <a class="nav-item nav-link" href="farmer-deliveries.html">Purchases</a>
                                                 
                                                     <li class="nav-item dropdown">
-                                                        <a class="nav-link dropdown-toggle active" href="#"
+                                                        <a class="nav-link dropdown-toggle" href="#"
                                                             id="navbarScrollingDropdown" role="button"
                                                             data-bs-toggle="dropdown" aria-expanded="false">
                                                             Weight
@@ -615,7 +615,227 @@
                     <!-- end of tool bar -->
 
                     <!-- stats cards -->
-                  
+                    <!-- Livestock Stats -->
+                    <div class="row">
+                        <div class="col-6 col-sm-12 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <div class="float-end d-flex">
+                                            <div class="input-group input-group-sm mx-2">
+                                                <select class="form-select form-select-sm">
+                                                    <option value="" selected="">All Categories</option>
+                                                    <option value="CATTLE">Cattle</option>
+                                                    <option value="SHEEP">Sheep</option>
+                                                    <option value="GOAT">Goats</option>
+                                                    <option value="PIG">Pigs</option>
+                                                    <option value="POULTRY">Poultry</option>
+                                                    <option value="HORSE">Horses</option>
+                                                    <option value="RABBIT">Rabbits</option>
+                                                    <option value="FISH">Fish</option>
+                                                    <option value="BEES">Bees</option>
+                                                </select>
+                                                <label class="input-group-text">Category</label>
+                                            </div>
+
+                                            <div class="input-group input-group-sm">
+                                                <select class="form-select form-select-sm">
+                                                    <option value="" selected="">All Ages</option>
+                                                    <option value="0-7D">0-7 days</option>
+                                                    <option value="1-4W">1-4 weeks</option>
+                                                    <option value="1-3M">1-3 months</option>
+                                                    <option value="3-6M">3-6 months</option>
+                                                    <option value="6-12M">6-12 months</option>
+                                                    <option value="1-2Y">1-2 years</option>
+                                                    <option value="2-5Y">2-5 years</option>
+                                                    <option value="5Y+">5+ years</option>
+                                                </select>
+                                                <label class="input-group-text">Age</label>
+                                            </div>
+                                        </div>
+                                        <h4 class="card-title mb-4">Average Weight Progress</h4>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div id="avg-weight" style="height: 464px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-sm-12 col-md-6">
+                            <div class="row">
+                                <!-- Weight Progress Status Card -->
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">WEIGHT PROGRESS</p>
+                                                    <h5 class="mb-0">88%</h5>
+                                                </div>
+                                                <div class="avatar-sm ms-auto">
+                                                    <div
+                                                        class="avatar-title bg-primary rounded-circle text-white font-size-20">
+                                                        <i class="mdi mdi-chart-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="text-muted mb-0">
+                                                <span class="text-success me-1">
+                                                    <i class="mdi mdi-arrow-up"></i> 5%
+                                                </span> improvement from last month
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                  <!-- Total Livestock & Targets Card -->
+                                  <div class="col-lg-6 col-md-6">
+                                    <div class="card blog-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">AVG LIVESTOCK WEIGHT</p>
+                                                    <h5 class="mb-0">
+                                                        <span class="text-success">122.6</span> /
+                                                        <span class="text-muted">138.8</span> KG
+                                                    </h5>
+                                                </div>
+                                                <div class="avatar-sm ms-auto">
+                                                    <div
+                                                        class="avatar-title bg-success rounded-circle text-white font-size-20">
+                                                        <i class="mdi mdi-scale"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="text-muted mb-0">
+                                                <span class="text-success me-1">
+                                                    <i class="mdi mdi-arrow-up"></i> 88%
+                                                </span> of average target weight
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Weight Status Distribution Card -->
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="card blog-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">WEIGHT STATUS</p>
+                                                    <h5 class="mb-0">
+                                                        <span class="text-success">3</span> /
+                                                        <span class="text-primary">2</span> /
+                                                        <span class="text-warning">4</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="avatar-sm ms-auto">
+                                                    <div
+                                                        class="avatar-title bg-info rounded-circle text-white font-size-20">
+                                                        <i class="mdi mdi-weight"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <span class="badge bg-success me-1">Target Weight: 3</span>
+                                            <span class="badge bg-primary me-1">Ready Soon: 2</span>
+                                            <span class="badge bg-warning">Need Attention: 4</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                              
+
+                                <!-- Health Impact on Weight Card -->
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="card blog-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">HEALTH STATUS</p>
+                                                    <h5 class="mb-0">
+                                                        <span class="text-success">4</span> /
+                                                        <span class="text-danger">3</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="avatar-sm ms-auto">
+                                                    <div
+                                                        class="avatar-title bg-warning rounded-circle text-white font-size-20">
+                                                        <i class="mdi mdi-medical-bag"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <span class="badge bg-success me-1">Healthy: 57%</span>
+                                            <span class="badge bg-danger">Sick: 43%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Weighing Schedule Status Card -->
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="card blog-stats-wid">
+                                        <div class="card-body">
+                                            <h4 class="card-title mb-3">Weighing Schedule Stats</h4>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="text-muted text-truncate mb-2">Optimal Window</p>
+                                                        <h5 class="mb-0">12</h5>
+                                                    </div>
+                                                </div>
+                                
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="text-muted text-truncate mb-2">Overdue</p>
+                                                        <h5 class="mb-0 text-danger fw-bold text-danger">8</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="text-muted text-truncate mb-2">Not Weighed in 30 + Days</p>
+                                                        <h5 class="mb-0 fw-bold text-danger">10,000</h5>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="alert alert-warning m-0 mt-3" role="alert">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="mdi mdi-alert-circle-outline fs-3 me-3"></i>
+                                                            <div>
+                                                                <p class="mb-0">You have <strong>8 overdue</strong> and <strong>10,000 animals</strong> that haven't been weighed in 30+ days. Schedule a weighing session soon to maintain accurate weight progression data.</p>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <!-- end of stats -->
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
@@ -722,29 +942,27 @@
                                         <table class="table align-middle table-hover table-striped text-nowrap text-uppercase">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
-                                                    <th scope="col">Date Weighed</th>
                                                     <th scope="col">Tag No.</th>
                                                     <th scope="col">Name</th>
-                                                    <th scope="col">Age</th>
                                                     <th scope="col">Category</th>
-                                                    <th scope="col">Weight</th>
+                                                    <th scope="col">Last Weighed</th>
+                                                    <th scope="col">Current Weight</th>
                                                     <th scope="col">Target Weight</th>
                                                     <th scope="col">Weight Progress</th>
-                                                    <th scope="col">Next Weighing</th>
-                                                    <th scope="col">Method</th>
-                                                    <th scope="col">Recorded By</th>
-                                                    <th scope="col">Notes</th>
+                                                    <th scope="col">Health Status</th>
+                                                    <th scope="col">Weight Status</th>
+                                                    <th scope="col">Weighing Schedule</th>
+                                                    <th scope="col">Age</th>
+                                                    <th scope="col">Zone</th>
                                                     <th scope="col">Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <!-- Row 1 -->
                                                 <tr>
-                                                    <td>15 Mar 2024 10:30 AM</td>
                                                     <td class="fw-bold">#00123</td>
                                                     <td>Bella</td>
-                                                    <td>2Y, 3M, 1W</td>
                                                     <td>Cattle</td>
+                                                    <td>15 Mar 2024 10:30 AM</td>
                                                     <td class="fw-bold">500 kg</td>
                                                     <td>550 kg</td>
                                                     <td>
@@ -753,10 +971,11 @@
                                                         </div>
                                                         <small class="text-muted fw-bold">91% of target</small>
                                                     </td>
-                                                    <td><span class="badge bg-success">29 Mar 2024</span></td>
-                                                    <td>Digital Scale</td>
-                                                    <td>John Smith</td>
-                                                    <td>Healthy appearance, good muscle tone</td>
+                                                    <td><span class="badge bg-success">Healthy</span></td>
+                                                    <td><span class="badge bg-primary">Ready Soon</span></td>
+                                                    <td><span class="badge bg-success">Optimal Window</span></td>
+                                                    <td>2Y, 3M, 1W</td>
+                                                    <td>MAVOKO</td>
                                                     <td>
                                                         <div class="d-flex">
                                                             <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
@@ -768,13 +987,11 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <!-- Row 2 -->
                                                 <tr>
-                                                    <td>20 Feb 2024 09:15 AM</td>
                                                     <td class="fw-bold">#00456</td>
                                                     <td>-</td>
-                                                    <td>1Y, 6M, 0W</td>
                                                     <td>Goat</td>
+                                                    <td>20 Feb 2024 09:15 AM</td>
                                                     <td class="fw-bold">45 kg</td>
                                                     <td>60 kg</td>
                                                     <td>
@@ -783,10 +1000,11 @@
                                                         </div>
                                                         <small class="text-muted fw-bold">75% of target</small>
                                                     </td>
-                                                    <td><span class="badge bg-danger">Overdue (5 Mar)</span></td>
-                                                    <td>Manual Scale</td>
-                                                    <td>Mary Johnson</td>
-                                                    <td>Signs of mild respiratory issues</td>
+                                                    <td><span class="badge bg-danger">Sick</span></td>
+                                                    <td><span class="badge bg-warning">Need Attention</span></td>
+                                                    <td><span class="badge bg-danger">Not Weighed 30+ Days</span></td>
+                                                    <td>1Y, 6M, 0W</td>
+                                                    <td>KIPIPIRI</td>
                                                     <td>
                                                         <div class="d-flex">
                                                             <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
@@ -798,13 +1016,11 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <!-- Row 3 -->
                                                 <tr>
-                                                    <td>10 Apr 2024 11:45 AM</td>
                                                     <td class="fw-bold">#00789</td>
                                                     <td>Woolly</td>
-                                                    <td>3Y, 1M, 2W</td>
                                                     <td>Sheep</td>
+                                                    <td>10 Apr 2024 11:45 AM</td>
                                                     <td class="fw-bold">60 kg</td>
                                                     <td>65 kg</td>
                                                     <td>
@@ -813,10 +1029,11 @@
                                                         </div>
                                                         <small class="text-muted fw-bold">92% of target</small>
                                                     </td>
-                                                    <td><span class="badge bg-success">24 Apr 2024</span></td>
-                                                    <td>Digital Scale</td>
-                                                    <td>David Williams</td>
-                                                    <td>Recovering from minor infection</td>
+                                                    <td><span class="badge bg-danger">Sick</span></td>
+                                                    <td><span class="badge bg-primary">Ready Soon</span></td>
+                                                    <td><span class="badge bg-success">Optimal Window</span></td>
+                                                    <td>3Y, 1M, 2W</td>
+                                                    <td>KIENI</td>
                                                     <td>
                                                         <div class="d-flex">
                                                             <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
@@ -828,13 +1045,11 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <!-- Row 4 -->
                                                 <tr>
-                                                    <td>05 May 2024 08:20 AM</td>
                                                     <td class="fw-bold">#00987</td>
                                                     <td>Piggy</td>
-                                                    <td>0Y, 6M, 2W</td>
                                                     <td>Pig</td>
+                                                    <td>05 May 2024 08:20 AM</td>
                                                     <td class="fw-bold">80 kg</td>
                                                     <td>100 kg</td>
                                                     <td>
@@ -843,10 +1058,11 @@
                                                         </div>
                                                         <small class="text-muted fw-bold">80% of target</small>
                                                     </td>
-                                                    <td><span class="badge bg-warning">Tomorrow (21 Mar)</span></td>
-                                                    <td>Digital Scale</td>
-                                                    <td>Sarah Brown</td>
-                                                    <td>Good growth pattern, increased feed</td>
+                                                    <td><span class="badge bg-success">Healthy</span></td>
+                                                    <td><span class="badge bg-warning">Need Attention</span></td>
+                                                    <td><span class="badge bg-warning">Overdue</span></td>
+                                                    <td>0Y, 6M, 2W</td>
+                                                    <td>MARIGAT</td>
                                                     <td>
                                                         <div class="d-flex">
                                                             <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
@@ -858,13 +1074,11 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <!-- Row 5 -->
                                                 <tr>
-                                                    <td>01 Jun 2024 03:40 PM</td>
                                                     <td class="fw-bold">#00555</td>
                                                     <td>Clucky</td>
-                                                    <td>0Y, 4M, 1W</td>
                                                     <td>Chicken</td>
+                                                    <td>01 Jun 2024 03:40 PM</td>
                                                     <td class="fw-bold">2.5 kg</td>
                                                     <td>3 kg</td>
                                                     <td>
@@ -873,10 +1087,11 @@
                                                         </div>
                                                         <small class="text-muted fw-bold">83% of target</small>
                                                     </td>
-                                                    <td><span class="badge bg-success">15 Jun 2024</span></td>
-                                                    <td>Small Scale</td>
-                                                    <td>James Miller</td>
-                                                    <td>Antibiotics treatment started</td>
+                                                    <td><span class="badge bg-danger">Sick</span></td>
+                                                    <td><span class="badge bg-warning">Need Attention</span></td>
+                                                    <td><span class="badge bg-success">Optimal Window</span></td>
+                                                    <td>0Y, 4M, 1W</td>
+                                                    <td>KITUI CENTRAL</td>
                                                     <td>
                                                         <div class="d-flex">
                                                             <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
@@ -888,13 +1103,11 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <!-- Row 6 -->
                                                 <tr>
-                                                    <td>05 Jan 2024 10:05 AM</td>
                                                     <td class="fw-bold">#00501</td>
                                                     <td>Billy</td>
-                                                    <td>2Y, 1M, 2W</td>
                                                     <td>Goat</td>
+                                                    <td>05 Jan 2024 10:05 AM</td>
                                                     <td class="fw-bold">48 kg</td>
                                                     <td>55 kg</td>
                                                     <td>
@@ -903,10 +1116,11 @@
                                                         </div>
                                                         <small class="text-muted fw-bold">87% of target</small>
                                                     </td>
-                                                    <td><span class="badge bg-danger">Overdue (19 Jan)</span></td>
-                                                    <td>Manual Scale</td>
-                                                    <td>Robert Davis</td>
-                                                    <td>Feed changed to premium mix</td>
+                                                    <td><span class="badge bg-success">Healthy</span></td>
+                                                    <td><span class="badge bg-warning">Need Attention</span></td>
+                                                    <td><span class="badge bg-danger">Not Weighed 30+ Days</span></td>
+                                                    <td>2Y, 1M, 2W</td>
+                                                    <td>KIENI</td>
                                                     <td>
                                                         <div class="d-flex">
                                                             <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
@@ -918,432 +1132,10 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <!-- Row 7 -->
-                                                <tr>
-                                                    <td>12 Mar 2024 02:15 PM</td>
-                                                    <td class="fw-bold">#00333</td>
-                                                    <td>Moo</td>
-                                                    <td>1Y, 8M, 3W</td>
-                                                    <td>Cattle</td>
-                                                    <td class="fw-bold">480 kg</td>
-                                                    <td>520 kg</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 6px;">
-                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                        <small class="text-muted fw-bold">92% of target</small>
-                                                    </td>
-                                                    <td><span class="badge bg-success">26 Mar 2024</span></td>
-                                                    <td>Digital Scale</td>
-                                                    <td>Emma Wilson</td>
-                                                    <td>Normal growth rate</td>
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                                                                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-                                                            </button>
-                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                                                                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <!-- Row 8 -->
-                                                <tr>
-                                                    <td>18 Feb 2024 11:00 AM</td>
-                                                    <td class="fw-bold">#00666</td>
-                                                    <td>Spot</td>
-                                                    <td>0Y, 9M, 2W</td>
-                                                    <td>Sheep</td>
-                                                    <td class="fw-bold">55 kg</td>
-                                                    <td>70 kg</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 6px;">
-                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                        <small class="text-muted fw-bold">78% of target</small>
-                                                    </td>
-                                                    <td><span class="badge bg-danger">Overdue (4 Mar)</span></td>
-                                                    <td>Manual Scale</td>
-                                                    <td>Olivia Taylor</td>
-                                                    <td>Mild lameness observed</td>
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                                                                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-                                                            </button>
-                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                                                                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <!-- Row 9 -->
-                                                <tr>
-                                                    <td>22 Apr 2024 09:30 AM</td>
-                                                    <td class="fw-bold">#00888</td>
-                                                    <td>Daisy</td>
-                                                    <td>2Y, 0M, 1W</td>
-                                                    <td>Goat</td>
-                                                    <td class="fw-bold">50 kg</td>
-                                                    <td>65 kg</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 6px;">
-                                                            <div class="progress-bar bg-info" role="progressbar" style="width: 77%;" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                        <small class="text-muted fw-bold">77% of target</small>
-                                                    </td>
-                                                    <td><span class="badge bg-warning">6 May 2024</span></td>
-                                                    <td>Digital Scale</td>
-                                                    <td>Michael Brown</td>
-                                                    <td>Healthy, no issues</td>
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                                                                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-                                                            </button>
-                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                                                                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <!-- Row 10 -->
-                                                <tr>
-                                                    <td>30 Mar 2024 04:10 PM</td>
-                                                    <td class="fw-bold">#00222</td>
-                                                    <td>Buddy</td>
-                                                    <td>1Y, 2M, 0W</td>
-                                                    <td>Pig</td>
-                                                    <td class="fw-bold">90 kg</td>
-                                                    <td>110 kg</td>
-                                                    <td>
-                                                        <div class="progress" style="height: 6px;">
-                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                        <small class="text-muted fw-bold">82% of target</small>
-                                                    </td>
-                                                    <td><span class="badge bg-success">13 Apr 2024</span></td>
-                                                    <td>Digital Scale</td>
-                                                    <td>Sophia Martinez</td>
-                                                    <td>Good appetite, active</td>
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                                                                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-                                                            </button>
-                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                                                                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <!-- Add more rows as needed -->
-
-                                                <!-- Row 11 -->
-<tr>
-    <td>14 Mar 2024 08:45 AM</td>
-    <td class="fw-bold">#00999</td>
-    <td>Max</td>
-    <td>1Y, 5M, 3W</td>
-    <td>Cattle</td>
-    <td class="fw-bold">490 kg</td>
-    <td>530 kg</td>
-    <td>
-        <div class="progress" style="height: 6px;">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <small class="text-muted fw-bold">92% of target</small>
-    </td>
-    <td><span class="badge bg-success">28 Mar 2024</span></td>
-    <td>Digital Scale</td>
-    <td>Emily Clark</td>
-    <td>Normal growth, no issues</td>
-    <td>
-        <div class="d-flex">
-            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-            </button>
-            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-            </button>
-        </div>
-    </td>
-</tr>
-<!-- Row 12 -->
-<tr>
-    <td>25 Feb 2024 10:20 AM</td>
-    <td class="fw-bold">#00345</td>
-    <td>Luna</td>
-    <td>0Y, 8M, 2W</td>
-    <td>Sheep</td>
-    <td class="fw-bold">58 kg</td>
-    <td>70 kg</td>
-    <td>
-        <div class="progress" style="height: 6px;">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 83%;" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <small class="text-muted fw-bold">83% of target</small>
-    </td>
-    <td><span class="badge bg-danger">Overdue (10 Mar)</span></td>
-    <td>Manual Scale</td>
-    <td>Daniel White</td>
-    <td>Mild weight loss, monitoring</td>
-    <td>
-        <div class="d-flex">
-            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-            </button>
-            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-            </button>
-        </div>
-    </td>
-</tr>
-<!-- Row 13 -->
-<tr>
-    <td>17 Apr 2024 03:15 PM</td>
-    <td class="fw-bold">#00777</td>
-    <td>Rocky</td>
-    <td>2Y, 2M, 1W</td>
-    <td>Goat</td>
-    <td class="fw-bold">52 kg</td>
-    <td>60 kg</td>
-    <td>
-        <div class="progress" style="height: 6px;">
-            <div class="progress-bar bg-info" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <small class="text-muted fw-bold">87% of target</small>
-    </td>
-    <td><span class="badge bg-warning">1 May 2024</span></td>
-    <td>Digital Scale</td>
-    <td>Laura Adams</td>
-    <td>Good health, active</td>
-    <td>
-        <div class="d-flex">
-            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-            </button>
-            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-            </button>
-        </div>
-    </td>
-</tr>
-<!-- Row 14 -->
-<tr>
-    <td>28 Mar 2024 09:50 AM</td>
-    <td class="fw-bold">#00234</td>
-    <td>Charlie</td>
-    <td>1Y, 3M, 0W</td>
-    <td>Pig</td>
-    <td class="fw-bold">85 kg</td>
-    <td>100 kg</td>
-    <td>
-        <div class="progress" style="height: 6px;">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <small class="text-muted fw-bold">85% of target</small>
-    </td>
-    <td><span class="badge bg-success">11 Apr 2024</span></td>
-    <td>Digital Scale</td>
-    <td>Ryan Lee</td>
-    <td>Healthy, no issues</td>
-    <td>
-        <div class="d-flex">
-            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-            </button>
-            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-            </button>
-        </div>
-    </td>
-</tr>
-<!-- Row 15 -->
-<tr>
-    <td>02 Jun 2024 11:10 AM</td>
-    <td class="fw-bold">#00678</td>
-    <td>Milo</td>
-    <td>0Y, 5M, 1W</td>
-    <td>Chicken</td>
-    <td class="fw-bold">2.8 kg</td>
-    <td>3.5 kg</td>
-    <td>
-        <div class="progress" style="height: 6px;">
-            <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <small class="text-muted fw-bold">80% of target</small>
-    </td>
-    <td><span class="badge bg-success">16 Jun 2024</span></td>
-    <td>Small Scale</td>
-    <td>Grace Turner</td>
-    <td>Good appetite, active</td>
-    <td>
-        <div class="d-flex">
-            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-            </button>
-            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-            </button>
-        </div>
-    </td>
-</tr>
-<!-- Row 16 -->
-<tr>
-    <td>08 Jan 2024 07:30 AM</td>
-    <td class="fw-bold">#00444</td>
-    <td>Ruby</td>
-    <td>2Y, 0M, 3W</td>
-    <td>Goat</td>
-    <td class="fw-bold">47 kg</td>
-    <td>55 kg</td>
-    <td>
-        <div class="progress" style="height: 6px;">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <small class="text-muted fw-bold">85% of target</small>
-    </td>
-    <td><span class="badge bg-danger">Overdue (22 Jan)</span></td>
-    <td>Manual Scale</td>
-    <td>Ethan Harris</td>
-    <td>Feed adjusted, monitoring</td>
-    <td>
-        <div class="d-flex">
-            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-            </button>
-            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-            </button>
-        </div>
-    </td>
-</tr>
-<!-- Row 17 -->
-<tr>
-    <td>19 Mar 2024 01:20 PM</td>
-    <td class="fw-bold">#00567</td>
-    <td>Oscar</td>
-    <td>1Y, 7M, 2W</td>
-    <td>Cattle</td>
-    <td class="fw-bold">510 kg</td>
-    <td>550 kg</td>
-    <td>
-        <div class="progress" style="height: 6px;">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <small class="text-muted fw-bold">93% of target</small>
-    </td>
-    <td><span class="badge bg-success">2 Apr 2024</span></td>
-    <td>Digital Scale</td>
-    <td>Chloe King</td>
-    <td>Healthy, no issues</td>
-    <td>
-        <div class="d-flex">
-            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-            </button>
-            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-            </button>
-        </div>
-    </td>
-</tr>
-<!-- Row 18 -->
-<tr>
-    <td>23 Feb 2024 12:45 PM</td>
-    <td class="fw-bold">#00899</td>
-    <td>Lily</td>
-    <td>0Y, 10M, 1W</td>
-    <td>Sheep</td>
-    <td class="fw-bold">62 kg</td>
-    <td>75 kg</td>
-    <td>
-        <div class="progress" style="height: 6px;">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 83%;" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <small class="text-muted fw-bold">83% of target</small>
-    </td>
-    <td><span class="badge bg-danger">Overdue (8 Mar)</span></td>
-    <td>Manual Scale</td>
-    <td>Noah Scott</td>
-    <td>Normal growth, no issues</td>
-    <td>
-        <div class="d-flex">
-            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-            </button>
-            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-            </button>
-        </div>
-    </td>
-</tr>
-<!-- Row 19 -->
-<tr>
-    <td>29 Apr 2024 10:00 AM</td>
-    <td class="fw-bold">#00321</td>
-    <td>Jack</td>
-    <td>2Y, 4M, 0W</td>
-    <td>Goat</td>
-    <td class="fw-bold">53 kg</td>
-    <td>65 kg</td>
-    <td>
-        <div class="progress" style="height: 6px;">
-            <div class="progress-bar bg-info" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <small class="text-muted fw-bold">82% of target</small>
-    </td>
-    <td><span class="badge bg-warning">13 May 2024</span></td>
-    <td>Digital Scale</td>
-    <td>Ella Green</td>
-    <td>Healthy, no issues</td>
-    <td>
-        <div class="d-flex">
-            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-            </button>
-            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-            </button>
-        </div>
-    </td>
-</tr>
-<!-- Row 20 -->
-<tr>
-    <td>07 May 2024 02:55 PM</td>
-    <td class="fw-bold">#00901</td>
-    <td>Mia</td>
-    <td>1Y, 1M, 2W</td>
-    <td>Pig</td>
-    <td class="fw-bold">88 kg</td>
-    <td>105 kg</td>
-    <td>
-        <div class="progress" style="height: 6px;">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 84%;" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <small class="text-muted fw-bold">84% of target</small>
-    </td>
-    <td><span class="badge bg-success">21 May 2024</span></td>
-    <td>Digital Scale</td>
-    <td>Liam Hall</td>
-    <td>Good appetite, active</td>
-    <td>
-        <div class="d-flex">
-            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="Record new weight" data-bs-toggle="modal" data-bs-target="#modal-record-weight">
-                <i class="mdi mdi-scale font-size-16 align-middle me-1"></i> Record
-            </button>
-            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="View weight history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
-                <i class="mdi mdi-history font-size-16 align-middle me-1"></i> History
-            </button>
-        </div>
-    </td>
-</tr>
                                             </tbody>
                                             <tfoot class="table-dark fw-bold">
                                                 <tr>
-                                                    <td colspan="5">TOTALS</td>
+                                                    <td colspan="4">TOTALS</td>
                                                     <td>735.5 kg</td>
                                                     <td>833 kg</td>
                                                     <td>
@@ -1352,7 +1144,20 @@
                                                         </div>
                                                         <small class="text-light fw-bold">88% average progress</small>
                                                     </td>
-                                                    <td colspan="5"></td>
+                                                    <td>
+                                                        <span class="badge bg-success">4 Healthy</span><br>
+                                                        <span class="badge bg-danger">3 Sick</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary">2 Ready Soon</span><br>
+                                                        <span class="badge bg-warning">4 Need Attention</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success">3 Optimal</span><br>
+                                                        <span class="badge bg-warning">1 Overdue</span><br>
+                                                        <span class="badge bg-danger">2 30+ Days</span>
+                                                    </td>
+                                                    <td colspan="3"></td>
                                                 </tr>
                                             </tfoot>
                                         </table>
