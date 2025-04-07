@@ -898,8 +898,8 @@
                                                                         <i class="font-size-15 mdi mdi-emoticon-sad me-3 text-dark"></i>Mark as Deceased
                                                                     </a>
                                                                     <div class="dropdown-divider"></div>
-                                                                    <a class="dropdown-item" href="livestock-history.html" title="View complete animal history">
-                                                                        <i class="font-size-15 mdi mdi-history me-3 text-secondary"></i>Tracking History
+                                                                    <a class="dropdown-item" title="View complete animal history" data-bs-toggle="modal" data-bs-target="#modal-weight-history">
+                                                                        <i class="font-size-15 mdi mdi-history me-3 text-secondary"></i>Weight History
                                                                     </a>
                                                                     <a class="dropdown-item" href="livestock-vaccine.html" title="View vaccination records">
                                                                         <i class="font-size-15 mdi mdi-pill me-3 text-warning"></i>Vaccination & Medication
@@ -5484,7 +5484,338 @@
                             </div>
                         </div>
                     </div>
-                    
+                          <!-- Modal for Weight History -->
+                          <div class="modal fade" id="modal-weight-history" tabindex="-1" aria-labelledby="historyModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog modal-xl modal-dialog-centered">
+                              <div class="modal-content border-none border-0">
+                                  <div class="modal-header bg-primary radius-0">
+                                      <h5 class="modal-title text-white" id="historyModalLabel">
+                                          <i class="mdi mdi-history me-1"></i> Weight History
+                                      </h5>
+                                      <button type="button" class="btn-close bg-white" data-dismiss="modal"
+                                          aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <!-- Animal Information -->
+                                      <div class="card mb-3">
+                                          <div class="card-body">
+                                              <div class="row">
+  
+  
+                                                  <div class="col-6 text-uppercase">
+                                                      <div class="card shadow-none border border-2">
+                                                          <div class="card-body p-3">
+                                                              <div class="">
+  
+  
+                                                                  <div class="mb-3 d-flex w-100 justify-content-between">
+                                                                      <a href="javascript: void(0);" class="d-flex">
+                                                                          <div class="flex-shrink-0 me-3">
+                                                                              <img class="rounded-circle avatar-sm rounded"
+                                                                                  src="assets/images/users/avatar-2.jpg"
+                                                                                  alt="Generic placeholder image"
+                                                                                  height="36">
+                                                                          </div>
+                                                                          <div class="flex-grow-1 chat-user-box">
+                                                                              <p class="user-title m-0 p-0"><span
+                                                                                      class="p-0 m-0 h5">Bella
+                                                                                      Osama</span></p>
+                                                                              <p class="mb-0 text-muted"><i
+                                                                                      class="bx bx-map text-body align-middle"></i>
+                                                                                  Kitui Corner</p>
+                                                                          </div>
+                                                                      </a>
+  
+                                                                      <div class=" ms-2">
+                                                                          <span class="badge bg-success">Healthy</span>
+                                                                      </div>
+                                                                  </div>
+  
+                                                                  <div class="d-flex font-size-12">
+                                                                      <div class="overflow-hidden me-auto">
+                                                                          <p
+                                                                              class="text-muted text-truncate mb-0 font-size-14 fw-bold">
+                                                                              <span
+                                                                                  class="badge bg-soft-info text-info me-1 font-size-14">
+                                                                                  <i
+                                                                                      class="mdi mdi-tag-outline font-size-18 me-1"></i>
+                                                                                  #00123
+                                                                              </span>
+                                                                              <span
+                                                                                  class="badge bg-soft-primary text-primary font-size-14">
+                                                                                  <i
+                                                                                      class="mdi mdi-cow font-size-18 me-1"></i>
+                                                                                  Cattle
+                                                                              </span>
+                                                                          </p>
+                                                                      </div>
+  
+                                                                  </div>
+                                                                  <hr class="d-none">
+  
+                                                                  <div class="mt-3">
+                                                                      <div class="row font-size-12">
+                                                                          <div class="col-6 font-18">
+                                                                              <div class="d-flex align-items-center">
+                                                                                  <i
+                                                                                      class="mdi mdi-gender-female font-size-18 text-danger me-1"></i>
+                                                                                  <span class="text-muted">Female</span>
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="col-6">
+                                                                              <div class="d-flex align-items-center">
+                                                                                  <i
+                                                                                      class="mdi mdi-calendar font-size-18 text-warning me-1"></i>
+                                                                                  <span class="text-muted">2Y, 3M,
+                                                                                      1W</span>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+  
+                                                                      <div class="row mt-2 font-size-12">
+                                                                          <div class="col-6">
+                                                                              <div class="d-flex align-items-center">
+                                                                                  <i
+                                                                                      class="mdi mdi-scale font-size-18 text-success me-1"></i>
+                                                                                  <span class="text-muted">500 kg</span>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+  
+  
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+  
+                                                  <div class="col-6 text-uppercase">
+                                                      <div class="card shadow-none border border-2">
+                                                          <div class="card-body p-3">
+                                                              <h5 class="font-size-14 text-truncate mb-1"><a
+                                                                      href="javascript: void(0);"
+                                                                      class="text-body">Livestock Weight Progress</a></h5>
+                                                              <div class="mt-3">
+                                                                  <div class="alert alert-info p-2 mb-2" role="alert">
+                                                                      <i class="ri-information-line me-1"></i>
+                                                                      Livestock is approaching target weight for market
+                                                                      sale.
+                                                                  </div>
+                                                                  <br>
+                                                                  <div class="progress animated-progress custom-progress radius-0"
+                                                                      style="height: 20px;">
+                                                                      <div class="progress-bar bg-gradient bg-primary rounded-0"
+                                                                          role="progressbar" style="width: 91%"
+                                                                          aria-valuenow="91" aria-valuemin="0"
+                                                                          aria-valuemax="100">
+                                                                          91%
+                                                                      </div>
+                                                                  </div>
+                                                                  <div
+                                                                      class="d-flex justify-content-between mt-1 fw-bold text-black">
+                                                                      <small class="text-muted">Current Weight: 500
+                                                                          kg</small>
+                                                                      <small class="text-muted">Target Weight: 550
+                                                                          kg</small>
+                                                                  </div>
+                                                                  <div class="text-muted text-end mt-2">
+                                                                      <small>Last weighed: March 20, 2024 at 10:45
+                                                                          AM</small>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+  
+  
+                                              </div>
+                                          </div>
+                                      </div>
+  
+                                      <!-- Weight Chart -->
+                                      <div class="card mb-3 px-3">
+                                          <div class="card-body bg-light ">
+                                              <div>
+                                                  <div id="weightChart"></div>
+                                              </div>
+                                          </div>
+                                      </div>
+  
+                                      <!-- Weight History Table -->
+                                      <div class="card">
+                                          <div class="card-body">
+                                              <h5 class="card-title mb-3">Weight Records</h5>
+                                              <div class="table-responsive">
+                                                  <table class="table table-striped table-bordered align-middle">
+                                                      <thead class="table-dark text-uppercase">
+                                                          <tr>
+                                                              <th>Date & Time</th>
+                                                              <th>Weight (kg)</th>
+                                                              <th>Change</th>
+                                                              <th>Method</th>
+                                                              <th>Recorded By</th>
+                                                              <th>Notes</th>
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr>
+                                                              <td>15 Mar 2024 10:30 AM</td>
+                                                              <td class="fw-bold">500 kg</td>
+                                                              <td class="text-success">+15 kg</td>
+                                                              <td>Digital Scale</td>
+                                                              <td>John Smith</td>
+                                                              <td>Regular weight check</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Feb 2024 09:45 AM</td>
+                                                              <td class="fw-bold">485 kg</td>
+                                                              <td class="text-success">+10 kg</td>
+                                                              <td>Platform Scale</td>
+                                                              <td>Maria Wanjiku</td>
+                                                              <td>Supplemented feed increased</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Jan 2024 11:15 AM</td>
+                                                              <td class="fw-bold">475 kg</td>
+                                                              <td class="text-success">+25 kg</td>
+                                                              <td>Digital Scale</td>
+                                                              <td>James Ochieng</td>
+                                                              <td>Recovering well from treatment</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Dec 2023 10:00 AM</td>
+                                                              <td class="fw-bold">450 kg</td>
+                                                              <td class="text-danger">-10 kg</td>
+                                                              <td>Digital Scale</td>
+                                                              <td>Sarah Kamau</td>
+                                                              <td>Slight illness, under treatment</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Nov 2023 09:30 AM</td>
+                                                              <td class="fw-bold">460 kg</td>
+                                                              <td>Initial</td>
+                                                              <td>Digital Scale</td>
+                                                              <td>John Smith</td>
+                                                              <td>First weight record</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Oct 2023 08:15 AM</td>
+                                                              <td class="fw-bold">400 kg</td>
+                                                              <td class="text-success">+20 kg</td>
+                                                              <td>Veterinary Scale</td>
+                                                              <td>Emily Chen</td>
+                                                              <td>Rapid growth phase</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Sep 2023 07:45 AM</td>
+                                                              <td class="fw-bold">380 kg</td>
+                                                              <td class="text-success">+15 kg</td>
+                                                              <td>Platform Scale</td>
+                                                              <td>Michael Njoroge</td>
+                                                              <td>Consistent weight gain</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Aug 2023 11:20 AM</td>
+                                                              <td class="fw-bold">365 kg</td>
+                                                              <td class="text-success">+12 kg</td>
+                                                              <td>Digital Scale</td>
+                                                              <td>Lisa Wong</td>
+                                                              <td>Excellent nutritional program</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Jul 2023 10:10 AM</td>
+                                                              <td class="fw-bold">353 kg</td>
+                                                              <td class="text-success">+8 kg</td>
+                                                              <td>Digital Scale</td>
+                                                              <td>David Mutua</td>
+                                                              <td>Steady growth continues</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Jun 2023 09:55 AM</td>
+                                                              <td class="fw-bold">345 kg</td>
+                                                              <td class="text-success">+10 kg</td>
+                                                              <td>Platform Scale</td>
+                                                              <td>Rachel Kim</td>
+                                                              <td>Summer feeding program</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 May 2023 08:40 AM</td>
+                                                              <td class="fw-bold">335 kg</td>
+                                                              <td class="text-success">+7 kg</td>
+                                                              <td>Veterinary Scale</td>
+                                                              <td>Peter Odhiambo</td>
+                                                              <td>Early growth monitoring</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Apr 2023 07:30 AM</td>
+                                                              <td class="fw-bold">328 kg</td>
+                                                              <td class="text-success">+5 kg</td>
+                                                              <td>Digital Scale</td>
+                                                              <td>Sophia Muthomi</td>
+                                                              <td>Initial care period</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Mar 2023 10:05 AM</td>
+                                                              <td class="fw-bold">330 kg</td>
+                                                              <td>Initial</td>
+                                                              <td>Platform Scale</td>
+                                                              <td>John Smith</td>
+                                                              <td>First recorded measurement</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Feb 2023 11:45 AM</td>
+                                                              <td class="fw-bold">330 kg</td>
+                                                              <td class="text-danger">-2 kg</td>
+                                                              <td>Veterinary Scale</td>
+                                                              <td>Emma Adhiambo</td>
+                                                              <td>Initial adaptation period</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Jan 2023 09:20 AM</td>
+                                                              <td class="fw-bold">332 kg</td>
+                                                              <td>Initial</td>
+                                                              <td>Digital Scale</td>
+                                                              <td>Robert Kimani</td>
+                                                              <td>Baseline measurement</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Dec 2022 08:50 AM</td>
+                                                              <td class="fw-bold">330 kg</td>
+                                                              <td class="text-danger">-5 kg</td>
+                                                              <td>Platform Scale</td>
+                                                              <td>Alice Moraa</td>
+                                                              <td>Initial settling in period</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>15 Nov 2022 10:15 AM</td>
+                                                              <td class="fw-bold">335 kg</td>
+                                                              <td>Initial</td>
+                                                              <td>Digital Scale</td>
+                                                              <td>Daniel Mwangi</td>
+                                                              <td>First systematic tracking</td>
+                                                          </tr>
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                          <i class="mdi mdi-close me-1"></i> Close
+                                      </button>
+                                      <button type="button" class="btn btn-primary">
+                                          <i class="mdi mdi-file-export me-1"></i> Export Data
+                                      </button>
+                                      <button type="button" class="btn btn-success">
+                                          <i class="mdi mdi-printer me-1"></i> Print Report
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
                     <script>
                         document.addEventListener('DOMContentLoaded', function() {
                             // Set today's date as default for recovery date
@@ -5628,6 +5959,221 @@
                     toggleAcquisitionDetails();
                 });
             </script>
+
+<script>
+    Highcharts.chart('weightChart', {
+        chart: {
+            type: 'areaspline',
+            backgroundColor: '#eff2f7'
+        },
+        title: {
+            text: 'Livestock Weight Progression'
+        },
+        subtitle: {
+            text: 'Tracking Weight Gain Towards Target'
+        },
+        xAxis: {
+            type: 'datetime',
+            title: {
+                text: 'Date of Measurement'
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Weight (kg)'
+            }
+        },
+        tooltip: {
+            formatter: function () {
+                const actualWeightPoint = this.points.find(p => p.series.name ===
+                    'Actual Weight');
+
+                const date = Highcharts.dateFormat('%d %b %Y', this.x);
+                const actualWeight = actualWeightPoint ? actualWeightPoint.y : '-';
+                const targetWeight = 550;
+                const percentageProgress = ((actualWeight / targetWeight) * 100).toFixed(1);
+
+                return `
+                    <b>${date}</b><br>
+                    Actual Weight: <b>${actualWeight} kg</b><br>
+                    Target Weight: <b>${targetWeight} kg</b><br>
+                    Progress: <b>${percentageProgress}%</b>
+                `;
+            },
+            shared: true
+        },
+        exporting: {
+            enabled: false
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            areaspline: {
+                fillOpacity: 0.3,
+                marker: {
+                    enabled: true
+                }
+            },
+            line: {
+                marker: {
+                    enabled: false
+                }
+            }
+        },
+        series: [{
+            type: 'areaspline',
+            name: 'Actual Weight',
+            color: 'rgba(52, 152, 219, 0.7)',
+            data: [
+                [Date.UTC(2022, 10, 15, 10, 15), 335],
+                [Date.UTC(2022, 11, 15, 8, 50), 330],
+                [Date.UTC(2023, 0, 15, 9, 20), 332],
+                [Date.UTC(2023, 1, 15, 11, 45), 330],
+                [Date.UTC(2023, 2, 15, 10, 5), 330],
+                [Date.UTC(2023, 3, 15, 7, 30), 328],
+                [Date.UTC(2023, 4, 15, 8, 40), 335],
+                [Date.UTC(2023, 5, 15, 9, 55), 345],
+                [Date.UTC(2023, 6, 15, 10, 10), 353],
+                [Date.UTC(2023, 7, 15, 11, 20), 365],
+                [Date.UTC(2023, 8, 15, 7, 45), 380],
+                [Date.UTC(2023, 9, 15, 8, 15), 400],
+                [Date.UTC(2023, 10, 15, 9, 30), 460],
+                [Date.UTC(2023, 11, 15, 10, 0), 450],
+                [Date.UTC(2024, 0, 15, 11, 15), 475],
+                [Date.UTC(2024, 1, 15, 9, 45), 485],
+                [Date.UTC(2024, 2, 15, 10, 30), 500]
+            ]
+        }, {
+            type: 'line',
+            name: 'Target Weight',
+            color: 'rgba(231, 76, 60, 1)',
+            dashStyle: 'dash',
+            data: [
+                [Date.UTC(2022, 10, 15, 10, 15), 550],
+                [Date.UTC(2024, 2, 15, 10, 30), 550]
+            ]
+        }]
+    });
+</script>
+
+<script>
+    Highcharts.chart('avg-weight', {
+chart: {
+type: 'areaspline'
+},
+title: {
+text: null
+},
+subtitle: {
+text: null
+},
+xAxis: {
+type: 'datetime',
+title: {
+text: 'Date of Measurement'
+}
+},
+yAxis: {
+title: {
+text: 'Weight (kg)'
+}
+},
+tooltip: {
+shared: true,
+headerFormat: '<b>{point.x:%Y-%m-%d}</b><br>',
+pointFormat: '{series.name}: {point.y} kg'
+},
+credits: {
+enabled: false
+},
+exporting: {
+enabled: false
+},
+plotOptions: {
+areaspline: {
+lineWidth: 3,
+fillOpacity: 0.4,
+marker: {
+    enabled: true,
+    radius: 4,
+    symbol: 'circle',
+    lineColor: '#32CD32',
+    lineWidth: 1,
+    fillColor: '#FFFFFF'
+},
+fillColor: {
+    linearGradient: {
+        x1: 0,
+        y1: 0,
+        x2: 0,
+        y2: 1
+    },
+    stops: [
+        [0, 'rgba(46, 204, 113, 0.8)'],
+        [1, 'rgba(46, 204, 113, 0.1)']
+    ]
+}
+},
+line: {
+marker: {
+    enabled: false
+}
+}
+},
+series: [{
+type: 'areaspline',
+name: 'Average Weight',
+color: '#32CD32', // Lime green for the line
+data: [
+[Date.UTC(2023, 0, 1), 275],
+[Date.UTC(2023, 0, 15), 280],
+[Date.UTC(2023, 1, 1), 290],
+[Date.UTC(2023, 1, 15), 285],
+[Date.UTC(2023, 2, 1), 287],
+[Date.UTC(2023, 2, 15), 295],
+[Date.UTC(2023, 3, 1), 305],
+[Date.UTC(2023, 3, 15), 318],
+[Date.UTC(2023, 4, 1), 320],
+[Date.UTC(2023, 4, 15), 325],
+[Date.UTC(2023, 5, 1), 315],
+[Date.UTC(2023, 5, 15), 310],
+[Date.UTC(2023, 6, 1), 308],
+[Date.UTC(2023, 6, 15), 312],
+[Date.UTC(2023, 7, 1), 325],
+[Date.UTC(2023, 7, 15), 340],
+[Date.UTC(2023, 8, 1), 355],
+[Date.UTC(2023, 8, 15), 370],
+[Date.UTC(2023, 9, 1), 385],
+[Date.UTC(2023, 9, 15), 400],
+[Date.UTC(2023, 10, 1), 415],
+[Date.UTC(2023, 10, 15), 425],
+[Date.UTC(2023, 11, 1), 435],
+[Date.UTC(2023, 11, 15), 440],
+[Date.UTC(2024, 0, 1), 445],
+[Date.UTC(2024, 0, 15), 450],
+[Date.UTC(2024, 1, 1), 465],
+[Date.UTC(2024, 1, 15), 480],
+[Date.UTC(2024, 2, 1), 490],
+[Date.UTC(2024, 2, 15), 500],
+[Date.UTC(2024, 3, 1), 510],
+[Date.UTC(2024, 3, 15), 520],
+[Date.UTC(2024, 4, 1), 535],
+[Date.UTC(2024, 4, 15), 545]
+]
+}, {
+type: 'line',
+name: 'Target Weight',
+color: 'rgba(231, 76, 60, 1)',
+dashStyle: 'dash',
+lineWidth: 2,
+data: [
+[Date.UTC(2023, 0, 1), 550],
+[Date.UTC(2024, 4, 15), 550]
+]
+}]
+});
+</script>
 
             
 </body>

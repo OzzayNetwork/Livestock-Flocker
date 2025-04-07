@@ -875,7 +875,6 @@
                                                         <th>Address</th>
                                                         <th>Size (Acres)</th>
                                                         <th>Ownership Type</th>
-                                                        <th>Primary Livestock</th>
                                                         <th>Manager's Name</th>
                                                         <th>Manager's Contact</th>
                                                         <th>Actions</th>
@@ -909,14 +908,7 @@
                                                                 <option value="Government">Government</option>
                                                             </select>
                                                         </td>
-                                                        <td>
-                                                            <select class="form-control form-select" data-live-search="true" title="Select Primary Livestock">
-                                                                <option value="Goats">Goats</option>
-                                                                <option value="Sheep">Sheep</option>
-                                                                <option value="Cows">Cows</option>
-                                                                <option value="Camels">Camels</option>
-                                                            </select>
-                                                        </td>
+                                                    
                                                         <td>
                                                             <input type="text" class="form-control" placeholder="Enter Manager's Name" spellcheck="false">
                                                         </td>
@@ -951,14 +943,6 @@
                                                                 <option value="Leased">Leased</option>
                                                                 <option value="Communal">Communal</option>
                                                                 <option value="Government">Government</option>
-                                                            </select>
-                                                        </td>
-                                                        <td>
-                                                            <select class="form-control form-select" data-live-search="true" title="Select Primary Livestock">
-                                                                <option value="Goats">Goats</option>
-                                                                <option value="Sheep">Sheep</option>
-                                                                <option value="Cows">Cows</option>
-                                                                <option value="Camels">Camels</option>
                                                             </select>
                                                         </td>
                                                         <td>
@@ -1148,8 +1132,8 @@
                                                 <td>
                                                     <input type="file" class="form-control" accept="image/*">
                                                 </td>
-                                                <td>
-                                                    <select class="form-control form-select"title="Select Acquisition Type">
+                                             <td>
+                                                    <select class="form-control form-select" data-live-search="true" title="Select Acquisition Type">
                                                         <option value="All" selected>All Acquisition Type</option>
                                                         <option value="Bred">Bred</option>
                                                         <option value="Acquired" data-bs-toggle="modal" data-bs-target="#sellerInfoModal">Acquired</option>
