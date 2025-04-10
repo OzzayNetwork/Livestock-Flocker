@@ -962,61 +962,72 @@
                                 </div>
                                 <div class="card-body">
 
+                                   
+
 
                                     <div class="table-responsive">
                                         <table class="table align-middle table-hover table-striped text-nowrap text-uppercase">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
+                                                    <th scope="col">DN#</th>
                                                     <th scope="col">Date</th>
-                                                    <th scope="col">PRN</th>
-                                                    <th scope="col">Item</th>
-                                                    <th scope="col">Category</th>
-                                                    <th scope="col">Total Animals</th>
-                                                    <th scope="col">Qty (Weight)</th>
-                                                    <th scope="col">Unt</th>
-                                                    <th scope="col">Health Status</th>
-                                                    <th scope="col">Comments</th>
-                                                    <th scope="col">Amount (KES)</th>
-                                                    <th scope="col">Purchase Agent</th>
+                                                    <th scope="col">Type</th>
+                                                    <th scope="col">Breed</th>
+                                                    <th scope="col">Qty</th>
+                                                    <th scope="col">Avg Wt</th>
+                                                    <th scope="col">Tot Wt</th>
+                                                    <th scope="col">Health</th>
+                                                    <th scope="col">Price/Animal</th>
+                                                    <th scope="col">Total Value</th>
+                                                    <th scope="col">Payment Status</th>
+                                                    <th scope="col">Payment Method</th>
+                                                    <th scope="col">Agent</th>
+                                                    <th scope="col">Ranch</th>
+                                                    <th scope="col">Notes</th>
                                                     <th scope="col">Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="fw-bold">#KE2024-001</td>
-                                                    <td>Bella</td>
+                                                    <td class="fw-bold">DN001</td>
+                                                    <td>12/04/2025</td>
                                                     <td>Cattle</td>
+                                                    <td>Boran</td>
+                                                    <td>1</td>
                                                     <td class="fw-bold">450 kg</td>
-                                                    <td>550 kg</td>
-                                                    <td>2Y, 3M, 1W</td>
-                                                    <td>MAVOKO</td>
+                                                    <td>450 kg</td>
                                                     <td><span class="badge bg-success">Healthy</span></td>
-                                                    <td>Premium Boran breed, excellent condition</td>
+                                                    <td>85,000</td>
                                                     <td class="fw-bold">85,000</td>
+                                                    <td><span class="badge bg-success">Paid</span></td>
+                                                    <td>Bank Transfer</td>
                                                     <td>John Smith</td>
+                                                    <td>MAVOKO</td>
+                                                    <td>Premium quality</td>
                                                     <td>
                                                         <div class="d-flex">
-                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="View details">
-                                                                <i class="mdi mdi-eye font-size-16 align-middle me-1"></i> View
-                                                            </button>
-                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="Edit record">
-                                                                <i class="mdi mdi-pencil font-size-16 align-middle me-1"></i> Edit
+                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light" title="View delivery note" data-bs-toggle="modal" data-bs-target="#noteModal001">
+                                                                <i class="mdi mdi-file-document-outline font-size-16 align-middle me-1"></i> View Note
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="fw-bold">#KE2024-002</td>
-                                                    <td>-</td>
+                                                    <td class="fw-bold">DN002</td>
+                                                    <td>10/04/2025</td>
                                                     <td>Goat</td>
+                                                    <td>Local</td>
+                                                    <td>1</td>
                                                     <td class="fw-bold">38 kg</td>
-                                                    <td>60 kg</td>
-                                                    <td>1Y, 6M, 0W</td>
-                                                    <td>KIPIPIRI</td>
+                                                    <td>38 kg</td>
                                                     <td><span class="badge bg-warning">Fair</span></td>
-                                                    <td>Local breed, requires deworming</td>
+                                                    <td>7,500</td>
                                                     <td class="fw-bold">7,500</td>
+                                                    <td><span class="badge bg-warning">Pending</span></td>
+                                                    <td>M-Pesa</td>
                                                     <td>Maria Wanjiku</td>
+                                                    <td>KIPIPIRI</td>
+                                                    <td>Requires deworming</td>
                                                     <td>
                                                         <div class="d-flex">
                                                             <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="View details">
@@ -1029,86 +1040,102 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="fw-bold">#KE2024-003</td>
-                                                    <td>Woolly</td>
+                                                    <td class="fw-bold">DN003</td>
+                                                    <td>09/04/2025</td>
                                                     <td>Sheep</td>
+                                                    <td>Merino</td>
+                                                    <td>1</td>
                                                     <td class="fw-bold">55 kg</td>
-                                                    <td>65 kg</td>
-                                                    <td>3Y, 1M, 2W</td>
-                                                    <td>KIENI</td>
-                                                    <td><span class="badge bg-danger">Poor</span></td>
-                                                    <td>Merino breed, requires immediate vet attention</td>
-                                                    <td class="fw-bold">9,200</td>
-                                                    <td>James Ochieng</td>
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="View details">
-                                                                <i class="mdi mdi-eye font-size-16 align-middle me-1"></i> View
-                                                            </button>
-                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="Edit record">
-                                                                <i class="mdi mdi-pencil font-size-16 align-middle me-1"></i> Edit
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-bold">#KE2024-004</td>
-                                                    <td>Piggy</td>
-                                                    <td>Pig</td>
-                                                    <td class="fw-bold">72 kg</td>
-                                                    <td>100 kg</td>
-                                                    <td>0Y, 6M, 2W</td>
-                                                    <td>MARIGAT</td>
-                                                    <td><span class="badge bg-success">Healthy</span></td>
-                                                    <td>Large White breed, excellent growth potential</td>
-                                                    <td class="fw-bold">14,500</td>
-                                                    <td>Sarah Kamau</td>
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="View details">
-                                                                <i class="mdi mdi-eye font-size-16 align-middle me-1"></i> View
-                                                            </button>
-                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="Edit record">
-                                                                <i class="mdi mdi-pencil font-size-16 align-middle me-1"></i> Edit
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-bold">#KE2024-005</td>
-                                                    <td>Clucky</td>
-                                                    <td>Chicken</td>
-                                                    <td class="fw-bold">2.2 kg</td>
-                                                    <td>3 kg</td>
-                                                    <td>0Y, 4M, 1W</td>
-                                                    <td>KITUI CENTRAL</td>
-                                                    <td><span class="badge bg-warning">Fair</span></td>
-                                                    <td>Broiler breed, vaccination required</td>
-                                                    <td class="fw-bold">650</td>
-                                                    <td>Emily Chen</td>
-                                                    <td>
-                                                        <div class="d-flex">
-                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="View details">
-                                                                <i class="mdi mdi-eye font-size-16 align-middle me-1"></i> View
-                                                            </button>
-                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="Edit record">
-                                                                <i class="mdi mdi-pencil font-size-16 align-middle me-1"></i> Edit
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-bold">#KE2024-006</td>
-                                                    <td>Billy</td>
-                                                    <td>Goat</td>
-                                                    <td class="fw-bold">42 kg</td>
                                                     <td>55 kg</td>
-                                                    <td>2Y, 1M, 2W</td>
+                                                    <td><span class="badge bg-danger">Poor</span></td>
+                                                    <td>9,200</td>
+                                                    <td class="fw-bold">9,200</td>
+                                                    <td><span class="badge bg-success">Paid</span></td>
+                                                    <td>Cash</td>
+                                                    <td>James Ochieng</td>
                                                     <td>KIENI</td>
+                                                    <td>Needs vet attention</td>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="View details">
+                                                                <i class="mdi mdi-eye font-size-16 align-middle me-1"></i> View
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="Edit record">
+                                                                <i class="mdi mdi-pencil font-size-16 align-middle me-1"></i> Edit
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold">DN004</td>
+                                                    <td>08/04/2025</td>
+                                                    <td>Pig</td>
+                                                    <td>Large White</td>
+                                                    <td>1</td>
+                                                    <td class="fw-bold">72 kg</td>
+                                                    <td>72 kg</td>
                                                     <td><span class="badge bg-success">Healthy</span></td>
-                                                    <td>Boer breed, excellent meat production</td>
+                                                    <td>14,500</td>
+                                                    <td class="fw-bold">14,500</td>
+                                                    <td><span class="badge bg-danger">Unpaid</span></td>
+                                                    <td>Pending</td>
+                                                    <td>Sarah Kamau</td>
+                                                    <td>MARIGAT</td>
+                                                    <td>Good growth potential</td>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="View details">
+                                                                <i class="mdi mdi-eye font-size-16 align-middle me-1"></i> View
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="Edit record">
+                                                                <i class="mdi mdi-pencil font-size-16 align-middle me-1"></i> Edit
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold">DN005</td>
+                                                    <td>06/04/2025</td>
+                                                    <td>Chicken</td>
+                                                    <td>Broiler</td>
+                                                    <td>1</td>
+                                                    <td class="fw-bold">2.2 kg</td>
+                                                    <td>2.2 kg</td>
+                                                    <td><span class="badge bg-warning">Fair</span></td>
+                                                    <td>650</td>
+                                                    <td class="fw-bold">650</td>
+                                                    <td><span class="badge bg-success">Paid</span></td>
+                                                    <td>M-Pesa</td>
+                                                    <td>Emily Chen</td>
+                                                    <td>KITUI</td>
+                                                    <td>Vaccination required</td>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="View details">
+                                                                <i class="mdi mdi-eye font-size-16 align-middle me-1"></i> View
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" title="Edit record">
+                                                                <i class="mdi mdi-pencil font-size-16 align-middle me-1"></i> Edit
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fw-bold">DN006</td>
+                                                    <td>05/04/2025</td>
+                                                    <td>Goat</td>
+                                                    <td>Boer</td>
+                                                    <td>1</td>
+                                                    <td class="fw-bold">42 kg</td>
+                                                    <td>42 kg</td>
+                                                    <td><span class="badge bg-success">Healthy</span></td>
+                                                    <td>8,900</td>
                                                     <td class="fw-bold">8,900</td>
+                                                    <td><span class="badge bg-warning">Partial</span></td>
+                                                    <td>Bank Transfer</td>
                                                     <td>Michael Njoroge</td>
+                                                    <td>KIENI</td>
+                                                    <td>Excellent meat quality</td>
                                                     <td>
                                                         <div class="d-flex">
                                                             <button type="button" class="btn btn-sm btn-info waves-effect waves-light me-2" title="View details">
@@ -1123,16 +1150,289 @@
                                             </tbody>
                                             <tfoot class="table-dark fw-bold">
                                                 <tr>
-                                                    <td colspan="3">TOTALS</td>
+                                                    <td colspan="4">TOTALS</td>
+                                                    <td>6</td>
+                                                    <td></td>
                                                     <td>659.2 kg</td>
-                                                    <td>833 kg</td>
-                                                    <td colspan="3"></td>
-                                                    <td colspan="1"></td>
-                                                    <td>126,750</td>
                                                     <td colspan="2"></td>
+                                                    <td>125,750</td>
+                                                    <td colspan="6"></td>
                                                 </tr>
                                             </tfoot>
                                         </table>
+                                        
+                                        <!-- Delivery Note Modals -->
+                                          <div class="modal fade" id="noteModal001" tabindex="-1" aria-labelledby="noteModalLabel001" aria-hidden="true">
+                                          <div class="modal-dialog modal-fullscreen">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="noteModalLabel001">Delivery Note DN001</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                              </div>
+                                              <div class="modal-body">
+
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <address>
+                                                            <strong class="text-uppercase">Delivery Details:</strong><br>
+                                                            Date: 10 jan 2024 12:34 PM<br>
+                                                            Location: Gathigiriri<br>
+                                                            Ranch: West Side Ranch<br>
+                                                            Agent: Donald Duck<br>
+                                                        </address>
+                                                    </div>
+                                                    <div class="col-sm-6 text-sm-end">
+                                                        <address class="mt-2 mt-sm-0">
+                                                            <strong class="text-uppercase">Payment Details</strong><br>
+                                                            Payment Status: Paid<br>
+                                                            Payment Method: Bank Transfer<br>
+                                                            Reff Number: 66IUTI766<br>
+                                                            
+                                                        </address>
+                                                    </div>
+                                                </div>
+
+                                                <div class="delivery-note-container p-3">
+                                                  <div class="text-center mb-4">
+                                                    <h4>LIVESTOCK DELIVERY NOTE</h4>
+                                                    <h5>DN001</h5>
+                                                  </div>
+                                                  <div class="row mb-3">
+                                                    <div class="col-6">
+                                                      <p><strong>Date:</strong> 12/04/2025</p>
+                                                      <p><strong>Ranch:</strong> MAVOKO</p>
+                                                      <p><strong>Agent:</strong> John Smith</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                      <p><strong>Payment Status:</strong> Paid</p>
+                                                      <p><strong>Payment Method:</strong> Bank Transfer</p>
+                                                      <p><strong>Receipt No:</strong> BT78923</p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped">
+                                                      <thead class="table-dark">
+                                                        <tr>
+                                                          <th>Tag #</th>
+                                                          <th>Name</th>
+                                                          <th>Type</th>
+                                                          <th>Breed</th>
+                                                          <th>Farmer</th>
+                                                          <th>Age</th>
+                                                          <th>Gender</th>
+                                                          <th>Description</th>
+                                                          <th>Weight</th>
+                                                          <th>Health Status</th>
+                                                          <th>Quality</th>
+                                                          <th>Price</th>
+                                                          <th>Comments</th>
+                                                        </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>KE-C-2025-001</td>
+                                                          <td>Bella</td>
+                                                          <td>Cattle</td>
+                                                          <td>Boran</td>
+                                                          <td>John Kamau</td>
+                                                          <td>2Y, 3M, 1W</td>
+                                                          <td>Female</td>
+                                                          <td>Red coat, medium hump, horned</td>
+                                                          <td>450 kg</td>
+                                                          <td><span class="badge bg-success">Healthy</span></td>
+                                                          <td><span class="badge bg-primary">Premium</span></td>
+                                                          <td>85,000</td>
+                                                          <td>Excellent meat quality</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>KE-C-2025-002</td>
+                                                          <td>Max</td>
+                                                          <td>Cattle</td>
+                                                          <td>Boran</td>
+                                                          <td>John Kamau</td>
+                                                          <td>3Y, 1M, 2W</td>
+                                                          <td>Male</td>
+                                                          <td>White & brown, large hump</td>
+                                                          <td>520 kg</td>
+                                                          <td><span class="badge bg-success">Healthy</span></td>
+                                                          <td><span class="badge bg-primary">Premium</span></td>
+                                                          <td>92,000</td>
+                                                          <td>Castrated male, docile</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>KE-C-2025-003</td>
+                                                          <td>Ruby</td>
+                                                          <td>Cattle</td>
+                                                          <td>Boran</td>
+                                                          <td>John Kamau</td>
+                                                          <td>1Y, 8M, 3W</td>
+                                                          <td>Female</td>
+                                                          <td>Red coat, small hump, horned</td>
+                                                          <td>310 kg</td>
+                                                          <td><span class="badge bg-success">Healthy</span></td>
+                                                          <td><span class="badge bg-info">Standard</span></td>
+                                                          <td>68,000</td>
+                                                          <td>Good growth potential</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>KE-C-2025-004</td>
+                                                          <td>King</td>
+                                                          <td>Cattle</td>
+                                                          <td>Boran</td>
+                                                          <td>John Kamau</td>
+                                                          <td>4Y, 2M, 0W</td>
+                                                          <td>Male</td>
+                                                          <td>Brown, prominent hump</td>
+                                                          <td>580 kg</td>
+                                                          <td><span class="badge bg-success">Healthy</span></td>
+                                                          <td><span class="badge bg-primary">Premium</span></td>
+                                                          <td>105,000</td>
+                                                          <td>Breeding bull</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>KE-C-2025-005</td>
+                                                          <td>Daisy</td>
+                                                          <td>Cattle</td>
+                                                          <td>Boran</td>
+                                                          <td>John Kamau</td>
+                                                          <td>3Y, 5M, 2W</td>
+                                                          <td>Female</td>
+                                                          <td>Brown & white, medium hump</td>
+                                                          <td>490 kg</td>
+                                                          <td><span class="badge bg-warning">Fair</span></td>
+                                                          <td><span class="badge bg-info">Standard</span></td>
+                                                          <td>78,000</td>
+                                                          <td>Good maternal traits</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>KE-C-2025-006</td>
+                                                          <td>-</td>
+                                                          <td>Cattle</td>
+                                                          <td>Boran</td>
+                                                          <td>John Kamau</td>
+                                                          <td>2Y, 8M, 1W</td>
+                                                          <td>Male</td>
+                                                          <td>Brown, curved horns</td>
+                                                          <td>420 kg</td>
+                                                          <td><span class="badge bg-success">Healthy</span></td>
+                                                          <td><span class="badge bg-info">Standard</span></td>
+                                                          <td>74,000</td>
+                                                          <td>Disease resistant</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>KE-C-2025-007</td>
+                                                          <td>Lady</td>
+                                                          <td>Cattle</td>
+                                                          <td>Boran</td>
+                                                          <td>John Kamau</td>
+                                                          <td>2Y, 2M, 3W</td>
+                                                          <td>Female</td>
+                                                          <td>Light brown, medium hump</td>
+                                                          <td>385 kg</td>
+                                                          <td><span class="badge bg-success">Healthy</span></td>
+                                                          <td><span class="badge bg-info">Standard</span></td>
+                                                          <td>72,000</td>
+                                                          <td>Good maternal traits</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>KE-C-2025-008</td>
+                                                          <td>Chief</td>
+                                                          <td>Cattle</td>
+                                                          <td>Boran</td>
+                                                          <td>John Kamau</td>
+                                                          <td>3Y, 7M, 0W</td>
+                                                          <td>Male</td>
+                                                          <td>Red & white, medium build</td>
+                                                          <td>510 kg</td>
+                                                          <td><span class="badge bg-warning">Fair</span></td>
+                                                          <td><span class="badge bg-info">Standard</span></td>
+                                                          <td>88,000</td>
+                                                          <td>Needs deworming</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>KE-C-2025-009</td>
+                                                          <td>Star</td>
+                                                          <td>Cattle</td>
+                                                          <td>Boran</td>
+                                                          <td>John Kamau</td>
+                                                          <td>1Y, 11M, 2W</td>
+                                                          <td>Female</td>
+                                                          <td>White, small hump, short horns</td>
+                                                          <td>360 kg</td>
+                                                          <td><span class="badge bg-success">Healthy</span></td>
+                                                          <td><span class="badge bg-info">Standard</span></td>
+                                                          <td>70,000</td>
+                                                          <td>Good growth rate</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>KE-C-2025-010</td>
+                                                          <td>Duke</td>
+                                                          <td>Cattle</td>
+                                                          <td>Boran</td>
+                                                          <td>John Kamau</td>
+                                                          <td>4Y, 0M, 3W</td>
+                                                          <td>Male</td>
+                                                          <td>Brown & white, large hump</td>
+                                                          <td>570 kg</td>
+                                                          <td><span class="badge bg-success">Healthy</span></td>
+                                                          <td><span class="badge bg-primary">Premium</span></td>
+                                                          <td>98,000</td>
+                                                          <td>Excellent conformation</td>
+                                                        </tr>
+                                                      </tbody>
+                                                      <tfoot class="table-dark">
+                                                        <tr>
+                                                          <td colspan="8" class="text-end"><strong>Total:</strong></td>
+                                                          <td><strong>4,595 kg</strong></td>
+                                                          <td colspan="2"></td>
+                                                          <td><strong>830,000</strong></td>
+                                                          <td></td>
+                                                        </tr>
+                                                      </tfoot>
+                                                    </table>
+                                                  </div>
+                                                  <div class="row mt-4">
+                                                    <div class="col-12">
+                                                      <h5>Payment Information</h5>
+                                                      <p><strong>Payment Method:</strong> Bank Transfer</p>
+                                                      <p><strong>Reference Number:</strong> BT78923-04/2025</p>
+                                                      <p><strong>Payment Date:</strong> 12/04/2025</p>
+                                                      <p><strong>Payment Status:</strong> Paid in Full</p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row mt-4">
+                                                    <div class="col-12">
+                                                      <h5>General Comments</h5>
+                                                      <p>High-quality Boran cattle consignment from John Kamau's Mavoko Ranch. All animals vaccinated against FMD and CBPP. Animals were transported using proper livestock carrier with adequate ventilation. Cattle arrived in good condition with minimal stress. This consignment represents premium breeding stock with excellent genetic traits suitable for both meat and breeding programs. Documents verified by veterinary officer Dr. James Mwangi (Reg. KVB/2025/3421).</p>
+                                                    </div>
+                                                  </div>
+                                                    </table>
+                                                  </div>
+                                                  <div class="row mt-4">
+                                                    <div class="col-12">
+                                                      <p><strong>Health Status:</strong> Healthy</p>
+                                                      <p><strong>Notes:</strong> Premium quality Boran breed in excellent condition.</p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row mt-4">
+                                                    <div class="col-6">
+                                                      <p>_______________________<br>Agent Signature</p>
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                      <p>_______________________<br>Received By</p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Print</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                        <!-- Additional modals for other delivery notes would go here -->
                                     </div>
                                 </div> <!-- end col -->
                             </div>
