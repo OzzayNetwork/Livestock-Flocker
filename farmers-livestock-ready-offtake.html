@@ -733,13 +733,12 @@
                                                                     class="form-label">Show animals that have
                                                                     reached:</label>
                                                                 <select class="form-select" id="threshold-percentage">
-                                                                    <option value="80" selected>80% of target weight
+                                                                    <option value="100+" selected>100+% of target weight
                                                                     </option>
-                                                                    <option value="85">85% of target weight</option>
-                                                                    <option value="90">90% of target weight</option>
-                                                                    <option value="95">95% of target weight</option>
-                                                                    <option value="98">98% of target weight</option>
-                                                                    <option value="100">100% of target weight</option>
+                                                                    <option value="110">110% of target weight</option>
+                                                                    <option value="120">120% of target weight</option>
+                                                                    <option value="130">130% of target weight</option>
+                                                                    <option value="150+">150+% of target weight</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -858,112 +857,116 @@
                         <!-- end of filtering bar -->
                         <!-- Total Livestock Card -->
                         <!-- Approaching Market Readiness Card -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="card mini-stats-wid">
-                                <div class="card-body">
-                                    <div class="d-flex flex-wrap">
-                                        <div class="me-3">
-                                            <p class="text-muted mb-2">APPROACHING MARKET</p>
-                                            <h5 class="mb-0">6 Animals</h5>
-                                        </div>
-                                        <div class="avatar-sm ms-auto">
-                                            <div class="avatar-title bg-primary rounded-circle text-white font-size-20">
-                                                <i class="mdi mdi-chart-line"></i>
+                       <div class="col-12">
+                        <div class="row">
+                            <!-- Ready for Offtake Card -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap">
+                                            <div class="me-3">
+                                                <p class="text-muted mb-2">READY FOR OFFTAKE</p>
+                                                <h5 class="mb-0">6 Animals</h5>
+                                            </div>
+                                            <div class="avatar-sm ms-auto">
+                                                <div class="avatar-title bg-success rounded-circle text-white font-size-20">
+                                                    <i class="mdi mdi-check-circle"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="card-body border-top py-3">
-                                    <p class="text-muted mb-0">
-                                        <span class="text-warning me-1">
-                                            <i class="mdi mdi-clock-outline"></i> 88%
-                                        </span> average completion
-                                    </p>
+                        
+                                    <div class="card-body border-top py-3">
+                                        <p class="text-muted mb-0">
+                                            <span class="text-success me-1">
+                                                <i class="mdi mdi-arrow-up"></i> 100%
+                                            </span> offtake readiness
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Weight Progress Card -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="card blog-stats-wid">
-                                <div class="card-body">
-                                    <div class="d-flex flex-wrap">
-                                        <div class="me-3">
-                                            <p class="text-muted mb-2">WEIGHT PROGRESS</p>
-                                            <h5 class="mb-0">
-                                                <span class="text-primary">264 kg</span> /
-                                                <span class="text-info">297 kg</span>
-                                            </h5>
-                                        </div>
-                                        <div class="avatar-sm ms-auto">
-                                            <div class="avatar-title bg-success rounded-circle text-white font-size-20">
-                                                <i class="mdi mdi-scale"></i>
+                        
+                            <!-- Offtake Weight Achieved Card -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card blog-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap">
+                                            <div class="me-3">
+                                                <p class="text-muted mb-2">OFFTAKE WEIGHT</p>
+                                                <h5 class="mb-0">
+                                                    <span class="text-success">297 kg</span> /
+                                                    <span class="text-info">297 kg</span>
+                                                </h5>
+                                            </div>
+                                            <div class="avatar-sm ms-auto">
+                                                <div class="avatar-title bg-success rounded-circle text-white font-size-20">
+                                                    <i class="mdi mdi-scale-balance"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="card-body border-top py-3">
-                                    <span class="badge bg-warning me-1">33 kg remaining</span>
-                                    <span class="badge bg-success me-1">89% of target</span>
+                        
+                                    <div class="card-body border-top py-3">
+                                        <span class="badge bg-success me-1">Target achieved</span>
+                                        <span class="badge bg-success me-1">100% complete</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Health Status Card -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="card blog-stats-wid">
-                                <div class="card-body">
-                                    <div class="d-flex flex-wrap">
-                                        <div class="me-3">
-                                            <p class="text-muted mb-2">HEALTH STATUS</p>
-                                            <h5 class="mb-0">
-                                                <span class="text-success">2</span> /
-                                                <span class="text-danger">4</span>
-                                            </h5>
-                                        </div>
-                                        <div class="avatar-sm ms-auto">
-                                            <div class="avatar-title bg-danger rounded-circle text-white font-size-20">
-                                                <i class="mdi mdi-medical-bag"></i>
+                        
+                            <!-- Health Status Card -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card blog-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap">
+                                            <div class="me-3">
+                                                <p class="text-muted mb-2">HEALTH STATUS</p>
+                                                <h5 class="mb-0">
+                                                    <span class="text-success">6</span> /
+                                                    <span class="text-info">6</span>
+                                                </h5>
+                                            </div>
+                                            <div class="avatar-sm ms-auto">
+                                                <div class="avatar-title bg-success rounded-circle text-white font-size-20">
+                                                    <i class="mdi mdi-shield-check"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="card-body border-top py-3">
-                                    <span class="badge bg-success me-1">Healthy: 33%</span>
-                                    <span class="badge bg-danger me-1">Sick: 67%</span>
-                                    <span class="badge bg-info">Need treatment: 4</span>
+                        
+                                    <div class="card-body border-top py-3">
+                                        <span class="badge bg-success me-1">Healthy: 100%</span>
+                                        <span class="badge bg-info">Offtake ready</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Market Value Card -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="card blog-stats-wid">
-                                <div class="card-body">
-                                    <div class="d-flex flex-wrap">
-                                        <div class="me-3">
-                                            <p class="text-muted mb-2">ESTIMATED VALUE</p>
-                                            <h5 class="mb-0">KES 79,200</h5>
-                                        </div>
-                                        <div class="avatar-sm ms-auto">
-                                            <div class="avatar-title bg-warning rounded-circle text-white font-size-20">
-                                                <i class="mdi mdi-cash-multiple"></i>
+                        
+                            <!-- Offtake Value Card -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card blog-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap">
+                                            <div class="me-3">
+                                                <p class="text-muted mb-2">OFFTAKE VALUE</p>
+                                                <h5 class="mb-0">KES 89,100</h5>
+                                            </div>
+                                            <div class="avatar-sm ms-auto">
+                                                <div class="avatar-title bg-success rounded-circle text-white font-size-20">
+                                                    <i class="mdi mdi-cash-multiple"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card-body border-top py-3">
-                                    <p class="text-muted fw-bold mb-0">
-                                        <span class="text-success me-1">
-                                            <i class="mdi mdi-arrow-up"></i> KES 89,100
-                                        </span> at target weight
-                                    </p>
+                                    <div class="card-body border-top py-3">
+                                        <p class="text-muted fw-bold mb-0">
+                                            <span class="text-success me-1">
+                                                <i class="mdi mdi-arrow-up"></i> KES 89,100
+                                            </span> at offtake weight
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                       </div>
                     </div>
 
 
