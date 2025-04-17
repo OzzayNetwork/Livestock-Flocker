@@ -1710,6 +1710,20 @@ padding: 0px;
         background: #eaf9f4;
         font-weight: 600;
     }
+    .img-upload-cont{
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .img-upload-cont label{
+        cursor: pointer;
+        position: relative;
+
+    }
+    .img-upload-cont img{
+        height: 100%;
+        position: absolute;
+        top: 0px;
+    }
 
     
     
