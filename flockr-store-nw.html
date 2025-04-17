@@ -226,11 +226,12 @@
                     <ul class="metismenu list-unstyled text-capitalize" id="side-menu">
             
                         <!-- Dashboard -->
-                        <li>
+                         <li>
                             <a href="index.html" class="waves-effect">
                                 <i class="bx bx-home"></i><span>Dashboard</span>
                             </a>
                         </li>
+                        <hr>
                          <li class="menu-title" key="t-pages">Farm Management</li>
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
@@ -283,14 +284,49 @@
                                 <i class="mdi mdi-gate"></i> <span> All Ranches</span>
                             </a>
                         </li>
+                        <hr>
                         
                         <li class="menu-title" key="t-pages">Flockr Store Management</li>
                     
                         <li>
-                            <a href="livestock.html" class="waves-effect">
-                                <i class="bx bx-plus"></i> <span> Add Livestock</span>
+                            <a href="flockr-store-products.html" class="waves-effect" title="View Products">
+                                <i class="mdi mdi-package-variant-closed"></i> <span> Products</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="flockr-store-nw.html" class="waves-effect" title="Add New Product">
+                                <i class="mdi mdi-plus-box"></i> <span> Add Product</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage Orders">
+                                <i class="mdi mdi-cart-outline"></i>
+                                <span>Orders</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li>
+                                    <a href="flockr-store-orders-pending.html" title="View Pending Deliveries">
+                                        <i class="mdi mdi-clipboard-list-outline"></i> Pending Delivery
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="flockr-store-orders-fullfiled.html" title="View Fulfilled Orders">
+                                        <i class="mdi mdi-check-decagram-outline"></i> Fullfiled Orders
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="flockr-store-orders-cancelled.html" title="View Cancelled Orders">
+                                        <i class="mdi mdi-cancel"></i> Cancelled Orders
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="flockr-store-orders-customers.html" class="waves-effect" title="Manage Customers">
+                                <i class="mdi mdi-account-supervisor-circle"></i> <span> Customers</span>
+                            </a>
+                        </li>
+                        <hr>
 
                         <li><a href="production_weight.html"><i class="fas fa-weight"></i> Weight</a></li>
                         <li><a href="RFID.html"><i class="fas fa-id-card"></i> RFID</a></li>
@@ -601,27 +637,68 @@
                                        <div class="row">
                                         <div class="col-6 mb-3">
                                             <div class="mb-3">
-                                                <label for="breed-input" class="form-label">Source County <strong class="text-danger fw-bold">*</strong></label>
-                                                <select class="form-control" id="breed-input" required>
-                                                    <option value="">Select Breed</option>
-                                                    <option value="Friesian">Friesian</option>
-                                                    <option value="Boran">Boran</option>
-                                                    <option value="Sahiwal">Sahiwal</option>
-                                                    <option value="Galla">Galla</option>
-                                                    <option value="Dorper">Dorper</option>
-                                                    <option value="Kienyeji">Kienyeji</option>
-                                                    <option value="Landrace">Landrace</option>
-                                                    <option value="Other">Other</option>
+                                                <label for="source-county-input" class="form-label">Source County <strong class="text-danger fw-bold">*</strong></label>
+                                                <select class="form-control" id="source-county-input" name="source_county" required>
+                                                    <option value="">Select County</option>
+                                                    <option value="Mombasa">Mombasa</option>
+                                                    <option value="Kwale">Kwale</option>
+                                                    <option value="Kilifi">Kilifi</option>
+                                                    <option value="Tana River">Tana River</option>
+                                                    <option value="Lamu">Lamu</option>
+                                                    <option value="Taita Taveta">Taita Taveta</option>
+                                                    <option value="Garissa">Garissa</option>
+                                                    <option value="Wajir">Wajir</option>
+                                                    <option value="Mandera">Mandera</option>
+                                                    <option value="Marsabit">Marsabit</option>
+                                                    <option value="Isiolo">Isiolo</option>
+                                                    <option value="Meru">Meru</option>
+                                                    <option value="Tharaka Nithi">Tharaka Nithi</option>
+                                                    <option value="Embu">Embu</option>
+                                                    <option value="Kitui">Kitui</option>
+                                                    <option value="Machakos">Machakos</option>
+                                                    <option value="Makueni">Makueni</option>
+                                                    <option value="Nyandarua">Nyandarua</option>
+                                                    <option value="Nyeri">Nyeri</option>
+                                                    <option value="Kirinyaga">Kirinyaga</option>
+                                                    <option value="Murang'a">Murang'a</option>
+                                                    <option value="Kiambu">Kiambu</option>
+                                                    <option value="Turkana">Turkana</option>
+                                                    <option value="West Pokot">West Pokot</option>
+                                                    <option value="Samburu">Samburu</option>
+                                                    <option value="Trans Nzoia">Trans Nzoia</option>
+                                                    <option value="Uasin Gishu">Uasin Gishu</option>
+                                                    <option value="Elgeyo Marakwet">Elgeyo Marakwet</option>
+                                                    <option value="Nandi">Nandi</option>
+                                                    <option value="Baringo">Baringo</option>
+                                                    <option value="Laikipia">Laikipia</option>
+                                                    <option value="Nakuru">Nakuru</option>
+                                                    <option value="Narok">Narok</option>
+                                                    <option value="Kajiado">Kajiado</option>
+                                                    <option value="Kericho">Kericho</option>
+                                                    <option value="Bomet">Bomet</option>
+                                                    <option value="Kakamega">Kakamega</option>
+                                                    <option value="Vihiga">Vihiga</option>
+                                                    <option value="Bungoma">Bungoma</option>
+                                                    <option value="Busia">Busia</option>
+                                                    <option value="Siaya">Siaya</option>
+                                                    <option value="Kisumu">Kisumu</option>
+                                                    <option value="Homa Bay">Homa Bay</option>
+                                                    <option value="Migori">Migori</option>
+                                                    <option value="Kisii">Kisii</option>
+                                                    <option value="Nyamira">Nyamira</option>
+                                                    <option value="Nairobi">Nairobi</option>
                                                 </select>
                                             </div>
                                         </div>
-
+                                        
                                         <div class="col-6 mb-3">
                                             <div class="mb-3">
-                                                <label for="product-name-input" class="form-label">Source Zone <strong class="text-danger fw-bold">*</strong></label>
-                                                <input type="text" class="form-control" id="product-name-input" placeholder="Eg. Friesian Heifer 2yrs" spellcheck="false" required>
+                                                <label for="source-zone-input" class="form-label">Source Zone <strong class="text-danger fw-bold">*</strong></label>
+                                                <input type="text" class="form-control" id="source-zone-input" name="source_zone" placeholder="Eg. Zone 3A" spellcheck="false" required>
                                             </div>
                                         </div>
+                                        
+                                        
                                        </div>
                                     </div>
                                    
