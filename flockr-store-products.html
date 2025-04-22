@@ -587,12 +587,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Products</h4>
+                                <h4 class="mb-sm-0 font-size-18">Livestock on Sale</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Ecommerce</a></li>
-                                        <li class="breadcrumb-item active">Products</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                        <li class="breadcrumb-item active">Livestock on Sale</li>
                                     </ol>
                                 </div>
 
@@ -606,105 +606,117 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title mb-4">Filter</h4>
-
+                        
                                     <div>
-                                        <h5 class="font-size-14 mb-3">Clothes</h5>
+                                        <h5 class="font-size-14 mb-3">Livestock Type</h5>
                                         <ul class="list-unstyled product-list">
-                                            <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> T-shirts</a></li>
-                                            <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> Shirts</a></li>
-                                            <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> Jeans</a></li>
-                                            <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> Jackets</a></li>
+                                            <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> Cattle</a></li>
+                                            <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> Goats</a></li>
+                                            <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> Sheep</a></li>
+                                            <li><a href="javascript: void(0);"><i class="mdi mdi-chevron-right me-1"></i> Camels</a></li>
                                         </ul>
                                     </div>
+                                    
                                     <div class="mt-4 pt-3">
-                                        <h5 class="font-size-14 mb-3">Price</h5>
-                                        <input type="text" id="pricerange">
+                                        <h5 class="font-size-14 mb-3">Weight Range (KG)</h5>
+                                        <input type="text" id="weightrange">
                                     </div>
-
+                        
                                     <div class="mt-4 pt-3">
-                                        <h5 class="font-size-14 mb-3">Discount</h5>
+                                        <h5 class="font-size-14 mb-3">Age</h5>
                                         <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" id="productdiscountCheck1">
-                                            <label class="form-check-label" for="productdiscountCheck1">
-                                                Less than 10%
+                                            <input class="form-check-input" type="checkbox" id="ageCheck1">
+                                            <label class="form-check-label" for="ageCheck1">
+                                                Less than 1 year
                                             </label>
                                         </div>
-
+                        
                                         <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" id="productdiscountCheck2">
-                                            <label class="form-check-label" for="productdiscountCheck2">
-                                                10% or more
+                                            <input class="form-check-input" type="checkbox" id="ageCheck2">
+                                            <label class="form-check-label" for="ageCheck2">
+                                                1-2 years
                                             </label>
                                         </div>
-
+                        
                                         <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" id="productdiscountCheck3" checked>
-                                            <label class="form-check-label" for="productdiscountCheck3">
-                                                20% or more
+                                            <input class="form-check-input" type="checkbox" id="ageCheck3" checked>
+                                            <label class="form-check-label" for="ageCheck3">
+                                                2-3 years
                                             </label>
                                         </div>
-
+                        
                                         <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" id="productdiscountCheck4">
-                                            <label class="form-check-label" for="productdiscountCheck4">
-                                                30% or more
+                                            <input class="form-check-input" type="checkbox" id="ageCheck4">
+                                            <label class="form-check-label" for="ageCheck4">
+                                                3-4 years
                                             </label>
                                         </div>
-
+                        
                                         <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" id="productdiscountCheck5">
-                                            <label class="form-check-label" for="productdiscountCheck5">
-                                                40% or more
+                                            <input class="form-check-input" type="checkbox" id="ageCheck5">
+                                            <label class="form-check-label" for="ageCheck5">
+                                                4-5 years
                                             </label>
                                         </div>
-
+                        
                                         <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" id="productdiscountCheck6">
-                                            <label class="form-check-label" for="productdiscountCheck6">
-                                                50% or more
+                                            <input class="form-check-input" type="checkbox" id="ageCheck6">
+                                            <label class="form-check-label" for="ageCheck6">
+                                                5+ years
                                             </label>
                                         </div>
-
                                     </div>
-
+                        
                                     <div class="mt-4 pt-3">
-                                        <h5 class="font-size-14 mb-3">Customer Rating</h5>
-                                        <div>
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="checkbox" id="productratingCheck1">
-                                                <label class="form-check-label" for="productratingCheck1">
-                                                    4 <i class="bx bxs-star text-warning"></i>  & Above
-                                                </label>
-                                            </div>
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="checkbox" id="productratingCheck2">
-                                                <label class="form-check-label" for="productratingCheck2">
-                                                    3 <i class="bx bxs-star text-warning"></i>  & Above
-                                                </label>
-                                            </div>
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="checkbox" id="productratingCheck3">
-                                                <label class="form-check-label" for="productratingCheck3">
-                                                    2 <i class="bx bxs-star text-warning"></i>  & Above
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="checkbox" id="productratingCheck4">
-                                                <label class="form-check-label" for="productratingCheck4">
-                                                    1 <i class="bx bxs-star text-warning"></i>
-                                                </label>
-                                            </div>
-                                            
+                                        <h5 class="font-size-14 mb-3">County</h5>
+                                        <div class="form-check mt-2">
+                                            <input class="form-check-input" type="checkbox" id="countyCheck1">
+                                            <label class="form-check-label" for="countyCheck1">
+                                                Nairobi
+                                            </label>
+                                        </div>
+                        
+                                        <div class="form-check mt-2">
+                                            <input class="form-check-input" type="checkbox" id="countyCheck2">
+                                            <label class="form-check-label" for="countyCheck2">
+                                                Nakuru
+                                            </label>
+                                        </div>
+                        
+                                        <div class="form-check mt-2">
+                                            <input class="form-check-input" type="checkbox" id="countyCheck3">
+                                            <label class="form-check-label" for="countyCheck3">
+                                                Kajiado
+                                            </label>
+                                        </div>
+                        
+                                        <div class="form-check mt-2">
+                                            <input class="form-check-input" type="checkbox" id="countyCheck4">
+                                            <label class="form-check-label" for="countyCheck4">
+                                                Laikipia
+                                            </label>
+                                        </div>
+                        
+                                        <div class="form-check mt-2">
+                                            <input class="form-check-input" type="checkbox" id="countyCheck5">
+                                            <label class="form-check-label" for="countyCheck5">
+                                                Machakos
+                                            </label>
+                                        </div>
+                        
+                                        <div class="form-check mt-2">
+                                            <input class="form-check-input" type="checkbox" id="countyCheck6">
+                                            <label class="form-check-label" for="countyCheck6">
+                                                Narok
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                         <div class="col-lg-9">
                                 
-                            <div class="row mb-3">
+                            <div class="row mb-3 d-none">
                                 <div class="col-xl-4 col-sm-6">
                                     <div class="mt-2">
                                         <h5>Clothes</h5>
@@ -744,7 +756,8 @@
                                                 <img src="assets/images/product/img-1.png" alt="" class="img-fluid mx-auto d-block">
                                             </div>
                                             <div class="mt-4 text-center">
-                                                <h5 class="mb-3 text-truncate"><a href="javascript: void(0);" class="text-dark">Half sleeve T-shirt </a></h5>
+                                                <h5 class="mb-1 text-truncate"><a href="javascript: void(0);" class="text-dark">Ankole Cattle - 520 KG</a></h5>
+                                                <p>Ugandan Longhorn</p>
                                                 
                                                 <p class="text-muted">
                                                     <i class="bx bxs-star text-warning"></i>
@@ -753,7 +766,7 @@
                                                     <i class="bx bxs-star text-warning"></i>
                                                     <i class="bx bxs-star text-warning"></i>
                                                 </p>
-                                                <h5 class="my-0"><span class="text-muted me-2"><del>$500</del></span> <b>$450</b></h5>
+                                                <h5 class="my-0"><span class="text-muted me-2"><del>KES 64,000</del></span> <b>KES 57,600</b></h5>
 
                                             </div>
                                         </div>
@@ -766,7 +779,8 @@
                                                 <img src="assets/images/product/img-2.png" alt="" class="img-fluid mx-auto d-block">
                                             </div>
                                             <div class="mt-4 text-center">
-                                                <h5 class="mb-3 text-truncate"><a href="javascript: void(0);" class="text-dark">Light blue T-shirt</a></h5>
+                                                <h5 class="mb-1 text-truncate"><a href="javascript: void(0);" class="text-dark">Boran Cattle - 450 KG</a></h5>
+                                                <p>Kenyan Boran</p>
                                                 
                                                 <p class="text-muted">
                                                     <i class="bx bxs-star text-warning"></i>
@@ -775,8 +789,8 @@
                                                     <i class="bx bxs-star text-warning"></i>
                                                     <i class="bx bxs-star"></i>
                                                 </p>
-                                                <h5 class="my-0"><span class="text-muted me-2"><del>$240</del></span> <b>$225</b></h5>
-
+                                                <h5 class="my-0"><span class="text-muted me-2"><del>KES 30,720</del></span> <b>KES 28,800</b></h5>
+                                
                                             </div>
                                         </div>
                                     </div>
@@ -793,7 +807,8 @@
                                                 <img src="assets/images/product/img-3.png" alt="" class="img-fluid mx-auto d-block">
                                             </div>
                                             <div class="mt-4 text-center">
-                                                <h5 class="mb-3 text-truncate"><a href="javascript: void(0);" class="text-dark">Black Color T-shirt</a></h5>
+                                                <h5 class="mb-1 text-truncate"><a href="javascript: void(0);" class="text-dark">Sahiwal Cattle - 380 KG</a></h5>
+                                                <p>Tanzanian Sahiwal</p>
                                                 
                                                 <p class="text-muted">
                                                     <i class="bx bxs-star text-warning"></i>
@@ -802,7 +817,7 @@
                                                     <i class="bx bxs-star text-warning"></i>
                                                     <i class="bx bxs-star"></i>
                                                 </p>
-                                                <h5 class="my-0"><span class="text-muted me-2"><del>$175</del></span> <b>$152</b></h5>
+                                                <h5 class="my-0"><span class="text-muted me-2"><del>KES 22,400</del></span> <b>KES 19,456</b></h5>
 
                                             </div>
                                         </div>
@@ -815,7 +830,8 @@
                                                 <img src="assets/images/product/img-4.png" alt="" class="img-fluid mx-auto d-block">
                                             </div>
                                             <div class="mt-4 text-center">
-                                                <h5 class="mb-3 text-truncate"><a href="javascript: void(0);" class="text-dark">Hoodie (Blue)</a></h5>
+                                                <h5 class="mb-1 text-truncate"><a href="javascript: void(0);" class="text-dark">Galla Goat - 45 KG</a></h5>
+                                                <p>Kenyan Galla</p>
                                                 
                                                 <p class="text-muted">
                                                     <i class="bx bxs-star text-warning"></i>
@@ -824,7 +840,7 @@
                                                     <i class="bx bxs-star text-warning"></i>
                                                     <i class="bx bxs-star"></i>
                                                 </p>
-                                                <h5 class="my-0"><span class="text-muted me-2"><del>$150</del></span> <b>$145</b></h5>
+                                                <h5 class="my-0"><span class="text-muted me-2"><del>KES 19,200</del></span> <b>KES 18,560</b></h5>
 
                                             </div>
                                         </div>
@@ -843,7 +859,8 @@
                                                 <img src="assets/images/product/img-5.png" alt="" class="img-fluid mx-auto d-block">
                                             </div>
                                             <div class="mt-4 text-center">
-                                                <h5 class="mb-3 text-truncate"><a href="javascript: void(0);" class="text-dark">Half sleeve T-Shirt</a></h5>
+                                                <h5 class="mb-1 text-truncate"><a href="javascript: void(0);" class="text-dark">Black Head Sheep - 35 KG</a></h5>
+                                                <p>Ethiopian Blackhead</p>
                                                 
                                                 <p class="text-muted">
                                                     <i class="bx bxs-star text-warning"></i>
@@ -852,7 +869,7 @@
                                                     <i class="bx bxs-star text-warning"></i>
                                                     <i class="bx bxs-star"></i>
                                                 </p>
-                                                <h5 class="my-0"><span class="text-muted me-2"><del>$145</del></span> <b>$138</b></h5>
+                                                <h5 class="my-0"><span class="text-muted me-2"><del>KES 18,560</del></span> <b>KES 17,664</b></h5>
 
                                             </div>
                                         </div>
@@ -870,7 +887,8 @@
                                                 <img src="assets/images/product/img-6.png" alt="" class="img-fluid mx-auto d-block">
                                             </div>
                                             <div class="mt-4 text-center">
-                                                <h5 class="mb-3 text-truncate"><a href="javascript: void(0);" class="text-dark">Green color T-shirt</a></h5>
+                                                <h5 class="mb-1 text-truncate"><a href="javascript: void(0);" class="text-dark">Red Maasai Sheep - 40 KG</a></h5>
+                                                <p>Kenyan Red Maasai</p>
                                                 
                                                 <p class="text-muted">
                                                     <i class="bx bxs-star text-warning"></i>
@@ -879,7 +897,7 @@
                                                     <i class="bx bxs-star text-warning"></i>
                                                     <i class="bx bxs-star"></i>
                                                 </p>
-                                                <h5 class="my-0"><span class="text-muted me-2"><del>$138</del></span> <b>$135</b></h5>
+                                                <h5 class="my-0"><span class="text-muted me-2"><del>KES 17,664</del></span> <b>KES 17,280</b></h5>
 
                                             </div>
                                         </div>
