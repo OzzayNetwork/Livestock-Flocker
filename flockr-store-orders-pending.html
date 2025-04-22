@@ -1,0 +1,1553 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- By Kelvin Njuguna   13:53:02 GMT -->
+
+<head>
+
+    <meta charset="utf-8" />
+   <title>Flockr | Livestosck Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="HMIS By Craft Silicon Payments" name="description" />
+    <meta content="Kelvin Njuguna" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg">
+    <!-- droping file -->
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap select styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+     <!-- owl.carousel css -->
+     <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.carousel.min.css">
+
+     <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.theme.default.min.css">
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-sidebar="dark">
+
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-chase">
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Begin page -->
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex text-uppercase">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a class="logo logo-dark"><span class="logo-sm"><img alt="" height="22" src="./assets/images/logo.svg"></span><span class="logo-lg"></span></a><a class="logo logo-light d-flex"><span class="logo-sm"><img alt="" height="35" src="assets/images/COUNTY_LOGO_PLAIN.png"></span><span class="logo-lg"><img alt="" height="45" src="assets/images/COUNTY_LOGO_PLAIN.png"></span><div class="portal-title"><h4 class="text-white">Ranch</h4><h6 class="text-muted mb-0 text-white opacity-75">Experts</h6></div></a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                    </button>
+                    <!-- logo small -->
+                    <div class="phone-logo d-md-none d-sm-flex"> <img src="assets/images/color-log0.svg" alt="" class="img"></div>
+
+
+
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="bx bx-search-alt"></span>
+                        </div>
+                    </form>
+
+
+                </div>
+
+                <div class="d-flex">
+                    <!-- small search -->
+                    <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="dropdown d-none d-lg-inline-block ms-1">
+                        <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
+                                <i class="bx bx-fullscreen"></i>
+                            </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block d-none">
+
+                        <!-- notifications, i will come to this later -->
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-bell bx-tada"></i>
+                                <span class="badge bg-danger rounded-pill">3</span>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0" key="t-notifications"> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="small" key="t-view-all"> View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="bx bx-cart"></i>
+                                                </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1" key="t-your-order">Your order is placed</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">James Lemire</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-simplified">It will seem like simplified English.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="bx bx-badge-check"></i>
+                                                </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1" key="t-shipped">Your item is shipped</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-4.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Salena Layfield</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-occidental">As a skeptical Cambridge friend of mine occidental.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top d-grid">
+                                <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">View More..</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ms-1" key="t-henry">Adroa Balinda</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="myprofile.html"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">My Profile</span></a>
+                            <a class="dropdown-item" href="my-logs.html"><i class="bx bx-time font-size-16 align-middle me-1"></i> <span key="t-profile">My Logs</span></a>
+                            <a class="dropdown-item" href="auth-lock-screen.html"><i class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span key="t-lock-screen">Lock screen</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="auth-login.html"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+         <div class="vertical-menu">
+            <div data-simplebar class="h-100">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled text-capitalize" id="side-menu">
+            
+                        <!-- Dashboard -->
+                         <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="bx bx-home"></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="menu-title" key="t-pages">Farm Management</li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-account-group-outline"></i> 
+                                <span>Farmers</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="farmer-register.html"><i class="mdi mdi-book-open-page-variant"></i> Farmers Register</a></li>
+                                <li><a href="farmer-add.html"><i class="mdi mdi-account-plus"></i> Add Farmer</a></li>
+                                <li><a href="farmer-ranch.html"><i class="mdi mdi-gate"></i> Manage Ranches</a></li>
+                            </ul>
+                        </li>
+
+                       <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-cow"></i>
+                                <span>All Livestock</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li>
+                                    <a href="farmers-all-livestock.html">
+                                        <i class="mdi mdi-clipboard-list"></i> All Livestock
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="farmers-livestock-nearing-target.html">
+                                        <i class="mdi mdi-scale-balance"></i> Near Target
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="farmers-livestock-ready-offtake.html">
+                                        <i class="mdi mdi-check-circle-outline"></i> Ready for Offtake
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="farmers-livestock-offtaken.html">
+                                        <i class="mdi mdi-truck-check"></i> Offtaken Livestock
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="farmers-all-deliveries.html" class="waves-effect">
+                                <i class="mdi mdi-truck-fast"></i> <span> Livestock Collections</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="farmers-all-ranches.html" class="waves-effect">
+                                <i class="mdi mdi-gate"></i> <span> All Ranches</span>
+                            </a>
+                        </li>
+                        <hr>
+                        
+                        <li class="menu-title" key="t-pages">Flockr Store Management</li>
+                       
+                        <li>
+                            <a href="flockr-store-products.html" class="waves-effect" title="View Products">
+                                <i class="mdi mdi-package-variant-closed"></i> <span> Products</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="flockr-store-nw.html" class="waves-effect" title="Add New Product">
+                                <i class="mdi mdi-plus-box"></i> <span> Add Product</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage Orders">
+                                <i class="mdi mdi-cart-outline"></i>
+                                <span>Orders</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li>
+                                    <a href="flockr-store-orders-pending.html" title="View Pending Deliveries">
+                                        <i class="mdi mdi-clipboard-list-outline"></i> Pending Delivery
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="flockr-store-orders-fullfiled.html" title="View Fulfilled Orders">
+                                        <i class="mdi mdi-clipboard-check"></i> Fullfiled Orders
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="flockr-store-orders-cancelled.html" title="View Cancelled Orders">
+                                        <i class="mdi mdi-cancel"></i> Cancelled Orders
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="flockr-store-orders-customers.html" class="waves-effect" title="Manage Customers">
+                                <i class="mdi mdi-account-supervisor-circle"></i> <span> Customers</span>
+                            </a>
+                        </li>
+                        <hr>
+                        
+
+
+
+                        <li><a href="production_weight.html"><i class="fas fa-weight"></i> Weight</a></li>
+                        <li><a href="RFID.html"><i class="fas fa-id-card"></i> RFID</a></li>
+
+
+
+                        <li><a href="breeding_pregnancy.html"><i class="fas fa-baby-carriage"></i> Pregnancy</a></li>
+            
+                        <!-- Livestock Inventory -->
+                       
+            
+                        <!-- Vaccine Management -->
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Vaccines</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="vaccines_health.html"><i class="fas fa-file-medical"></i> Health</a></li>
+                                <li><a href="vaccines_schedule.html"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                                <li><a href="vaccines_contacts.html"><i class="fas fa-address-book"></i> Contacts</a></li>
+                            </ul>
+                        </li>
+            
+                        <!-- Breeding & Reproduction -->
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="fas fa-baby"></i>
+                                <span>Breeding</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="breeding_schedule.html"><i class="fas fa-calendar-check"></i> Schedule</a></li>
+                           
+                                <li><a href="breeding_birth.html"><i class="fas fa-birthday-cake"></i> Birth</a></li>
+                            </ul>
+                        </li>
+            
+                        <!-- Health Management -->
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="fas fa-drumstick-bite"></i>
+                                <span>Health</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="health_feed.html"><i class="fas fa-utensils"></i> Feed</a></li>
+                                <li><a href="health_feeding.html"><i class="fas fa-clock"></i> Feeding</a></li>
+                                <li><a href="health_nutrition.html"><i class="fas fa-clipboard-list"></i> Nutrition</a></li>
+                            </ul>
+                        </li>
+            
+                        <!-- Production & Performance -->
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Production</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="production_weight.html"><i class="fas fa-weight"></i> Weight</a></li>
+                            </ul>
+                        </li>
+            
+                        <!-- Sales Management -->
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>Sales</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="sales_buyers.html"><i class="fas fa-users"></i> Buyers</a></li>
+                                <li><a href="sales_sellers.html"><i class="fas fa-user-tie"></i> Sellers</a></li>
+                                <li><a href="sales_livestock.html"><i class="fas fa-shopping-cart"></i> Livestock</a></li>
+                                <li><a href="sales_profit.html"><i class="fas fa-chart-pie"></i> Profit</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="death.html" class="waves-effect">
+                                <i class="bx bx-skull"></i> <span>  Death</span>
+                            </a>
+                        </li>
+                        
+            
+                        <!-- Reports & Analytics -->
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="reports_health.html"><i class="fas fa-file-medical-alt"></i> Health</a></li>
+                                <li><a href="reports_production.html"><i class="fas fa-chart-line"></i> Production</a></li>
+                                <li><a href="reports_financial.html"><i class="fas fa-coins"></i> Financial</a></li>
+                            </ul>
+                        </li>
+            
+                        <!-- Settings & Configuration -->
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="settings_users.html"><i class="fas fa-users-cog"></i> Users</a></li>
+                                <li><a href="settings_farm.html"><i class="fas fa-tractor"></i> Farm</a></li>
+                                <li><a href="settings_preferences.html"><i class="fas fa-sliders-h"></i> Preferences</a></li>
+                            </ul>
+                        </li>
+            
+                        <!-- Help & Support -->
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Help</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="help_guides.html"><i class="fas fa-book"></i> Guides</a></li>
+                                <li><a href="help_support.html"><i class="fas fa-headset"></i> Support</a></li>
+                            </ul>
+                        </li>
+            
+                        <!-- Original HR and System Administration Menus (Hidden) -->
+                        <li class="d-none">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-sitemap"></i>
+                                <span>Structure</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="org-designations.html"><i class="mdi mdi-account-tie"></i> Designations</a></li>
+                                <li><a href="org-departments.html"><i class="mdi mdi-domain"></i> Departments</a></li>
+                                <li><a href="org-employment-types.html"><i class="mdi mdi-briefcase"></i> Employment</a></li>
+                                <li><a href="org-affiliated-institution.html"><i class="mdi mdi-school"></i> Institution</a></li>
+                            </ul>
+                        </li>
+            
+                       <li class="menu-title" key="t-pages">System Administration</li>
+                       <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage Organizational Structure">
+                                <i class="mdi mdi-sitemap"></i>
+                                <span>Organization Structure</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="org-designations.html" title="Manage Staff Designations">Designations</a></li>
+                                <li><a href="org-zones.html" title="Manage Operational Zones and Extension Areas">Operational Zones</a></li>
+                                <li><a href="org-animal-categories.html" title="Manage Livestock Breeds and Categories">Livestock Breeds</a></li>
+                                <li><a href="org-departments.html" title="Manage Organizational Departments">Departments</a></li>
+                                <li><a href="org-employment-types.html" title="Manage Employment Types">Employment Types</a></li>
+                                <li><a href="org-affiliated-institutions.html" title="Manage Affiliated Institutions">Affiliated Institutions</a></li>
+                                <li><a href="org-system-setup.html" title="Configure System Settings">System Setup</a></li>
+                            </ul>
+                        </li>
+                       <li>
+                           <a href="javascript: void(0);" class="waves-effect has-arrow" title="Manage System Users">
+                               <i class="mdi mdi-account-multiple-outline"></i>
+                               <span>Users</span>
+                           </a>
+                           <ul class="sub-menu" aria-expanded="false">
+                               <li><a href="user-registration.html" title="Add New User">Add User</a></li>
+                               <li><a href="user-userlist.html" title="Add New User">Manage Users</a></li>
+                               <li><a href="users-deactivated.html" title="View Deactivated Users">Deactivated Users</a></li>
+                               <li><a href="use-logs.html" title="View System Logs">System Logs</a></li>
+                               <li><a href="users-roles.html" title="Manage User Roles">System Roles</a></li>
+                           </ul>
+                       </li>
+
+                       
+
+                        <li class="">
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="bx bx-aperture"></i>
+                                <span key="t-icons">Icons</span>
+                            </a>
+                            <ul class="sub-menu" >
+                                <li><a href="icons-boxicons.html" key="t-boxicons">Boxicons</a></li>
+                                <li><a href="icons-materialdesign.html" key="t-material-design" class="active">Material Design</a></li>
+                                <li><a href="icons-dripicons.html" key="t-dripicons">Dripicons</a></li>
+                                <li><a href="icons-fontawesome.html" key="t-font-awesome">Font Awesome</a></li>
+                            </ul>
+                        </li>
+            
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0 font-size-18">Farmers Register</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Farmers</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Farmers Register</a></li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <!-- some stats -->
+                    <div class="row">
+                        <!-- Total Farmers -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card mini-stats-wid">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="me-3">
+                                            <p class="text-muted mb-2">Total Farmers</p>
+                                            <h5 class="mb-0">14</h5>
+                                        </div>
+                                        <div class="avatar-sm ms-auto">
+                                            <div class="avatar-title bg-primary rounded-circle text-white font-size-20">
+                                                <i class="mdi mdi-account-cowboy-hat"></i> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Total Ranches -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card blog-stats-wid">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="me-3">
+                                            <p class="text-muted mb-2">Total Ranches</p>
+                                            <h5 class="mb-0">34</h5>
+                                        </div>
+                                        <div class="avatar-sm ms-auto">
+                                            <div class="avatar-title bg-success rounded-circle text-white font-size-20">
+                                                <i class="mdi mdi-home-variant"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Total Livestock -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card blog-stats-wid">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="me-3">
+                                            <p class="text-muted mb-2">Total Livestock</p>
+                                            <h5 class="mb-0">4,080</h5>
+                                        </div>
+                                        <div class="avatar-sm ms-auto">
+                                            <div class="avatar-title bg-info rounded-circle text-white font-size-20">
+                                                <i class="mdi mdi-cow"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Total Land Area -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card blog-stats-wid">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="me-3">
+                                            <p class="text-muted mb-2">Total Land Area</p>
+                                            <h5 class="mb-0">3,225 acres</h5>
+                                        </div>
+                                        <div class="avatar-sm ms-auto">
+                                            <div class="avatar-title bg-warning rounded-circle text-white font-size-20">
+                                                <i class="mdi mdi-map"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <!-- Verified Farmers -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card blog-stats-wid">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="me-3">
+                                            <p class="text-muted mb-2">Verified Farmers</p>
+                                            <h5 class="mb-0">8</h5>
+                                        </div>
+                                        <div class="avatar-sm ms-auto">
+                                            <div class="avatar-title bg-success rounded-circle text-white font-size-20">
+                                                <i class="mdi mdi-check-decagram"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Pending Verification -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card blog-stats-wid">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="me-3">
+                                            <p class="text-muted mb-2">Pending Verification</p>
+                                            <h5 class="mb-0">4</h5>
+                                        </div>
+                                        <div class="avatar-sm ms-auto">
+                                            <div class="avatar-title bg-warning rounded-circle text-white font-size-20">
+                                                <i class="mdi mdi-clock-outline"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Active Farmers -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card mini-stats-wid">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="me-3">
+                                            <p class="text-muted mb-2">Active Farmers</p>
+                                            <h5 class="mb-0">11</h5>
+                                        </div>
+                                        <div class="avatar-sm ms-auto">
+                                            <div class="avatar-title bg-primary rounded-circle text-white font-size-20">
+                                                <i class="mdi mdi-account-check"></i> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Self Registered -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card blog-stats-wid">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="me-3">
+                                            <p class="text-muted mb-2">Self Registered</p>
+                                            <h5 class="mb-0">4</h5>
+                                        </div>
+                                        <div class="avatar-sm ms-auto">
+                                            <div class="avatar-title bg-info rounded-circle text-white font-size-20">
+                                                <i class="mdi mdi-account-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- end of the stats -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header  bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+
+                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+                                        <h4 class="card-title text-uppercase mb-0 ">
+                                            All Farmers
+                                        </h4>
+
+                                        <div class="d-flex gap-3">
+                                            <button type="button" class="btn btn-info waves-effect waves-light text-uppercase" data-bs-toggle="modal" data-bs-target=".new-department">
+                                                <i class="bx bx-upload label-icon"></i> Upload Farmers List (Excel)
+                                            </button>
+                                            <a href="farmer-add.html" class="btn btn-primary waves-effect waves-light text-uppercase">
+                                                <i class="bx bx-user-plus label-icon"></i> Add Single Farmer
+                                            </a>
+                                        </div>
+                                       
+                                    </div>
+                                   
+                                </div>
+
+                                <div class="card-header bg-white border-bottom py-3">
+                                    <div class="btn-toolbar  d-flex justify-content-between align-items-center w-100" role="toolbar">
+                                        <div class="flex-grow-1">
+                                          <div class="search-box mb-0 me-3">
+                                              <div class="position-relative">
+                                                  <input type="text" class="form-control bg-light border-light rounded" placeholder="Search..." fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                                                  <i class="bx bx-search-alt search-icon"></i>
+                                              </div>
+                                          </div>
+                                        </div>
+          
+                                          <div class="d-flex">
+                                              <div class="d-flex align-items-center">
+                                                  <div class="d-flex justify-content-between">
+                                                      <div class="float-end d-flex ">
+                                                          <div class="input-group fw-semibold text-uppercase me-3">
+                                                              <label class="input-group-text text-uppercase">Status</label>
+                                                              <select class="form-select ">
+                                                                  <option value="" disabled>Select Status</option>
+                                                                  <option value="All Patients" selected="">All Statuses</option>
+                                                                  <option value="Inpatient">Active</option>
+                                                                  <option value="Outpatient">Inactive</option>                                                        
+                                                              </select>
+                                                          </div>
+          
+                                                          <div class="input-group fw-semibold text-uppercase" title="Select the starting date to filter records based on the last edit date.">
+                                                            <label class="input-group-text text-uppercase">From:</label>
+                                                            <input class="form-control form-control-sm" type="date" value="2019-08-19" id="last-edit-from">
+                                                        </div>
+                                                        
+                                                        <div class="input-group fw-semibold text-uppercase" title="Select the ending date to filter records based on the last edit date.">
+                                                            <label class="input-group-text text-uppercase">To:</label>
+                                                            <input class="form-control form-control-sm" type="date" value="2019-08-19" id="last-edit-to">
+                                                        </div>
+                                                        
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              
+          
+                                          </div>
+          
+          
+                                      </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table align-middle table-hover contacts-table text-uppercase border table-striped text-nowrap"  id="datatable-button">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th scope="col">SN</th>
+                                                    <th scope="col">Farmer</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Email</th>
+                                                    <th scope="col">Phone</th>
+                                                    <th scope="col">County</th>
+                                                    <th scope="col">ID No.</th>
+                                                    <th scope="col">Ranche(s)</th>
+                                                    <th>Livestock</th>
+                                                    <th>Acres</th>
+                                                    <th>Added By</th>
+                                                    <th>Verrification</th>
+                                                    <th>Status</th>
+                                                    <th class="text-right">Actions</th>                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody class="border">
+                                                <tr>
+                                                    <td>1.</td>
+                                                    <td>Kelvin Njuguna</td>
+                                                    <td>10 Oct 2025</td>
+                                                    <td><a href="mailto:kelvin.njuguna@example.com">kelvin.njuguna@example.com</a></td>
+                                                    <td><a href="tel:0704549859">0704549859</a></td>
+                                                    <td>Arujo Ward, Homa Bay County</td>
+                                                    <td>7979979</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">5 Ranches </a></td>
+                                                    <td><a href="farmer-livestock.html">1250</a></td>
+                                                    <td>475 acres</td>
+                                                    <td>John Kamau</td>
+                                                    <td><span class="badge bg-success">Verified</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2.</td>
+                                                    <td>Faith Wambui</td>
+                                                    <td>15 Oct 2025</td>
+                                                    <td><a href="mailto:faith.wambui@example.com">faith.wambui@example.com</a></td>
+                                                    <td><a href="tel:0722456789">0722456789</a></td>
+                                                    <td>Gatundu North, Kiambu County</td>
+                                                    <td>23564187</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">2 Ranches </a></td>
+                                                    <td><a href="farmer-livestock.html">350</a></td>
+                                                    <td>250 acres</td>
+                                                    <td>Self Registration</td>
+                                                    <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.</td>
+                                                    <td>Joseph Kamau</td>
+                                                    <td>18 Oct 2025</td>
+                                                    <td><a href="mailto:joseph.kamau@example.com">joseph.kamau@example.com</a></td>
+                                                    <td><a href="tel:0733789456">0733789456</a></td>
+                                                    <td>Kinango, Kwale County</td>
+                                                    <td>19876543</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">3 Ranches </a></td>
+                                                    <td><a href="farmer-livestock.html">450</a></td>
+                                                    <td>380 acres</td>
+                                                    <td>Alice Wairimu</td>
+                                                    <td><span class="badge bg-success">Verified</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4.</td>
+                                                    <td>Mary Atieno</td>
+                                                    <td>22 Oct 2025</td>
+                                                    <td><a href="mailto:mary.atieno@example.com">mary.atieno@example.com</a></td>
+                                                    <td><a href="tel:0712345678">0712345678</a></td>
+                                                    <td>Kisumu East, Kisumu County</td>
+                                                    <td>24563198</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">1 Ranch </a></td>
+                                                    <td><a href="farmer-livestock.html">180</a></td>
+                                                    <td>150 acres</td>
+                                                    <td>Self Registration</td>
+                                                    <td><span class="badge bg-danger">Rejected</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5.</td>
+                                                    <td>Daniel Kipchirchir</td>
+                                                    <td>25 Oct 2025</td>
+                                                    <td><a href="mailto:daniel.kipchirchir@example.com">daniel.kipchirchir@example.com</a></td>
+                                                    <td><a href="tel:0758963214">0758963214</a></td>
+                                                    <td>Marakwet East, Elgeyo-Marakwet County</td>
+                                                    <td>32145698</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">4 Ranches </a></td>
+                                                    <td><a href="farmer-livestock.html">520</a></td>
+                                                    <td>420 acres</td>
+                                                    <td>Peter Omondi</td>
+                                                    <td><span class="badge bg-success">Verified</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6.</td>
+                                                    <td>Sarah Mwende</td>
+                                                    <td>28 Oct 2025</td>
+                                                    <td><a href="mailto:sarah.mwende@example.com">sarah.mwende@example.com</a></td>
+                                                    <td><a href="tel:0745632178">0745632178</a></td>
+                                                    <td>Kyangwithya, Kitui County</td>
+                                                    <td>25896314</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">2 Ranches </a></td>
+                                                    <td><a href="farmer-livestock.html">250</a></td>
+                                                    <td>230 acres</td>
+                                                    <td>George Mutua</td>
+                                                    <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-warning me-1"></i> Pending</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7.</td>
+                                                    <td>James Odhiambo</td>
+                                                    <td>01 Nov 2025</td>
+                                                    <td><a href="mailto:james.odhiambo@example.com">james.odhiambo@example.com</a></td>
+                                                    <td><a href="tel:0789654123">0789654123</a></td>
+                                                    <td>Nyakach, Kisumu County</td>
+                                                    <td>18965432</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">3 Ranches </a></td>
+                                                    <td><a href="farmer-livestock.html">380</a></td>
+                                                    <td>320 acres</td>
+                                                    <td>Susan Auma</td>
+                                                    <td><span class="badge bg-success">Verified</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8.</td>
+                                                    <td>Elizabeth Wanjiku</td>
+                                                    <td>05 Nov 2025</td>
+                                                    <td><a href="mailto:elizabeth.wanjiku@example.com">elizabeth.wanjiku@example.com</a></td>
+                                                    <td><a href="tel:0723456789">0723456789</a></td>
+                                                    <td>Githioro, Nakuru County</td>
+                                                    <td>23145678</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">1 Ranch </a></td>
+                                                    <td><a href="farmer-livestock.html">150</a></td>
+                                                    <td>120 acres</td>
+                                                    <td>Self Registration</td>
+                                                    <td><span class="badge bg-success">Verified</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9.</td>
+                                                    <td>Samson Kiprotich</td>
+                                                    <td>09 Nov 2025</td>
+                                                    <td><a href="mailto:samson.kiprotich@example.com">samson.kiprotich@example.com</a></td>
+                                                    <td><a href="tel:0712587496">0712587496</a></td>
+                                                    <td>Tapsagoi, Nandi County</td>
+                                                    <td>25874136</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">2 Ranches </a></td>
+                                                    <td><a href="farmer-livestock.html">290</a></td>
+                                                    <td>250 acres</td>
+                                                    <td>Jane Chebet</td>
+                                                    <td><span class="badge bg-danger">Rejected</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-danger me-1"></i> Inactive</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10.</td>
+                                                    <td>Ruth Mumbi</td>
+                                                    <td>12 Nov 2025</td>
+                                                    <td><a href="mailto:ruth.mumbi@example.com">ruth.mumbi@example.com</a></td>
+                                                    <td><a href="tel:0736987412">0736987412</a></td>
+                                                    <td>Mugunda, Nyeri County</td>
+                                                    <td>30214578</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">1 Ranch </a></td>
+                                                    <td><a href="farmer-livestock.html">210</a></td>
+                                                    <td>175 acres</td>
+                                                    <td>Francis Mugo</td>
+                                                    <td><span class="badge bg-success">Verified</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11.</td>
+                                                    <td>David Mwangi</td>
+                                                    <td>15 Nov 2025</td>
+                                                    <td><a href="mailto:david.mwangi@example.com">david.mwangi@example.com</a></td>
+                                                    <td><a href="tel:0756321489">0756321489</a></td>
+                                                    <td>Syokimau, Machakos County</td>
+                                                    <td>27891456</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">3 Ranches </a></td>
+                                                    <td><a href="farmer-livestock.html">350</a></td>
+                                                    <td>300 acres</td>
+                                                    <td>Self Registration</td>
+                                                    <td><span class="badge bg-success">Verified</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12.</td>
+                                                    <td>Grace Akinyi</td>
+                                                    <td>18 Nov 2025</td>
+                                                    <td><a href="mailto:grace.akinyi@example.com">grace.akinyi@example.com</a></td>
+                                                    <td><a href="tel:0745123698">0745123698</a></td>
+                                                    <td>Rusinga, Homa Bay County</td>
+                                                    <td>18529637</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">2 Ranches </a></td>
+                                                    <td><a href="farmer-livestock.html">260</a></td>
+                                                    <td>220 acres</td>
+                                                    <td>Paul Otieno</td>
+                                                    <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13.</td>
+                                                    <td>Peter Mutembei</td>
+                                                    <td>22 Nov 2025</td>
+                                                    <td><a href="mailto:peter.mutembei@example.com">peter.mutembei@example.com</a></td>
+                                                    <td><a href="tel:0789654321">0789654321</a></td>
+                                                    <td>Akachiu, Meru County</td>
+                                                    <td>28963147</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">1 Ranch </a></td>
+                                                    <td><a href="farmer-livestock.html">290</a></td>
+                                                    <td>160 acres</td>
+                                                    <td>Grace Karimi</td>
+                                                    <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-warning me-1"></i> Pending</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14.</td>
+                                                    <td>Esther Nyambura</td>
+                                                    <td>25 Nov 2025</td>
+                                                    <td><a href="mailto:esther.nyambura@example.com">esther.nyambura@example.com</a></td>
+                                                    <td><a href="tel:0712369854">0712369854</a></td>
+                                                    <td>Limuru, Kiambu County</td>
+                                                    <td>21478963</td>
+                                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#ranchesModal" class="view-ranches">4 Ranches </a></td>
+                                                    <td><a href="farmer-livestock.html">480 </a></td>
+                                                    <td>395 acres</td>
+                                                    <td>Self Registration</td>
+                                                    <td><span class="badge bg-success">Verified</span></td>
+                                                    <td><p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success me-1"></i> Active</p></td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="farmer-add.html" class="btn btn-sm btn-success text-uppercase" title="Edit Farm">Edit</a>
+                                                            <a href="farmer-details.html" class="btn btn-sm btn-info text-uppercase mx-2" title="View Farm Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".deactivate-department" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Deactivate Farm">
+                                                                <div>Deactivate</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+
+                    <!-- end row -->
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <!-- ranches modal -->
+           <!-- Ranch Modal - Start -->
+        <!-- Ranches Modal -->
+       <!-- Ranch Modal - Start -->
+<!-- Ranches Modal -->
+<div class="modal fade" id="ranchesModal" tabindex="-1" aria-labelledby="ranchesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-uppercase" id="ranchesModalLabel">Kelvin Njuguna's Ranches</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ranch-list">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped text-uppercase">
+                    <thead class="table-dark">
+                      <tr>
+                        <th>#</th>
+                        <th>Ranch Name</th>
+                        <th>Zone</th>
+                        <th>Ownership Type</th>
+                        <th>Land Size</th>
+                        <th>Cattle</th>
+                        <th>Goats</th>
+                        <th>Sheep</th>
+                        <th>Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Greendale Ranch</td>
+                        <td>Syokimau, Machakos County</td>
+                        <td>Private Ownership</td>
+                        <td>175 acres</td>
+                        <td>120</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td><strong>200</strong></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Hillcrest Farm</td>
+                        <td>Githioro, Nakuru County</td>
+                        <td>Leased</td>
+                        <td>120 acres</td>
+                        <td>85</td>
+                        <td>120</td>
+                        <td>45</td>
+                        <td><strong>250</strong></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Riverside Pastures</td>
+                        <td>Mugunda, Nyeri County</td>
+                        <td>Family Trust</td>
+                        <td>80 acres</td>
+                        <td>150</td>
+                        <td>30</td>
+                        <td>20</td>
+                        <td><strong>200</strong></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Lakeside Ranch</td>
+                        <td>Ilchamus, Baringo County</td>
+                        <td>Cooperative</td>
+                        <td>50 acres</td>
+                        <td>200</td>
+                        <td>80</td>
+                        <td>120</td>
+                        <td><strong>400</strong></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Island View</td>
+                        <td>Rusinga, Homa Bay County</td>
+                        <td>Private Ownership</td>
+                        <td>50 acres</td>
+                        <td>70</td>
+                        <td>90</td>
+                        <td>40</td>
+                        <td><strong>200</strong></td>
+                      </tr>
+                    </tbody>
+                    <tfoot class="table-light">
+                      <tr>
+                        <td colspan="4" class="text-end"><strong>Total:</strong></td>
+                        <td><strong>475 acres</strong></td>
+                        <td><strong>625</strong></td>
+                        <td><strong>370</strong></td>
+                        <td><strong>255</strong></td>
+                        <td><strong>1,250</strong></td>
+                      </tr>
+                    </tfoot>
+                  </table>
+            </div>
+
+            
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Ranch Modal - End -->
+        <!-- Ranch Modal - End -->
+            <!-- end of ranches modal -->
+
+            <!-- Creating new department -->
+            <div class="modal fade new-department" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content modal-md">
+                        <div class="modal-header border-bottom-0">
+                            <h4 class="modal-title text-uppercase">Create New Department</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="department-name" class="form-label">Department Name<strong class="text-danger fw-bold">*</strong></label>
+                                        <input type="text" class="form-control" id="department-name" placeholder="Enter Department Name" spellcheck="false" required>
+                                    </div>
+                                </div>
+
+                              
+
+                                <div class="col-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="assigned-manager" class="form-label">Assigned Manager</label>
+                                        <input type="text" class="form-control" id="assigned-manager" placeholder="Enter Manager Name" spellcheck="false" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="formrow-inputState" class="form-label">Status<strong class="text-danger fw-bold">*</strong></label>
+                                        <select id="formrow-inputState" class="form-select" required>
+                                            <option disabled selected>Select Status</option>
+                                            <option>Active</option>
+                                            <option>Inactive</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            
+                                <div class="col-12 mb-3">
+                                    <div class="mb-3">
+                                        <label for="role-description" class="form-label">Department Description</label>
+                                        <textarea id="role-description" placeholder="Enter Description" class="form-control" rows="3" spellcheck="false" required></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex flex-wrap gap-2 text-uppercase">
+                                <button type="submit" class="btn btn-primary waves-effect waves-light">
+                                    Save
+                                </button>
+                                <button type="reset" class="btn btn-secondary waves-effect" data-bs-dismiss="modal">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of new department -->
+
+
+            <!-- editing existing designation -->
+            <!-- Edit Department Modal -->
+            <div class="modal fade edit-department" tabindex="-1" role="dialog" aria-hidden="true" id="edit-department-modal">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content modal-md">
+                        <div class="modal-header border-bottom-0">
+                            <h4 class="modal-title text-uppercase">Edit Department</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="department-name" class="form-label">Department Name<strong class="text-danger fw-bold">*</strong></label>
+                                        <input type="text" class="form-control" id="department-name" value="Marketing Department">
+                                    </div>
+                                </div>
+
+                              
+
+                                <div class="col-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="assigned-manager" class="form-label">Assigned Manager</label>
+                                        <input type="text" class="form-control" id="assigned-manager" value="Dr. Smith">
+                                    </div>
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="formrow-inputState" class="form-label">Status<strong class="text-danger fw-bold">*</strong></label>
+                                        <select id="formrow-inputState" class="form-select">
+                                            <option value="Active" selected>Active</option>
+                                            <option value="Inactive">Inactive</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                               
+
+                                <div class="col-12 mb-3">
+                                    <div class="mb-3">
+                                        <label for="role-description" class="form-label">Department Description</label>
+                                        <textarea id="role-description" class="form-control" rows="3">Marketing department responsible for promoting company products and managing brand visibility.</textarea>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex flex-wrap gap-2 text-uppercase">
+                                <button type="submit" class="btn btn-primary waves-effect waves-light">
+                                    Save Changes
+                                </button>
+                                <button type="button" class="btn btn-secondary waves-effect" data-bs-dismiss="modal">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of edit department -->
+
+            
+            <!-- end of editing -->
+
+            <!-- modal for deactivating designation -->
+            <div class="modal fade deactivate-department" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content modal-md">
+                        <div class="modal-header border-bottom-0">
+                            <h4 class="modal-title text-uppercase">Deactivate Department</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to deactivate the department <strong class="text-primary">Marketing  Department</strong>?</p>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <label for="deactivation-reason" class="form-label">Reason for Deactivation (Optional)</label>
+                                    <textarea id="deactivation-reason" placeholder="Provide reason for deactivation" class="form-control" rows="3" spellcheck="false"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex flex-wrap gap-2 text-uppercase">
+                                <button type="submit" class="btn btn-danger waves-effect waves-light">
+                                    Confirm Deactivation
+                                </button>
+                                <button type="button" class="btn btn-secondary waves-effect" data-bs-dismiss="modal">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            
+             <!-- end of deactivation -->
+
+
+            <footer class="footer ">
+                <div class="container-fluid ">
+                    <div class="row ">
+                        <div class="col-sm-6 ">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © Hospital Management Information System
+                        </div>
+                        <div class="col-sm-6 ">
+                            <div class="text-sm-end d-sm-block ">
+                                2024
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay "></div>
+
+    <script src="assets/libs/jquery/jquery.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js "></script>
+    <script src="assets/libs/simplebar/simplebar.min.js "></script>
+    <script src="assets/libs/node-waves/waves.min.js "></script>
+
+
+
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js "></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js "></script>
+    <!-- Buttons examples -->
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js "></script>
+    <script src="assets/libs/jszip/jszip.min.js "></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js "></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js "></script>
+    <!-- numerals number formater -->
+    <script src="assets/libs/numeral/numeral.js "></script>
+
+    <!-- Responsive examples -->
+    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js "></script>
+    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js "></script>
+
+    <!-- Bootstrap select -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js "></script>
+    <!-- Plugins js -->
+    <script src="assets/libs/dropzone/min/dropzone.min.js "></script>
+    <!-- Datatable init js -->
+    <script src="assets/js/pages/datatables.init.js "></script>
+
+     <!-- owl.carousel js -->
+     <script src="assets/libs/owl.carousel/owl.carousel.min.js"></script>
+
+     <!-- timeline init js -->
+     <script src="assets/js/pages/timeline.init.js"></script>
+
+      <!-- Table Editable plugin -->
+    <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
+    <script src="assets/js/pages/table-editable.int.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js "></script>
+    <script src="assets/js/custom.js "></script>
+</body>
+
+
+<!-- By Kelvin Njuguna   13:55:49 GMT -->
+
+</html>
