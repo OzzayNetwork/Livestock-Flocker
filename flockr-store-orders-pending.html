@@ -1322,43 +1322,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <!-- Order Status -->
-                                <div class="col-md-6">
-                                    <div class="mt-3">
-                                        <h5 class="font-size-18 mb-2">Order Status</h5>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="allStatus"
-                                                checked>
-                                            <label class="form-check-label" for="allStatus">
-                                                All Statuses
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="pendingStatus">
-                                            <label class="form-check-label" for="pendingStatus">
-                                                Pending
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="processingStatus">
-                                            <label class="form-check-label" for="processingStatus">
-                                                Processing
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="inTransitStatus">
-                                            <label class="form-check-label" for="inTransitStatus">
-                                                In Transit
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="deliveredStatus">
-                                            <label class="form-check-label" for="deliveredStatus">
-                                                Delivered
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+                               
 
                                 <!-- Order Date Range -->
                                 <div class="col-md-6">
@@ -1379,7 +1343,7 @@
 
                                 <!-- Expected Delivery Date -->
                                 <div class="col-md-6">
-                                    <div class="mt-4">
+                                    <div class="mt-3">
                                         <h5 class="font-size-18 mb-2">Expected Delivery Date</h5>
                                         <div class="row">
                                             <div class="col-6">
@@ -1425,25 +1389,7 @@
                                     </div>
                                 </div>
 
-                                <!-- RFID Tagged Animals -->
-                                <div class="col-md-6">
-                                    <div class="mt-4">
-                                        <h5 class="font-size-18 mb-2">RFID Tagged Animals</h5>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="allAnimals"
-                                                checked>
-                                            <label class="form-check-label" for="allAnimals">
-                                                All Animals
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="taggedAnimals">
-                                            <label class="form-check-label" for="taggedAnimals">
-                                                Show Tagged Animals Only
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+                              
 
                                 <!-- Gender -->
                                 <div class="col-md-6">
@@ -1797,27 +1743,54 @@
                 <!-- order details modal -->
                 <div class="modal fade order-details" id="order-details" tabindex="-1" aria-labelledby="orderDetailsLabel"
                 aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-dialog modal-dialog-centered modal-fullscreen">
                     <div class="modal-content">
                         <div class="modal-header bg-dark text-white">
                             <h5 class="modal-title text-white" id="orderDetailsLabel">
                                 <i class="mdi mdi-clipboard-list me-1"></i> Livestock Order Details
                             </h5>
-                            <button type="button" class="btn-close bg-white" data-dismiss="modal"
-                                aria-label="Close"></button>
+                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                aria-bs-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-sm-6 mb-2">
-                                    <address>
-                                        <strong>Billed To:</strong><br>
-                                        John Mwangi<br>
-                                        Loresho Gardens, House No. 14<br>
-                                        Waiyaki Way<br>
-                                        Nairobi, Kenya<br>
-                                        P.O. Box 12345-00100
-                                    </address>
+                                <div class="col-12 p-3">
+                                    <div class="alert alert-info mb-0 p-3">
+                                        <div class="row">
+                                            <div class="col-12 text-center text-uppercase">
+                                                <h4>Order No. ORD123456789</h4>
+                                                <p>Order placed by John Mwangi</p>
+                                                <hr>
+                                            </div>
+                                            <!-- Customer / Order Details Column -->
+                                            <div class="col-sm-6">
+                                                <address>
+                                                    <strong class="text-uppercase">Customer Details:</strong><br>
+                                                    Name: John Mwangi<br>
+                                                    Address: Loresho Gardens, House No. 14, Waiyaki Way<br>
+                                                    City: Nairobi<br>
+                                                    P.O. Box: 12345-00100<br>
+                                                    Phone: +254 712 345678<br>
+                                                    Email: john.mwangi@example.com<br>
+                                                    Order Date: 10 Jan 2024 12:34 PM
+                                                </address>
+                                            </div>
+                                            <!-- Payment Details Column -->
+                                            <div class="col-sm-6 text-sm-end">
+                                                <address class="mt-2 mt-sm-0">
+                                                    <strong class="text-uppercase">Payment Details</strong><br>
+                                                    Payment Status: <span class="text-success">Paid</span><br>
+                                                    Payment Method: MPESA<br>
+                                                    Transaction Code: QJD7T9H2XY<br>
+                                                    Amount Paid: KES 162,000<br>
+                                                    MPESA Number: +254 712 345678<br>
+                                                    Payment Date: 10 Jan 2024 3:30 PM<br>
+                                                </address>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                
                                 
                                 <div class="col-12">
                                     <div class="table-responsive">
@@ -1891,6 +1864,7 @@
                                         </table>
                                     </div>
                                 </div>
+                               
                             </div>
                             
                             <!-- Costs Summary Table -->
@@ -1927,7 +1901,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            aria-bs-label="Close">
                                 <i class="mdi mdi-close me-1"></i> Close
                             </button>
                             <button type="button" class="btn btn-primary">
