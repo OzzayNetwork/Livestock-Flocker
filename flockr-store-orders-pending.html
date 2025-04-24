@@ -1871,7 +1871,7 @@
                             <div class="row mt-4">
                                 <div class="col-md-6 offset-md-6">
                                     <div class="card">
-                                        <div class="card-body">
+                                        <div class="card-body border-bottom-1">
                                             <h5 class="card-title mb-3">Order Summary</h5>
                                             <div class="table-responsive">
                                                 <table class="table mb-0">
@@ -1915,6 +1915,99 @@
             </div>
                 <!-- end of order details modal -->
 
+                <!-- canceling an order -->
+                <div class="modal fade cancel-order" id="cancel-order-modal" tabindex="-1" aria-labelledby="cancelOrderModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger text-white">
+                            <h5 class="modal-title text-white" id="cancelOrderModalLabel">
+                                <i class="mdi mdi-close-circle-outline me-1"></i> Cancel Order
+                            </h5>
+                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="text-center mb-4">
+                                <i class="mdi mdi-alert-circle-outline text-warning display-4"></i>
+                                <h4 class="mt-2">Are you sure you want to cancel this order?</h4>
+                                <p class="text-muted mx-4">This action cannot be undone. All selected livestock will be returned to inventory.</p>
+                            </div>
+            
+                            <div class="card mb-3">
+                                <div class="card-body bg-light">
+                                    <h6 class="card-title">Order Details</h6>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="mb-0 text-muted">Order ID:</p>
+                                            <h6>#ORD-2023-45789</h6>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="mb-0 text-muted">Order Date:</p>
+                                            <h6>April 20, 2025</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-sm-6">
+                                            <p class="mb-0 text-muted">Customer:</p>
+                                            <h6>John Kamau</h6>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="mb-0 text-muted">Total Amount:</p>
+                                            <h6>KES 162,000</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="mb-3">
+                                <label for="cancellation-reason" class="form-label">Reason for Cancellation</label>
+                                <select class="form-select" id="cancellation-reason" required>
+                                    <option value="" selected disabled>Select a reason</option>
+                                    <option value="customer-request">Customer Request</option>
+                                    <option value="payment-issue">Payment Issue</option>
+                                    <option value="livestock-unavailable">Livestock No Longer Available</option>
+                                    <option value="delivery-issue">Delivery Logistics Issue</option>
+                                    <option value="price-change">Price Dispute</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+            
+                            <div class="mb-3">
+                                <label for="cancellation-notes" class="form-label">Additional Notes</label>
+                                <textarea class="form-control" id="cancellation-notes" rows="3" placeholder="Please provide any additional details about this cancellation..."></textarea>
+                            </div>
+            
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="notify-customer">
+                                <label class="form-check-label" for="notify-customer">
+                                    Notify customer about this cancellation
+                                </label>
+                            </div>
+            
+                            <div class="alert alert-warning">
+                                <div class="d-flex align-items-center">
+                                    <i class="mdi mdi-information-outline me-2 font-size-18"></i>
+                                    <div>
+                                        <h6 class="alert-heading mb-1">Cancellation Policy</h6>
+                                        <p class="mb-0">Orders canceled within 24 hours of delivery may be subject to a restocking fee. All applicable refunds will be processed within 5-7 business days.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                <i class="mdi mdi-close me-1"></i> Close
+                            </button>
+                            <button type="button" class="btn btn-danger" id="confirm-cancel-order">
+                                <i class="mdi mdi-check me-1"></i> Confirm Cancellation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- end of order cancalation -->
+
 
 
 
@@ -1926,7 +2019,7 @@
                         <div class="col-sm-6 ">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> © Hospital Management Information System
+                            </script> © Flockr Dashboard
                         </div>
                         <div class="col-sm-6 ">
                             <div class="text-sm-end d-sm-block ">
