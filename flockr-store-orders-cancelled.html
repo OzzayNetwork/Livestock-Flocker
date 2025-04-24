@@ -535,13 +535,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Fullfiled Deliveries</h4>
+                                <h4 class="mb-sm-0 font-size-18">Cancelled Orders</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Orders</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Fullfiled Deliveries</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Cancelled Orders</a></li>
                                     </ol>
                                 </div>
 
@@ -801,215 +801,55 @@
                                                     <th>Delivery Form</th>
                                                     <th>Total (KES)</th>
                                                     <th>Due Date</th>
-                                                    <th class="text-right">Actions</th>                                                    
+                                                    <th>Cancellation Date</th>
+                                                    <th>Cancellation Reason</th>
+                                                    <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody class="border">
                                                 <tr>
                                                     <td>1.</td>
-                                                    <td>LST-25-0001</td>
-                                                    <td>John Kamau</td>
-                                                    <td>10 Apr 2025</td>
-                                                    <td><a href="mailto:john.kamau@example.com">john.kamau@example.com</a></td>
-                                                    <td><a href="tel:0704549859">0704549859</a></td>
-                                                    <td>Homa Bay County</td>
-                                                    <td>Cattle</td>
-                                                    <td>2</td>
-                                                    <td>Live Animal</td>
-                                                    <td>120,000</td>
-                                                    <td>15 Apr 2025</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                           
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
-                                                                <div>Cancel</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2.</td>
                                                     <td>LST-25-0002</td>
                                                     <td>Faith Wambui</td>
                                                     <td>15 Apr 2025</td>
-                                                    <td><a href="mailto:faith.wambui@example.com">faith.wambui@example.com</a></td>
-                                                    <td><a href="tel:0722456789">0722456789</a></td>
+                                                    <td>faith.wambui@example.com</td>
+                                                    <td>0722456789</td>
                                                     <td>Kiambu County</td>
                                                     <td>Goat</td>
                                                     <td>5</td>
                                                     <td>Processed Meat</td>
                                                     <td>45,000</td>
                                                     <td>20 Apr 2025</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                           
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
-                                                                <div>Cancel</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3.</td>
-                                                    <td>LST-25-0003</td>
-                                                    <td>Joseph Kamau</td>
                                                     <td>18 Apr 2025</td>
-                                                    <td><a href="mailto:joseph.kamau@example.com">joseph.kamau@example.com</a></td>
-                                                    <td><a href="tel:0733789456">0733789456</a></td>
-                                                    <td>Kwale County</td>
-                                                    <td>Sheep</td>
-                                                    <td>3</td>
-                                                    <td>Live Animal</td>
-                                                    <td>36,000</td>
-                                                    <td>25 Apr 2025</td>
+                                                    <td>Customer requested cancellation</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                            
                                                             <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
-                                                                <div>Cancel</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                           
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>4.</td>
+                                                    <td>2.</td>
                                                     <td>LST-25-0004</td>
                                                     <td>Mary Atieno</td>
                                                     <td>22 Apr 2025</td>
-                                                    <td><a href="mailto:mary.atieno@example.com">mary.atieno@example.com</a></td>
-                                                    <td><a href="tel:0712345678">0712345678</a></td>
+                                                    <td>mary.atieno@example.com</td>
+                                                    <td>0712345678</td>
                                                     <td>Kisumu County</td>
                                                     <td>Cattle</td>
                                                     <td>1</td>
                                                     <td>Processed Meat</td>
                                                     <td>65,000</td>
                                                     <td>30 Apr 2025</td>
+                                                    <td>23 Apr 2025</td>
+                                                    <td>Payment issues</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                            
                                                             <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
-                                                                <div>Cancel</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5.</td>
-                                                    <td>LST-25-0005</td>
-                                                    <td>Daniel Kipchirchir</td>
-                                                    <td>25 Apr 2025</td>
-                                                    <td><a href="mailto:daniel.kipchirchir@example.com">daniel.kipchirchir@example.com</a></td>
-                                                    <td><a href="tel:0758963214">0758963214</a></td>
-                                                    <td>Elgeyo-Marakwet County</td>
-                                                    <td>Goat</td>
-                                                    <td>8</td>
-                                                    <td>Live Animal</td>
-                                                    <td>72,000</td>
-                                                    <td>02 May 2025</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                           
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
-                                                                <div>Cancel</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>6.</td>
-                                                    <td>LST-25-0006</td>
-                                                    <td>Sarah Mwende</td>
-                                                    <td>28 Apr 2025</td>
-                                                    <td><a href="mailto:sarah.mwende@example.com">sarah.mwende@example.com</a></td>
-                                                    <td><a href="tel:0745632178">0745632178</a></td>
-                                                    <td>Kitui County</td>
-                                                    <td>Sheep</td>
-                                                    <td>4</td>
-                                                    <td>Processed Meat</td>
-                                                    <td>48,000</td>
-                                                    <td>05 May 2025</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                           
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
-                                                                <div>Cancel</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>7.</td>
-                                                    <td>LST-25-0007</td>
-                                                    <td>James Odhiambo</td>
-                                                    <td>01 May 2025</td>
-                                                    <td><a href="mailto:james.odhiambo@example.com">james.odhiambo@example.com</a></td>
-                                                    <td><a href="tel:0789654123">0789654123</a></td>
-                                                    <td>Kisumu County</td>
-                                                    <td>Cattle</td>
-                                                    <td>3</td>
-                                                    <td>Live Animal</td>
-                                                    <td>180,000</td>
-                                                    <td>10 May 2025</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                           
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
-                                                                <div>Cancel</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>8.</td>
-                                                    <td>LST-25-0008</td>
-                                                    <td>Elizabeth Wanjiku</td>
-                                                    <td>05 May 2025</td>
-                                                    <td><a href="mailto:elizabeth.wanjiku@example.com">elizabeth.wanjiku@example.com</a></td>
-                                                    <td><a href="tel:0723456789">0723456789</a></td>
-                                                    <td>Nakuru County</td>
-                                                    <td>Goat</td>
-                                                    <td>10</td>
-                                                    <td>Processed Meat</td>
-                                                    <td>90,000</td>
-                                                    <td>15 May 2025</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                           
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
-                                                                <div>Cancel</div>
-                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                            
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -1862,6 +1702,14 @@
                                             </tbody>
                                             
                                         </table>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 p-3">
+                                    <div class="alert alert-danger mb-0 p-3">
+                                        <p class="p-0 m-0"> 	
+                                            <strong>Reason For Cancelation:</strong> Customer requested cancellation	
+                                        </p>
                                     </div>
                                 </div>
                                
