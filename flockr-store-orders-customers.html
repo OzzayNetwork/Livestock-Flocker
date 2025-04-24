@@ -574,7 +574,7 @@
                                             <button type="button" class="btn btn-light waves-effect me-2" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <i class="bx bxs-hide font-size-16 me-1 align-middle"></i> Hide fields
                                             </button>
-                                            
+                                        
                                             <div class="dropdown-menu p-4" style="width: 300px;">
                                                 <div class="row">
                                                     <div class="col-12">
@@ -583,61 +583,34 @@
                                                     <div class="col-12 mb-2">
                                                         <hr>
                                                     </div>
-                                                   
+                                        
                                                     <div class="col-12 mb-3">
                                                         <div class="form-check form-switch mb-2">
-                                                            <input class="form-check-input" type="checkbox" id="column-order-id" checked>
-                                                            <label class="form-check-label" for="column-order-id">Order ID</label>
-                                                        </div>
-                                                        <div class="form-check form-switch mb-2">
-                                                            <input class="form-check-input" type="checkbox" id="column-num-items" checked>
-                                                            <label class="form-check-label" for="column-num-items">Number of Items</label>
-                                                        </div>
-                                                        <div class="form-check form-switch mb-2">
                                                             <input class="form-check-input" type="checkbox" id="column-customer-name" checked>
-                                                            <label class="form-check-label" for="column-customer-name">Customer's Name</label>
+                                                            <label class="form-check-label" for="column-customer-name">Customer Name</label>
                                                         </div>
                                                         <div class="form-check form-switch mb-2">
-                                                            <input class="form-check-input" type="checkbox" id="column-date-ordered" checked>
-                                                            <label class="form-check-label" for="column-date-ordered">Date Ordered</label>
+                                                            <input class="form-check-input" type="checkbox" id="column-email" checked>
+                                                            <label class="form-check-label" for="column-email">Email</label>
                                                         </div>
                                                         <div class="form-check form-switch mb-2">
-                                                            <input class="form-check-input" type="checkbox" id="column-delivery-address" checked>
-                                                            <label class="form-check-label" for="column-delivery-address">Delivery Address</label>
+                                                            <input class="form-check-input" type="checkbox" id="column-location" checked>
+                                                            <label class="form-check-label" for="column-location">Location</label>
                                                         </div>
                                                         <div class="form-check form-switch mb-2">
-                                                            <input class="form-check-input" type="checkbox" id="column-phone-number" checked>
-                                                            <label class="form-check-label" for="column-phone-number">Phone Number</label>
+                                                            <input class="form-check-input" type="checkbox" id="column-orders" checked>
+                                                            <label class="form-check-label" for="column-orders">Number of Orders</label>
                                                         </div>
                                                         <div class="form-check form-switch mb-2">
-                                                            <input class="form-check-input" type="checkbox" id="column-animal" checked>
-                                                            <label class="form-check-label" for="column-animal">Animal(s)</label>
-                                                        </div>
-                                                        <div class="form-check form-switch mb-2">
-                                                            <input class="form-check-input" type="checkbox" id="column-animal-type" checked>
-                                                            <label class="form-check-label" for="column-animal-type">Animal Type</label>
-                                                        </div>
-                                                        <div class="form-check form-switch mb-2">
-                                                            <input class="form-check-input" type="checkbox" id="column-breed" checked>
-                                                            <label class="form-check-label" for="column-breed">Breed</label>
-                                                        </div>
-                                                        <div class="form-check form-switch mb-2">
-                                                            <input class="form-check-input" type="checkbox" id="column-weight" checked>
-                                                            <label class="form-check-label" for="column-weight">Weight</label>
-                                                        </div>
-                                                        <div class="form-check form-switch mb-2">
-                                                            <input class="form-check-input" type="checkbox" id="column-gender" checked>
-                                                            <label class="form-check-label" for="column-gender">Gender</label>
+                                                            <input class="form-check-input" type="checkbox" id="column-joined" checked>
+                                                            <label class="form-check-label" for="column-joined">Join Date</label>
                                                         </div>
                                                         <div class="form-check form-switch mb-2">
                                                             <input class="form-check-input" type="checkbox" id="column-status" checked>
-                                                            <label class="form-check-label" for="column-status">Delivery Status</label>
-                                                        </div>
-                                                        <div class="form-check form-switch mb-2">
-                                                            <input class="form-check-input" type="checkbox" id="column-expected-date" checked>
-                                                            <label class="form-check-label" for="column-expected-date">Expected Delivery Date</label>
+                                                            <label class="form-check-label" for="column-status">Status</label>
                                                         </div>
                                                     </div>
+                                        
                                                     <div class="col-12">
                                                         <button type="button" class="btn btn-sm btn-outline-primary me-2">Show All</button>
                                                         <button type="button" class="btn btn-sm btn-outline-danger">Hide All</button>
@@ -645,14 +618,17 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
 
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-light waves-effect" data-bs-toggle="dropdown" aria-expanded="false"><i class="bx bx-sort font-size-16 me-1 align-middle"></i> Sort</button>
-                                            
-                                            <div class="dropdown-menu p-4" style="">
+                                            <button type="button" class="btn btn-light waves-effect" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="bx bx-sort font-size-16 me-1 align-middle"></i> Sort
+                                            </button>
+                                        
+                                            <div class="dropdown-menu p-4">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <h5 class="text-capitalize mb-0">Sort by field</h5>
+                                                        <h5 class="text-capitalize mb-0">Sort by</h5>
                                                     </div>
                                                     <div class="col-12 mb-2">
                                                         <hr>
@@ -662,40 +638,37 @@
                                                             <label for="sort-field-select" class="form-label">Field</label>
                                                             <select class="form-select" id="sort-field-select">
                                                                 <option value="" selected disabled>Select field</option>
-                                                                <option value="orderId">Order ID</option>
-                                                                <option value="numItems">Number of Items</option>
-                                                                <option value="customerName">Customer's Name</option>
-                                                                <option value="dateOrdered">Date Ordered</option>
-                                                                <option value="deliveryAddress">Delivery Address</option>
-                                                                <option value="phoneNumber">Phone Number</option>
-                                                                <option value="animal">Animal(s)</option>
-                                                                <option value="animalType">Animal Type</option>
-                                                                <option value="breed">Breed</option>
-                                                                <option value="weight">Weight</option>
-                                                                <option value="gender">Gender</option>
-                                                                <option value="deliveryStatus">Delivery Status</option>
-                                                                <option value="expectedDelivery">Expected Delivery Date</option>
+                                                                <option value="customerName">Customer Name</option>
+                                                                <option value="email">Email</option>
+                                                                <option value="location">Location</option>
+                                                                <option value="orders">Number of Orders</option>
+                                                                <option value="joinedOn">Join Date</option>
+                                                                <option value="status">Status</option>
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    
+                                        
                                                     <div class="col-12">
                                                         <div class="mb-3">
-                                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked="">
-                                                                <label class="btn btn-outline-secondary" for="btnradio4"><i class="bx bx-sort-up"></i> Ascending</label>
-                                                                
-                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
-                                                                <label class="btn btn-outline-secondary" for="btnradio6"><i class="bx bx-sort-down"></i> Descending</label>
+                                                            <div class="btn-group" role="group" aria-label="Sort order">
+                                                                <input type="radio" class="btn-check" name="sortOrder" id="sortAsc" autocomplete="off" checked>
+                                                                <label class="btn btn-outline-secondary" for="sortAsc"><i class="bx bx-sort-up"></i> Ascending</label>
+                                        
+                                                                <input type="radio" class="btn-check" name="sortOrder" id="sortDesc" autocomplete="off">
+                                                                <label class="btn btn-outline-secondary" for="sortDesc"><i class="bx bx-sort-down"></i> Descending</label>
                                                             </div>
                                                         </div>
                                                     </div>
+                                        
                                                     <div class="col-12 mt-4">
-                                                        <button type="button" class="btn btn-outline-danger w-100"><i class="bx bx-trash me-1"></i> Clear Sort</button>
+                                                        <button type="button" class="btn btn-outline-danger w-100">
+                                                            <i class="bx bx-trash me-1"></i> Clear Sort
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        
 
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-light waves-effect mx-2" data-bs-toggle="dropdown" aria-expanded="false"><i class="bx bx-calendar font-size-16 me-1 align-middle"></i> Date Range</button>
@@ -786,78 +759,118 @@
                                
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table align-middle table-hover contacts-table text-uppercase border table-striped text-nowrap" id="datatable-button">
-                                            <thead class="table-light">
+                                        <table class="table align-middle mb-0 table-nowrap table-striped">
+                                            <thead class="table-dark">
                                                 <tr>
-                                                    <th scope="col">SN</th>
-                                                    <th scope="col">Order ID</th>
-                                                    <th scope="col">Customer</th>
-                                                    <th scope="col">Date</th>
-                                                    <th scope="col">Email</th>
-                                                    <th scope="col">Phone</th>
-                                                    <th scope="col">Delivery Address</th>
-                                                    <th scope="col">Animal Type</th>
-                                                    <th scope="col">Quantity</th>
-                                                    <th>Delivery Form</th>
-                                                    <th>Total (KES)</th>
-                                                    <th>Due Date</th>
-                                                    <th>Cancellation Date</th>
-                                                    <th>Cancellation Reason</th>
-                                                    <th></th>
+                                                    <th>Profile</th>
+                                                    <th>Location</th>
+                                                    <th>Purchases</th>
+                                                    <th>Joined On</th>
+                                                    <th>Status</th>
+                                                    <th>Last seen</th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="border">
+                                            <tbody>
                                                 <tr>
-                                                    <td>1.</td>
-                                                    <td>LST-25-0002</td>
-                                                    <td>Faith Wambui</td>
-                                                    <td>15 Apr 2025</td>
-                                                    <td>faith.wambui@example.com</td>
-                                                    <td>0722456789</td>
-                                                    <td>Kiambu County</td>
-                                                    <td>Goat</td>
-                                                    <td>5</td>
-                                                    <td>Processed Meat</td>
-                                                    <td>45,000</td>
-                                                    <td>20 Apr 2025</td>
-                                                    <td>18 Apr 2025</td>
-                                                    <td>Customer requested cancellation</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                           
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
-                                                           
-                                                        </div>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="d-flex align-items-center">
+                                                            <div class="flex-shrink-0 me-3">
+                                                                <img class="rounded-circle avatar-sm" src="assets/images/users/avatar-1.jpg" alt="John Mwangi" height="36">
+                                                            </div>
+                                                            <div class="flex-grow-1 chat-user-box">
+                                                                <p class="user-title m-0">John Mwangi</p>
+                                                                <p class="text-muted m-0">john.mwangi@example.com</p>
+                                                            </div>
+                                                        </a>
                                                     </td>
+                                                    <td>Nairobi</td>
+                                                    <td>15 Orders</td>
+                                                    <td>12th Jan 2024</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                    <td>24th Apr 2025</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>2.</td>
-                                                    <td>LST-25-0004</td>
-                                                    <td>Mary Atieno</td>
-                                                    <td>22 Apr 2025</td>
-                                                    <td>mary.atieno@example.com</td>
-                                                    <td>0712345678</td>
-                                                    <td>Kisumu County</td>
-                                                    <td>Cattle</td>
-                                                    <td>1</td>
-                                                    <td>Processed Meat</td>
-                                                    <td>65,000</td>
-                                                    <td>30 Apr 2025</td>
-                                                    <td>23 Apr 2025</td>
-                                                    <td>Payment issues</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                           
-                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
-                                                            
-                                                        </div>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="d-flex align-items-center">
+                                                            <div class="flex-shrink-0 me-3">
+                                                                <img class="rounded-circle avatar-sm" src="assets/images/users/avatar-2.jpg" alt="Mary Atieno" height="36">
+                                                            </div>
+                                                            <div class="flex-grow-1 chat-user-box">
+                                                                <p class="user-title m-0">Mary Atieno</p>
+                                                                <p class="text-muted m-0">mary.atieno@example.com</p>
+                                                            </div>
+                                                        </a>
                                                     </td>
+                                                    <td>Kisumu</td>
+                                                    <td>3 Orders</td>
+                                                    <td>5th Feb 2024</td>
+                                                    <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                                    <td>24th Apr 2025</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="d-flex align-items-center">
+                                                            <div class="flex-shrink-0 me-3">
+                                                                <img class="rounded-circle avatar-sm" src="assets/images/users/avatar-3.jpg" alt="Ali Hassan" height="36">
+                                                            </div>
+                                                            <div class="flex-grow-1 chat-user-box">
+                                                                <p class="user-title m-0">Ali Hassan</p>
+                                                                <p class="text-muted m-0">ali.hassan@example.com</p>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>Mombasa</td>
+                                                    <td>9 Orders</td>
+                                                    <td>22nd Mar 2024</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                    <td>24th Apr 2025</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="d-flex align-items-center">
+                                                            <div class="flex-shrink-0 me-3">
+                                                                <img class="rounded-circle avatar-sm" src="assets/images/users/avatar-4.jpg" alt="David Kiprono" height="36">
+                                                            </div>
+                                                            <div class="flex-grow-1 chat-user-box">
+                                                                <p class="user-title m-0">David Kiprono</p>
+                                                                <p class="text-muted m-0">david.kiprono@example.com</p>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>Eldoret</td>
+                                                    <td>6 Orders</td>
+                                                    <td>10th Apr 2024</td>
+                                                    <td><span class="badge bg-secondary">Inactive</span></td>
+                                                    <td>24th Apr 2025</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="d-flex align-items-center">
+                                                            <div class="flex-shrink-0 me-3">
+                                                                <img class="rounded-circle avatar-sm" src="assets/images/users/avatar-5.jpg" alt="Beatrice Nyambura" height="36">
+                                                            </div>
+                                                            <div class="flex-grow-1 chat-user-box">
+                                                                <p class="user-title m-0">Beatrice Nyambura</p>
+                                                                <p class="text-muted m-0">beatrice.n@example.com</p>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>Nakuru</td>
+                                                    <td>12 Orders</td>
+                                                    <td>18th Mar 2024</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                    <td>24th Apr 2025</td>
                                                 </tr>
                                             </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th colspan="6">5 Buyers/Customers</th>
+                                                </tr>
+                                            </tfoot>
                                         </table>
+                                        
                                     </div>
-
-                                   
+                                    
                                 </div>
                             </div>
                         </div>
