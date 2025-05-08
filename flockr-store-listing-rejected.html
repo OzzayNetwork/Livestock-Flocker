@@ -928,413 +928,355 @@
 
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table
-                                            class="table align-middle table-hover contacts-table text-capitalize border table-striped text-nowrap"
-                                            id="datatable-button">
+                                        <table class="table align-middle table-hover contacts-table text-capitalize border table-striped text-nowrap">
                                             <thead class="table-light">
                                                 <tr>
-                                                    <th scope="col">SN</th>
+                                                    <th scope="col" class="text-center" style="width: 40px;">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="selectAll">
+                                                            <label class="form-check-label" for="selectAll"></label>
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col">Listing ID</th>
                                                     <th scope="col">Listing Name</th>
                                                     <th scope="col">Seller/Farmer</th>
-                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Submission Date</th>
+                                                    <th scope="col">Rejection Date</th>
                                                     <th scope="col">Category</th>
                                                     <th scope="col">Breed</th>
-                                                    <th scope="col">Age</th>
-                                                    <th scope="col">Gender</th>
-                                                    <th>Address</th>
-                                                    <th>Images</th>
-                                                    <th scope="col" class="text-right">Slaughter Charges</th>
-                                                    <th class="text-right">Price</th>
-                                                    <th class="text-right">Actions</th>
+                                                    <th scope="col">Price</th>
+                                                    <th scope="col">Rejection Reason</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col" class="text-right">Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody class="border">
                                                 <tr>
-                                                    <td>1.</td>
-                                                    <td>Wool Sheep</td>
-                                                    <td>
-                                                        <a href="javascript:void(0);">
-                                                            <span class="d-block">Archie Cantones</span>
-                                                            <small
-                                                                class="fs-12 d-block fw-normal text-muted"><span>arcie.tones@gmail.com</span>
-                                                                <span> 0704 549 859</span></small>
-                                                        </a>
-                                                    </td>
-                                                    <td>10 Apr 2025 11:23 AM</td>
-                                                    <td>Sheep</td>
-                                                    <td>Merino Sheep</td>
-                                                    <td>4Y 2M</td>
-                                                    <td>male</td>
-                                                    <td>Ratumu Village kajiado</td>
-                                                    <td>5 Images</td>
-                                                    <td class="text-right">2,000</td>
-                                                    <td class="text-right">7,000</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target=".order-details"
-                                                                class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal"
-                                                                data-bs-target=".reject-listing-modal"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Reject Listing">
-                                                                <div>Reject Listing</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                    <td class="text-center">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="listing1">
+                                                            <label class="form-check-label" for="listing1"></label>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2.</td>
-                                                    <td>Dairy Cow</td>
+                                                    <td>LST2025040001</td>
+                                                    <td>Friesian Heifer</td>
                                                     <td>
                                                         <a href="javascript:void(0);">
-                                                            <span class="d-block">Maria Wangari</span>
-                                                            <small
-                                                                class="fs-12 d-block fw-normal text-muted"><span>maria.wangari@gmail.com</span>
-                                                                <span> 0722 876 543</span></small>
+                                                            <span class="d-block">James Mwangi</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>james.mwangi@gmail.com</span> <span> 0722 123 456</span></small>
                                                         </a>
                                                     </td>
-                                                    <td>12 Apr 2025 09:45 AM</td>
+                                                    <td>05 Apr 2025 09:15 AM</td>
+                                                    <td>06 Apr 2025 02:30 PM</td>
                                                     <td>Cattle</td>
                                                     <td>Friesian</td>
-                                                    <td>3Y 6M</td>
-                                                    <td>female</td>
-                                                    <td>Naivasha, Nakuru</td>
-                                                    <td>4 Images</td>
-                                                    <td class="text-right">3,500</td>
-                                                    <td class="text-right">65,000</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target=".order-details"
-                                                                class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal"
-                                                                data-bs-target=".reject-listing-modal"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Reject Listing">
-                                                                <div>Reject Listing</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3.</td>
-                                                    <td>Broiler Chickens</td>
+                                                    <td class="text-right">95,000</td>
+                                                    <td><span class="badge bg-danger">Inadequate Images</span></td>
                                                     <td>
-                                                        <a href="javascript:void(0);">
-                                                            <span class="d-block">John Mwangi</span>
-                                                            <small
-                                                                class="fs-12 d-block fw-normal text-muted"><span>john.mwangi@yahoo.com</span>
-                                                                <span> 0733 123 456</span></small>
-                                                        </a>
+                                                        <span class="badge bg-secondary">Pending Resubmission</span>
                                                     </td>
-                                                    <td>15 Apr 2025 02:30 PM</td>
-                                                    <td>Poultry</td>
-                                                    <td>Broiler</td>
-                                                    <td>8M</td>
-                                                    <td>mixed</td>
-                                                    <td>Thika, Kiambu</td>
-                                                    <td>6 Images</td>
-                                                    <td class="text-right">300</td>
-                                                    <td class="text-right">2,500</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target=".order-details"
-                                                                class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal"
-                                                                data-bs-target=".reject-listing-modal"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Reject Listing">
-                                                                <div>Reject Listing</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".reject-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Rejection Details">Details</a>
+                                                            <button type="button" class="btn btn-sm btn-success text-uppercase" title="Reconsider Listing">
+                                                                Reconsider
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>4.</td>
-                                                    <td>Angora Goat</td>
+                                                    <td class="text-center">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="listing2">
+                                                            <label class="form-check-label" for="listing2"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>LST2025040012</td>
+                                                    <td>Boer Goats (Batch of 5)</td>
                                                     <td>
                                                         <a href="javascript:void(0);">
                                                             <span class="d-block">Sarah Kimani</span>
-                                                            <small
-                                                                class="fs-12 d-block fw-normal text-muted"><span>sarah.kimani@gmail.com</span>
-                                                                <span> 0712 345 678</span></small>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>sarah.k@yahoo.com</span> <span> 0733 987 654</span></small>
                                                         </a>
                                                     </td>
-                                                    <td>18 Apr 2025 10:15 AM</td>
+                                                    <td>08 Apr 2025 11:30 AM</td>
+                                                    <td>09 Apr 2025 10:45 AM</td>
                                                     <td>Goat</td>
-                                                    <td>Angora</td>
-                                                    <td>2Y 4M</td>
-                                                    <td>female</td>
-                                                    <td>Kiserian, Kajiado</td>
-                                                    <td>3 Images</td>
-                                                    <td class="text-right">1,800</td>
-                                                    <td class="text-right">9,500</td>
+                                                    <td>Boer</td>
+                                                    <td class="text-right">75,000</td>
+                                                    <td><span class="badge bg-danger">Missing Documents</span></td>
+                                                    <td>
+                                                        <span class="badge bg-warning">Resubmitted</span>
+                                                    </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target=".order-details"
-                                                                class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal"
-                                                                data-bs-target=".reject-listing-modal"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Reject Listing">
-                                                                <div>Reject Listing</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".reject-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Rejection Details">Details</a>
+                                                            <button type="button" class="btn btn-sm btn-success text-uppercase" title="Reconsider Listing">
+                                                                Reconsider
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>5.</td>
-                                                    <td>Beef Bull</td>
+                                                    <td class="text-center">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="listing3">
+                                                            <label class="form-check-label" for="listing3"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>LST2025040025</td>
+                                                    <td>Merino Breeding Ram</td>
                                                     <td>
                                                         <a href="javascript:void(0);">
                                                             <span class="d-block">Daniel Omondi</span>
-                                                            <small
-                                                                class="fs-12 d-block fw-normal text-muted"><span>daniel.omondi@hotmail.com</span>
-                                                                <span> 0756 789 012</span></small>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>danielo@gmail.com</span> <span> 0712 456 789</span></small>
                                                         </a>
                                                     </td>
-                                                    <td>20 Apr 2025 03:45 PM</td>
-                                                    <td>Cattle</td>
-                                                    <td>Boran</td>
-                                                    <td>5Y 1M</td>
-                                                    <td>male</td>
-                                                    <td>Kitengela, Kajiado</td>
-                                                    <td>8 Images</td>
-                                                    <td class="text-right">4,000</td>
-                                                    <td class="text-right">85,000</td>
+                                                    <td>10 Apr 2025 03:45 PM</td>
+                                                    <td>11 Apr 2025 09:20 AM</td>
+                                                    <td>Sheep</td>
+                                                    <td>Merino</td>
+                                                    <td class="text-right">22,000</td>
+                                                    <td><span class="badge bg-danger">Misleading Description</span></td>
+                                                    <td>
+                                                        <span class="badge bg-danger">Rejected Permanently</span>
+                                                    </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target=".order-details"
-                                                                class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal"
-                                                                data-bs-target=".reject-listing-modal"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Reject Listing">
-                                                                <div>Reject Listing</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".reject-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Rejection Details">Details</a>
+                                                            <button type="button" class="btn btn-sm btn-secondary text-uppercase" title="Listing Blocked" disabled>
+                                                                Blocked
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>6.</td>
-                                                    <td>Layers</td>
+                                                    <td class="text-center">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="listing4">
+                                                            <label class="form-check-label" for="listing4"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>LST2025040037</td>
+                                                    <td>Layer Chickens (50 Birds)</td>
                                                     <td>
                                                         <a href="javascript:void(0);">
                                                             <span class="d-block">Grace Achieng</span>
-                                                            <small
-                                                                class="fs-12 d-block fw-normal text-muted"><span>grace.achieng@gmail.com</span>
-                                                                <span> 0789 012 345</span></small>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>grace.a@hotmail.com</span> <span> 0756 234 567</span></small>
                                                         </a>
                                                     </td>
-                                                    <td>22 Apr 2025 11:00 AM</td>
+                                                    <td>12 Apr 2025 08:30 AM</td>
+                                                    <td>12 Apr 2025 04:15 PM</td>
                                                     <td>Poultry</td>
                                                     <td>ISA Brown</td>
-                                                    <td>1Y 3M</td>
-                                                    <td>female</td>
-                                                    <td>Rongai, Kajiado</td>
-                                                    <td>4 Images</td>
-                                                    <td class="text-right">250</td>
-                                                    <td class="text-right">1,800</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target=".order-details"
-                                                                class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal"
-                                                                data-bs-target=".reject-listing-modal"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Reject Listing">
-                                                                <div>Reject Listing</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>7.</td>
-                                                    <td>Mutton Goat</td>
+                                                    <td class="text-right">25,000</td>
+                                                    <td><span class="badge bg-danger">Price Issue</span></td>
                                                     <td>
-                                                        <a href="javascript:void(0);">
-                                                            <span class="d-block">Peter Waweru</span>
-                                                            <small
-                                                                class="fs-12 d-block fw-normal text-muted"><span>peter.waweru@yahoo.com</span>
-                                                                <span> 0745 678 901</span></small>
-                                                        </a>
+                                                        <span class="badge bg-info">Under Review</span>
                                                     </td>
-                                                    <td>25 Apr 2025 09:30 AM</td>
-                                                    <td>Goat</td>
-                                                    <td>Boer</td>
-                                                    <td>3Y 2M</td>
-                                                    <td>male</td>
-                                                    <td>Ngong, Kajiado</td>
-                                                    <td>5 Images</td>
-                                                    <td class="text-right">1,500</td>
-                                                    <td class="text-right">12,000</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target=".order-details"
-                                                                class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal"
-                                                                data-bs-target=".reject-listing-modal"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Reject Listing">
-                                                                <div>Reject Listing</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".reject-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Rejection Details">Details</a>
+                                                            <button type="button" class="btn btn-sm btn-success text-uppercase" title="Reconsider Listing">
+                                                                Reconsider
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>8.</td>
-                                                    <td>Pig</td>
-                                                    <td>
-                                                        <a href="javascript:void(0);">
-                                                            <span class="d-block">Janet Kamau</span>
-                                                            <small
-                                                                class="fs-12 d-block fw-normal text-muted"><span>janet.kamau@gmail.com</span>
-                                                                <span> 0723 456 789</span></small>
-                                                        </a>
-                                                    </td>
-                                                    <td>28 Apr 2025 01:15 PM</td>
-                                                    <td>Pig</td>
-                                                    <td>Large White</td>
-                                                    <td>1Y 8M</td>
-                                                    <td>female</td>
-                                                    <td>Ruiru, Kiambu</td>
-                                                    <td>6 Images</td>
-                                                    <td class="text-right">2,500</td>
-                                                    <td class="text-right">18,000</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target=".order-details"
-                                                                class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal"
-                                                                data-bs-target=".reject-listing-modal"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Reject Listing">
-                                                                <div>Reject Listing</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                    <td class="text-center">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="listing5">
+                                                            <label class="form-check-label" for="listing5"></label>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>9.</td>
-                                                    <td>Rabbit</td>
-                                                    <td>
-                                                        <a href="javascript:void(0);">
-                                                            <span class="d-block">Michael Njoroge</span>
-                                                            <small
-                                                                class="fs-12 d-block fw-normal text-muted"><span>michael.njoroge@gmail.com</span>
-                                                                <span> 0734 567 890</span></small>
-                                                        </a>
-                                                    </td>
-                                                    <td>01 May 2025 10:45 AM</td>
-                                                    <td>Rabbit</td>
-                                                    <td>Californian</td>
-                                                    <td>9M</td>
-                                                    <td>male</td>
-                                                    <td>Kikuyu, Kiambu</td>
-                                                    <td>3 Images</td>
-                                                    <td class="text-right">400</td>
-                                                    <td class="text-right">1,200</td>
-                                                    <td class="text-uppercase text-right">
-                                                        <div class="d-flex justify-content-end">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target=".order-details"
-                                                                class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal"
-                                                                data-bs-target=".reject-listing-modal"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Reject Listing">
-                                                                <div>Reject Listing</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10.</td>
-                                                    <td>Dairy Camel</td>
+                                                    <td>LST2025040043</td>
+                                                    <td>Boran Bulls (3 Animals)</td>
                                                     <td>
                                                         <a href="javascript:void(0);">
                                                             <span class="d-block">Ahmed Hassan</span>
-                                                            <small
-                                                                class="fs-12 d-block fw-normal text-muted"><span>ahmed.hassan@yahoo.com</span>
-                                                                <span> 0798 765 432</span></small>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>ahmed.h@gmail.com</span> <span> 0778 345 678</span></small>
                                                         </a>
                                                     </td>
-                                                    <td>05 May 2025 02:00 PM</td>
-                                                    <td>Camel</td>
-                                                    <td>Somali</td>
-                                                    <td>6Y 5M</td>
-                                                    <td>female</td>
-                                                    <td>Isiolo, Isiolo</td>
-                                                    <td>7 Images</td>
-                                                    <td class="text-right">5,000</td>
-                                                    <td class="text-right">120,000</td>
+                                                    <td>14 Apr 2025 01:20 PM</td>
+                                                    <td>15 Apr 2025 11:10 AM</td>
+                                                    <td>Cattle</td>
+                                                    <td>Boran</td>
+                                                    <td class="text-right">320,000</td>
+                                                    <td><span class="badge bg-danger">Incomplete Information</span></td>
+                                                    <td>
+                                                        <span class="badge bg-warning">Resubmitted</span>
+                                                    </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                            <a href="#" data-bs-toggle="modal"
-                                                                data-bs-target=".order-details"
-                                                                class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Order Details">Details</a>
-                                                            <button data-bs-toggle="modal"
-                                                                data-bs-target=".reject-listing-modal"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Reject Listing">
-                                                                <div>Reject Listing</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".reject-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Rejection Details">Details</a>
+                                                            <button type="button" class="btn btn-sm btn-success text-uppercase" title="Reconsider Listing">
+                                                                Reconsider
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="listing6">
+                                                            <label class="form-check-label" for="listing6"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>LST2025040058</td>
+                                                    <td>Somali Camel</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Mohamed Abdi</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>m.abdi@gmail.com</span> <span> 0790 123 456</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>18 Apr 2025 10:30 AM</td>
+                                                    <td>19 Apr 2025 02:45 PM</td>
+                                                    <td>Camel</td>
+                                                    <td>Somali</td>
+                                                    <td class="text-right">180,000</td>
+                                                    <td><span class="badge bg-danger">Health Concerns</span></td>
+                                                    <td>
+                                                        <span class="badge bg-secondary">Pending Resubmission</span>
+                                                    </td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".reject-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Rejection Details">Details</a>
+                                                            <button type="button" class="btn btn-sm btn-success text-uppercase" title="Reconsider Listing">
+                                                                Reconsider
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="listing7">
+                                                            <label class="form-check-label" for="listing7"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>LST2025040062</td>
+                                                    <td>Large White Pig</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Peter Waweru</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>peter.w@yahoo.com</span> <span> 0745 678 901</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>20 Apr 2025 09:15 AM</td>
+                                                    <td>21 Apr 2025 03:30 PM</td>
+                                                    <td>Pig</td>
+                                                    <td>Large White</td>
+                                                    <td class="text-right">23,000</td>
+                                                    <td><span class="badge bg-danger">Duplicate Listing</span></td>
+                                                    <td>
+                                                        <span class="badge bg-danger">Rejected Permanently</span>
+                                                    </td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".reject-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Rejection Details">Details</a>
+                                                            <button type="button" class="btn btn-sm btn-secondary text-uppercase" title="Listing Blocked" disabled>
+                                                                Blocked
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="listing8">
+                                                            <label class="form-check-label" for="listing8"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>LST2025040079</td>
+                                                    <td>Broiler Chickens (100 Birds)</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Janet Kamau</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>janet.k@gmail.com</span> <span> 0723 456 789</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>22 Apr 2025 11:40 AM</td>
+                                                    <td>23 Apr 2025 10:15 AM</td>
+                                                    <td>Poultry</td>
+                                                    <td>Broiler</td>
+                                                    <td class="text-right">30,000</td>
+                                                    <td><span class="badge bg-danger">Inadequate Images</span></td>
+                                                    <td>
+                                                        <span class="badge bg-warning">Resubmitted</span>
+                                                    </td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".reject-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Rejection Details">Details</a>
+                                                            <button type="button" class="btn btn-sm btn-success text-uppercase" title="Reconsider Listing">
+                                                                Reconsider
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="listing9">
+                                                            <label class="form-check-label" for="listing9"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>LST2025040085</td>
+                                                    <td>Galla Goat Breeding Stock</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Michael Njoroge</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>michael.n@gmail.com</span> <span> 0734 567 890</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>25 Apr 2025 02:30 PM</td>
+                                                    <td>26 Apr 2025 09:45 AM</td>
+                                                    <td>Goat</td>
+                                                    <td>Galla</td>
+                                                    <td class="text-right">18,500</td>
+                                                    <td><span class="badge bg-danger">Missing Documents</span></td>
+                                                    <td>
+                                                        <span class="badge bg-info">Under Review</span>
+                                                    </td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".reject-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Rejection Details">Details</a>
+                                                            <button type="button" class="btn btn-sm btn-success text-uppercase" title="Reconsider Listing">
+                                                                Reconsider
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="listing10">
+                                                            <label class="form-check-label" for="listing10"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>LST2025040097</td>
+                                                    <td>Red Maasai Sheep (5 Animals)</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Jane Muthoni</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>jane.m@yahoo.com</span> <span> 0798 765 432</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>28 Apr 2025 10:20 AM</td>
+                                                    <td>29 Apr 2025 01:35 PM</td>
+                                                    <td>Sheep</td>
+                                                    <td>Red Maasai</td>
+                                                    <td class="text-right">65,000</td>
+                                                    <td><span class="badge bg-danger">Price Issue</span></td>
+                                                    <td>
+                                                        <span class="badge bg-secondary">Pending Resubmission</span>
+                                                    </td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".reject-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Rejection Details">Details</a>
+                                                            <button type="button" class="btn btn-sm btn-success text-uppercase" title="Reconsider Listing">
+                                                                Reconsider
                                                             </button>
                                                         </div>
                                                     </td>
@@ -1344,6 +1286,43 @@
                                     </div>
 
 
+                                </div>
+
+                                <div class="card-footer bg-white p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-center">
+                                                <div class="dropdown me-2">
+                                                    <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="bulkActionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Bulk Actions
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="bulkActionsDropdown">
+                                                        <li><a class="dropdown-item" href="#"><i class="mdi mdi-check-circle-outline me-1"></i> Reconsider Selected</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="mdi mdi-email-outline me-1"></i> Message Sellers</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="mdi mdi-export me-1"></i> Export Selected</a></li>
+                                                        <li><hr class="dropdown-divider"></li>
+                                                        <li><a class="dropdown-item text-danger" href="#"><i class="mdi mdi-block-helper me-1"></i> Block Permanently</a></li>
+                                                    </ul>
+                                                </div>
+                                                <span class="text-muted small">Showing 1-10 of 32 rejected listings</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <nav aria-label="Rejected listings pagination">
+                                                <ul class="pagination justify-content-end mb-0">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -2850,6 +2829,102 @@
                     });
                 });
             </script>
+
+
+            <!-- Rejection Details Modal (would be triggered when clicking Details) -->
+<div class="modal fade reject-details" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title">
+                    <i class="mdi mdi-alert-circle-outline me-1"></i> Rejection Details
+                </h5>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-4">
+                    <h6 class="mb-2">Listing Information</h6>
+                    <div class="table-responsive">
+                        <table class="table table-sm table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 30%">Listing ID</th>
+                                    <td id="rejection-listing-id">LST2025040001</td>
+                                </tr>
+                                <tr>
+                                    <th>Listing</th>
+                                    <td id="rejection-listing-name">Friesian Heifer</td>
+                                </tr>
+                                <tr>
+                                    <th>Seller</th>
+                                    <td id="rejection-seller-name">James Mwangi</td>
+                                </tr>
+                                <tr>
+                                    <th>Submitted</th>
+                                    <td id="rejection-submission-date">05 Apr 2025 09:15 AM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <h6 class="mb-2">Rejection Information</h6>
+                    <div class="table-responsive">
+                        <table class="table table-sm table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 30%">Rejection Date</th>
+                                    <td id="rejection-date">06 Apr 2025 02:30 PM</td>
+                                </tr>
+                                <tr>
+                                    <th>Rejected By</th>
+                                    <td id="rejection-admin">Admin: John Doe</td>
+                                </tr>
+                                <tr>
+                                    <th>Primary Reason</th>
+                                    <td id="rejection-reason"><span class="badge bg-danger">Inadequate Images</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Current Status</th>
+                                    <td id="rejection-status"><span class="badge bg-secondary">Pending Resubmission</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <h6 class="mb-2">Detailed Explanation</h6>
+                    <div class="bg-light p-3 rounded">
+                        <p id="rejection-details" class="mb-0">
+                            This listing has been rejected due to inadequate images. The provided photos do not clearly show the animal from multiple angles. We require at least 4 high-quality images showing the front, both sides, and rear view of the livestock to allow potential buyers to properly assess the animal's condition.
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h6 class="mb-2">Seller Notification</h6>
+                    <div class="alert alert-secondary mb-0">
+                        <small class="text-muted">Email sent to seller on 06 Apr 2025 at 02:35 PM</small>
+                        <p class="mb-0 mt-1">
+                            <strong>Subject:</strong> Your listing "Friesian Heifer" (LST2025040001) requires revision
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="edit-rejection-btn">
+                    <i class="mdi mdi-pencil me-1"></i> Edit Rejection
+                </button>
+                <button type="button" class="btn btn-success" id="reconsider-btn">
+                    <i class="mdi mdi-refresh me-1"></i> Reconsider
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
