@@ -1943,6 +1943,12 @@
                                                             <strong>Gender:</strong> <span
                                                                 id="livestock-gender">Male</span>
                                                         </li>
+
+                                                        <li class="mb-2">
+                                                            <i class="mdi mdi-gender-male-female text-primary me-2"></i>
+                                                            <strong>Quantity:</strong> <span
+                                                                id="livestock-gender">1</span>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                                 <div class="col-md-6">
@@ -1977,12 +1983,7 @@
                                                         data-bs-target="#health" type="button" role="tab"
                                                         aria-controls="health" aria-selected="true">Health Info</button>
                                                 </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="documents-tab" data-bs-toggle="tab"
-                                                        data-bs-target="#documents" type="button" role="tab"
-                                                        aria-controls="documents"
-                                                        aria-selected="false">Documents</button>
-                                                </li>
+                                               
                                                 <li class="nav-item" role="presentation">
                                                     <button class="nav-link" id="notes-tab" data-bs-toggle="tab"
                                                         data-bs-target="#notes" type="button" role="tab"
@@ -2030,56 +2031,7 @@
                                                         health records.</p>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Seller Information & Approval Actions -->
-                                        <div class="col-md-4">
-                                            <!-- Seller Information -->
-                                            <div class="card shadow-sm mb-4">
-                                                <div class="card-header bg-light">
-                                                    <h5 class="card-title mb-0">Seller Information</h5>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="d-flex align-items-center mb-3">
-                                                        
-                                                        <div>
-                                                            <h6 class="mb-0" id="seller-name">Archie Cantones</h6>
-                                                            <p class="text-muted mb-0"><small>Member since January
-                                                                    2023</small></p>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <p class="mb-1"><i class="mdi mdi-email text-primary me-2"></i>
-                                                            <span id="seller-email">arcie.tones@gmail.com</span></p>
-                                                        <p class="mb-1"><i class="mdi mdi-phone text-primary me-2"></i>
-                                                            <span id="seller-phone">0704 549 859</span></p>
-                                                        <p class="mb-2"><i
-                                                                class="mdi mdi-map-marker text-primary me-2"></i> <span
-                                                                id="seller-location">Ratumu Village, Kajiado</span></p>
-                                                    </div>
-                                                    <div class="pt-2">
-                                                        <div>
-                                                            <span class="text-muted me-2">Verification:</span>
-                                                            <span class="text-success"><i
-                                                                    class="mdi mdi-check-circle"></i> Verified</span>
-                                                        </div>
-                                                        <p>
-                                                            <div>
-                                                                <span class="text-muted me-2">Rating:</span>
-                                                                <span class="text-warning">
-                                                                    <i class="mdi mdi-star"></i>
-                                                                    <i class="mdi mdi-star"></i>
-                                                                    <i class="mdi mdi-star"></i>
-                                                                    <i class="mdi mdi-star"></i>
-                                                                    <i class="mdi mdi-star-outline"></i>
-                                                                </span>
-                                                            </div>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Approval Actions Card -->
                                             <div class="card shadow-sm">
                                                 <div class="card-header bg-light">
                                                     <h5 class="card-title mb-0">Approval Decision</h5>
@@ -2104,16 +2056,126 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="d-grid gap-2">
-                                                        <button class="btn btn-success" id="approve-btn">
-                                                            <i class="mdi mdi-check-circle me-1"></i> Approve Listing
-                                                        </button>
-                                                        <button class="btn btn-danger" id="reject-btn">
-                                                            <i class="mdi mdi-close-circle me-1"></i> Reject Listing
-                                                        </button>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Seller Information & Approval Actions -->
+                                        <div class="col-md-4">
+                                            <!-- Seller Information -->
+                                            <div class="card shadow-sm mb-4">
+                                                <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                                                    <h5 class="card-title mb-0">Seller Information</h5>
+                                                    <a href="#" class="text-primary small">View Full Profile</a>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <div>
+                                                            <h6 class="mb-0" id="seller-name">Archie Cantones</h6>
+                                                            <p class="text-muted mb-0"><small>Member since January 2023</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-1"><i class="mdi mdi-email text-primary me-2"></i>
+                                                            <span id="seller-email">arcie.tones@gmail.com</span></p>
+                                                        <p class="mb-1"><i class="mdi mdi-phone text-primary me-2"></i>
+                                                            <span id="seller-phone">0704 549 859</span></p>
+                                                        <p class="mb-2"><i class="mdi mdi-map-marker text-primary me-2"></i> 
+                                                            <span id="seller-location">Ratumu Village, Kajiado</span></p>
+                                                    </div>
+                                                    <div class="pt-2">
+                                                        <div>
+                                                            <span class="text-muted me-2">Verification:</span>
+                                                            <span class="text-success"><i class="mdi mdi-check-circle"></i> Verified</span>
+                                                        </div>
+                                                        <p>
+                                                            <div>
+                                                                <span class="text-muted me-2">Rating:</span>
+                                                                <span class="text-warning">
+                                                                    <i class="mdi mdi-star"></i>
+                                                                    <i class="mdi mdi-star"></i>
+                                                                    <i class="mdi mdi-star"></i>
+                                                                    <i class="mdi mdi-star"></i>
+                                                                    <i class="mdi mdi-star-outline"></i>
+                                                                </span>
+                                                                <span class="text-muted">(4.2/5)</span>
+                                                            </div>
+                                                        </p>
+                                                    </div>
+                                                    
+                                                    <!-- Seller Activity Stats -->
+                                                    <div class="border-top pt-3 mt-2">
+                                                        <h6 class="mb-2">Seller Activity</h6>
+                                                        <div class="row g-2 text-center">
+                                                            <div class="col-4">
+                                                                <div class="border rounded p-2">
+                                                                    <h5 class="mb-0 text-primary" id="active-listings">12</h5>
+                                                                    <small class="text-muted d-block">Active Listings</small>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="border rounded p-2">
+                                                                    <h5 class="mb-0 text-success" id="completed-sales">47</h5>
+                                                                    <small class="text-muted d-block">Sales Completed</small>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="border rounded p-2">
+                                                                    <h5 class="mb-0 text-info" id="seller-likes">86</h5>
+                                                                    <small class="text-muted d-block">Likes Received</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                   
+                                                    
+                                                    <!-- Trust Indicators -->
+                                                    <div class="mt-3 d-none">
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="badge bg-success me-2"><i class="mdi mdi-shield-check me-1"></i> Trusted Seller</span>
+                                                            <span class="badge bg-primary me-2"><i class="mdi mdi-certificate me-1"></i> Certified</span>
+                                                            <span class="badge bg-info"><i class="mdi mdi-thumb-up me-1"></i> 98% Positive</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Performance Metrics -->
+                                                    <div class="mt-3 pt-2 border-top d-none">
+                                                        <h6 class="mb-2">Performance Metrics</h6>
+                                                        <div class="mb-1">
+                                                            <div class="d-flex justify-content-between mb-1">
+                                                                <small>Response Rate</small>
+                                                                <small>95%</small>
+                                                            </div>
+                                                            <div class="progress" style="height: 5px;">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-1">
+                                                            <div class="d-flex justify-content-between mb-1">
+                                                                <small>Delivery Rate</small>
+                                                                <small>92%</small>
+                                                            </div>
+                                                            <div class="progress" style="height: 5px;">
+                                                                <div class="progress-bar bg-info" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="d-flex justify-content-between mb-1">
+                                                                <small>Quality Score</small>
+                                                                <small>89%</small>
+                                                            </div>
+                                                            <div class="progress" style="height: 5px;">
+                                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <!-- Approval Actions Card -->
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -2122,11 +2184,14 @@
                                 <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                                     <i class="mdi mdi-close me-1"></i> Close
                                 </button>
-                                <button type="button" class="btn btn-info" id="contact-seller-btn">
-                                    <i class="mdi mdi-email-outline me-1"></i> Contact Seller
+                               
+
+
+                                <button class="btn btn-success" id="approve-btn">
+                                    <i class="mdi mdi-check-circle me-1"></i> Approve Listing
                                 </button>
-                                <button type="button" class="btn btn-primary" id="review-submit-btn">
-                                    <i class="mdi mdi-content-save me-1"></i> Submit Review
+                                <button class="btn btn-danger" id="reject-btn">
+                                    <i class="mdi mdi-close-circle me-1"></i> Reject Listing
                                 </button>
                             </div>
                         </div>
