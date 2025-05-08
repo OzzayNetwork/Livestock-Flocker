@@ -555,13 +555,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Pending Deliveries</h4>
+                                <h4 class="mb-sm-0 font-size-18">Listings Pending Approval</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Orders</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Pending Deliveries</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Listings Pending Approval</a></li>
                                     </ol>
                                 </div>
 
@@ -806,41 +806,45 @@
                                
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table align-middle table-hover contacts-table text-uppercase border table-striped text-nowrap" id="datatable-button">
+                                        <table class="table align-middle table-hover contacts-table text-capitalize border table-striped text-nowrap" id="datatable-button">
                                             <thead class="table-light">
                                                 <tr>
                                                     <th scope="col">SN</th>
-                                                    <th scope="col">Order ID</th>
-                                                    <th scope="col">Customer</th>
+                                                    <th scope="col">Listing Name</th>
+                                                    <th scope="col">Seller/Farmer</th>
                                                     <th scope="col">Date</th>
-                                                    <th scope="col">Email</th>
-                                                    <th scope="col">Phone</th>
-                                                    <th scope="col">Delivery Address</th>
-                                                    <th scope="col">Animal Type</th>
-                                                    <th scope="col">Quantity</th>
-                                                    <th>Delivery Form</th>
-                                                    <th>Total (KES)</th>
-                                                    <th>Due Date</th>
+                                                    <th scope="col">Category</th>
+                                                    <th scope="col">Breed</th>
+                                                    <th scope="col">Age</th>
+                                                    <th scope="col">Gender</th>
+                                                    <th>Address</th>
+                                                    <th>Images</th>
+                                                    <th scope="col" class="text-right">Slaughter Charges</th>
+                                                    <th class="text-right">Price</th>
                                                     <th class="text-right">Actions</th>                                                    
                                                 </tr>
                                             </thead>
                                             <tbody class="border">
                                                 <tr>
                                                     <td>1.</td>
-                                                    <td>LST-25-0001</td>
-                                                    <td>John Kamau</td>
-                                                    <td>10 Apr 2025</td>
-                                                    <td><a href="mailto:john.kamau@example.com">john.kamau@example.com</a></td>
-                                                    <td><a href="tel:0704549859">0704549859</a></td>
-                                                    <td>Homa Bay County</td>
-                                                    <td>Cattle</td>
-                                                    <td>2</td>
-                                                    <td>Live Animal</td>
-                                                    <td>120,000</td>
-                                                    <td>15 Apr 2025</td>
+                                                    <td>Wool Sheep</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Archie Cantones</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>arcie.tones@gmail.com</span> <span> 0704 549 859</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>10 Apr 2025 11:23 AM</td>
+                                                    <td>Sheep</td>
+                                                    <td>Merino Sheep</td>
+                                                    <td>4Y 2M</td>
+                                                    <td>male</td>
+                                                    <td>Ratumu Village kajiado</td>
+                                                    <td>5 Images</td>
+                                                    <td class="text-right">2,000</td>
+                                                    <td class="text-right">7,000</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                           
                                                             <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
                                                                 <div>Cancel</div>
@@ -853,20 +857,24 @@
                                                 </tr>
                                                 <tr>
                                                     <td>2.</td>
-                                                    <td>LST-25-0002</td>
-                                                    <td>Faith Wambui</td>
-                                                    <td>15 Apr 2025</td>
-                                                    <td><a href="mailto:faith.wambui@example.com">faith.wambui@example.com</a></td>
-                                                    <td><a href="tel:0722456789">0722456789</a></td>
-                                                    <td>Kiambu County</td>
-                                                    <td>Goat</td>
-                                                    <td>5</td>
-                                                    <td>Processed Meat</td>
-                                                    <td>45,000</td>
-                                                    <td>20 Apr 2025</td>
+                                                    <td>Dairy Cow</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Maria Wangari</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>maria.wangari@gmail.com</span> <span> 0722 876 543</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>12 Apr 2025 09:45 AM</td>
+                                                    <td>Cattle</td>
+                                                    <td>Friesian</td>
+                                                    <td>3Y 6M</td>
+                                                    <td>female</td>
+                                                    <td>Naivasha, Nakuru</td>
+                                                    <td>4 Images</td>
+                                                    <td class="text-right">3,500</td>
+                                                    <td class="text-right">65,000</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                           
                                                             <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
                                                                 <div>Cancel</div>
@@ -879,20 +887,24 @@
                                                 </tr>
                                                 <tr>
                                                     <td>3.</td>
-                                                    <td>LST-25-0003</td>
-                                                    <td>Joseph Kamau</td>
-                                                    <td>18 Apr 2025</td>
-                                                    <td><a href="mailto:joseph.kamau@example.com">joseph.kamau@example.com</a></td>
-                                                    <td><a href="tel:0733789456">0733789456</a></td>
-                                                    <td>Kwale County</td>
-                                                    <td>Sheep</td>
-                                                    <td>3</td>
-                                                    <td>Live Animal</td>
-                                                    <td>36,000</td>
-                                                    <td>25 Apr 2025</td>
+                                                    <td>Broiler Chickens</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">John Mwangi</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>john.mwangi@yahoo.com</span> <span> 0733 123 456</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>15 Apr 2025 02:30 PM</td>
+                                                    <td>Poultry</td>
+                                                    <td>Broiler</td>
+                                                    <td>8M</td>
+                                                    <td>mixed</td>
+                                                    <td>Thika, Kiambu</td>
+                                                    <td>6 Images</td>
+                                                    <td class="text-right">300</td>
+                                                    <td class="text-right">2,500</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                           
                                                             <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
                                                                 <div>Cancel</div>
@@ -905,20 +917,24 @@
                                                 </tr>
                                                 <tr>
                                                     <td>4.</td>
-                                                    <td>LST-25-0004</td>
-                                                    <td>Mary Atieno</td>
-                                                    <td>22 Apr 2025</td>
-                                                    <td><a href="mailto:mary.atieno@example.com">mary.atieno@example.com</a></td>
-                                                    <td><a href="tel:0712345678">0712345678</a></td>
-                                                    <td>Kisumu County</td>
-                                                    <td>Cattle</td>
-                                                    <td>1</td>
-                                                    <td>Processed Meat</td>
-                                                    <td>65,000</td>
-                                                    <td>30 Apr 2025</td>
+                                                    <td>Angora Goat</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Sarah Kimani</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>sarah.kimani@gmail.com</span> <span> 0712 345 678</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>18 Apr 2025 10:15 AM</td>
+                                                    <td>Goat</td>
+                                                    <td>Angora</td>
+                                                    <td>2Y 4M</td>
+                                                    <td>female</td>
+                                                    <td>Kiserian, Kajiado</td>
+                                                    <td>3 Images</td>
+                                                    <td class="text-right">1,800</td>
+                                                    <td class="text-right">9,500</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                           
                                                             <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
                                                                 <div>Cancel</div>
@@ -931,20 +947,24 @@
                                                 </tr>
                                                 <tr>
                                                     <td>5.</td>
-                                                    <td>LST-25-0005</td>
-                                                    <td>Daniel Kipchirchir</td>
-                                                    <td>25 Apr 2025</td>
-                                                    <td><a href="mailto:daniel.kipchirchir@example.com">daniel.kipchirchir@example.com</a></td>
-                                                    <td><a href="tel:0758963214">0758963214</a></td>
-                                                    <td>Elgeyo-Marakwet County</td>
-                                                    <td>Goat</td>
-                                                    <td>8</td>
-                                                    <td>Live Animal</td>
-                                                    <td>72,000</td>
-                                                    <td>02 May 2025</td>
+                                                    <td>Beef Bull</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Daniel Omondi</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>daniel.omondi@hotmail.com</span> <span> 0756 789 012</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>20 Apr 2025 03:45 PM</td>
+                                                    <td>Cattle</td>
+                                                    <td>Boran</td>
+                                                    <td>5Y 1M</td>
+                                                    <td>male</td>
+                                                    <td>Kitengela, Kajiado</td>
+                                                    <td>8 Images</td>
+                                                    <td class="text-right">4,000</td>
+                                                    <td class="text-right">85,000</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                           
                                                             <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
                                                                 <div>Cancel</div>
@@ -957,20 +977,24 @@
                                                 </tr>
                                                 <tr>
                                                     <td>6.</td>
-                                                    <td>LST-25-0006</td>
-                                                    <td>Sarah Mwende</td>
-                                                    <td>28 Apr 2025</td>
-                                                    <td><a href="mailto:sarah.mwende@example.com">sarah.mwende@example.com</a></td>
-                                                    <td><a href="tel:0745632178">0745632178</a></td>
-                                                    <td>Kitui County</td>
-                                                    <td>Sheep</td>
-                                                    <td>4</td>
-                                                    <td>Processed Meat</td>
-                                                    <td>48,000</td>
-                                                    <td>05 May 2025</td>
+                                                    <td>Layers</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Grace Achieng</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>grace.achieng@gmail.com</span> <span> 0789 012 345</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>22 Apr 2025 11:00 AM</td>
+                                                    <td>Poultry</td>
+                                                    <td>ISA Brown</td>
+                                                    <td>1Y 3M</td>
+                                                    <td>female</td>
+                                                    <td>Rongai, Kajiado</td>
+                                                    <td>4 Images</td>
+                                                    <td class="text-right">250</td>
+                                                    <td class="text-right">1,800</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                           
                                                             <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
                                                                 <div>Cancel</div>
@@ -983,20 +1007,24 @@
                                                 </tr>
                                                 <tr>
                                                     <td>7.</td>
-                                                    <td>LST-25-0007</td>
-                                                    <td>James Odhiambo</td>
-                                                    <td>01 May 2025</td>
-                                                    <td><a href="mailto:james.odhiambo@example.com">james.odhiambo@example.com</a></td>
-                                                    <td><a href="tel:0789654123">0789654123</a></td>
-                                                    <td>Kisumu County</td>
-                                                    <td>Cattle</td>
-                                                    <td>3</td>
-                                                    <td>Live Animal</td>
-                                                    <td>180,000</td>
-                                                    <td>10 May 2025</td>
+                                                    <td>Mutton Goat</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Peter Waweru</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>peter.waweru@yahoo.com</span> <span> 0745 678 901</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>25 Apr 2025 09:30 AM</td>
+                                                    <td>Goat</td>
+                                                    <td>Boer</td>
+                                                    <td>3Y 2M</td>
+                                                    <td>male</td>
+                                                    <td>Ngong, Kajiado</td>
+                                                    <td>5 Images</td>
+                                                    <td class="text-right">1,500</td>
+                                                    <td class="text-right">12,000</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                           
                                                             <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
                                                                 <div>Cancel</div>
@@ -1009,20 +1037,84 @@
                                                 </tr>
                                                 <tr>
                                                     <td>8.</td>
-                                                    <td>LST-25-0008</td>
-                                                    <td>Elizabeth Wanjiku</td>
-                                                    <td>05 May 2025</td>
-                                                    <td><a href="mailto:elizabeth.wanjiku@example.com">elizabeth.wanjiku@example.com</a></td>
-                                                    <td><a href="tel:0723456789">0723456789</a></td>
-                                                    <td>Nakuru County</td>
-                                                    <td>Goat</td>
-                                                    <td>10</td>
-                                                    <td>Processed Meat</td>
-                                                    <td>90,000</td>
-                                                    <td>15 May 2025</td>
+                                                    <td>Pig</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Janet Kamau</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>janet.kamau@gmail.com</span> <span> 0723 456 789</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>28 Apr 2025 01:15 PM</td>
+                                                    <td>Pig</td>
+                                                    <td>Large White</td>
+                                                    <td>1Y 8M</td>
+                                                    <td>female</td>
+                                                    <td>Ruiru, Kiambu</td>
+                                                    <td>6 Images</td>
+                                                    <td class="text-right">2,500</td>
+                                                    <td class="text-right">18,000</td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
-                                                           
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
+                                                                <div>Cancel</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9.</td>
+                                                    <td>Rabbit</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Michael Njoroge</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>michael.njoroge@gmail.com</span> <span> 0734 567 890</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>01 May 2025 10:45 AM</td>
+                                                    <td>Rabbit</td>
+                                                    <td>Californian</td>
+                                                    <td>9M</td>
+                                                    <td>male</td>
+                                                    <td>Kikuyu, Kiambu</td>
+                                                    <td>3 Images</td>
+                                                    <td class="text-right">400</td>
+                                                    <td class="text-right">1,200</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
+                                                            <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
+                                                                <div>Cancel</div>
+                                                                <div class="spinner-border text-white ms-2 d-none" style="height: 19px; width: 19px;" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10.</td>
+                                                    <td>Dairy Camel</td>
+                                                    <td>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="d-block">Ahmed Hassan</span>
+                                                            <small class="fs-12 d-block fw-normal text-muted"><span>ahmed.hassan@yahoo.com</span> <span> 0798 765 432</span></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>05 May 2025 02:00 PM</td>
+                                                    <td>Camel</td>
+                                                    <td>Somali</td>
+                                                    <td>6Y 5M</td>
+                                                    <td>female</td>
+                                                    <td>Isiolo, Isiolo</td>
+                                                    <td>7 Images</td>
+                                                    <td class="text-right">5,000</td>
+                                                    <td class="text-right">120,000</td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
                                                             <a href="#" data-bs-toggle="modal" data-bs-target=".order-details" class="btn btn-sm btn-info text-uppercase mx-2" title="View Order Details">Details</a>
                                                             <button data-bs-toggle="modal" data-bs-target=".cancel-order" class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn" title="Cancel Order">
                                                                 <div>Cancel</div>
@@ -1761,178 +1853,309 @@
 
 
                 <!-- order details modal -->
-                <div class="modal fade order-details" id="order-details" tabindex="-1" aria-labelledby="orderDetailsLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-fullscreen">
-                    <div class="modal-content">
-                        <div class="modal-header bg-dark text-white">
-                            <h5 class="modal-title text-white" id="orderDetailsLabel">
-                                <i class="mdi mdi-clipboard-list me-1"></i> Livestock Order Details
-                            </h5>
-                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
-                                aria-bs-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-12 p-3">
-                                    <div class="alert alert-info mb-0 p-3">
-                                        <div class="row">
-                                            <div class="col-12 text-center text-uppercase">
-                                                <h4>Order No. ORD123456789</h4>
-                                                <p>Order placed by John Mwangi</p>
-                                                <hr>
+                <div class="modal fade livestock-details order-details" id="livestock-details-modal" tabindex="-1"
+                    aria-labelledby="livestockDetailsLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-warning text-dark">
+                                <h5 class="modal-title" id="livestockDetailsLabel">
+                                    <i class="mdi mdi-clipboard-check-outline me-1"></i> <span
+                                        id="modal-title">Livestock Listing Pending Approval</span>
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <!-- Status Banner -->
+                                <div class="bg-light p-3 border-bottom">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <span class="badge bg-warning text-dark fs-6 mb-2">Pending Approval</span>
+                                            <h5 class="mb-0" id="livestock-name">Merino Sheep</h5>
+                                        </div>
+                                        <div class="text-end">
+                                            <p class="text-muted mb-0"><small>Submitted: <span id="submission-date">10
+                                                        Apr 2025 11:23 AM</span></small></p>
+                                            <p class="text-muted mb-0"><small>Listing ID: <span
+                                                        id="listing-id">LST2025041001</span></small></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Livestock Image Gallery -->
+                                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"></li>
+                                        <li data-bs-target="#carouselExampleFade" data-bs-slide-to="1"></li>
+                                        <li data-bs-target="#carouselExampleFade" data-bs-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block img-fluid" src="assets/images/small/img-1.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/small/img-2.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="assets/images/small/img-3.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+
+                                <!-- Livestock Details Section -->
+                                <div class="livestock-info p-4">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <!-- Listing Information -->
+                                            <h5 class="mb-3 border-bottom pb-2">Listing Information</h5>
+                                            <p id="livestock-description" class="text-muted mb-4">
+                                                Healthy Merino sheep with high-quality wool. Raised in open pastures
+                                                with natural diet and regular veterinary care.
+                                            </p>
+
+                                            <div class="row mb-4">
+                                                <div class="col-md-6">
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-2">
+                                                            <i class="mdi mdi-tag-outline text-primary me-2"></i>
+                                                            <strong>Category:</strong> <span
+                                                                id="livestock-category">Sheep</span>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <i class="mdi mdi-dna text-primary me-2"></i>
+                                                            <strong>Breed:</strong> <span id="livestock-breed">Merino
+                                                                Sheep</span>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <i class="mdi mdi-calendar text-primary me-2"></i>
+                                                            <strong>Age:</strong> <span id="livestock-age">4Y 2M</span>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <i class="mdi mdi-gender-male-female text-primary me-2"></i>
+                                                            <strong>Gender:</strong> <span
+                                                                id="livestock-gender">Male</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-2">
+                                                            <i class="mdi mdi-map-marker-outline text-primary me-2"></i>
+                                                            <strong>Location:</strong> <span
+                                                                id="livestock-location">Ratumu Village, Kajiado</span>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <i class="mdi mdi-currency-usd text-primary me-2"></i>
+                                                            <strong>Price:</strong> <span id="price">KES 7,000</span>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <i class="mdi mdi-knife text-primary me-2"></i>
+                                                            <strong>Slaughter Charges:</strong> <span
+                                                                id="slaughter-charges">KES 2,000</span>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <i class="mdi mdi-scale text-primary me-2"></i>
+                                                            <strong>Weight:</strong> <span id="livestock-weight">65 kg
+                                                                (approximate)</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <!-- Customer / Order Details Column -->
-                                            <div class="col-sm-6">
-                                                <address>
-                                                    <strong class="text-uppercase">Customer Details:</strong><br>
-                                                    Name: John Mwangi<br>
-                                                    Address: Loresho Gardens, House No. 14, Waiyaki Way<br>
-                                                    City: Nairobi<br>
-                                                    P.O. Box: 12345-00100<br>
-                                                    Phone: +254 712 345678<br>
-                                                    Email: john.mwangi@example.com<br>
-                                                    Order Date: 10 Jan 2024 12:34 PM
-                                                </address>
+
+                                            <!-- Health and Documentation Tabs -->
+                                            <ul class="nav nav-tabs" id="livestockInfoTabs" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="health-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#health" type="button" role="tab"
+                                                        aria-controls="health" aria-selected="true">Health Info</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="documents-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#documents" type="button" role="tab"
+                                                        aria-controls="documents"
+                                                        aria-selected="false">Documents</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="notes-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#notes" type="button" role="tab"
+                                                        aria-controls="notes" aria-selected="false">Seller
+                                                        Notes</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content p-3 border border-top-0 rounded-bottom mb-4"
+                                                id="livestockInfoTabsContent">
+                                                <div class="tab-pane fade show active" id="health" role="tabpanel"
+                                                    aria-labelledby="health-tab">
+                                                    <p class="mb-2"><i
+                                                            class="mdi mdi-medical-bag text-success me-2"></i>
+                                                        <strong>Vaccination Status:</strong> <span
+                                                            class="text-success">Up to date</span></p>
+                                                    <p class="mb-2"><i
+                                                            class="mdi mdi-clipboard-check text-success me-2"></i>
+                                                        <strong>Last Vet Check:</strong> 15 Mar 2025</p>
+                                                    <p class="mb-0"><i
+                                                            class="mdi mdi-clipboard-text text-success me-2"></i>
+                                                        <strong>Health Notes:</strong> Healthy animal with good appetite
+                                                        and normal vital signs. Free from common diseases and parasites.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade" id="documents" role="tabpanel"
+                                                    aria-labelledby="documents-tab">
+                                                    <p class="mb-2"><i
+                                                            class="mdi mdi-file-document-outline text-primary me-2"></i>
+                                                        <strong>Ownership Certificate:</strong> <a href="#">View
+                                                            Document</a></p>
+                                                    <p class="mb-2"><i
+                                                            class="mdi mdi-file-document-outline text-primary me-2"></i>
+                                                        <strong>Vaccination Record:</strong> <a href="#">View
+                                                            Document</a></p>
+                                                    <p class="mb-0"><i
+                                                            class="mdi mdi-file-document-outline text-primary me-2"></i>
+                                                        <strong>Veterinary Certificate:</strong> <a href="#">View
+                                                            Document</a></p>
+                                                </div>
+                                                <div class="tab-pane fade" id="notes" role="tabpanel"
+                                                    aria-labelledby="notes-tab">
+                                                    <p class="mb-0">This sheep has been raised on natural pastures and
+                                                        produces high-quality wool. It has a good temperament and is in
+                                                        excellent health. We've maintained all required vaccinations and
+                                                        health records.</p>
+                                                </div>
                                             </div>
-                                            <!-- Payment Details Column -->
-                                            <div class="col-sm-6 text-sm-end">
-                                                <address class="mt-2 mt-sm-0">
-                                                    <strong class="text-uppercase">Payment Details</strong><br>
-                                                    Payment Status: <span class="text-success">Paid</span><br>
-                                                    Payment Method: MPESA<br>
-                                                    Transaction Code: QJD7T9H2XY<br>
-                                                    Amount Paid: KES 162,000<br>
-                                                    MPESA Number: +254 712 345678<br>
-                                                    Payment Date: 10 Jan 2024 3:30 PM<br>
-                                                </address>
+                                        </div>
+
+                                        <!-- Seller Information & Approval Actions -->
+                                        <div class="col-md-4">
+                                            <!-- Seller Information -->
+                                            <div class="card shadow-sm mb-4">
+                                                <div class="card-header bg-light">
+                                                    <h5 class="card-title mb-0">Seller Information</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        
+                                                        <div>
+                                                            <h6 class="mb-0" id="seller-name">Archie Cantones</h6>
+                                                            <p class="text-muted mb-0"><small>Member since January
+                                                                    2023</small></p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-1"><i class="mdi mdi-email text-primary me-2"></i>
+                                                            <span id="seller-email">arcie.tones@gmail.com</span></p>
+                                                        <p class="mb-1"><i class="mdi mdi-phone text-primary me-2"></i>
+                                                            <span id="seller-phone">0704 549 859</span></p>
+                                                        <p class="mb-2"><i
+                                                                class="mdi mdi-map-marker text-primary me-2"></i> <span
+                                                                id="seller-location">Ratumu Village, Kajiado</span></p>
+                                                    </div>
+                                                    <div class="pt-2">
+                                                        <div>
+                                                            <span class="text-muted me-2">Verification:</span>
+                                                            <span class="text-success"><i
+                                                                    class="mdi mdi-check-circle"></i> Verified</span>
+                                                        </div>
+                                                        <p>
+                                                            <div>
+                                                                <span class="text-muted me-2">Rating:</span>
+                                                                <span class="text-warning">
+                                                                    <i class="mdi mdi-star"></i>
+                                                                    <i class="mdi mdi-star"></i>
+                                                                    <i class="mdi mdi-star"></i>
+                                                                    <i class="mdi mdi-star"></i>
+                                                                    <i class="mdi mdi-star-outline"></i>
+                                                                </span>
+                                                            </div>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Approval Actions Card -->
+                                            <div class="card shadow-sm">
+                                                <div class="card-header bg-light">
+                                                    <h5 class="card-title mb-0">Approval Decision</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="mb-3">
+                                                        <label for="approval-notes" class="form-label">Admin
+                                                            Notes</label>
+                                                        <textarea class="form-control" id="approval-notes" rows="3"
+                                                            placeholder="Enter any notes about this listing..."></textarea>
+                                                    </div>
+
+                                                   
+
+                                                    <div class="mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="feature-listing">
+                                                            <label class="form-check-label" for="feature-listing">
+                                                                Feature This Listing
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-grid gap-2">
+                                                        <button class="btn btn-success" id="approve-btn">
+                                                            <i class="mdi mdi-check-circle me-1"></i> Approve Listing
+                                                        </button>
+                                                        <button class="btn btn-danger" id="reject-btn">
+                                                            <i class="mdi mdi-close-circle me-1"></i> Reject Listing
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
-                                <div class="col-12">
-                                    <div class="table-responsive">
-                                        <table class="table align-middle mb-0 table-nowrap">
-                                            <thead class="table-light">
-                                                <tr>
-                                                    <th>Livestock</th>
-                                                    <th>Description</th>
-                                                    <th>Price</th>
-                                                    <th>Processing Option</th>
-                                                    <th>Subtotal</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <img src="assets/images/product/img-1.png" alt="livestock-img" title="livestock-img" class="avatar-md">
-                                                    </td>
-                                                    <td>
-                                                        <h5 class="font-size-14 text-truncate">Friesian Cattle (450 kg)</h5>
-                                                        <p class="mb-0">Breed: <span class="fw-medium">Friesian, Female</span></p>
-                                                    </td>
-                                                    <td>
-                                                        KES 120,000
-                                                    </td>
-                                                    <td>
-                                                        Live Delivery
-                                                    </td>
-                                                    <td>
-                                                        KES 120,000
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src="assets/images/product/img-2.png" alt="livestock-img" title="livestock-img" class="avatar-md">
-                                                    </td>
-                                                    <td>
-                                                        <h5 class="font-size-14 text-truncate">Dorper Sheep (65 kg)</h5>
-                                                        <p class="mb-0">Breed: <span class="fw-medium">Dorper, Male</span></p>
-                                                    </td>
-                                                    <td>
-                                                        KES 15,000
-                                                    </td>
-                                                    <td>
-                                                        Processed Meat
-                                                    </td>
-                                                    <td>
-                                                        KES 15,000
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src="assets/images/product/img-3.png" alt="livestock-img" title="livestock-img" class="avatar-md">
-                                                    </td>
-                                                    <td>
-                                                        <h5 class="font-size-14 text-truncate">Galla Goat (45 kg)</h5>
-                                                        <p class="mb-0">Breed: <span class="fw-medium">Galla, Male</span></p>
-                                                    </td>
-                                                    <td>
-                                                        KES 12,500
-                                                    </td>
-                                                    <td>
-                                                        Live Delivery
-                                                    </td>
-                                                    <td>
-                                                        KES 12,500
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                            
-                                        </table>
-                                    </div>
-                                </div>
-                               
                             </div>
-                            
-                            <!-- Costs Summary Table -->
-                            <div class="row mt-4">
-                                <div class="col-md-6 offset-md-6">
-                                    <div class="card">
-                                        <div class="card-body border-bottom-1">
-                                            <h5 class="card-title mb-3">Order Summary</h5>
-                                            <div class="table-responsive">
-                                                <table class="table mb-0">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Subtotal:</td>
-                                                            <td class="text-end">KES 147,500</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Transportation Cost:</td>
-                                                            <td class="text-end">KES 12,000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Slaughtering Costs:</td>
-                                                            <td class="text-end">KES 2,500</td>
-                                                        </tr>
-                                                        <tr class="bg-light">
-                                                            <th>Total:</th>
-                                                            <th class="text-end">KES 162,000</th>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                    <i class="mdi mdi-close me-1"></i> Close
+                                </button>
+                                <button type="button" class="btn btn-info" id="contact-seller-btn">
+                                    <i class="mdi mdi-email-outline me-1"></i> Contact Seller
+                                </button>
+                                <button type="button" class="btn btn-primary" id="review-submit-btn">
+                                    <i class="mdi mdi-content-save me-1"></i> Submit Review
+                                </button>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                            aria-bs-label="Close">
-                                <i class="mdi mdi-close me-1"></i> Close
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                                <i class="mdi mdi-check me-1"></i> Confirm Order
-                            </button>
-                           
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <!-- Additional CSS for the modal -->
+                <style>
+                    .thumbnail.active img {
+                        border: 2px solid #ffc107;
+                    }
+
+                    .tab-pane {
+                        min-height: 120px;
+                    }
+
+                    #livestockInfoTabs .nav-link {
+                        color: #495057;
+                    }
+
+                    #livestockInfoTabs .nav-link.active {
+                        color: #0d6efd;
+                        font-weight: 500;
+                    }
+
+                    .seller-avatar img {
+                        border: 2px solid #e9ecef;
+                    }
+                </style>
                 <!-- end of order details modal -->
 
                 <!-- canceling an order -->
