@@ -333,7 +333,7 @@
                                 <i class="mdi mdi-silo"></i> <span> Feed inventory</span>
                             </a>
                         </li>
-                         <li>
+                        <li>
                             <a href="other-charges-management.html" class="waves-effect">
                                 <i class="mdi mdi-calculator-variant"></i> <span>Other Charges Mngt</span>
                             </a>
@@ -345,7 +345,7 @@
                             </a>
                         </li>
 
-                         <li>
+                        <li>
                             <a href="feed-inventoy-all-report.html" class="waves-effect">
                                 <i class="mdi mdi-food-variant"></i> <span>Feeding Report</span>
 
@@ -733,95 +733,88 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div
-                                    class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100"
-                                        role="toolbar">
-                                        <h4 class="card-title text-uppercase mb-0">
-                                            Other Charges Management
-                                        </h4>
+                               <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+        <h4 class="card-title text-uppercase mb-0">
+            Animal Feeding History
+        </h4>
+    </div>
+</div>
 
-                                        <div class="d-flex">
-                                            <button data-bs-toggle="modal" data-bs-target=".new-expense-category"
-                                                type="button"
-                                                class="btn btn-primary waves-effect btn-label waves-light text-uppercase">
-                                                <i class="bx bx-plus label-icon"></i> Add Category
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+<div class="card-header bg-white border-bottom py-3">
+    <div class="btn-toolbar d-flex justify-content-between align-items-center w-100" role="toolbar">
+        <div class="flex-grow-1">
+            <div class="search-box mb-0 me-3">
+                <div class="position-relative">
+                    <input type="text" class="form-control bg-light border-light rounded"
+                        placeholder="Search animal name, tag, feed type..."
+                        fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
+                    <i class="bx bx-search-alt search-icon"></i>
+                </div>
+            </div>
+        </div>
 
-                                <div class="card-header bg-white border-bottom py-3">
-                                    <div class="btn-toolbar d-flex justify-content-between align-items-center w-100"
-                                        role="toolbar">
-                                        <div class="flex-grow-1">
-                                            <div class="search-box mb-0 me-3">
-                                                <div class="position-relative">
-                                                    <input type="text"
-                                                        class="form-control bg-light border-light rounded"
-                                                        placeholder="Search category name, description..."
-                                                        fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
-                                                    <i class="bx bx-search-alt search-icon"></i>
-                                                </div>
-                                            </div>
-                                        </div>
+        <div class="d-flex">
+            <div class="d-flex align-items-center">
+                <div class="d-flex justify-content-between">
+                    <div class="float-end d-flex">
+                        <!-- Animal Category Filter -->
+                        <div class="input-group fw-semibold text-uppercase me-3">
+                            <label class="input-group-text text-uppercase">Animal</label>
+                            <select class="form-select">
+                                <option value="" selected>All Animals</option>
+                                <option value="cattle">Cattle</option>
+                                <option value="goats">Goats</option>
+                                <option value="sheep">Sheep</option>
+                                <option value="pigs">Pigs</option>
+                                <option value="poultry">Poultry</option>
+                                <option value="fish">Fish</option>
+                            </select>
+                        </div>
 
-                                        <div class="d-flex">
-                                            <div class="d-flex align-items-center">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="float-end d-flex">
-                                                        <!-- Expense Category Filter -->
-                                                        <div class="input-group fw-semibold text-uppercase me-3">
-                                                            <label
-                                                                class="input-group-text text-uppercase">Category</label>
-                                                            <select class="form-select">
-                                                                <option value="" selected>All Categories</option>
-                                                                <option value="transportation">Transportation</option>
-                                                                <option value="personnel">Personnel Salaries</option>
-                                                                <option value="maintenance">Maintenance & Repairs
-                                                                </option>
-                                                                <option value="veterinary">Veterinary Services</option>
-                                                                <option value="utilities">Utilities</option>
-                                                                <option value="insurance">Insurance</option>
-                                                                <option value="equipment">Equipment</option>
-                                                                <option value="fuel">Fuel & Energy</option>
-                                                                <option value="construction">Construction</option>
-                                                                <option value="other">Other</option>
-                                                            </select>
-                                                        </div>
+                        <!-- Feed Type Filter -->
+                        <div class="input-group fw-semibold text-uppercase me-3">
+                            <label class="input-group-text text-uppercase">Feed Type</label>
+                            <select class="form-select">
+                                <option value="" selected>All Feeds</option>
+                                <option value="premium-cattle">Premium Cattle Feed</option>
+                                <option value="goat-mineral">Goat Mineral Mix</option>
+                                <option value="sheep-pellets">Sheep Pellets</option>
+                                <option value="pig-grower">Pig Grower Feed</option>
+                                <option value="poultry-starter">Poultry Starter Feed</option>
+                            </select>
+                        </div>
 
-                                                        <!-- Status Filter -->
-                                                        <div class="input-group fw-semibold text-uppercase me-3">
-                                                            <label
-                                                                class="input-group-text text-uppercase">Status</label>
-                                                            <select class="form-select">
-                                                                <option value="" selected>All Status</option>
-                                                                <option value="active">Active</option>
-                                                                <option value="inactive">Inactive</option>
-                                                            </select>
-                                                        </div>
+                        <!-- Status Filter -->
+                        <div class="input-group fw-semibold text-uppercase me-3">
+                            <label class="input-group-text text-uppercase">Status</label>
+                            <select class="form-select">
+                                <option value="" selected>All Status</option>
+                                <option value="completed">Completed</option>
+                                <option value="partial">Partial</option>
+                                <option value="skipped">Skipped</option>
+                            </select>
+                        </div>
 
-                                                        <!-- Expense Date Filter From -->
-                                                        <div class="input-group fw-semibold text-uppercase me-2"
-                                                            title="Select the starting date to filter records based on expense date.">
-                                                            <label class="input-group-text text-uppercase">From:</label>
-                                                            <input class="form-control form-control-sm" type="date"
-                                                                value="" id="expense-from">
-                                                        </div>
+                        <!-- Feeding Date Filter From -->
+                        <div class="input-group fw-semibold text-uppercase me-2"
+                            title="Select the starting date to filter records based on feeding date.">
+                            <label class="input-group-text text-uppercase">From:</label>
+                            <input class="form-control form-control-sm" type="date" value="" id="feeding-from">
+                        </div>
 
-                                                        <!-- Expense Date Filter To -->
-                                                        <div class="input-group fw-semibold text-uppercase me-3"
-                                                            title="Select the ending date to filter records based on expense date.">
-                                                            <label class="input-group-text text-uppercase">To:</label>
-                                                            <input class="form-control form-control-sm" type="date"
-                                                                value="" id="expense-to">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <!-- Feeding Date Filter To -->
+                        <div class="input-group fw-semibold text-uppercase me-3"
+                            title="Select the ending date to filter records based on feeding date.">
+                            <label class="input-group-text text-uppercase">To:</label>
+                            <input class="form-control form-control-sm" type="date" value="" id="feeding-to">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
                                 <div class="card-body p-0">
                                     <div class="table-responsive">
                                         <table
@@ -830,11 +823,15 @@
                                             <thead class="table-light">
                                                 <tr class="">
                                                     <th scope="col">SN</th>
-                                                    <th scope="col">Category Name</th>
-                                                    <th scope="col">Description</th>
-                                                    <th scope="col">Total Expenses (KES)</th>
-                                                    <th scope="col">This Month (KES)</th>
-                                                    <th scope="col">Last Expense</th>
+                                                    <th scope="col">Animal Tag</th>
+                                                    <th scope="col">Animal Name</th>
+                                                    <th scope="col">Feed Type</th>
+                                                    <th scope="col">Quantity (KG)</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Time</th>
+                                                    <th scope="col">Amount (KES)</th>
+                                                    <th scope="col">Fed By</th>
+                                                    <th scope="col">Location</th>
                                                     <th scope="col">Status</th>
                                                     <th class="text-right">Actions</th>
                                                 </tr>
@@ -842,272 +839,271 @@
                                             <tbody class="border">
                                                 <tr>
                                                     <td>1.</td>
-                                                    <td>Transportation</td>
-                                                    <td>Feed delivery, livestock transport, vehicle fuel</td>
-                                                    <td class="fw-bold text-primary">KES 125,500.00</td>
-                                                    <td class="fw-bold text-info">KES 18,500.00</td>
-                                                    <td>2025-06-28</td>
+                                                    <td class="fw-bold text-primary">C001</td>
+                                                    <td>Bessie</td>
+                                                    <td>Premium Cattle Feed</td>
+                                                    <td class="fw-bold text-success">5.2</td>
+                                                    <td>2025-07-02</td>
+                                                    <td>07:30</td>
+                                                    <td class="fw-bold text-success">KES 650.00</td>
+                                                    <td>John Mwangi</td>
+                                                    <td>Main Paddock</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Completed
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-feeding"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Feeding Record">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-feeding-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-feeding"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Record">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>2.</td>
-                                                    <td>Personnel Salaries</td>
-                                                    <td>Farm workers, veterinary staff, management salaries</td>
-                                                    <td class="fw-bold text-primary">KES 450,000.00</td>
-                                                    <td class="fw-bold text-info">KES 75,000.00</td>
-                                                    <td>2025-06-30</td>
+                                                    <td class="fw-bold text-primary">C002</td>
+                                                    <td>Daisy</td>
+                                                    <td>Premium Cattle Feed</td>
+                                                    <td class="fw-bold text-success">4.8</td>
+                                                    <td>2025-07-02</td>
+                                                    <td>07:30</td>
+                                                    <td class="fw-bold text-success">KES 600.00</td>
+                                                    <td>John Mwangi</td>
+                                                    <td>Main Paddock</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Completed
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-feeding"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Feeding Record">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-feeding-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-feeding"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Record">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>3.</td>
-                                                    <td>Maintenance & Repairs</td>
-                                                    <td>Equipment maintenance, building repairs, infrastructure</td>
-                                                    <td class="fw-bold text-primary">KES 89,200.00</td>
-                                                    <td class="fw-bold text-info">KES 12,800.00</td>
-                                                    <td>2025-06-25</td>
+                                                    <td class="fw-bold text-primary">G001</td>
+                                                    <td>Billy</td>
+                                                    <td>Goat Mineral Mix</td>
+                                                    <td class="fw-bold text-success">1.5</td>
+                                                    <td>2025-07-01</td>
+                                                    <td>18:00</td>
+                                                    <td class="fw-bold text-success">KES 337.50</td>
+                                                    <td>Mary Wanjiku</td>
+                                                    <td>Goat Pen</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Completed
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-feeding"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Feeding Record">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-feeding-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-feeding"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Record">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>4.</td>
-                                                    <td>Veterinary Services</td>
-                                                    <td>Health checkups, vaccinations, treatments, medications</td>
-                                                    <td class="fw-bold text-primary">KES 78,500.00</td>
-                                                    <td class="fw-bold text-info">KES 6,500.00</td>
-                                                    <td>2025-06-20</td>
+                                                    <td class="fw-bold text-primary">C001</td>
+                                                    <td>Bessie</td>
+                                                    <td>Premium Cattle Feed</td>
+                                                    <td class="fw-bold text-success">5.0</td>
+                                                    <td>2025-07-01</td>
+                                                    <td>07:30</td>
+                                                    <td class="fw-bold text-success">KES 625.00</td>
+                                                    <td>Peter Ochieng</td>
+                                                    <td>Main Paddock</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Completed
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-feeding"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Feeding Record">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-feeding-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-feeding"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Record">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>5.</td>
-                                                    <td>Utilities</td>
-                                                    <td>Water, electricity, internet, phone bills</td>
-                                                    <td class="fw-bold text-primary">KES 42,300.00</td>
-                                                    <td class="fw-bold text-warning">KES 4,200.00</td>
-                                                    <td>2025-07-05</td>
+                                                    <td class="fw-bold text-primary">S001</td>
+                                                    <td>Dolly</td>
+                                                    <td>Sheep Pellets</td>
+                                                    <td class="fw-bold text-success">2.3</td>
+                                                    <td>2025-06-30</td>
+                                                    <td>17:45</td>
+                                                    <td class="fw-bold text-success">KES 414.00</td>
+                                                    <td>Grace Njeri</td>
+                                                    <td>Sheep Enclosure</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Completed
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-feeding"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Feeding Record">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-feeding-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-feeding"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Record">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>6.</td>
-                                                    <td>Insurance</td>
-                                                    <td>Livestock insurance, property insurance, liability coverage</td>
-                                                    <td class="fw-bold text-primary">KES 135,000.00</td>
-                                                    <td class="fw-bold text-info">KES 0.00</td>
-                                                    <td>2025-06-15</td>
+                                                    <td class="fw-bold text-primary">P001</td>
+                                                    <td>Porky</td>
+                                                    <td>Pig Grower Feed</td>
+                                                    <td class="fw-bold text-success">3.2</td>
+                                                    <td>2025-06-30</td>
+                                                    <td>08:15</td>
+                                                    <td class="fw-bold text-success">KES 448.00</td>
+                                                    <td>Samuel Kiprotich</td>
+                                                    <td>Pig Pen A</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Completed
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-feeding"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Feeding Record">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-feeding-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-feeding"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Record">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>7.</td>
-                                                    <td>Equipment</td>
-                                                    <td>Farm equipment, tools, machinery purchases</td>
-                                                    <td class="fw-bold text-primary">KES 285,000.00</td>
-                                                    <td class="fw-bold text-info">KES 35,000.00</td>
-                                                    <td>2025-06-10</td>
+                                                    <td class="fw-bold text-primary">G002</td>
+                                                    <td>Nanny</td>
+                                                    <td>Goat Mineral Mix</td>
+                                                    <td class="fw-bold text-success">1.8</td>
+                                                    <td>2025-06-29</td>
+                                                    <td>18:00</td>
+                                                    <td class="fw-bold text-success">KES 405.00</td>
+                                                    <td>Mary Wanjiku</td>
+                                                    <td>Goat Pen</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Completed
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-feeding"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Feeding Record">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-feeding-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-feeding"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Record">Delete</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>8.</td>
+                                                    <td class="fw-bold text-primary">C003</td>
+                                                    <td>Moobert</td>
+                                                    <td>Premium Cattle Feed</td>
+                                                    <td class="fw-bold text-warning">4.5</td>
+                                                    <td>2025-06-29</td>
+                                                    <td>07:30</td>
+                                                    <td class="fw-bold text-warning">KES 562.50</td>
+                                                    <td>John Mwangi</td>
+                                                    <td>Main Paddock</td>
+                                                    <td class="fw-bold text-black">
+                                                        <p class="mb-2 text-truncate">
+                                                            <i class="mdi mdi-circle text-warning me-1"></i> Partial
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button data-bs-toggle="modal"
+                                                                data-bs-target=".edit-feeding"
+                                                                class="btn btn-sm btn-success text-uppercase"
+                                                                title="Edit Feeding Record">Edit</button>
+                                                            <button data-bs-toggle="modal"
+                                                                data-bs-target=".view-feeding-details"
+                                                                class="btn btn-sm btn-info text-uppercase mx-2"
+                                                                title="View Details">Details</button>
+                                                            <button data-bs-toggle="modal"
+                                                                data-bs-target=".delete-feeding"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Record">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
