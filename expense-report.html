@@ -333,15 +333,22 @@
                                 <i class="mdi mdi-silo"></i> <span> Feed inventory</span>
                             </a>
                         </li>
-                         <li>
+                        <li>
                             <a href="other-charges-management.html" class="waves-effect">
                                 <i class="mdi mdi-calculator-variant"></i> <span>Other Charges Mngt</span>
                             </a>
                         </li>
 
-                         <li>
+                       <li>
                             <a href="expense-report.html" class="waves-effect">
                                 <i class="mdi mdi-file-chart"></i> <span>Expense Report</span>
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="feed-inventoy-all-report.html" class="waves-effect">
+                                <i class="mdi mdi-food-variant"></i> <span>Feeding Report</span>
+
                             </a>
                         </li>
                         <hr>
@@ -644,18 +651,18 @@
                     </div>
 
                     <div class="row">
-                        <!-- Total Categories -->
+                        <!-- Total Expenditures -->
                         <div class="col-lg-3 col-md-6">
                             <div class="card blog-stats-wid">
                                 <div class="card-body">
                                     <div class="d-flex flex-wrap">
                                         <div class="me-3">
-                                            <p class="text-muted mb-2">Total Categories</p>
-                                            <h5 class="mb-0">12</h5>
+                                            <p class="text-muted mb-2">Total Expenditures</p>
+                                            <h5 class="mb-0">147</h5>
                                         </div>
                                         <div class="avatar-sm ms-auto">
                                             <div class="avatar-title bg-primary rounded-circle text-white font-size-20">
-                                                <i class="mdi mdi-view-grid"></i>
+                                                <i class="mdi mdi-receipt-text"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -663,18 +670,18 @@
                             </div>
                         </div>
 
-                        <!-- Monthly Expenses -->
+                        <!-- This Month Expenses -->
                         <div class="col-lg-3 col-md-6">
                             <div class="card blog-stats-wid">
                                 <div class="card-body">
                                     <div class="d-flex flex-wrap">
                                         <div class="me-3">
-                                            <p class="text-muted mb-2">Monthly Expenses</p>
-                                            <h5 class="mb-0">KES 187,500</h5>
+                                            <p class="text-muted mb-2">This Month Expenses</p>
+                                            <h5 class="mb-0">KES 118,950</h5>
                                         </div>
                                         <div class="avatar-sm ms-auto">
                                             <div class="avatar-title bg-success rounded-circle text-white font-size-20">
-                                                <i class="mdi mdi-calendar-month"></i>
+                                                <i class="mdi mdi-calendar-month-outline"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -682,18 +689,18 @@
                             </div>
                         </div>
 
-                        <!-- Total Yearly Expenses -->
+                        <!-- Total Amount Spent -->
                         <div class="col-lg-3 col-md-6">
                             <div class="card blog-stats-wid">
                                 <div class="card-body">
                                     <div class="d-flex flex-wrap">
                                         <div class="me-3">
-                                            <p class="text-muted mb-2">Total Yearly Expenses</p>
-                                            <h5 class="mb-0">KES 1,205,500</h5>
+                                            <p class="text-muted mb-2">Total Amount Spent</p>
+                                            <h5 class="mb-0">KES 1,847,350</h5>
                                         </div>
                                         <div class="avatar-sm ms-auto">
                                             <div class="avatar-title bg-info rounded-circle text-white font-size-20">
-                                                <i class="mdi mdi-cash-multiple"></i>
+                                                <i class="mdi mdi-cash-minus"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -701,18 +708,18 @@
                             </div>
                         </div>
 
-                        <!-- Highest Expense Category -->
+                        <!-- Pending Payments -->
                         <div class="col-lg-3 col-md-6">
                             <div class="card blog-stats-wid">
                                 <div class="card-body">
                                     <div class="d-flex flex-wrap">
                                         <div class="me-3">
-                                            <p class="text-muted mb-2">Highest Expense</p>
-                                            <h5 class="mb-0">Personnel</h5>
+                                            <p class="text-muted mb-2">Pending Payments</p>
+                                            <h5 class="mb-0 text-warning">8</h5>
                                         </div>
                                         <div class="avatar-sm ms-auto">
                                             <div class="avatar-title bg-warning rounded-circle text-white font-size-20">
-                                                <i class="mdi mdi-trending-up"></i>
+                                                <i class="mdi mdi-clock-alert"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -726,94 +733,100 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div
-                                    class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100"
-                                        role="toolbar">
-                                        <h4 class="card-title text-uppercase mb-0">
-                                            Other Charges Management
-                                        </h4>
+                                <div class="card">
+                                    <div
+                                        class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+                                        <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100"
+                                            role="toolbar">
+                                            <h4 class="card-title text-uppercase mb-0">
+                                                Expenditure Report
+                                            </h4>
 
-                                        <div class="d-flex">
-                                            <button data-bs-toggle="modal" data-bs-target=".new-expense-category"
-                                                type="button"
-                                                class="btn btn-primary waves-effect btn-label waves-light text-uppercase">
-                                                <i class="bx bx-plus label-icon"></i> Add Category
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-header bg-white border-bottom py-3">
-                                    <div class="btn-toolbar d-flex justify-content-between align-items-center w-100"
-                                        role="toolbar">
-                                        <div class="flex-grow-1">
-                                            <div class="search-box mb-0 me-3">
-                                                <div class="position-relative">
-                                                    <input type="text"
-                                                        class="form-control bg-light border-light rounded"
-                                                        placeholder="Search category name, description..."
-                                                        fdprocessedid="husj3l" spellcheck="false" data-ms-editor="true">
-                                                    <i class="bx bx-search-alt search-icon"></i>
-                                                </div>
+                                            <div class="d-flex">
+                                                <button data-bs-toggle="modal" data-bs-target=".add-expenditure"
+                                                    type="button"
+                                                    class="btn btn-primary waves-effect btn-label waves-light text-uppercase">
+                                                    <i class="bx bx-plus label-icon"></i> Add Expenditure
+                                                </button>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div class="d-flex">
-                                            <div class="d-flex align-items-center">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="float-end d-flex">
-                                                        <!-- Expense Category Filter -->
-                                                        <div class="input-group fw-semibold text-uppercase me-3">
-                                                            <label
-                                                                class="input-group-text text-uppercase">Category</label>
-                                                            <select class="form-select">
-                                                                <option value="" selected>All Categories</option>
-                                                                <option value="transportation">Transportation</option>
-                                                                <option value="personnel">Personnel Salaries</option>
-                                                                <option value="maintenance">Maintenance & Repairs
-                                                                </option>
-                                                                <option value="veterinary">Veterinary Services</option>
-                                                                <option value="utilities">Utilities</option>
-                                                                <option value="insurance">Insurance</option>
-                                                                <option value="equipment">Equipment</option>
-                                                                <option value="fuel">Fuel & Energy</option>
-                                                                <option value="construction">Construction</option>
-                                                                <option value="other">Other</option>
-                                                            </select>
-                                                        </div>
+                                    <div class="card-header bg-white border-bottom py-3">
+                                        <div class="btn-toolbar d-flex justify-content-between align-items-center w-100"
+                                            role="toolbar">
+                                            <div class="flex-grow-1">
+                                                <div class="search-box mb-0 me-3">
+                                                    <div class="position-relative">
+                                                        <input type="text"
+                                                            class="form-control bg-light border-light rounded"
+                                                            placeholder="Search expense name, supplier, recorded by..."
+                                                            fdprocessedid="husj3l" spellcheck="false"
+                                                            data-ms-editor="true">
+                                                        <i class="bx bx-search-alt search-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                                        <!-- Status Filter -->
-                                                        <div class="input-group fw-semibold text-uppercase me-3">
-                                                            <label
-                                                                class="input-group-text text-uppercase">Status</label>
-                                                            <select class="form-select">
-                                                                <option value="" selected>All Status</option>
-                                                                <option value="active">Active</option>
-                                                                <option value="inactive">Inactive</option>
-                                                            </select>
-                                                        </div>
+                                            <div class="d-flex">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="float-end d-flex">
+                                                            <!-- Expense Category Filter -->
+                                                            <div class="input-group fw-semibold text-uppercase me-3">
+                                                                <label
+                                                                    class="input-group-text text-uppercase">Category</label>
+                                                                <select class="form-select">
+                                                                    <option value="" selected>All Categories</option>
+                                                                    <option value="veterinary">Veterinary Services
+                                                                    </option>
+                                                                    <option value="feed">Feed</option>
+                                                                    <option value="transportation">Transportation
+                                                                    </option>
+                                                                    <option value="maintenance">Maintenance</option>
+                                                                    <option value="personnel">Personnel</option>
+                                                                    <option value="utilities">Utilities</option>
+                                                                    <option value="equipment">Equipment</option>
+                                                                    <option value="other">Other</option>
+                                                                </select>
+                                                            </div>
 
-                                                        <!-- Expense Date Filter From -->
-                                                        <div class="input-group fw-semibold text-uppercase me-2"
-                                                            title="Select the starting date to filter records based on expense date.">
-                                                            <label class="input-group-text text-uppercase">From:</label>
-                                                            <input class="form-control form-control-sm" type="date"
-                                                                value="" id="expense-from">
-                                                        </div>
+                                                            <!-- Status Filter -->
+                                                            <div class="input-group fw-semibold text-uppercase me-3">
+                                                                <label
+                                                                    class="input-group-text text-uppercase">Status</label>
+                                                                <select class="form-select">
+                                                                    <option value="" selected>All Status</option>
+                                                                    <option value="paid">Paid</option>
+                                                                    <option value="pending">Pending</option>
+                                                                    <option value="overdue">Overdue</option>
+                                                                </select>
+                                                            </div>
 
-                                                        <!-- Expense Date Filter To -->
-                                                        <div class="input-group fw-semibold text-uppercase me-3"
-                                                            title="Select the ending date to filter records based on expense date.">
-                                                            <label class="input-group-text text-uppercase">To:</label>
-                                                            <input class="form-control form-control-sm" type="date"
-                                                                value="" id="expense-to">
+                                                            <!-- Expense Date Filter From -->
+                                                            <div class="input-group fw-semibold text-uppercase me-2"
+                                                                title="Select the starting date to filter records based on expense date.">
+                                                                <label
+                                                                    class="input-group-text text-uppercase">From:</label>
+                                                                <input class="form-control form-control-sm" type="date"
+                                                                    value="" id="expense-from">
+                                                            </div>
+
+                                                            <!-- Expense Date Filter To -->
+                                                            <div class="input-group fw-semibold text-uppercase me-3"
+                                                                title="Select the ending date to filter records based on expense date.">
+                                                                <label
+                                                                    class="input-group-text text-uppercase">To:</label>
+                                                                <input class="form-control form-control-sm" type="date"
+                                                                    value="" id="expense-to">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Table content continues here -->
                                 </div>
                                 <div class="card-body p-0">
                                     <div class="table-responsive">
@@ -823,11 +836,17 @@
                                             <thead class="table-light">
                                                 <tr class="">
                                                     <th scope="col">SN</th>
-                                                    <th scope="col">Category Name</th>
-                                                    <th scope="col">Description</th>
-                                                    <th scope="col">Total Expenses (KES)</th>
-                                                    <th scope="col">This Month (KES)</th>
-                                                    <th scope="col">Last Expense</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Expense Category</th>
+                                                    <th scope="col">Expense Name/Title</th>
+                                                    <th scope="col">Animal(s) Affected</th>
+                                                    <th scope="col">Quantity</th>
+                                                    <th scope="col">Unit</th>
+                                                    <th scope="col">Unit Price (KES)</th>
+                                                    <th scope="col">Total Amount (KES)</th>
+                                                    <th scope="col">Payment Method</th>
+                                                    <th scope="col">Supplier/Vendor</th>
+                                                    <th scope="col">Recorded By</th>
                                                     <th scope="col">Status</th>
                                                     <th class="text-right">Actions</th>
                                                 </tr>
@@ -835,272 +854,319 @@
                                             <tbody class="border">
                                                 <tr>
                                                     <td>1.</td>
-                                                    <td>Transportation</td>
-                                                    <td>Feed delivery, livestock transport, vehicle fuel</td>
-                                                    <td class="fw-bold text-primary">KES 125,500.00</td>
-                                                    <td class="fw-bold text-info">KES 18,500.00</td>
                                                     <td>2025-06-28</td>
+                                                    <td>Veterinary Services</td>
+                                                    <td>Cattle Vaccination (FMD)</td>
+                                                    <td>
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target=".view-affected-animals"
+                                                            class="btn btn-link p-0 text-decoration-none fw-bold text-primary">
+                                                            20 Cattle
+                                                        </button>
+                                                    </td>
+                                                    <td>20</td>
+                                                    <td>Doses</td>
+                                                    <td class="fw-bold text-primary">KES 450.00</td>
+                                                    <td class="fw-bold text-success">KES 9,000.00</td>
+                                                    <td>Cash</td>
+                                                    <td>Dr. Kimani Veterinary</td>
+                                                    <td>John Mwangi</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Paid
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-expense"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Expense">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-expense-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-expense"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Expense">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>2.</td>
-                                                    <td>Personnel Salaries</td>
-                                                    <td>Farm workers, veterinary staff, management salaries</td>
-                                                    <td class="fw-bold text-primary">KES 450,000.00</td>
-                                                    <td class="fw-bold text-info">KES 75,000.00</td>
-                                                    <td>2025-06-30</td>
+                                                    <td>2025-06-25</td>
+                                                    <td>Feed</td>
+                                                    <td>Premium Cattle Feed Purchase</td>
+                                                    <td>
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target=".view-affected-animals"
+                                                            class="btn btn-link p-0 text-decoration-none fw-bold text-primary">
+                                                            All Cattle (25)
+                                                        </button>
+                                                    </td>
+                                                    <td>500</td>
+                                                    <td>KG</td>
+                                                    <td class="fw-bold text-primary">KES 125.00</td>
+                                                    <td class="fw-bold text-success">KES 62,500.00</td>
+                                                    <td>Bank Transfer</td>
+                                                    <td>Agri-Tech Feeds Ltd</td>
+                                                    <td>Mary Wanjiku</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Paid
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-expense"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Expense">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-expense-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-expense"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Expense">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>3.</td>
-                                                    <td>Maintenance & Repairs</td>
-                                                    <td>Equipment maintenance, building repairs, infrastructure</td>
-                                                    <td class="fw-bold text-primary">KES 89,200.00</td>
-                                                    <td class="fw-bold text-info">KES 12,800.00</td>
-                                                    <td>2025-06-25</td>
+                                                    <td>2025-06-22</td>
+                                                    <td>Transportation</td>
+                                                    <td>Feed Delivery Transport</td>
+                                                    <td>
+                                                        <span class="text-muted">N/A</span>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>Trip</td>
+                                                    <td class="fw-bold text-primary">KES 8,500.00</td>
+                                                    <td class="fw-bold text-success">KES 8,500.00</td>
+                                                    <td>M-Pesa</td>
+                                                    <td>Kipkoech Transport</td>
+                                                    <td>Peter Ochieng</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Paid
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-expense"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Expense">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-expense-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-expense"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Expense">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>4.</td>
-                                                    <td>Veterinary Services</td>
-                                                    <td>Health checkups, vaccinations, treatments, medications</td>
-                                                    <td class="fw-bold text-primary">KES 78,500.00</td>
-                                                    <td class="fw-bold text-info">KES 6,500.00</td>
                                                     <td>2025-06-20</td>
+                                                    <td>Maintenance</td>
+                                                    <td>Cattle Shed Roof Repair</td>
+                                                    <td>
+                                                        <span class="text-muted">N/A</span>
+                                                    </td>
+                                                    <td>25</td>
+                                                    <td>Sheets</td>
+                                                    <td class="fw-bold text-primary">KES 850.00</td>
+                                                    <td class="fw-bold text-success">KES 21,250.00</td>
+                                                    <td>Cash</td>
+                                                    <td>Mabati Hardware</td>
+                                                    <td>Samuel Kiprotich</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Paid
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-expense"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Expense">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-expense-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-expense"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Expense">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>5.</td>
-                                                    <td>Utilities</td>
-                                                    <td>Water, electricity, internet, phone bills</td>
-                                                    <td class="fw-bold text-primary">KES 42,300.00</td>
-                                                    <td class="fw-bold text-warning">KES 4,200.00</td>
-                                                    <td>2025-07-05</td>
+                                                    <td>2025-06-18</td>
+                                                    <td>Veterinary Services</td>
+                                                    <td>Goat Deworming Treatment</td>
+                                                    <td>
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target=".view-affected-animals"
+                                                            class="btn btn-link p-0 text-decoration-none fw-bold text-primary">
+                                                            15 Goats
+                                                        </button>
+                                                    </td>
+                                                    <td>15</td>
+                                                    <td>Doses</td>
+                                                    <td class="fw-bold text-primary">KES 180.00</td>
+                                                    <td class="fw-bold text-success">KES 2,700.00</td>
+                                                    <td>Cash</td>
+                                                    <td>Agrovet Supplies</td>
+                                                    <td>Grace Njeri</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Paid
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-expense"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Expense">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-expense-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-expense"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Expense">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>6.</td>
-                                                    <td>Insurance</td>
-                                                    <td>Livestock insurance, property insurance, liability coverage</td>
-                                                    <td class="fw-bold text-primary">KES 135,000.00</td>
-                                                    <td class="fw-bold text-info">KES 0.00</td>
                                                     <td>2025-06-15</td>
+                                                    <td>Personnel</td>
+                                                    <td>Monthly Salary - Farm Worker</td>
+                                                    <td>
+                                                        <span class="text-muted">N/A</span>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>Month</td>
+                                                    <td class="fw-bold text-primary">KES 25,000.00</td>
+                                                    <td class="fw-bold text-success">KES 25,000.00</td>
+                                                    <td>Bank Transfer</td>
+                                                    <td>N/A</td>
+                                                    <td>Admin User</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Paid
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-expense"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Expense">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-expense-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-expense"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Expense">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
                                                     <td>7.</td>
-                                                    <td>Equipment</td>
-                                                    <td>Farm equipment, tools, machinery purchases</td>
-                                                    <td class="fw-bold text-primary">KES 285,000.00</td>
-                                                    <td class="fw-bold text-info">KES 35,000.00</td>
-                                                    <td>2025-06-10</td>
+                                                    <td>2025-06-12</td>
+                                                    <td>Utilities</td>
+                                                    <td>Electricity Bill - Farm</td>
+                                                    <td>
+                                                        <span class="text-muted">N/A</span>
+                                                    </td>
+                                                    <td>350</td>
+                                                    <td>Units</td>
+                                                    <td class="fw-bold text-primary">KES 12.00</td>
+                                                    <td class="fw-bold text-warning">KES 4,200.00</td>
+                                                    <td>Bank Transfer</td>
+                                                    <td>Kenya Power</td>
+                                                    <td>Mary Wanjiku</td>
                                                     <td class="fw-bold text-black">
                                                         <p class="mb-2 text-truncate">
-                                                            <i class="mdi mdi-circle text-success me-1"></i> Active
+                                                            <i class="mdi mdi-circle text-warning me-1"></i> Pending
                                                         </p>
                                                     </td>
                                                     <td class="text-uppercase text-right">
                                                         <div class="d-flex justify-content-end">
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".edit-category"
+                                                                data-bs-target=".edit-expense"
                                                                 class="btn btn-sm btn-success text-uppercase"
-                                                                title="Edit Category">Edit</button>
+                                                                title="Edit Expense">Edit</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".view-category-details"
+                                                                data-bs-target=".view-expense-details"
                                                                 class="btn btn-sm btn-info text-uppercase mx-2"
-                                                                title="View Category Details">Details</button>
-                                                            <button data-bs-toggle="modal" data-bs-target=".add-expense"
-                                                                class="btn btn-sm btn-warning text-uppercase mx-1"
-                                                                title="Add Expense">Add Expense</button>
+                                                                title="View Details">Details</button>
                                                             <button data-bs-toggle="modal"
-                                                                data-bs-target=".deactivate-category"
-                                                                class="btn btn-sm btn-danger text-uppercase d-flex align-items-center modal-details-btn"
-                                                                title="Deactivate Category">
-                                                                <div>Deactivate</div>
-                                                                <div class="spinner-border text-white ms-2 d-none"
-                                                                    style="height: 19px; width: 19px;" role="status">
-                                                                    <span class="sr-only">Loading...</span>
-                                                                </div>
-                                                            </button>
+                                                                data-bs-target=".delete-expense"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Expense">Delete</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>8.</td>
+                                                    <td>2025-06-10</td>
+                                                    <td>Veterinary Services</td>
+                                                    <td>Mixed Livestock Health Checkup</td>
+                                                    <td>
+                                                        <button data-bs-toggle="modal"
+                                                            data-bs-target=".view-affected-animals"
+                                                            class="btn btn-link p-0 text-decoration-none fw-bold text-primary">
+                                                            Mixed (12 Animals)
+                                                        </button>
+                                                    </td>
+                                                    <td>12</td>
+                                                    <td>Checkups</td>
+                                                    <td class="fw-bold text-primary">KES 300.00</td>
+                                                    <td class="fw-bold text-success">KES 3,600.00</td>
+                                                    <td>Cash</td>
+                                                    <td>Dr. Kimani Veterinary</td>
+                                                    <td>John Mwangi</td>
+                                                    <td class="fw-bold text-black">
+                                                        <p class="mb-2 text-truncate">
+                                                            <i class="mdi mdi-circle text-success me-1"></i> Paid
+                                                        </p>
+                                                    </td>
+                                                    <td class="text-uppercase text-right">
+                                                        <div class="d-flex justify-content-end">
+                                                            <button data-bs-toggle="modal"
+                                                                data-bs-target=".edit-expense"
+                                                                class="btn btn-sm btn-success text-uppercase"
+                                                                title="Edit Expense">Edit</button>
+                                                            <button data-bs-toggle="modal"
+                                                                data-bs-target=".view-expense-details"
+                                                                class="btn btn-sm btn-info text-uppercase mx-2"
+                                                                title="View Details">Details</button>
+                                                            <button data-bs-toggle="modal"
+                                                                data-bs-target=".delete-expense"
+                                                                class="btn btn-sm btn-danger text-uppercase"
+                                                                title="Delete Expense">Delete</button>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -1804,6 +1870,824 @@
             </div>
 
             <!-- end of deactivation -->
+
+            <!-- affected animals -->
+            <!-- Animals Affected Modal -->
+            <div class="modal fade view-affected-animals" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header border-bottom-0">
+                            <h4 class="modal-title text-uppercase">Animals Affected - Cattle Vaccination (FMD)</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Expense Summary -->
+                                <div class="col-12 mb-4">
+                                    <div class="card border-0 bg-light">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <h6 class="text-muted">Expense Date</h6>
+                                                    <p class="fw-bold">2025-06-28</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h6 class="text-muted">Total Amount</h6>
+                                                    <p class="fw-bold text-success">KES 9,000.00</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h6 class="text-muted">Animals Affected</h6>
+                                                    <p class="fw-bold">20 Cattle</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h6 class="text-muted">Cost per Animal</h6>
+                                                    <p class="fw-bold text-primary">KES 450.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Animals Table -->
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table class="table align-middle table-hover border">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th scope="col">SN</th>
+                                                    <th scope="col">Tag Number</th>
+                                                    <th scope="col">Animal Name</th>
+                                                    <th scope="col">Category</th>
+                                                    <th scope="col">Age</th>
+                                                    <th scope="col">Weight (KG)</th>
+                                                    <th scope="col">Amount Spent (KES)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1.</td>
+                                                    <td class="fw-bold text-primary">C001</td>
+                                                    <td>Bessie</td>
+                                                    <td>Cattle</td>
+                                                    <td>3 years</td>
+                                                    <td>450</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2.</td>
+                                                    <td class="fw-bold text-primary">C002</td>
+                                                    <td>Daisy</td>
+                                                    <td>Cattle</td>
+                                                    <td>4 years</td>
+                                                    <td>520</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.</td>
+                                                    <td class="fw-bold text-primary">C003</td>
+                                                    <td>Moobert</td>
+                                                    <td>Cattle</td>
+                                                    <td>2 years</td>
+                                                    <td>380</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4.</td>
+                                                    <td class="fw-bold text-primary">C004</td>
+                                                    <td>Ferdinand</td>
+                                                    <td>Cattle</td>
+                                                    <td>5 years</td>
+                                                    <td>680</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5.</td>
+                                                    <td class="fw-bold text-primary">C005</td>
+                                                    <td>Bella</td>
+                                                    <td>Cattle</td>
+                                                    <td>3 years</td>
+                                                    <td>420</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6.</td>
+                                                    <td class="fw-bold text-primary">C006</td>
+                                                    <td>Angus</td>
+                                                    <td>Cattle</td>
+                                                    <td>4 years</td>
+                                                    <td>550</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7.</td>
+                                                    <td class="fw-bold text-primary">C007</td>
+                                                    <td>Buttercup</td>
+                                                    <td>Cattle</td>
+                                                    <td>2 years</td>
+                                                    <td>350</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8.</td>
+                                                    <td class="fw-bold text-primary">C008</td>
+                                                    <td>Thunder</td>
+                                                    <td>Cattle</td>
+                                                    <td>6 years</td>
+                                                    <td>720</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9.</td>
+                                                    <td class="fw-bold text-primary">C009</td>
+                                                    <td>Rosie</td>
+                                                    <td>Cattle</td>
+                                                    <td>3 years</td>
+                                                    <td>470</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10.</td>
+                                                    <td class="fw-bold text-primary">C010</td>
+                                                    <td>Buster</td>
+                                                    <td>Cattle</td>
+                                                    <td>4 years</td>
+                                                    <td>580</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11.</td>
+                                                    <td class="fw-bold text-primary">C011</td>
+                                                    <td>Honey</td>
+                                                    <td>Cattle</td>
+                                                    <td>2 years</td>
+                                                    <td>390</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12.</td>
+                                                    <td class="fw-bold text-primary">C012</td>
+                                                    <td>Duke</td>
+                                                    <td>Cattle</td>
+                                                    <td>5 years</td>
+                                                    <td>650</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13.</td>
+                                                    <td class="fw-bold text-primary">C013</td>
+                                                    <td>Clover</td>
+                                                    <td>Cattle</td>
+                                                    <td>3 years</td>
+                                                    <td>440</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14.</td>
+                                                    <td class="fw-bold text-primary">C014</td>
+                                                    <td>Rusty</td>
+                                                    <td>Cattle</td>
+                                                    <td>4 years</td>
+                                                    <td>500</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15.</td>
+                                                    <td class="fw-bold text-primary">C015</td>
+                                                    <td>Patches</td>
+                                                    <td>Cattle</td>
+                                                    <td>2 years</td>
+                                                    <td>360</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16.</td>
+                                                    <td class="fw-bold text-primary">C016</td>
+                                                    <td>Maple</td>
+                                                    <td>Cattle</td>
+                                                    <td>5 years</td>
+                                                    <td>590</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17.</td>
+                                                    <td class="fw-bold text-primary">C017</td>
+                                                    <td>Storm</td>
+                                                    <td>Cattle</td>
+                                                    <td>3 years</td>
+                                                    <td>480</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18.</td>
+                                                    <td class="fw-bold text-primary">C018</td>
+                                                    <td>Willow</td>
+                                                    <td>Cattle</td>
+                                                    <td>4 years</td>
+                                                    <td>530</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19.</td>
+                                                    <td class="fw-bold text-primary">C019</td>
+                                                    <td>Jasper</td>
+                                                    <td>Cattle</td>
+                                                    <td>2 years</td>
+                                                    <td>370</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20.</td>
+                                                    <td class="fw-bold text-primary">C020</td>
+                                                    <td>Luna</td>
+                                                    <td>Cattle</td>
+                                                    <td>6 years</td>
+                                                    <td>700</td>
+                                                    <td class="fw-bold text-success">KES 450.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- Summary Row -->
+                                <div class="col-12 mt-3">
+                                    <div class="card border-success">
+                                        <div class="card-body">
+                                            <div class="row text-center">
+                                                <div class="col-md-3">
+                                                    <h6 class="text-success">Total Animals</h6>
+                                                    <h4 class="text-success">20</h4>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h6 class="text-success">Total Amount</h6>
+                                                    <h4 class="text-success">KES 9,000.00</h4>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h6 class="text-success">Average per Animal</h6>
+                                                    <h4 class="text-success">KES 450.00</h4>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h6 class="text-success">Total Weight</h6>
+                                                    <h4 class="text-success">10,560 KG</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex flex-wrap gap-2">
+                                <button class="btn btn-info waves-effect waves-light">
+                                    <i class="mdi mdi-download me-1"></i> Export Report
+                                </button>
+                                <button class="btn btn-success waves-effect waves-light">
+                                    <i class="mdi mdi-printer me-1"></i> Print Report
+                                </button>
+                                <button type="button" class="btn btn-secondary waves-effect" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of affected animals -->
+
+            <!-- adding expenditure modal -->
+            <div class="modal fade add-expenditure" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header border-bottom-0">
+                            <h4 class="modal-title text-uppercase">Add New Expenditure</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Basic Information -->
+                                <div class="col-12 mb-3">
+                                    <h5 class="text-primary border-bottom pb-2">Basic Information</h5>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="expense-date" class="form-label">Expense Date <strong
+                                                class="text-danger fw-bold">*</strong></label>
+                                        <input type="date" class="form-control" id="expense-date" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="expense-category" class="form-label">Expense Category <strong
+                                                class="text-danger fw-bold">*</strong></label>
+                                        <select id="expense-category" class="form-select" required>
+                                            <option disabled selected>Select Expense Category</option>
+                                            <option value="veterinary">Veterinary Services</option>
+                                            <option value="feed">Feed</option>
+                                            <option value="transportation">Transportation</option>
+                                            <option value="maintenance">Maintenance & Repairs</option>
+                                            <option value="personnel">Personnel Salaries</option>
+                                            <option value="utilities">Utilities</option>
+                                            <option value="insurance">Insurance</option>
+                                            <option value="equipment">Equipment</option>
+                                            <option value="construction">Construction</option>
+                                            <option value="breeding">Breeding Services</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <div class="mb-3">
+                                        <label for="expense-title" class="form-label">Expense Name/Title <strong
+                                                class="text-danger fw-bold">*</strong></label>
+                                        <input type="text" class="form-control" id="expense-title"
+                                            placeholder="Enter expense name/title" required>
+                                    </div>
+                                </div>
+
+                                <!-- Animal Information -->
+                                <div class="col-12 mb-3 mt-3">
+                                    <h5 class="text-primary border-bottom pb-2">Animal Information</h5>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="animals-affected" class="form-label">Animals Affected</label>
+                                        <select id="animals-affected" class="form-select">
+                                            <option value="none" selected>No Animals Affected (N/A)</option>
+                                            <option value="all-cattle">All Cattle</option>
+                                            <option value="all-goats">All Goats</option>
+                                            <option value="all-sheep">All Sheep</option>
+                                            <option value="all-pigs">All Pigs</option>
+                                            <option value="mixed">Mixed Animals</option>
+                                            <option value="specific">Specific Animals</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="cost-distribution" class="form-label">Cost Distribution
+                                            Method</label>
+                                        <select id="cost-distribution" class="form-select">
+                                            <option value="equal" selected>Equal Cost per Animal</option>
+                                            <option value="weight">Based on Animal Weight</option>
+                                            <option value="custom">Custom Amount per Animal</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Animal Selection Section -->
+                                <div class="col-12" id="animal-selection-section" style="display: none;">
+                                    <div class="card border-primary">
+                                        <div class="card-header bg-light">
+                                            <h6 class="mb-0">Select Animals & Set Individual Costs</h6>
+                                        </div>
+                                        <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label fw-bold">Available Animals</label>
+                                                    <div class="border p-3 rounded"
+                                                        style="max-height: 300px; overflow-y: auto;">
+                                                        <div id="available-animals-list">
+                                                            <!-- Available animals will be populated here -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label fw-bold">Selected Animals & Costs</label>
+                                                    <div class="border p-3 rounded"
+                                                        style="max-height: 300px; overflow-y: auto;">
+                                                        <div id="selected-animals-list">
+                                                            <p class="text-muted text-center">No animals selected</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Summary Section -->
+                                            <div class="row mt-3">
+                                                <div class="col-12">
+                                                    <div class="card border-success">
+                                                        <div class="card-body">
+                                                            <div class="row text-center">
+                                                                <div class="col-md-3">
+                                                                    <h6 class="text-success">Total Animals</h6>
+                                                                    <h5 class="text-success" id="total-animals-count">0
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <h6 class="text-success">Total Cost</h6>
+                                                                    <h5 class="text-success" id="total-animals-cost">KES
+                                                                        0.00</h5>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <h6 class="text-success">Average per Animal</h6>
+                                                                    <h5 class="text-success"
+                                                                        id="average-cost-per-animal">KES 0.00</h5>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <button type="button"
+                                                                        class="btn btn-outline-success btn-sm"
+                                                                        id="apply-equal-cost">
+                                                                        Apply Equal Cost
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Quantity & Pricing -->
+                                <div class="col-12 mb-3 mt-3">
+                                    <h5 class="text-primary border-bottom pb-2">Quantity & Pricing</h5>
+                                </div>
+
+                                <div class="col-md-3 mb-3">
+                                    <div class="mb-3">
+                                        <label for="quantity" class="form-label">Quantity <strong
+                                                class="text-danger fw-bold">*</strong></label>
+                                        <input type="number" class="form-control" id="quantity"
+                                            placeholder="Enter quantity" min="0" step="0.01" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 mb-3">
+                                    <div class="mb-3">
+                                        <label for="unit" class="form-label">Unit <strong
+                                                class="text-danger fw-bold">*</strong></label>
+                                        <select id="unit" class="form-select" required>
+                                            <option disabled selected>Select Unit</option>
+                                            <option value="kg">KG</option>
+                                            <option value="doses">Doses</option>
+                                            <option value="trip">Trip</option>
+                                            <option value="sheets">Sheets</option>
+                                            <option value="month">Month</option>
+                                            <option value="units">Units</option>
+                                            <option value="checkups">Checkups</option>
+                                            <option value="pieces">Pieces</option>
+                                            <option value="liters">Liters</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 mb-3">
+                                    <div class="mb-3">
+                                        <label for="unit-price" class="form-label">Unit Price (KES) <strong
+                                                class="text-danger fw-bold">*</strong></label>
+                                        <input type="number" class="form-control" id="unit-price"
+                                            placeholder="Enter unit price" min="0" step="0.01" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 mb-3">
+                                    <div class="mb-3">
+                                        <label for="total-amount" class="form-label">Total Amount (KES)</label>
+                                        <input type="number" class="form-control" id="total-amount"
+                                            placeholder="Auto-calculated" readonly>
+                                    </div>
+                                </div>
+
+                                <!-- Payment Information -->
+                                <div class="col-12 mb-3 mt-3">
+                                    <h5 class="text-primary border-bottom pb-2">Payment Information</h5>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="mb-3">
+                                        <label for="payment-method" class="form-label">Payment Method <strong
+                                                class="text-danger fw-bold">*</strong></label>
+                                        <select id="payment-method" class="form-select" required>
+                                            <option disabled selected>Select Payment Method</option>
+                                            <option value="cash">Cash</option>
+                                            <option value="bank-transfer">Bank Transfer</option>
+                                            <option value="mpesa">M-Pesa</option>
+                                            <option value="cheque">Cheque</option>
+                                            <option value="card">Card</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="mb-3">
+                                        <label for="supplier-vendor" class="form-label">Supplier/Vendor</label>
+                                        <input type="text" class="form-control" id="supplier-vendor"
+                                            placeholder="Enter supplier/vendor name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="mb-3">
+                                        <label for="expense-status" class="form-label">Status <strong
+                                                class="text-danger fw-bold">*</strong></label>
+                                        <select id="expense-status" class="form-select" required>
+                                            <option value="paid" selected>Paid</option>
+                                            <option value="pending">Pending</option>
+                                            <option value="overdue">Overdue</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Additional Information -->
+                                <div class="col-12 mb-3 mt-3">
+                                    <h5 class="text-primary border-bottom pb-2">Additional Information</h5>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="recorded-by" class="form-label">Recorded By</label>
+                                        <input type="text" class="form-control" id="recorded-by"
+                                            placeholder="Enter recorder name" value="Current User" readonly>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="mb-3">
+                                        <label for="reference-number" class="form-label">Reference Number</label>
+                                        <input type="text" class="form-control" id="reference-number"
+                                            placeholder="Enter reference number (invoice, receipt, etc.)">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <div class="mb-3">
+                                        <label for="expense-notes" class="form-label">Notes/Comments</label>
+                                        <textarea class="form-control" id="expense-notes" rows="3"
+                                            placeholder="Enter any additional notes or comments about this expense"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex flex-wrap gap-2 text-uppercase">
+                                <button type="submit" class="btn btn-primary waves-effect waves-light">
+                                    Add Expenditure
+                                </button>
+                                <button type="reset" class="btn btn-secondary waves-effect">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // Sample animals data
+                const allAnimals = {
+                    cattle: [{
+                            id: 'C001',
+                            name: 'Bessie',
+                            weight: 450,
+                            category: 'Cattle'
+                        },
+                        {
+                            id: 'C002',
+                            name: 'Daisy',
+                            weight: 520,
+                            category: 'Cattle'
+                        },
+                        {
+                            id: 'C003',
+                            name: 'Moobert',
+                            weight: 380,
+                            category: 'Cattle'
+                        },
+                        {
+                            id: 'C004',
+                            name: 'Ferdinand',
+                            weight: 680,
+                            category: 'Cattle'
+                        },
+                        {
+                            id: 'C005',
+                            name: 'Bella',
+                            weight: 420,
+                            category: 'Cattle'
+                        }
+                    ],
+                    goats: [{
+                            id: 'G001',
+                            name: 'Billy',
+                            weight: 45,
+                            category: 'Goat'
+                        },
+                        {
+                            id: 'G002',
+                            name: 'Nanny',
+                            weight: 38,
+                            category: 'Goat'
+                        },
+                        {
+                            id: 'G003',
+                            name: 'Buck',
+                            weight: 52,
+                            category: 'Goat'
+                        },
+                        {
+                            id: 'G004',
+                            name: 'Daisy',
+                            weight: 41,
+                            category: 'Goat'
+                        }
+                    ],
+                    sheep: [{
+                            id: 'S001',
+                            name: 'Dolly',
+                            weight: 35,
+                            category: 'Sheep'
+                        },
+                        {
+                            id: 'S002',
+                            name: 'Woolly',
+                            weight: 42,
+                            category: 'Sheep'
+                        },
+                        {
+                            id: 'S003',
+                            name: 'Baa-rbara',
+                            weight: 38,
+                            category: 'Sheep'
+                        }
+                    ],
+                    pigs: [{
+                            id: 'P001',
+                            name: 'Porky',
+                            weight: 120,
+                            category: 'Pig'
+                        },
+                        {
+                            id: 'P002',
+                            name: 'Bacon',
+                            weight: 145,
+                            category: 'Pig'
+                        }
+                    ]
+                };
+
+                let selectedAnimals = [];
+
+                // Auto-calculate total amount
+                document.getElementById('quantity').addEventListener('input', calculateTotal);
+                document.getElementById('unit-price').addEventListener('input', calculateTotal);
+
+                function calculateTotal() {
+                    const quantity = parseFloat(document.getElementById('quantity').value) || 0;
+                    const unitPrice = parseFloat(document.getElementById('unit-price').value) || 0;
+                    const total = quantity * unitPrice;
+                    document.getElementById('total-amount').value = total.toFixed(2);
+                }
+
+                // Show/hide animal fields based on selection
+                document.getElementById('animals-affected').addEventListener('change', function () {
+                    const value = this.value;
+                    const animalSection = document.getElementById('animal-selection-section');
+
+                    if (value === 'none') {
+                        animalSection.style.display = 'none';
+                        selectedAnimals = [];
+                    } else {
+                        animalSection.style.display = 'block';
+                        populateAvailableAnimals(value);
+                    }
+                });
+
+                function populateAvailableAnimals(category) {
+                    const availableList = document.getElementById('available-animals-list');
+                    let animals = [];
+
+                    switch (category) {
+                        case 'all-cattle':
+                            animals = allAnimals.cattle;
+                            break;
+                        case 'all-goats':
+                            animals = allAnimals.goats;
+                            break;
+                        case 'all-sheep':
+                            animals = allAnimals.sheep;
+                            break;
+                        case 'all-pigs':
+                            animals = allAnimals.pigs;
+                            break;
+                        case 'mixed':
+                        case 'specific':
+                            animals = [...allAnimals.cattle, ...allAnimals.goats, ...allAnimals.sheep, ...allAnimals
+                                .pigs
+                            ];
+                            break;
+                    }
+
+                    availableList.innerHTML = '';
+                    animals.forEach(animal => {
+                        const animalDiv = document.createElement('div');
+                        animalDiv.className = 'form-check mb-2';
+                        animalDiv.innerHTML = `
+            <input class="form-check-input" type="checkbox" value="${animal.id}" id="animal-${animal.id}" onchange="toggleAnimal('${animal.id}', '${animal.name}', ${animal.weight}, '${animal.category}')">
+            <label class="form-check-label" for="animal-${animal.id}">
+                <strong>${animal.id}</strong> - ${animal.name} (${animal.category}) - ${animal.weight}kg
+            </label>
+        `;
+                        availableList.appendChild(animalDiv);
+                    });
+                }
+
+                function toggleAnimal(id, name, weight, category) {
+                    const checkbox = document.getElementById(`animal-${id}`);
+                    const existingIndex = selectedAnimals.findIndex(animal => animal.id === id);
+
+                    if (checkbox.checked && existingIndex === -1) {
+                        selectedAnimals.push({
+                            id: id,
+                            name: name,
+                            weight: weight,
+                            category: category,
+                            cost: 0
+                        });
+                    } else if (!checkbox.checked && existingIndex !== -1) {
+                        selectedAnimals.splice(existingIndex, 1);
+                    }
+
+                    updateSelectedAnimalsList();
+                    updateSummary();
+                }
+
+                function updateSelectedAnimalsList() {
+                    const selectedList = document.getElementById('selected-animals-list');
+
+                    if (selectedAnimals.length === 0) {
+                        selectedList.innerHTML = '<p class="text-muted text-center">No animals selected</p>';
+                        return;
+                    }
+
+                    selectedList.innerHTML = '';
+                    selectedAnimals.forEach((animal, index) => {
+                        const animalDiv = document.createElement('div');
+                        animalDiv.className = 'border rounded p-2 mb-2';
+                        animalDiv.innerHTML = `
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <small class="text-muted">${animal.id}</small><br>
+                    <strong>${animal.name}</strong> (${animal.category})<br>
+                    <small>Weight: ${animal.weight}kg</small>
+                </div>
+                <div class="col-md-5">
+                    <label class="form-label">Cost (KES)</label>
+                    <input type="number" class="form-control form-control-sm" 
+                           value="${animal.cost}" 
+                           min="0" step="0.01"
+                           onchange="updateAnimalCost(${index}, this.value)"
+                           placeholder="0.00">
+                </div>
+            </div>
+        `;
+                        selectedList.appendChild(animalDiv);
+                    });
+                }
+
+                function updateAnimalCost(index, cost) {
+                    selectedAnimals[index].cost = parseFloat(cost) || 0;
+                    updateSummary();
+                }
+
+                function updateSummary() {
+                    const totalAnimals = selectedAnimals.length;
+                    const totalCost = selectedAnimals.reduce((sum, animal) => sum + animal.cost, 0);
+                    const averageCost = totalAnimals > 0 ? totalCost / totalAnimals : 0;
+
+                    document.getElementById('total-animals-count').textContent = totalAnimals;
+                    document.getElementById('total-animals-cost').textContent = `KES ${totalCost.toFixed(2)}`;
+                    document.getElementById('average-cost-per-animal').textContent = `KES ${averageCost.toFixed(2)}`;
+                }
+
+                // Apply equal cost to all selected animals
+                document.getElementById('apply-equal-cost').addEventListener('click', function () {
+                    const totalAmount = parseFloat(document.getElementById('total-amount').value) || 0;
+                    const animalCount = selectedAnimals.length;
+
+                    if (animalCount > 0 && totalAmount > 0) {
+                        const equalCost = totalAmount / animalCount;
+                        selectedAnimals.forEach(animal => {
+                            animal.cost = equalCost;
+                        });
+                        updateSelectedAnimalsList();
+                        updateSummary();
+                    } else {
+                        alert('Please enter total amount and select animals first.');
+                    }
+                });
+
+                // Set today's date as default
+                document.getElementById('expense-date').valueAsDate = new Date();
+            </script>
 
 
             <footer class="footer ">
